@@ -1,0 +1,62 @@
+.partners{
+	&-block{
+		text-align: center;
+	}
+	&-heading{
+		color: #026fb3;
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		&-small{
+			color: #1a7cbb;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+	}
+	&-description{
+		color: #47474b;
+		font-size: 14px;
+		margin-bottom: 60px;
+	}
+	&-btn{
+		.btn{
+			color: #fff;;
+	    background-color: #63c980; 
+	    border-color: #55d17d;
+		  &:hover,
+		  &:focus,
+		  &.focus {
+		    color: #55d17d;;
+		    background-color: transparent; 
+		  }
+	    text-transform: uppercase;
+		  @include button-size(9px, 18px, 14px, 1.1em, 20px);
+  		transition: all .3s linear;
+		}
+	}
+	&-general{
+
+	}
+	&-exhibition{
+
+	}
+	&-info{
+		
+	}
+	&-img{
+		height: 200px;
+		&-min{
+			height: 100px;
+		}
+	}
+	&-caption{
+		color: #262626;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-bottom: 70px;
+	}
+
+}

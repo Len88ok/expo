@@ -1,13 +1,30 @@
-@import 'base/variables';
+// Core variables and mixins
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-@import 'base/normalize';
-@import 'base/global';
 
-// Import Components
-// @import 'components/header';
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
-// Import Layouts
-// @import 'layouts/home';
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
 
-// Import Plugins
-// @import 'plugins/plugin';
+@import "base/global.scss";
+@import "base/variables.scss";
+
+@import "components/partners.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

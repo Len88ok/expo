@@ -1,0 +1,20 @@
+{
+  "name": "Expo",
+  "description": "A Gulp file and project generator.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Helen"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Expo"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
