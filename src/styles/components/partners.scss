@@ -33,7 +33,10 @@
 		    background-color: transparent; 
 		  }
 	    text-transform: uppercase;
-		  @include button-size(9px, 18px, 14px, 1.1em, 20px);
+	    padding: 9px 18px;
+	    line-height: 1.1em;
+	    font-size: 14px;
+	    border-radius: 20px;
   		transition: all .3s linear;
 		}
 	}

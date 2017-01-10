@@ -2,19 +2,24 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+
+
+
+
 
 @import "base/global.scss";
-@import "base/variables.scss";
 
 @import "components/partners.scss";
 
-
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
 
 
 

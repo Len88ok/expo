@@ -19,14 +19,19 @@
   font-size: 14px;
   margin-bottom: 60px; }
 
-.partners-general {
-  margin-bottom: 70px; }
-
-.partners-exhibition {
-  margin-bottom: 70px; }
-
-.partners-info {
-  margin-bottom: 70px; }
+.partners-btn .btn {
+  color: #fff;
+  background-color: #63c980;
+  border-color: #55d17d;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  line-height: 1.1em;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: all .3s linear; }
+  .partners-btn .btn:hover, .partners-btn .btn:focus, .partners-btn .btn.focus {
+    color: #55d17d;
+    background-color: transparent; }
 
 .partners-img {
   height: 200px; }
@@ -36,4 +41,5 @@
 .partners-caption {
   color: #262626;
   font-size: 14px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 70px; }
