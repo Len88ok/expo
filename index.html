@@ -1,175 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Expo</title>
-    <link href="css/screen.css" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expo</title>
+	<link href="css/screen.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<main class="main-content">
+		<div class="container">
+			<div class="partners-block">
+				<div class="row">
+					<div class="col-sm-offset-2 col-sm-8">
+						<div class="partners-heading">наши партнеры</div>
+					</div>
+					<div class="col-sm--2">
+						<div class="partners-btn">
+							<a href="myModal" role="button" class="btn" data-toggle="modal" data-target="#myModal">Стать партнером</a>
+						</div>
+						<!-- Modal -->
+						<div id="myModal" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Стать партнером</h4>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-xs-12">
+												<label>Имя</label>
+												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-12">
+												<label>email</label>
+												<input type="text" class="form-control">
+											</div>
+											<div class="col-xs-12">
+												<label>Название компании</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12">
+												<label>Сообщение</label>
+												<textarea class="form-control" rows="4"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+										<button type="button" class="btn btn-success">Отправить</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- end Modals-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-offset-2 col-sm-8">
+						<div class="partners-description">Наши партнеры являются неотъемлемой частью развития масштабного проекта ExpoUniverse, вносят большой вклад в популяризацию инновационного решения для развития выставочной индустрии.</div>
+					</div>
+				</div>
+				<div class="partners-general">
+					<div class="partners-heading-small">генеральные партнеры</div>
+					<div class="row">
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img">
+								<img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/bp-logo.png" alt="bp-logo" id="bp-popover">
+								<!-- Modal -->
+								<div id="popover-content1" class="hide">
+									<div class="popover-dialog">
+										<div class="popover-content">
+											<div class="popover-header">
+												<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+												<h4 class="popover-title">british petroleum</h4>
+											</div>
+											<div class="popover-content">
+												<div class="row">
+													<div class="col-sm-3">
+														<div class="popover-img"><img src="images/bp-logo.png" alt="bp-logo"></div>
+													</div>
+													<div class="col-sm-9">
+														<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+													</div>
+												</div>
+											</div>
+											<div class="popover-footer">
+												<a href="#">www.bp.com</a>
+											</div>
+										</div>
+									</div>
+								</div><!-- end Modals-->
+								</div>
+							<div class="partners-caption">british petroleum</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" id="google-popover" src="images/google.png" alt="google-logo">
+								<!-- Modal -->
+								<div id="popover-content2" class="hide">
+									<div class="popover-dialog">
+										<div class="popover-content">
+											<div class="popover-header">
+												<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+												<h4 class="popover-title">google</h4>
+											</div>
+											<div class="popover-content">
+												<div class="row">
+													<div class="col-sm-3">
+														<div class="popover-img"><img src="images/google.png" alt="google-logo"></div>
+													</div>
+													<div class="col-sm-9">
+														<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+													</div>
+												</div>
+											</div>
+											<div class="popover-footer">
+												<a href="#">www.google.com</a>
+											</div>
+										</div>
+									</div>
+								</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">Google</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/nike.png" alt="nike-logo" id="nike-popover">
+							<!-- Modal -->
+							<div id="popover-content3" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">nike</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/nike.png" alt="nike-logo"></div>
+												</div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <main class="main-content">
-			<div class="container">
-				<div class="partners-block">
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.nike.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">Nike</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/intel.png" alt="intel-logo" id="intel-popover">
+							<!-- Modal -->
+							<div id="popover-content4" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">intel</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/intel.png" alt="intel-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.intel.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">intel</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/mts.png" alt="mts-logo" id="mts-popover">
+							<!-- Modal -->
+							<div id="popover-content5" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">МТС</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/mts.png" alt="mts-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.МТС.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">МТС</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/samsung.png" alt="samsung-logo" id="samsung-popover">
+							<!-- Modal -->
+							<div id="popover-content6" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">samsung</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/samsung.png" alt="samsung-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.samsung.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">samsung</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/skype.png" alt="skype-logo" id="skype-popover">
+							<!-- Modal -->
+							<div id="popover-content7" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">skype</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/skype.png" alt="skype-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.skype.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">skype</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/pepsi.png" alt="pepsi-logo" id="pepsi-popover">
+							<!-- Modal -->
+							<div id="popover-content8" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">pepsi</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/pepsi.png" alt="pepsi-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.pepsi.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">pepsi</div>
+						</div>
+					</div>
+				</div>
+				<div class="partners-exhibition">
+					<div class="partners-heading-small">партнеры-организаторы выставок</div>
 					<div class="row">
-						<div class="col-sm-offset-2 col-sm-8">
-							<div class="partners-heading">наши партнеры</div>
-						</div>
-						<div class="col-sm--2">
-							<div class="partners-btn">
-								<a href="myModal" role="button" class="btn" data-toggle="modal" data-target="#myModal">Стать партнером</a>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/yandex.png" alt="yandex-logo" id="yandex-popover">
+							<!-- Modal -->
+							<div id="popover-content9" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">yandex</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/yandex.png" alt="yandex-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.yandex.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
 							</div>
-							 <!-- Modal -->
-	            <div id="myModal" class="modal fade">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title">Стать партнером</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <label>Имя</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="col-xs-12">
-                          <label>email</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="col-xs-12">
-                          <label>Название компании</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <label>Сообщение</label>
-                          <textarea class="form-control" rows="4"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                      <button type="button" class="btn btn-success">Отправить</button>
-                    </div>
-                  </div>
-                </div>
-	            </div><!-- end Modals--> 
-						</div>					
+							<div class="partners-caption">Яндекс</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/7up.png" alt="7up-logo" id="7up-popover">
+							<!-- Modal -->
+							<div id="popover-content10" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">7up</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/7up.png" alt="7up-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.7up.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">7up</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/eclipse.png" alt="eclipse-logo" id="eclipse-popover">
+							<!-- Modal -->
+							<div id="popover-content11" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">eclipse</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/eclipse.png" alt="eclipse-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.eclipse.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">eclipse</div>
+						</div>
+						<div class="col-xs-6 col-md-3 block-collapse">
+							<div class="partners-img"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/dell.png" alt="dell-logo" id="dell-popover">
+							<!-- Modal -->
+							<div id="popover-content12" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">dell</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/dell.png" alt="dell-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.dell.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">dell</div>
+						</div>
 					</div>
+				</div>
+				<div class="partners-info">
+					<div class="partners-heading-small">Информационные партнеры</div>
 					<div class="row">
-						<div class="col-sm-offset-2 col-sm-8">					
-							<div class="partners-description">Наши партнеры являются неотъемлемой частью развития масштабного проекта ExpoUniverse, вносят большой вклад в популяризацию инновационного решения для развития выставочной индустрии.</div>
+						<div class="col-xs-6 col-md-2 block-collapse">
+							<div class="partners-img-min"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/mykharkov.png" alt="mykharkov-logo" id="kharkov-popover"> 
+							<!-- Modal -->
+							<div id="popover-content13" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">myKharkov</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/mykharkov.png" alt="mykharkov-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.myKharkov.info</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
+							</div>
+							<div class="partners-caption">my Kharkov.info</div>
 						</div>
-					</div>										
-					<div class="partners-general">
-						<div class="partners-heading-small">генеральные партнеры</div>
-						<div class="row">
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/bp-logo.png" alt="bp-logo"></div>
-								<div class="partners-caption">british petroleum</div>
+						<div class="col-xs-6 col-md-2 block-collapse">
+							<div class="partners-img-min"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/web-peppers.png" alt="web-peppers-logo" id="peppers-popover">
+							<!-- Modal -->
+							<div id="popover-content14" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">Web peppers</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/web-peppers.png" alt="web-peppers-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.peppers.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
 							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/google.png" alt="google-logo"></div>
-								<div class="partners-caption">Google</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/nike.png" alt="nike-logo"></div>
-								<div class="partners-caption">Nike</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/intel.png" alt="intel-logo"></div>
-								<div class="partners-caption">intel</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/mts.png" alt="mts-logo"></div>
-								<div class="partners-caption">МТС</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/samsung.png" alt="samsung-logo"></div>
-								<div class="partners-caption">samsung</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/skype.png" alt="skype-logo"></div>
-								<div class="partners-caption">skype</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/pepsi.png" alt="pepsi-logo"></div>
-								<div class="partners-caption">pepsi</div>
-							</div>
-						</div>						
-					</div>
-					<div class="partners-exhibition">
-						<div class="partners-heading-small">партнеры-организаторы выставок</div>
-						<div class="row">
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/yandex.png" alt="yandex-logo"></div>
-								<div class="partners-caption">Яндекс</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/7up.png" alt="7up-logo"></div>
-								<div class="partners-caption">7up</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/eclipse.png" alt="eclipse-logo"></div>
-								<div class="partners-caption">eclipse</div>
-							</div>
-							<div class="col-xs-6 col-md-3 block-collapse">
-								<div class="partners-img"><img src="images/dell.png" alt="dell-logo"></div>
-								<div class="partners-caption">dell</div>
-							</div>
+							<div class="partners-caption">web peppers</div>
 						</div>
-					</div>
-					<div class="partners-info">
-						<div class="partners-heading-small">Информационные партнеры</div>
-						<div class="row">
-							<div class="col-xs-6 col-md-2 block-collapse">
-								<div class="partners-img-min"><img src="images/mykharkov.png" alt="mykharkov-logo"></div>
-								<div class="partners-caption">my Kharkov.info</div>
+						<div class="col-xs-6 col-md-2 block-collapse">
+							<div class="partners-img-min"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/lvbs.png" alt="lvbs-logo" id="lviv-popover">
+							<!-- Modal -->
+							<div id="popover-content15" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">Lviv buisness school</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/lvbs.png" alt="lvbs-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.Lviv.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
 							</div>
-							<div class="col-xs-6 col-md-2 block-collapse">
-								<div class="partners-img-min"><img src="images/web-peppers.png" alt="web-peppers-logo"></div>
-								<div class="partners-caption">web peppers</div>
+							<div class="partners-caption">Lviv buisness school</div>
+						</div>
+						<div class="col-xs-6 col-md-2 block-collapse">
+							<div class="partners-img-min"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/it-ratings.png" alt="it-ratings-logo" id="rate-popover">
+							<!-- Modal -->
+							<div id="popover-content16" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">IT рейтинг украины</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/it-ratings.png" alt="it-ratings-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.rate.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Modals-->
 							</div>
-							<div class="col-xs-6 col-md-2 block-collapse">
-								<div class="partners-img-min"><img src="images/lvbs.png" alt="lvbs-logo"></div>
-								<div class="partners-caption">Lviv buisness school</div>
+							<div class="partners-caption">IT рейтинг украины</div>
+						</div>
+						<div class="col-xs-6 col-md-2 block-collapse">
+							<div class="partners-img-min"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/ok-kr.png" alt="profi-logo" id="profi-popover">
+							<!-- Popover -->
+							<div id="popover-content17" class="hide">
+								<div class="popover-dialog">
+									<div class="popover-content">
+										<div class="popover-header">
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<h4 class="popover-title">profi consulting</h4>
+										</div>
+										<div class="popover-content">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="popover-img"><img src="images/ok-kr.png" alt="profi-logo"></div>
+												</div>
+												<div class="col-sm-9">
+													<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+												</div>
+											</div>
+										</div>
+										<div class="popover-footer">
+											<a href="#">www.consulting.com</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- end Popover-->
 							</div>
-							<div class="col-xs-6 col-md-2 block-collapse">
-								<div class="partners-img-min"><img src="images/it-ratings.png" alt="it-ratings-logo"></div>
-								<div class="partners-caption">IT рейтинг украины</div>
+							<div class="partners-caption">profi consulting</div>
+						</div>
+						<div class="col-xs-6 col-md-2 block-collapse">
+							<div class="partners-img-min"><img data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" src="images/logo-057.png" alt="057-logo" id="057-popover">
+							<div id="popover-content18" class="hide">
+					      <div class="popover-dialog">
+					      	<div class="popover-content">
+					      		<div class="popover-header">
+					      			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					      			<h4 class="popover-title">057</h4>
+					      		</div>
+					      		<div class="popover-content">
+					      			<div class="row">
+					      				<div class="col-sm-3">
+					      					<div class="popover-img"><img src="images/logo-057.png" alt="057-logo"></div>
+					      				</div>
+					      				<div class="col-sm-9">
+					      					<div class="popover-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+					      				</div>
+					      			</div>
+					      		</div>
+					      		<div class="popover-footer">
+					      			<a href="#">www.057.com</a>
+					      		</div>
+					      	</div>
+					      </div>
+					    </div>					    
 							</div>
-							<div class="col-xs-6 col-md-2 block-collapse">
-								<div class="partners-img-min"><img src="images/ok-kr.png" alt="profi-logo"></div>
-								<div class="partners-caption">profi consulting</div>
-							</div>
-							<div class="col-xs-6 col-md-2 block-collapse">
-								<div class="partners-img-min"><img src="images/logo-057.png" alt="057-logo"></div>
-								<div class="partners-caption">057.ua</div>
-							</div>
+							<div class="partners-caption">057.ua</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</main>
-		bs3-carousel
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-  </body>
+		</div>
+	</main>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="scripts/main.js"></script>
+</body>
 </html>
-
-
-
-		

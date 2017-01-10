@@ -1,0 +1,42 @@
+.modal{
+	&-dialog{
+		
+	}
+}
+
+
+.hide{
+	display: none !important;
+}
+
+
+
+.popover{
+		&-dialog{
+
+		}
+		&-title{
+			text-transform: uppercase;
+		}		
+		&-content{
+		background-color: #FFF;
+		padding: 15px;
+
+		}
+		&-img{
+			width: 100%;
+			img{
+				max-width: 100%;
+			}
+		}
+		&-text{}
+		&-footer{
+			a{
+				color: blue;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+
+	}

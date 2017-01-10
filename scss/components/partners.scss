@@ -51,8 +51,17 @@
 	}
 	&-img{
 		height: 200px;
-		&-min{
+		position: relative;
+		img:hover{
+			filter: grayscale(1);
+			/* filter: brightness(0.1); */
+		}
+		&-min{			
+			position: relative;
 			height: 100px;
+			img:hover{
+			filter: grayscale(1);
+		}
 		}
 	}
 	&-caption{
@@ -65,6 +74,5 @@
 }
 
 
-.modal{
-	
-}
+
+
