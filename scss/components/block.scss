@@ -1,6 +1,20 @@
+body{
+margin: 0;
+}
 
 .block{
 	&-collapse{
 		padding: 0 !important;
 	}
+	&-bg-lg{
+		background-image: url("../images/bg.png");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #ebecff;
+    background-size: cover;
+    overflow: hidden;
+	}
 }
+
+
+

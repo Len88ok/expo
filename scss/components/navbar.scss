@@ -1,0 +1,45 @@
+.navbar{
+	background-color: transparent;
+	border: none;
+	&-brand{
+		padding: 0;
+		margin-right: 50px;
+		&-dscr{
+			text-transform: none;
+	    color: #026fb3;
+	    font-size: 9px;
+	    line-height: 11px;
+	    display: block;
+	    padding-top: 4px;
+		}
+	}
+	&-nav{
+			li>a{
+				color: #262626;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+	}
+
+}
+
+
+.main-menu.authorization-menu{
+	position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-right: 30px;
+  display: inline-block;
+
+  li{
+  	float: left;
+  	list-style-type: none;
+  }
+  li>a{
+    padding: 10px;
+
+  }
+}
+
+    
+    

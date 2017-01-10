@@ -12,11 +12,13 @@
 
 
 .popover{
+	text-align: center;
 		&-dialog{
 
 		}
-		&-title{
+		&-heading{
 			text-transform: uppercase;
+			color: #000;
 		}		
 		&-content{
 		background-color: #FFF;
