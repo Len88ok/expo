@@ -89,28 +89,26 @@ $(document).ready(function(){
 		          return $('#popover-content18').html();
 		        }
 		});
+           
+    $(document).on("click", ".partners-img img, .partners-img-min img" , function(){ 
+    	 $(".cover").fadeTo(500, 0.5).css('display', 'block');
+    });
+
 		$(document).on("click", ".popover .close" , function(){
         $(this).parents(".popover").popover('hide');
+        $(".cover").fadeOut(500);
     });
+
 		$(document).mouseup(function (e){ 
 		var div = $(".popover"); 
 		if (!div.is(e.target) 
 		    && div.has(e.target).length === 0) { 
-			div.hide(); 
+			div.hide();
+			$(".cover").fadeOut(500); 
 		}
 	});	
 });
 
-
-$(document).ready(function () {
-        $(".partners-img img").click(function () {
-            $(".cover").fadeTo(500, 0.5).css('display', 'block');
-        });
- 
-        $(".popover .close").click(function () {
-            $(".cover").fadeOut(500);
-        });
-    });
 
 
 
