@@ -2500,7 +2500,7 @@ button.close {
     .popover-footer a:hover {
       text-decoration: underline; }
 
-#back {
+.cover {
   /* задний фон по умолчанию не виден, его цвет черный, он занимает всё пространство по высоте и ширине, его позиция фиксирована , то есть при скроллинге он никуда не денется */
   display: none;
   height: 100%;
@@ -2509,5 +2509,4 @@ button.close {
   position: fixed;
   top: 0px;
   left: 0px;
-  background: #000;
-  opacity: 0.5; }
+  background: #000; }

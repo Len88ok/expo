@@ -99,14 +99,19 @@ $(document).ready(function(){
 			div.hide(); 
 		}
 	});	
-
 });
 
 
-$(document).ready(function(){
-    $(document).on("click", ".popover" , function(){
-        document.getElementById('back').style.display = 'block';
+$(document).ready(function () {
+        $(".partners-img img").click(function () {
+            $(".cover").fadeTo(500, 0.5).css('display', 'block');
+        });
+ 
+        $(".popover .close").click(function () {
+            $(".cover").fadeOut(500);
+        });
     });
-});	
+
+
 
 
