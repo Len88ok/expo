@@ -92,4 +92,11 @@ $(document).ready(function(){
 		$(document).on("click", ".popover .close" , function(){
         $(this).parents(".popover").popover('hide');
     });
+		$(document).mouseup(function (e){ 
+		var div = $(".popover"); 
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0) { 
+			div.hide(); 
+		}
+	});
 });								
