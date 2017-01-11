@@ -98,5 +98,15 @@ $(document).ready(function(){
 		    && div.has(e.target).length === 0) { 
 			div.hide(); 
 		}
-	});
-});								
+	});	
+
+});
+
+
+$(document).ready(function(){
+    $(document).on("click", ".popover" , function(){
+        document.getElementById('back').style.display = 'block';
+    });
+});	
+
+

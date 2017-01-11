@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2195,7 +2196,7 @@ body {
     position: relative;
     height: 100px;
     line-height: 100px; }
-    .partners-img-min img:hover {
+    .partners-img-min img:hover, .partners-img-min img:focus, .partners-img-min img.focus {
       -webkit-filter: grayscale(1);
       filter: grayscale(1); }
 
@@ -2498,3 +2499,15 @@ button.close {
     color: blue; }
     .popover-footer a:hover {
       text-decoration: underline; }
+
+#back {
+  /* задний фон по умолчанию не виден, его цвет черный, он занимает всё пространство по высоте и ширине, его позиция фиксирована , то есть при скроллинге он никуда не денется */
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0.5; }

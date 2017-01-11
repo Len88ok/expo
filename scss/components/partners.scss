@@ -61,9 +61,13 @@
 			position: relative;
 			height: 100px;
 			line-height: 100px;
-			img:hover{
-			filter: grayscale(1);
-		}
+			img{
+				&:hover,
+			  	&:focus,
+			  	&.focus{
+					filter: grayscale(1);
+				}	
+			}			
 		}
 	}
 	&-caption{
