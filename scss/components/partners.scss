@@ -51,6 +51,7 @@
 	}
 	&-img{
 		height: 200px;
+		line-height: 200px;
 		position: relative;
 		img:hover{
 			filter: grayscale(1);
@@ -59,6 +60,7 @@
 		&-min{			
 			position: relative;
 			height: 100px;
+			line-height: 100px;
 			img:hover{
 			filter: grayscale(1);
 		}

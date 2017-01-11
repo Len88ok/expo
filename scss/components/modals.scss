@@ -12,6 +12,7 @@
 
 
 .popover{
+	max-width: 320px; 
 	text-align: center;
 		&-dialog{
 
@@ -21,18 +22,20 @@
 			color: #000;
 		}		
 		&-content{
-		background-color: #FFF;
-
-    padding: 4px 7px;
-
-		}
+			background-color: #FFF;
+    		padding: 4px 6px;
+    	}
 		&-img{
 			width: 100%;
 			img{
 				max-width: 100%;
+				padding-left: 10px !important;
 			}
 		}
-		&-text{}
+		&-text{
+			text-align: justify;
+		    margin-bottom: 20px;
+		}
 		&-footer{
 			a{
 				color: blue;
