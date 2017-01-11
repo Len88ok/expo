@@ -96,7 +96,7 @@ $(document).ready(function(){
 
 		$(document).on("click", ".popover .close" , function(){
         $(this).parents(".popover").popover('hide');
-        $(".cover").fadeOut(500);
+        $(".cover").hide();
     });
 
 		$(document).mouseup(function (e){ 
@@ -104,7 +104,7 @@ $(document).ready(function(){
 		if (!div.is(e.target) 
 		    && div.has(e.target).length === 0) { 
 			div.hide();
-			$(".cover").fadeOut(500); 
+			$(".cover").hide();
 		}
 	});	
 });

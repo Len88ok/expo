@@ -22,7 +22,10 @@
 		margin-bottom: 60px;
 	}
 	&-btn{
+		margin-bottom: 10px;
+
 		.btn{
+			display: inline-block;
 			color: #fff;;
 	    background-color: #63c980; 
 	    border-color: #55d17d;
@@ -53,9 +56,13 @@
 		height: 200px;
 		line-height: 200px;
 		position: relative;
-		img:hover{
-			filter: grayscale(1);
-			/* filter: brightness(0.1); */
+		img{
+			&:hover,
+	  	&:focus,
+	  	&.focus{
+				filter: grayscale(1);
+				/* filter: brightness(0.1); */
+			}
 		}
 		&-min{			
 			position: relative;
@@ -63,8 +70,8 @@
 			line-height: 100px;
 			img{
 				&:hover,
-			  	&:focus,
-			  	&.focus{
+		  	&:focus,
+		  	&.focus{
 					filter: grayscale(1);
 				}	
 			}			
@@ -77,6 +84,30 @@
 		margin-bottom: 70px;
 	}
 
+}
+
+
+@media screen and (max-width: 767px ) {
+	.partners{
+		&-caption{
+			margin-bottom: 0;
+		}
+		&-general,
+		&-exhibition,
+		&-info{
+		margin-bottom: 40px;
+		}
+		&-img{		
+			width: 80%;
+			margin: 0 auto;
+			height: 185px;
+			line-height: 185px;
+		}
+		&-img-min{		
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
 }
 
 
