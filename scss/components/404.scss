@@ -23,22 +23,8 @@
   }
   &-button{
     a.btn {
-      display: inline-block;
-      background-color: #55d17d;
-      border-radius: 20px;
       padding: 10px 60px;
-      border: 1px solid transparent;
-      color: #fff;    
-      font-size: 14px;
-      transition: all 0.3s linear;
-      cursor: pointer;
-      text-decoration: none;
-      text-transform: uppercase;
-      &:hover {
-        background-color: transparent;
-        color: #55d17d;
-        border-color: #55d17d;
-        }
+      
     }
-  }
+  } 
 }
