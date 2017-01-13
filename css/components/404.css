@@ -1,0 +1,33 @@
+.error-heading, .error-text {
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 100px #00bcff, 0 3px 0 rgba(50, 0, 100, 0.8);
+  -webkit-filter: url(#drop-shadow);
+  filter: url(#drop-shadow);
+  font-family: Roboto;
+  font-weight: 300; }
+
+.error-heading {
+  font-size: 25vw; }
+
+.error-text {
+  font-size: 5vw; }
+
+.error-buttons {
+  margin-top: 40px; }
+  .error-buttons a.btn {
+    display: inline-block;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #103754;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 10px 15px;
+    box-shadow: 0 0 100px #00bcff, 0 3px 0 rgba(27, 143, 196, 0.8); }
+    .error-buttons a.btn:hover {
+      border-color: #037FDE;
+      box-shadow: 0 0 100px #00bcff; }
