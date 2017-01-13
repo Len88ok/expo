@@ -95,7 +95,7 @@ $(document).ready(function(){
     });
 
 		$(document).on("click", ".popover .close" , function(){
-        $(this).parents(".popover").popover('hide');
+        $(this).parents(".popover").fadeOut(500);
         $(".cover").hide();
     });
 
@@ -103,8 +103,8 @@ $(document).ready(function(){
 		var div = $(".popover"); 
 		if (!div.is(e.target) 
 		    && div.has(e.target).length === 0) { 
-			div.hide();
-			$(".cover").hide();
+			div.fadeOut(500);
+			$(".cover").fadeOut(500);
 		}
 	});	
 });
