@@ -23,25 +23,6 @@
 	}
 	&-btn{
 		margin-bottom: 10px;
-
-		.btn{
-			display: inline-block;
-			color: #fff;;
-	    background-color: #63c980; 
-	    border-color: #55d17d;
-		  &:hover,
-		  &:focus,
-		  &.focus {
-		    color: #55d17d;;
-		    background-color: transparent; 
-		  }
-	    text-transform: uppercase;
-	    padding: 9px 18px;
-	    line-height: 1.1em;
-	    font-size: 14px;
-	    border-radius: 20px;
-  		transition: all .3s linear;
-		}
 	}
 	&-general{
 

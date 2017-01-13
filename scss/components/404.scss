@@ -28,3 +28,32 @@
     }
   } 
 }
+
+
+@media screen and (max-width: 767px ) {
+  .error{
+    &-button{
+      a.btn {
+        padding: 10px 20px;
+        
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 479px ) {
+  .error{
+     &-text{
+      margin-bottom: 10px;
+
+    }
+    &-button{
+      a.btn {
+        padding: 5px 10px;
+        font-size: 12px;
+        
+      }
+    }
+  }
+}
