@@ -2,6 +2,10 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
+@import "components/global.scss";
+@import "components/bgs.scss";
+@import "components/block.scss";
+
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
@@ -18,13 +22,17 @@
 @import "components/navbar.scss";
 
 
-@import "components/block.scss";
+
 @import "components/partners.scss";
+@import "components/info.scss";
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/close";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
 @import "components/modals.scss";
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+
 
 
 @import "components/404.scss";

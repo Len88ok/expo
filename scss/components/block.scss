@@ -1,37 +1,51 @@
-html,
-body{
-margin: 0;
-background-image: linear-gradient(to top, white 0%, #e9ebff 100%);
-}
-ul,ol{
-	padding-left: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .block{
 	&-collapse{
 		padding: 0 !important;
 	}
-	&-bg-lg{
-		background-image: url("../images/bg.png");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-color: #ebecff;
-    background-size: cover;
-    overflow: hidden;
-	}
-	&-bg-paper{
-		background-image: url("../images/paper.png");
-		background-repeat: no-repeat;
-		background-position: 0 0;
-	    background-size: 100%;
-	    overflow: hidden;
-	    width: 100%;
-	    height: 100vh;
+	&-info{
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		span{
+			color: #0a73b5;
+		}
+		&-light{
+			color: #fff;
+			text-align: center;			
+			text-transform: uppercase;
+			&-overlay {
+				position: relative;
+				z-index: 1;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: -1;
+					opacity: 0.83;
+					background-color: silver;
+					background-image: linear-gradient(-47deg, #0a73b5 0%, #56d17e 100%);				
+				}
+			}
+		}
+		&-desc{
+			text-transform: none;
+			position: relative;
+			z-index: 1;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				opacity: 0.2;
+				background-color: #000;		
+			}
+		}
 	}
 }
 

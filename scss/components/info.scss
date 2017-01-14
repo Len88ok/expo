@@ -1,0 +1,134 @@
+.brand{
+	text-align: center;
+	&-img{
+		&-desc{
+		text-transform: none;
+    color: #026fb3;
+    font-size: 14px;
+    line-height: 1.22em;
+    display: block;
+    padding-top: 4px;
+		}
+	}
+
+}
+
+
+.feature{
+	text-align: center;
+	&-icon{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto;
+	}
+	&-content{
+
+	}
+}
+
+.mackbook{
+	margin-bottom: 110px;
+	&-info{
+		font-size: 18px;
+		color: #3a3a3a;
+		padding: 30% 0;
+
+		span{
+			color: #0a73b5;
+			font-weight: 700;
+		}
+	}
+}
+
+
+.zoom-features{
+	&-info{
+		width: 428px;
+		font-size: 14px;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		padding: 15% 0;
+	}
+	&-img{
+		margin-top: -50px;
+	}
+}
+
+.advantages{
+	font-size: 14px;
+	line-height: 1.313em;
+	text-align: center;
+	span{
+		display: inline-block;
+		font-size: 24px;
+		margin-bottom: 50px;
+	}
+	&-yours{
+
+	}
+	&-us{
+
+	}
+	&-item{		
+		text-align: left;
+		margin-bottom: 10px;
+		list-style-type: none;
+	}
+}
+
+.video-section{
+	&-wrapper{
+		background: #f39c12;
+		margin-top: 105px;
+	}
+	&-title{
+		color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 8px;
+    span{
+	    display: block;
+	    font-size: 14px;
+	    line-height: 16px;
+	    padding-top: 8px;
+    }
+	}
+}
+
+
+.btn-play {
+  color: #fff;
+  &:hover{
+  	color: #55d17d;
+  }
+  &-icon{
+  	background: url(../images/ic-play.png) no-repeat 53% center #494949;
+    width: 70px;
+    height: 70px;
+    border-radius: 50% !important;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    &:hover{
+    	    background-color: #55d17d;
+    }
+  }
+  &-link{
+  	display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+    span{
+    	font-size: 24px;
+    	line-height: 26px;
+    	padding-bottom: 7px;
+    	display: block;
+    	text-transform: uppercase;
+    }
+  }
+}
+
+    
