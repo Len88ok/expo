@@ -15,17 +15,21 @@
 
 
 .feature{
+	&-block{
+		padding: 70px 0;
+		margin-bottom: 100px;
+	}
 	text-align: center;
 	&-icon{
 		width: 100px;
 		height: 100px;
 		border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    margin: 0 auto;
+	    text-align: center;
+	    line-height: 100px;
+	    margin: 0 auto 20px;
 	}
 	&-content{
-
+		margin-bottom: 70px;
 	}
 }
 
@@ -61,6 +65,7 @@
 	font-size: 14px;
 	line-height: 1.313em;
 	text-align: center;
+	padding: 3em 0;
 	span{
 		display: inline-block;
 		font-size: 24px;
@@ -83,6 +88,8 @@
 	&-wrapper{
 		background: #f39c12;
 		margin-top: 105px;
+		padding: 2em 0;
+
 	}
 	&-title{
 		color: #fff;

@@ -3,16 +3,41 @@
 		padding: 0 !important;
 	}
 	&-info{
+		position: relative;
 		color: #000;
 		text-align: center;
 		text-transform: uppercase;
 		span{
 			color: #0a73b5;
 		}
+		&-title{
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		&-desc{
+			font-size: 16px;
+			line-height: 1.5em;
+			padding: 30px 0;
+		}
+		&-before{
+			&:before{
+				position: absolute;
+				top: -150px;
+				left: 50%;
+				margin-left: -3px;
+				width: 6px;
+				height: 100px;
+				content: '';
+				background: url(../images/vertical-line.png) no-repeat center center;
+				z-index: 100;
+			}
+		}
 		&-light{
 			color: #fff;
 			text-align: center;			
 			text-transform: uppercase;
+			padding: 3em 0;
 			&-overlay {
 				position: relative;
 				z-index: 1;
