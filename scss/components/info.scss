@@ -48,6 +48,12 @@
 	}
 }
 
+@media screen and (max-width: 767px ) {
+	.mackbook{
+	margin-bottom: 0;
+	}
+}
+
 
 .zoom-features{
 	&-info{
@@ -60,6 +66,17 @@
 	&-img{
 		margin-top: -50px;
 	}
+}
+
+@media screen and (max-width: 767px ) {
+	.zoom-features{
+	&-info{
+		padding: 10% 0;
+	}
+	&-img{
+		margin-top: 0;
+	}
+}
 }
 
 .advantages{
@@ -118,6 +135,14 @@
 	    line-height: 16px;
 	    padding-top: 8px;
     }
+	}
+}
+
+@media screen and (max-width: 767px ) {
+	.video-section{
+		&-wrapper{
+			margin-top: 0;
+		}
 	}
 }
 
