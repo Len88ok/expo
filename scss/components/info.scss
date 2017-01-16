@@ -74,6 +74,7 @@
 	}
 	&-yours{
 		position: relative;
+		padding: 0 50px;
 		&:after{
 		    position: absolute;
 		    top: -86px;
@@ -88,7 +89,7 @@
 
 	}
 	&-us{
-
+		padding: 0 50px;
 	}
 	&-item{		
 		text-align: left;
@@ -101,15 +102,16 @@
 	&-wrapper{
 		background: #f39c12;
 		margin-top: 105px;
-		padding: 2em 0;
+		padding: 2em;
 
 	}
 	&-title{
-		color: #fff;
+	color: #fff;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 26px;
-    padding-top: 8px;
+    text-align: right;
+    padding: 8px 50px 0;
     span{
 	    display: block;
 	    font-size: 14px;
@@ -122,6 +124,7 @@
 
 .btn-play {
   color: #fff;
+  padding: 8px 50px 0;
   &:hover{
   	color: #55d17d;
   }
