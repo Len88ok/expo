@@ -1,5 +1,6 @@
 .brand{
 	text-align: center;
+	padding: 2em 0;
 	&-img{
 		&-desc{
 		text-transform: none;
@@ -72,6 +73,18 @@
 		margin-bottom: 50px;
 	}
 	&-yours{
+		position: relative;
+		&:after{
+		    position: absolute;
+		    top: -86px;
+		    left: 100%;
+		    margin-left: -16px;
+		    width: 37px;
+		    height: 500px;
+		    content: '';
+		    background: url(../images/long-line.png) no-repeat center center;
+		    z-index: 100;
+		}
 
 	}
 	&-us{
@@ -138,4 +151,10 @@
   }
 }
 
+
+.pad{
+	&-3{
+		padding: 3em 0 1.5em;
+	}
+}
     
