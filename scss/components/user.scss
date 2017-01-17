@@ -1,0 +1,44 @@
+.phase{
+	padding: 2em 0;
+	&-number{
+		width: 70px;
+		height: 70px;
+		background: #026fb3;
+		border-radius: 50%;
+		padding-top: 15px;
+		text-align: center;
+		color: #fff;
+		font-size: 36px;
+		line-height: 36px;
+		&-outer{
+			width: 90px;
+			height: 90px;
+			padding: 9px;
+			border-radius: 50%;
+			border: 1px solid #026fb3;
+			margin: 0 auto 27px;
+		}
+	}
+	&-line{
+    position: absolute;
+		left: 190px;
+    top: 45px;
+    height: 1px;
+    width: 204px;
+    background-color: #026fb3;
+	}
+	&-caption{
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+.green{color: #1abc9c;}
+.orange{color: #e67e22;}
+.blue{color: #3498db;}
+.violet{color: #9b59b6;}
+.rose{color: #cc2551;}
+.red{color: #e74c3c;}

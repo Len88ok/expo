@@ -15,10 +15,17 @@
 			font-weight: 700;
 			margin-bottom: 20px;
 		}
-		&-desc{
-			font-size: 16px;
-			line-height: 1.5em;
-			padding: 30px 0;
+		&-blue{
+			color: #026fb3;	
+			font-size: 24px;
+			margin-bottom: 60px;	
+			&-title{
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+			&-desc{
+				font-size: 18px;
+			}
 		}
 		&-before{
 			&:before{
@@ -55,10 +62,14 @@
 				}
 			}
 		}
+
 		&-desc{
 			text-transform: none;
 			position: relative;
 			z-index: 1;
+			font-size: 16px;
+			line-height: 1.5em;
+			padding: 30px 0;
 			&:after {
 				content: '';
 				position: absolute;
@@ -73,6 +84,10 @@
 		}
 	}
 }
+
+
+
+
 
 
 
