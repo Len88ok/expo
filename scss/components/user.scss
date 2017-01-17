@@ -113,17 +113,33 @@
 			width: 100%;
 			margin: 0 auto;
 		}
+		&:hover{
+			.carousel-caption-heading{
+				display: block;		
+
+			}
+		}
 	}
+
 	&-caption{
 		right: 0;
 		left: 0;
 		bottom: 0;
-		padding: 10px 5px 60px;
+		padding: 20px;
     margin: 0 5px;
     font-size: 22px;
 		text-transform: uppercase;
 		&-period{
 			font-size: 12px;
+		}
+		&-heading{
+			display: none;	
+			a{
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+				}
+			}		
 		}
 		&:after {
 				content: '';
@@ -139,9 +155,4 @@
 	}
 }
 
-@media screen and (max-width: 479px ) {
-	.carousel{
-		&-caption{
-		}
-	}
-}
+
