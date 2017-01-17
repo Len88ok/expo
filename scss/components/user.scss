@@ -32,6 +32,37 @@
 		margin: 0 auto;
 	}
 }
+@media screen and (max-width: 1199px ) {
+.phase{
+	&-line{
+			left: 166px;
+	    width: 153px;
+		}
+	}
+}
+@media screen and (max-width: 991px ) {
+.phase{
+	&-line{
+			left: 138px;
+	    width: 99px;
+		}
+	}
+}
+@media screen and (max-width: 767px ) {
+.phase{
+	&-line{
+			display: none;
+		}
+	&-caption{
+		margin-bottom: 15px;
+		}
+	&-number{
+		&-outer{
+			margin-bottom: 15px;
+			}
+		}
+	}
+}
 
 .feature{
 	&-inline{
@@ -77,6 +108,12 @@
 
 
 .carousel{
+	.item{
+		img{
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
 	&-caption{
 		right: 0;
 		left: 0;
@@ -99,5 +136,12 @@
 				opacity: 0.4;
 				background-color: #000;		
 			}
+	}
+}
+
+@media screen and (max-width: 479px ) {
+	.carousel{
+		&-caption{
+		}
 	}
 }
