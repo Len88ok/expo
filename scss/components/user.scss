@@ -122,13 +122,14 @@
 	}
 	&-control{
 		width: 25%;
+		&.left{
+			background-image: none;
+		}
+		&.right{
+			background-image: none;
+		}
 	}
-	.left{
-			background-image: none;
-		}
-		.right{
-			background-image: none;
-		}
+	
 
 	&-caption{
 		right: 0;
