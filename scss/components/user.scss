@@ -33,12 +33,45 @@
 	}
 }
 
+.feature{
+	&-inline{
+		float: left;
+		width: 70px;
+		height: 105px;
+		margin-right: 30px;
+	}
+	&-steps{
+		display: block;
+	}
+}
 
 
+.green{color: #1abc9c; font-weight: 700;}
+.orange{color: #e67e22; font-weight: 700;}
+.blue{color: #3498db; font-weight: 700;}
+.violet{color: #9b59b6; font-weight: 700;}
+.rose{color: #cc2551; font-weight: 700;}
+.red{color: #e74c3c; font-weight: 700;}
 
-.green{color: #1abc9c;}
-.orange{color: #e67e22;}
-.blue{color: #3498db;}
-.violet{color: #9b59b6;}
-.rose{color: #cc2551;}
-.red{color: #e74c3c;}
+
+.opportunities{
+	font-size: 18px;
+	padding: 3em 0 0;
+	.feature{
+		text-align: justify;
+		&-block{
+			margin-bottom: 0;
+			padding: 50px 0 0;
+		}
+	}	
+}
+
+.stand{
+	font-size: 18px;
+	padding: 3em 0 0;
+	.feature-block{
+		padding: 50px 0 0;
+    margin-bottom: 0;
+	}
+}
+

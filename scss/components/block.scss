@@ -18,13 +18,13 @@
 		&-blue{
 			color: #026fb3;	
 			font-size: 24px;
-			margin-bottom: 60px;	
 			&-title{
 				font-weight: 700;
 				text-transform: uppercase;
 			}
 			&-desc{
 				font-size: 18px;
+				margin-bottom: 60px;
 			}
 		}
 		&-before{
@@ -45,6 +45,7 @@
 			text-align: center;			
 			text-transform: uppercase;
 			padding: 3em 0;
+			font-size: 18px;
 			&-overlay {
 				position: relative;
 				z-index: 1;
