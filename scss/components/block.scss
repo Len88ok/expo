@@ -1,4 +1,12 @@
 .block{
+	&-table{
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+	&-row{
+		display: table-row-group;
+	}
 	&-collapse{
 		padding: 0 !important;
 	}

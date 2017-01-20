@@ -8,13 +8,14 @@
     overflow: hidden;
 	}
 	&-paper{
-		background-image: url("../images/paper.png");
+		background-image: url("../images/myspace.png");
 		background-repeat: no-repeat;
-		background-position: 0 -50px;
-	    background-size: 100%;
+		background-position: center 0;
+	    background-size: 120%;
 	    overflow: hidden;
-	    width: 100%;
+	    width: 100vw;
 	    height: 100vh;
+
 	}
 	&-under-height{
 		background-image: url("../images/bg-under.png");
@@ -85,10 +86,19 @@
 	}
 }
 
+
 @media screen and (max-width: 767px ) {
-	.block{
-		&-bg-paper{
-			background-position: 0 0;
+	.bg{
+		&-paper{
+			background-size: 150%;
+		}
+	}
+}
+@media screen and (max-width: 479px ) {
+	.bg{
+		&-paper{
+			background-size: 200%;
+			background-position: 50% 25%;
 		}
 	}
 }

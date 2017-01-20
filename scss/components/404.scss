@@ -2,23 +2,24 @@
   &-block{
     text-align: center;
     color: #fff;
+    display: table-cell;
+    vertical-align: middle;
   }
   &-heading,
   &-text{
     margin: 0;    
   }
   &-heading{
-    margin: 22% 0 0;
-    font-size: 16vw;
+    font-size: 9vw;
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
   }
   &-text{
-    font-size: 3vw;
+    font-size: 1.75vw;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
   }
   &-button{
@@ -32,15 +33,10 @@
 
 @media screen and (max-width: 767px ) {
   .error{
-     &-text{
-      margin-bottom: 15px;
-
-    }
     &-button{
       a.btn {
-        padding: 5px 30px;
-        font-size: 12px;
-        
+        padding: 5px 15px;
+        font-size: 11px;        
       }
     }
   }
@@ -48,15 +44,14 @@
 
 @media screen and (max-width: 479px ) {
   .error{
-     &-text{
-      margin-bottom: 5px;
-
+    &-block{
+        vertical-align: top;
+        padding: 160px 0;
     }
     &-button{
       a.btn {
         padding: 4px 10px;
-        font-size: 11px;
-        
+       
       }
     }
   }
