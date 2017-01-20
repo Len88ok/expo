@@ -115,13 +115,13 @@
 		}
 		&:hover{
 			.carousel-caption-heading{
-				display: block;		
+				opacity: 1;		
 
 			}
 		}
 	}
 	&-control{
-		width: 25%;
+		width: 5%;
 		&.left{
 			background-image: none;
 		}
@@ -134,34 +134,74 @@
 	&-caption{
 		right: 0;
 		left: 0;
-		bottom: 0;
-		padding: 20px;
-    margin: 0 5px;
+		top: 0;
+		margin: 0 5px;
     font-size: 22px;
 		text-transform: uppercase;
+		height: 100%;
 		&-period{
 			font-size: 12px;
+			padding: 15px 0;
+	    position: absolute;	    
+	    display: block;
+	    width: 100%;
+	    bottom: 0;
+	    left: 0;
+			&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: -1;
+					opacity: 0.4;
+					background-color: #000;		
+				}
 		}
 		&-heading{
-			display: none;	
+			opacity: 0;	
+			position: absolute;
+			top: 15%;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			padding: 5px;
+			transition: opacity 0.5s linear; 
 			a{
 				color: #fff;
 				&:hover{
 					text-decoration: none;
 				}
-			}		
+			}	
+			&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: -1;
+					opacity: 0.4;
+					background-color: #000;		
+				}	
 		}
-		&:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				z-index: -1;
-				opacity: 0.4;
-				background-color: #000;		
+		
+	}
+	&-indicators{
+		bottom: -40px;
+		li{
+			background-color: transparent;
+			border-color: #55d17d;
+			&.active{
+				background-color: #55d17d;
 			}
+		}		
+	}
+
+	&-after-btn{
+		text-align: center;
+		    margin-top: 40px;
 	}
 }
 
