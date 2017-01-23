@@ -1,33 +1,35 @@
-.error-heading, .error-text {
-  margin: 0;
+.error-block {
+  text-align: center;
   color: #fff;
-  text-shadow: 0 0 100px #00bcff, 0 3px 0 rgba(50, 0, 100, 0.8);
-  -webkit-filter: url(#drop-shadow);
-  filter: url(#drop-shadow);
-  font-family: Roboto;
-  font-weight: 300; }
+  display: table-cell;
+  vertical-align: middle; }
+
+.error-heading, .error-text {
+  margin: 0; }
 
 .error-heading {
-  font-size: 25vw; }
+  font-size: 9vw;
+  line-height: 1em;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .error-text {
-  font-size: 5vw; }
+  font-size: 1.75vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
 
-.error-buttons {
-  margin-top: 40px; }
-  .error-buttons a.btn {
-    display: inline-block;
-    background: transparent;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    color: #103754;
-    font-size: 20px;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 0 10px 15px;
-    box-shadow: 0 0 100px #00bcff, 0 3px 0 rgba(27, 143, 196, 0.8); }
-    .error-buttons a.btn:hover {
-      border-color: #037FDE;
-      box-shadow: 0 0 100px #00bcff; }
+.error-button a.btn {
+  padding: 10px 60px; }
+
+@media screen and (max-width: 767px) {
+  .error-button a.btn {
+    padding: 5px 15px;
+    font-size: 11px; } }
+
+@media screen and (max-width: 479px) {
+  .error-block {
+    vertical-align: top;
+    padding: 160px 0; }
+  .error-button a.btn {
+    padding: 4px 10px; } }

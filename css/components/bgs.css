@@ -1,0 +1,83 @@
+.bg-lg {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ebecff;
+  background-size: cover;
+  overflow: hidden; }
+
+.bg-paper {
+  background-image: url("../images/myspace.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 120%;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh; }
+
+.bg-under-height {
+  background-image: url("../images/bg-under.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 280px; }
+
+.bg-under {
+  background-image: url("../images/bg-under.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%; }
+
+.bg-white-overlay {
+  position: relative;
+  z-index: 1; }
+  .bg-white-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.83;
+    background-color: white; }
+
+.bg-orange {
+  background-color: #f39c12; }
+
+.icon-wrap1 {
+  background-color: #1abc9c; }
+
+.icon-wrap2 {
+  background-color: #e6400c; }
+
+.icon-wrap3 {
+  background-color: #9b59b6; }
+
+.icon-wrap4 {
+  background-color: #2ecc71; }
+
+.icon-wrap5 {
+  background-color: #3498db; }
+
+.mackbook-bg {
+  background-image: url(../images/macbook.png);
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: 50%;
+  overflow: hidden;
+  height: 500px; }
+
+@media screen and (max-width: 767px) {
+  .bg-paper {
+    background-size: 150%; } }
+
+@media screen and (max-width: 479px) {
+  .bg-paper {
+    background-size: 200%;
+    background-position: 50% 25%; } }

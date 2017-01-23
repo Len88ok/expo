@@ -1,7 +1,87 @@
-.brand-img-desc {
-  text-transform: none;
-  color: #026fb3;
-  font-size: 9px;
-  line-height: 11px;
-  display: block;
-  padding-top: 4px; }
+.brand {
+  text-align: center;
+  padding: 2em 0; }
+  .brand-img-desc {
+    text-transform: none;
+    color: #026fb3;
+    font-size: 14px;
+    line-height: 1.22em;
+    display: block;
+    padding-top: 4px; }
+
+.feature {
+  text-align: center; }
+  .feature-block {
+    padding: 70px 0;
+    margin-bottom: 100px; }
+  .feature-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto 20px; }
+  .feature-content {
+    margin-bottom: 70px; }
+
+.mackbook {
+  margin-bottom: 110px; }
+  .mackbook-info {
+    font-size: 18px;
+    color: #3a3a3a;
+    padding: 30% 0; }
+    .mackbook-info span {
+      color: #0a73b5;
+      font-weight: 700; }
+
+@media screen and (max-width: 767px) {
+  .mackbook {
+    margin-bottom: 0; } }
+
+.zoom-features-info {
+  width: 428px;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  padding: 15% 0; }
+
+.zoom-features-img {
+  margin-top: -50px; }
+
+@media screen and (max-width: 767px) {
+  .zoom-features-info {
+    padding: 10% 0; }
+  .zoom-features-img {
+    margin-top: 0; } }
+
+.advantages {
+  font-size: 14px;
+  line-height: 1.313em;
+  text-align: center;
+  padding: 3em 0; }
+  .advantages span {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 50px; }
+  .advantages-yours {
+    position: relative;
+    padding: 0 50px; }
+    .advantages-yours:after {
+      position: absolute;
+      top: -86px;
+      left: 100%;
+      margin-left: -16px;
+      width: 37px;
+      height: 500px;
+      content: '';
+      background: url(../images/long-line.png) no-repeat center center;
+      z-index: 100; }
+  .advantages-us {
+    padding: 0 50px; }
+  .advantages-item {
+    text-align: left;
+    margin-bottom: 10px;
+    list-style-type: none; }
+
+.pad-3 {
+  padding: 3em 0 1.5em; }
