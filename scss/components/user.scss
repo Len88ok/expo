@@ -205,4 +205,11 @@
 	}
 }
 
+@media screen and (max-width: 479px ) {
+	.carousel{
+		&-caption{
+		font-size: 16px;
+		}
+	}
+}
 
