@@ -5,9 +5,9 @@
     padding: 4px 0;
     display: block;
     margin: 0;
-    outline: none;
+    outline: none;    
     //add to existing styles 
-    line-height: 2em;
+    line-height: 2em;    
     ul.footer-menu{
     	float: right;
     	margin: 0;
@@ -15,6 +15,7 @@
     }
     a.social-networks{
     	margin-right: 10px;
+    	transition: all 0.5s linear; 
     	&:hover{
     		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     		    filter: grayscale(100%);
