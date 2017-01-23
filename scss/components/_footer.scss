@@ -1,0 +1,32 @@
+#footer{
+    background: #272626;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 0;
+    display: block;
+    margin: 0;
+    outline: none;
+    //add to existing styles 
+    line-height: 2em;
+    ul.footer-menu{
+    	float: right;
+    	margin: 0;
+    	padding: 0;
+    }
+    a.social-networks{
+    	margin-right: 10px;
+    }
+}
+
+
+
+.copyright{
+	color: #cfd0e4;
+  padding-top: 0;
+}
+
+.list-unstyled{
+	padding-left: 0;
+  list-style: none;
+} 
+
