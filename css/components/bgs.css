@@ -9,8 +9,8 @@
 .bg-paper {
   background-image: url("../images/myspace.png");
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 120%;
+  background-position: center center;
+  background-size: 100%;
   overflow: hidden;
   width: 100vw;
   height: 100vh; }

@@ -29,8 +29,8 @@ img {
 .bg-paper {
   background-image: url("../images/myspace.png");
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: 120%;
+  background-position: center center;
+  background-size: 100%;
   overflow: hidden;
   width: 100vw;
   height: 100vh; }
@@ -101,14 +101,6 @@ img {
   .bg-paper {
     background-size: 200%;
     background-position: 50% 25%; } }
-
-.block-table {
-  display: table;
-  width: 100%;
-  table-layout: fixed; }
-
-.block-row {
-  display: table-row-group; }
 
 .block-collapse {
   padding: 0 !important; }
@@ -3282,10 +3274,13 @@ button.close {
   position: fixed; }
 
 .error-block {
+  width: 30%;
   text-align: center;
-  color: #fff;
-  display: table-cell;
-  vertical-align: middle; }
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  margin-left: -15%;
+  color: #fff; }
 
 .error-heading, .error-text {
   margin: 0; }

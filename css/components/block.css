@@ -1,11 +1,3 @@
-.block-table {
-  display: table;
-  width: 100%;
-  table-layout: fixed; }
-
-.block-row {
-  display: table-row-group; }
-
 .block-collapse {
   padding: 0 !important; }
 
