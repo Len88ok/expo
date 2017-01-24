@@ -3756,6 +3756,13 @@ button.close {
   background: #fff !important;
   border-radius: 50%; }
 
+#ModalStand .close:hover,
+#ModalStand .close:focus {
+  outline: none; }
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: none !important; }
+
 #footer {
   background: #272626;
   color: #fff;

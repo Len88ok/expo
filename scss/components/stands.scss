@@ -190,4 +190,12 @@
         background: #fff !important;
         border-radius: 50%;
     }
+    .close:hover, 
+    .close:focus{
+        outline: none;
+    }
+
 }
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus{
+        outline: none !important;
+    }
