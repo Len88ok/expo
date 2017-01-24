@@ -9,6 +9,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
@@ -39,6 +40,8 @@
 
 
 @import "components/404.scss";
+
+@import "components/stands.scss";
 
 @import "components/footer.scss";
 
