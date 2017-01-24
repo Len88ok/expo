@@ -27,13 +27,13 @@ img {
   overflow: hidden; }
 
 .bg-paper {
-  background-image: url("../images/myspace.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh; }
+  width: 100%;
+  height: 100%; }
 
 .bg-under-height {
   background-image: url("../images/bg-under.png");
@@ -92,15 +92,6 @@ img {
   background-size: 50%;
   overflow: hidden;
   height: 500px; }
-
-@media screen and (max-width: 767px) {
-  .bg-paper {
-    background-size: 150%; } }
-
-@media screen and (max-width: 479px) {
-  .bg-paper {
-    background-size: 200%;
-    background-position: 50% 25%; } }
 
 .block-collapse {
   padding: 0 !important; }
@@ -2901,7 +2892,8 @@ tbody.collapse.in {
   color: #fff;
   padding: 8px 50px 0; }
   .btn-play:hover {
-    color: #55d17d; }
+    color: #55d17d;
+    text-decoration: none; }
   .btn-play-icon {
     background: url(../images/ic-play.png) no-repeat 53% center #494949;
     width: 70px;
@@ -3273,32 +3265,29 @@ button.close {
 .affix {
   position: fixed; }
 
-.error-block {
-  width: 30%;
-  text-align: center;
-  position: absolute;
-  top: 250px;
-  left: 50%;
-  margin-left: -15%;
-  color: #fff; }
-
-.error-heading, .error-text {
-  margin: 0; }
-
-.error-heading {
-  font-size: 9vw;
-  line-height: 1em;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.error-text {
-  font-size: 1.75vw;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 10px; }
-
-.error-button a.btn {
-  padding: 10px 60px; }
+.error {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF; }
+  .error-block {
+    width: 100%;
+    margin: 30vh 0;
+    text-align: center;
+    color: #fff; }
+  .error-heading, .error-text {
+    margin: 0; }
+  .error-heading {
+    font-size: 9vw;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .error-text {
+    font-size: 1.75vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .error-button a.btn {
+    padding: 10px 60px; }
 
 @media screen and (max-width: 767px) {
   .error-button a.btn {
@@ -3306,9 +3295,6 @@ button.close {
     font-size: 11px; } }
 
 @media screen and (max-width: 479px) {
-  .error-block {
-    vertical-align: top;
-    padding: 160px 0; }
   .error-button a.btn {
     padding: 4px 10px; } }
 

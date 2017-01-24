@@ -7,13 +7,13 @@
   overflow: hidden; }
 
 .bg-paper {
-  background-image: url("../images/myspace.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh; }
+  width: 100%;
+  height: 100%; }
 
 .bg-under-height {
   background-image: url("../images/bg-under.png");
@@ -72,12 +72,3 @@
   background-size: 50%;
   overflow: hidden;
   height: 500px; }
-
-@media screen and (max-width: 767px) {
-  .bg-paper {
-    background-size: 150%; } }
-
-@media screen and (max-width: 479px) {
-  .bg-paper {
-    background-size: 200%;
-    background-position: 50% 25%; } }

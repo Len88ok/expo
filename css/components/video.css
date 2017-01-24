@@ -53,7 +53,8 @@
   color: #fff;
   padding: 8px 50px 0; }
   .btn-play:hover {
-    color: #55d17d; }
+    color: #55d17d;
+    text-decoration: none; }
   .btn-play-icon {
     background: url(../images/ic-play.png) no-repeat 53% center #494949;
     width: 70px;
