@@ -28,5 +28,7 @@
     font-size: 11px; } }
 
 @media screen and (max-width: 479px) {
+  .error-block {
+    margin: 35vh 0; }
   .error-button a.btn {
     padding: 4px 10px; } }
