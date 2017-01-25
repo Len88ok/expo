@@ -3827,6 +3827,9 @@ button.close {
       background-image: url("../images/plus.png");
       background-repeat: no-repeat;
       background-position: center center; }
+      .expostand-add-link:hover {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1); }
   .expostand-action {
     text-align: right; }
   .expostand-caption {
@@ -3850,7 +3853,11 @@ button.close {
   background-image: url(../images/spritesheet.png);
   background-repeat: no-repeat;
   display: inline-block;
-  margin: 3px; }
+  margin: 3px;
+  opacity: 1;
+  transition: opacity .3s linear; }
+  .sprite:hover {
+    opacity: 0.5; }
 
 .sprite-card-icon1 {
   width: 30px;
