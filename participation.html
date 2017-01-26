@@ -82,21 +82,21 @@
 							<a class="toggle-filters" id="toggle_filters"></a>
 								<div id="filters" class="history-filters-outer">
 									<form id="filter_form">
-										<table class="history-filters" cellpadding="0" cellspacing="0">
-											<tbody><tr>
-												<td class="date-period">
+										<div class="history-filters">
+											<ul>
+												<li class="date-period">
 													<div class="magazine">
 														<label for="date_from" id="date_from_label">Начало</label>
 														<input name="date_from" id="date_from" placeholder="ДД/ММ/ГГГГ" class="form-control input-inline active">
 													</div>
-												</td>
-												<td class="date-period">
+												</li>
+												<li class="date-period">
 													<div class="magazine">
 														<label for="date_to" id="date_to_label">Конец</label>
 														<input name="date_to" id="date_to" placeholder="ДД/ММ/ГГГГ" class="form-control input-inline">
 													</div>
-												</td>
-												<td class="kind">
+												</li>
+												<li class="kind">
 													<div class="magazine">
 														<select id="industry_id" name="industry_id" class="filter_data" tabindex="-1" style="display: none;">
 															<option value="">Направление выставки</option>
@@ -164,13 +164,12 @@
 															<option value="176">rr</option>
 															</select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-industry_id-container"><span class="select2-selection__rendered" id="select2-industry_id-container" title="направление выставки">направление выставки</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
 														</div>
-													</td>
-													<td class="search">
+													</li>
+													<li class="search">
 														<input type="text" id="search" name="search" placeholder="ПОИСК">
 														<button id="submit_search">поиск</button>
-													</td>
-												</tr>
-											</tbody></table>
+													</li>
+												</ul></div>
 										</form>
 									</div>
 									<div id="filter_links" class="filters-links">
@@ -268,7 +267,7 @@
 
 							<div class="partisipation-content">
 								<div class="row">
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -285,7 +284,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -303,7 +302,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -320,7 +319,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -337,9 +336,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -356,7 +353,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -373,7 +370,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-3">
+									<div class="col-lg-3 col-md-4 col-sm-6">
 										<div class="expostand">
 											<div class="expostand-header expostand-header1">
 												<div class="expostand-header-img1">
@@ -390,7 +387,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-3"></div>
+									<div class="col-lg-3 col-md-4 col-sm-6"></div>
 								</div>
 							</div>
 						</div>

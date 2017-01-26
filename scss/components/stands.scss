@@ -35,9 +35,14 @@
           transition: opacity .3s linear; 
           img{
             width: 100%;
+            height: auto;
           }
           &1{
             opacity: 0.5;
+            img{
+                width: 100%;
+                height: auto;
+              }
           }
         } 
         &:hover .expostand-header-hover{
@@ -131,7 +136,36 @@
         line-height: 1.125em;
     }
 }
-
+@media screen and (max-width: 1199px ) {
+    .expostand{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 991px ) {
+    .expostand{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 767px ) {
+    .expostand{
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 662px ) {
+    .expostand{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 479px ) {
+    .expostand{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
 
 
 .sprite {

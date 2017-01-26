@@ -3790,9 +3790,13 @@ button.close {
       opacity: 1;
       transition: opacity .3s linear; }
       .expostand-header-img img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
       .expostand-header-img1 {
         opacity: 0.5; }
+        .expostand-header-img1 img {
+          width: 100%;
+          height: auto; }
     .expostand-header:hover .expostand-header-hover {
       opacity: 1; }
     .expostand-header:hover .expostand-header-img {
@@ -3859,6 +3863,31 @@ button.close {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.125em; }
+
+@media screen and (max-width: 1199px) {
+  .expostand {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 991px) {
+  .expostand {
+    width: 75%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 767px) {
+  .expostand {
+    width: 40%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 662px) {
+  .expostand {
+    width: 60%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 479px) {
+  .expostand {
+    width: 60%;
+    margin: 0 auto; } }
 
 .sprite {
   background-image: url(../images/spritesheet.png);
@@ -3936,13 +3965,13 @@ button.close {
   padding: 9px 0 20px 25px;
   border-bottom: 1px solid #d4d4d4; }
 
-table.history-filters .date-period .magazine {
+.history-filcipationters .date-period .magazine {
   width: 120px; }
 
-table.history-filters .kind .magazine {
+.history-filters .kind .magazine {
   width: 270px; }
 
-table.history-filters .magazine {
+.history-filters .magazine {
   margin-left: 15px;
   margin-right: 15px;
   position: relative; }
@@ -3954,18 +3983,19 @@ table.history-filters .magazine {
   right: auto;
   left: 0;
   text-transform: lowercase;
-  color: #a2a2a2;
+  color: #757576;
   font-size: 12px;
   font-weight: normal;
   margin: 0;
   padding: 0; }
 
-table.history-filters .date-period .magazine .form-control {
+.history-filters .date-period .magazine .form-control {
   height: 31px;
   border-radius: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  color: #757576; }
 
-table.history-filters .date-period input {
+.history-filters .date-period input {
   padding: 6px 0;
   width: 118px;
   cursor: pointer;
@@ -3973,7 +4003,7 @@ table.history-filters .date-period input {
   border: 1px solid #262626;
   border-width: 0 0 1px 0; }
 
-table.history-filters .magazine .select2 {
+.history-filters .magazine .select2 {
   margin-bottom: 0; }
 
 .magazine .select2 {
@@ -3991,7 +4021,7 @@ table.history-filters .magazine .select2 {
   vertical-align: middle; }
 
 select {
-  color: #262626;
+  color: #757576;
   resize: none;
   padding: 5px;
   background: #fff;
@@ -4003,7 +4033,7 @@ select {
   box-shadow: none !important;
   text-shadow: none; }
 
-table.history-filters .magazine .select2.select2-container--default .select2-selection--single {
+.history-filters .magazine .select2.select2-container--default .select2-selection--single {
   height: 31px;
   background: transparent;
   padding: 0;
@@ -4017,8 +4047,8 @@ table.history-filters .magazine .select2.select2-container--default .select2-sel
   cursor: pointer;
   display: block; }
 
-table.history-filters .magazine .select2-container--default .select2-selection--single .select2-selection__rendered {
-  color: #a2a2a2 !important;
+.history-filters .magazine .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #757576 !important;
   padding-left: 0;
   padding-top: 6px;
   display: block;
@@ -4056,20 +4086,29 @@ table.history-filters .magazine .select2-container--default .select2-selection--
   margin-top: -2px;
   position: absolute; }
 
-table.history-filters .search {
-  width: 492px; }
+.history-filters li {
+  display: inline-block;
+  vertical-align: bottom; }
 
-table.history-filters .search input {
+.history-filters .search {
+  width: 450px; }
+
+.history-filters .search input {
   width: 400px;
   float: left;
   background: transparent;
-  color: #6c6c6c;
   border: 1px solid #262626;
   border-width: 0 0 1px 0;
   padding: 6px 0;
   height: 31px; }
 
-table.history-filters .search button {
+.history-filters .search input::-webkit-input-placeholder {
+  color: #757576; }
+
+.history-filters .search input:-moz-placeholder {
+  color: #757576; }
+
+.history-filters .search button {
   float: left;
   color: transparent;
   border-bottom: 1px solid #262626;
@@ -4085,10 +4124,6 @@ table.history-filters .search button {
 
 input[type="text"] {
   outline: none !important; }
-
-.filters-links ul, .history-filters-outer {
-  float: left;
-  width: 95%; }
 
 .filters-links {
   display: none; }
@@ -4114,7 +4149,7 @@ input[type="text"] {
   border: 1px solid transparent;
   border-radius: 35px !important;
   font-size: 14px;
-  color: #262626;
+  color: #757576;
   text-transform: uppercase; }
 
 .filters-links ul li a:hover, .filters-links ul li a:focus {
@@ -4132,15 +4167,30 @@ input[type="text"] {
   height: 22px;
   background: url(../images/site-sprite.png) no-repeat -27px -445px; }
 
+@media screen and (max-width: 479px) {
+  .toggle-filters {
+    display: block;
+    margin-bottom: 20px;
+    float: none; }
+  .history-filters li {
+    display: block;
+    margin-bottom: 20px; }
+  .history-filters .search {
+    width: 200px; }
+    .history-filters .search input {
+      width: auto; }
+  .history-filters .kind .magazine {
+    width: 200px; } }
+
 .partisipation-filter {
-  padding: 2em 0; }
+  padding: 2em 0 3em; }
   .partisipation-filter-text {
     display: inline-block;
     margin-right: 20px;
     vertical-align: top;
     text-transform: uppercase;
     line-height: 2em;
-    color: #a2a2a2; }
+    color: #757576; }
   .partisipation-filter-select {
     display: inline-block;
     vertical-align: top; }
@@ -4148,9 +4198,9 @@ input[type="text"] {
 select.filter_data2 {
   width: 280px;
   background: transparent;
-  border: 1px solid #262626;
+  border: 1px solid #494949;
   border-width: 0 0 1px 0;
-  color: #a2a2a2 !important;
+  color: #757576 !important;
   text-transform: uppercase; }
 
 .partisipation-toggler {
