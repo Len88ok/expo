@@ -3808,11 +3808,22 @@ button.close {
       font-size: 20px;
       font-weight: 400;
       text-transform: uppercase;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      height: 50px; }
     .expostand-header1:hover .expostand-header-title {
       opacity: 0.9; }
     .expostand-header1:hover .expostand-header-btn {
       opacity: 1; }
+    .expostand-header-info {
+      font-size: 12px;
+      color: #fff;
+      padding-top: 30px;
+      height: 50px;
+      text-align: left; }
+    .expostand-header-status {
+      font-size: 12px;
+      color: #fff;
+      text-align: left; }
   .expostand-add {
     position: relative;
     height: 240px; }
