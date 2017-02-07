@@ -1,10 +1,139 @@
-.stand-add {
-  height: 248px; }
+.expostand {
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+  margin-bottom: 30px; }
+  .expostand-header {
+    position: relative;
+    background-color: #000; }
+    .expostand-header-hover {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      margin-left: -90px;
+      opacity: 0;
+      transition: opacity .5s linear; }
+      .expostand-header-hover .btn:hover {
+        border-color: #fff;
+        color: #fff; }
+    .expostand-header-btn {
+      opacity: 0;
+      transition: opacity .5s linear; }
+      .expostand-header-btn .btn:hover {
+        border-color: #fff;
+        color: #fff; }
+    .expostand-header-img {
+      opacity: 1;
+      transition: opacity .3s linear; }
+      .expostand-header-img img {
+        width: 100%;
+        height: auto; }
+      .expostand-header-img1 {
+        opacity: 0.5; }
+        .expostand-header-img1 img {
+          width: 100%;
+          height: auto; }
+    .expostand-header:hover .expostand-header-hover {
+      opacity: 1; }
+    .expostand-header:hover .expostand-header-img {
+      opacity: 0.5; }
+    .expostand-header-caption {
+      position: absolute;
+      width: 90%;
+      left: 5%;
+      top: 10%;
+      text-align: center; }
+    .expostand-header-title {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      height: 50px; }
+    .expostand-header1:hover .expostand-header-title {
+      opacity: 0.9; }
+    .expostand-header1:hover .expostand-header-btn {
+      opacity: 1; }
+    .expostand-header-info {
+      font-size: 12px;
+      color: #fff;
+      padding-top: 30px;
+      height: 50px;
+      text-align: left; }
+    .expostand-header-status {
+      font-size: 12px;
+      color: #fff;
+      text-align: left; }
+  .expostand-add {
+    position: relative;
+    height: 240px; }
+    .expostand-add-link {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -45px;
+      width: 90px;
+      height: 90px;
+      background-image: url("../../images/plus.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
+      .expostand-add-link:hover {
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1); }
+  .expostand-action {
+    text-align: right; }
+  .expostand-caption {
+    height: 133px;
+    padding: 8px; }
+    .expostand-caption-period {
+      text-align: center;
+      padding: 10px; }
+  .expostand-title {
+    color: #026fb3;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .expostand-subtitle {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.125em; }
+
+@media screen and (max-width: 1199px) {
+  .expostand {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 991px) {
+  .expostand {
+    width: 75%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 767px) {
+  .expostand {
+    width: 40%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 662px) {
+  .expostand {
+    width: 60%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 479px) {
+  .expostand {
+    width: 60%;
+    margin: 0 auto; } }
 
 .sprite {
-  background-image: url(spritesheet.png);
+  background-image: url(../images/spritesheet.png);
   background-repeat: no-repeat;
-  display: block; }
+  display: inline-block;
+  margin: 3px;
+  opacity: 1;
+  transition: opacity .3s linear; }
+  .sprite:hover {
+    opacity: 0.5; }
 
 .sprite-card-icon1 {
   width: 30px;
@@ -26,7 +155,43 @@
   height: 30px;
   background-position: -5px -125px; }
 
-/* <i class="sprite sprite-card-icon1"></i>
-<i class="sprite sprite-card-icon2"></i>
-<i class="sprite sprite-card-icon3"></i>
-<i class="sprite sprite-card-icon4"></i> */
+@media (min-width: 768px) {
+  #ModalStand .modal-dialog {
+    width: 80%; } }
+
+#ModalStand .modal-header {
+  height: 84px;
+  background-color: #eef3f5;
+  color: #0567a6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.125em;
+  text-transform: uppercase; }
+
+#ModalStand .modal-title {
+  line-height: 3em;
+  text-align: center; }
+
+#ModalStand .close {
+  float: none;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1;
+  color: #000;
+  text-shadow: none;
+  opacity: 1;
+  filter: alpha(opacity=20);
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -32px;
+  right: -36px;
+  background: #fff !important;
+  border-radius: 50%; }
+
+#ModalStand .close:hover,
+#ModalStand .close:focus {
+  outline: none; }
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: none !important; }

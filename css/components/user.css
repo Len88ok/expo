@@ -174,3 +174,18 @@
 @media screen and (max-width: 479px) {
   .carousel-caption {
     font-size: 16px; } }
+
+.feature {
+  text-align: center; }
+  .feature-block {
+    padding: 70px 0;
+    margin-bottom: 100px; }
+  .feature-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto 20px; }
+  .feature-content {
+    margin-bottom: 70px; }
