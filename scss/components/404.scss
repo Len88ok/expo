@@ -29,7 +29,11 @@
   &-button{
     a.btn {
       padding: 10px 60px;
-      
+      border-radius: 20px;
+      &:hover{
+        border-color: #63c980;
+        color: #fff;
+      }      
     }
   } 
 }

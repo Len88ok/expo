@@ -20,7 +20,11 @@
     text-transform: uppercase;
     margin-bottom: 10px; }
   .error-button a.btn {
-    padding: 10px 60px; }
+    padding: 10px 60px;
+    border-radius: 20px; }
+    .error-button a.btn:hover {
+      border-color: #63c980;
+      color: #fff; }
 
 @media screen and (max-width: 767px) {
   .error-button a.btn {
