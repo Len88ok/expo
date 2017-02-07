@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-comfort {
+    width: 66px;
+    height: 66px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-easy-conference {
+    width: 66px;
+    height: 66px;
+    background-position: -81px -5px;
+}
+
+.sprite-icon-efficiency-mark {
+    width: 66px;
+    height: 66px;
+    background-position: -5px -81px;
+}
+
+.sprite-icon-info {
+    width: 66px;
+    height: 66px;
+    background-position: -81px -81px;
+}
+
+.sprite-icon-language {
+    width: 66px;
+    height: 66px;
+    background-position: -157px -5px;
+}
+
+.sprite-icon-many {
+    width: 64px;
+    height: 64px;
+    background-position: -157px -81px;
+}
+
+.sprite-icon-time {
+    width: 66px;
+    height: 66px;
+    background-position: -157px -155px;
+}
+
+.sprite-icon-world {
+    width: 66px;
+    height: 66px;
+    background-position: -233px -5px;
+}

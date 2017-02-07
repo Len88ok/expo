@@ -1,0 +1,188 @@
+.about{
+    p{
+        font-size: 1.4rem;
+        margin-bottom: 1.14em;
+    }
+    &-white{
+        background-color: #FFF;
+        border: 3px solid #ebecff;
+    }
+    &-info{
+        &-heading{
+            font-size: 1.8rem;
+            margin-bottom: 1.6em;
+        }
+    }
+    &-heading{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0.6em;
+    }
+    &-content{
+        margin-bottom: 4.3em;
+        padding: 0 4.3em;
+    }
+    &-top{
+        &-info{
+            height: 100%;
+            padding: 5em 1.8em;
+            background-color: #FFF;
+
+        }
+        &-img{
+            margin-right: -2px;
+            border-left: 3px solid #ebecff;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &-mission{
+        padding: 4em 0;
+        background-color: #FFF;
+        &-content{
+            padding: 5em 0;
+            list-style-type: none;
+        }
+    }
+    &-advantages{
+        padding: 5.75em 0;
+        &-content{
+            margin-bottom: 2em;
+            p{font-size: 1.6rem;}
+        }
+        &-info{
+            border: 1px dashed #74b3dd;
+            padding: 1.85em;
+            width: 65%;
+            margin: 0 auto;
+        }
+    }
+    &-feature{
+        text-align: center;
+        padding: 3.6em 0.5em;
+        background-color: #FFF;
+        margin-bottom: 3.8em;
+        height: 22.2em;
+        border-bottom: 5px solid transparent;
+        &-icon{
+            i{margin: 0 auto;}            
+            margin-bottom: 2.3em;
+        }
+        &-heading{
+            color: #2d5980;
+            font-size: 1.6rem;
+            margin-bottom: 1.7em;
+        }
+        &-content{
+
+        }
+    }
+    &-team{
+        padding: 4em 0;
+        background-color: #FFF;
+        &-info{
+            padding: 5.5em 0;
+        }
+    }
+
+}
+
+
+.line{
+    &-1{
+        border-color: #ff0084;
+    }
+    &-2{
+        border-color: #9300ff;
+    }
+    &-3{
+        border-color: #04f3b2;
+    }
+    &-4{
+        border-color: #e200ff;
+    }
+    &-5{
+        border-color: #ffa200;
+    }
+    &-6{
+        border-color: #00deff;
+    }
+    &-7{
+        border-color: #a800ff;
+    }
+    &-8{
+        border-color: #ee7103;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sprite1 {
+    background-image: url(../../images/about/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite1-icon-comfort {
+    width: 66px;
+    height: 66px;
+    background-position: -5px -5px;
+}
+
+.sprite1-icon-easy-conference {
+    width: 66px;
+    height: 66px;
+    background-position: -81px -5px;
+}
+
+.sprite1-icon-efficiency-mark {
+    width: 66px;
+    height: 66px;
+    background-position: -5px -81px;
+}
+
+.sprite1-icon-info {
+    width: 66px;
+    height: 66px;
+    background-position: -81px -81px;
+}
+
+.sprite1-icon-language {
+    width: 66px;
+    height: 66px;
+    background-position: -157px -5px;
+}
+
+.sprite1-icon-many {
+    width: 64px;
+    height: 64px;
+    background-position: -157px -81px;
+}
+
+.sprite1-icon-time {
+    width: 66px;
+    height: 66px;
+    background-position: -157px -155px;
+}
+
+.sprite1-icon-world {
+    width: 66px;
+    height: 66px;
+    background-position: -233px -5px;
+}
