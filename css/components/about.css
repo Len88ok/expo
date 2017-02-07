@@ -71,6 +71,12 @@
   .about-team-info {
     padding: 5.5em 0; }
 
+@media screen and (max-width: 480px) {
+  .about-feature-heading {
+    font-size: 1.2rem; }
+  .about-feature-content {
+    font-size: 1.1rem; } }
+
 .line-1 {
   border-color: #ff0084; }
 

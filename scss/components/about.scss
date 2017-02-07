@@ -88,6 +88,19 @@
 
 }
 
+@media screen and (max-width: 480px) {
+    .about{
+        &-feature{
+            &-heading{
+                font-size: 1.2rem;
+            }
+            &-content{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
 
 .line{
     &-1{
