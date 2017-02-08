@@ -146,7 +146,7 @@ $(document).ready(function($) {
 			on = 0;
 		}
 	}
-	$(document).on("click", ".partners-img img, .partners-img-min img" , function(){ 
+	$(document).on("click", ".partners-img, .partners-img-min" , function(){ 
 		load();
 	});
 	/* при клике на фоне HTML страницы, вне самого окна, окно закрывается */
