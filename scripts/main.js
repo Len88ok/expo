@@ -144,13 +144,14 @@ $(document).ready(function(){
 			load();
 		});
 		/* при клике на фоне HTML страницы, вне самого окна, окно закрывается */
-		$(document).on("click", "div.cover" , function(){ 
+		$(document).on("click", "div.cover, .popover" , function(){ 
 			off();
 		});
 		/* закрыть окно при клике на блоке с классом "close"*/
 		$(document).on("click", ".close" , function(){ 
 			off();
 		});
+
 });
 
 
