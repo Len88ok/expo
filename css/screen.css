@@ -29,6 +29,9 @@ img {
     display: block;
     padding-top: 4px; }
 
+.pad-3 {
+  padding: 3em 0 1.5em; }
+
 .bg-lg {
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
@@ -324,7 +327,9 @@ img {
   max-width: 330px;
   text-align: center; }
   .popover-dialog {
-    font-size: 12px; }
+    font-size: 12px;
+    width: 320px;
+    line-height: 1.5em; }
   .popover-heading {
     color: #6c6c6c;
     font-size: 14px;

@@ -6,7 +6,9 @@
   max-width: 330px;
   text-align: center; }
   .popover-dialog {
-    font-size: 12px; }
+    font-size: 12px;
+    width: 320px;
+    line-height: 1.5em; }
   .popover-heading {
     color: #6c6c6c;
     font-size: 14px;

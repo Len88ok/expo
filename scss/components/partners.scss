@@ -1,6 +1,12 @@
 .partners{
 	&-block{
 		text-align: center;
+		a:focus{
+			outline: none !important;
+		}
+		a{
+			display: inline-block;
+		}
 	}
 	&-heading{
 		color: #026fb3;
@@ -90,6 +96,68 @@
 		}
 	}
 }
+
+.hide{
+	display: none !important;
+}
+
+
+
+.popover{
+	max-width: 330px; 
+	text-align: center;
+	z-index: 100;
+		&-dialog{
+						font-size: 12px;
+						width: 320px;
+						line-height: 1.5em;
+
+		}
+		&-heading{
+			color: #6c6c6c;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.5em;
+			text-transform: uppercase;
+		}		
+		&-content{
+			background-color: #FFF;
+    		padding: 4px 9px;
+    	}
+		&-img{
+			width: 100%;
+			img{
+				max-width: 100%;
+				padding-left: 20px !important;
+			}
+		}
+		&-text{
+
+			text-align: justify;
+		    margin-bottom: 20px;
+		}
+		&-footer{
+			a{
+				color: #026fb3;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+
+	.cover {
+	/* задний фон по умолчанию не виден, его цвет черный, он занимает всё пространство по высоте и ширине, его позиция фиксирована , то есть при скроллинге он никуда не денется */
+	opacity: 0;
+	height:100%;
+	width:100%;
+	z-index:10;
+	position: fixed;
+	top:0px;
+	left:0px;
+	background:#000;
+	}
 
 
 
