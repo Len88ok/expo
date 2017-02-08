@@ -126,10 +126,6 @@ $(document).ready(function(){
 	          return $('#popover-content18').html();
 	        }
 	});
-
-// $(document).on("click", ".partners-img img, .partners-img-min img" , function(){ 
-//     	 $(".cover").show().fadeTo(500,.5);
-//     });
 });
 
 $(document).ready(function($) {
@@ -146,7 +142,7 @@ $(document).ready(function($) {
 			on = 0;
 		}
 	}
-	$(document).on("click", ".partners-img, .partners-img-min" , function(){ 
+	$(document).on("click", ".partners-img a, .partners-img-min a" , function(){ 
 		load();
 	});
 	/* при клике на фоне HTML страницы, вне самого окна, окно закрывается */
