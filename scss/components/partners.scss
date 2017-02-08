@@ -101,8 +101,6 @@
 	display: none !important;
 }
 
-
-
 .popover{
 	max-width: 330px; 
 	text-align: center;
@@ -145,19 +143,13 @@
 			}
 		}
 	}
+	
 
 
-	.cover {
-	/* задний фон по умолчанию не виден, его цвет черный, он занимает всё пространство по высоте и ширине, его позиция фиксирована , то есть при скроллинге он никуда не денется */
-	opacity: 0;
-	height:100%;
-	width:100%;
-	z-index:10;
-	position: fixed;
-	top:0px;
-	left:0px;
-	background:#000;
-	}
+
+
+
+
 
 
 

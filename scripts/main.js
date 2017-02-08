@@ -127,10 +127,38 @@ $(document).ready(function(){
 	        }
 	});
 
-/*$(document).on("click", ".partners-img img, .partners-img-min img" , function(){ 
-    	 $(".cover").fadeTo(500, 0.5);
-    });*/
+// $(document).on("click", ".partners-img img, .partners-img-min img" , function(){ 
+//     	 $(".cover").show().fadeTo(500,.5);
+//     });
 });
+
+$(document).ready(function($) {
+	var on = 0;
+	function load() {
+		if(on == 0) {
+			$(".cover").show().fadeTo(500,.5);
+			on = 1;
+		}
+	}
+	function off() {
+		if(on == 1) {
+			$(".cover").fadeOut("normal");
+			on = 0;
+		}
+	}
+	$(document).on("click", ".partners-img img, .partners-img-min img" , function(){ 
+		load();
+	});
+	/* при клике на фоне HTML страницы, вне самого окна, окно закрывается */
+	$(document).on("click", "div.cover" , function(){ 
+		off();
+	});
+	/* закрыть окно при клике на блоке с классом "close"*/
+	$(document).on("click", ".close" , function(){ 
+		off();
+	});
+});
+
 
 
 
