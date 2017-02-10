@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expo</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/screen.css" rel="stylesheet">
+	<link href="css/components/new_map.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header id="header">
+		<ul class="main-menu authorization-menu non-authorized">
+			<li class="">
+				<a href="#registration" class="popup-open-register">
+					Регистрация
+				</a>
+			</li>
+			<li class="authorization">
+				<a href="#login" class="popup-open-login">
+					Вход
+				</a>
+			</li>
+		</ul>
+		<!--Navbar header-->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+						<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+							<li><a class="text-uppercase" href="#">для посетителей</a></li>
+							<li><a class="text-uppercase" href="#">новости</a></li>
+							<li><a class="text-uppercase" href="#">расписание</a></li>
+							<li><a class="text-uppercase" href="#">о проекте</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">О проекте</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Организаторам<br>выставок</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</header>
+		<main class="map">
+			<div class="container"> 
+				<div class="map-info">
+					<div class="map-heading">Выставка образование и карьера</div>
+					<div class="map-desc">Повседневная практика показывает, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития</div>
+				</div>
+			</div>			
+
+			<section class="map-recommend">
+				<div class="container">
+					<div class="map-title m-25 text-center">рекомендуем посетить</div>
+					<div id="commercial-slider" class="commercial-slider">
+							<div class="commercial-slider-item">
+							<div class="commercial-slider-item-inner">
+								<a href="#">
+									<div class="commercial-slider-exh-info text-center">
+										<div class="img-wrapper">
+											<img src="images/map/1.png">											
+										</div>
+										<div class="commercial-slider-caption">
+											<div class="commercial-slider-caption-logo">
+												<img src="images/map/slide-logo.png" alt="images">
+											</div>
+											<div class="commercial-slider-caption-info">
+												Лесная сказка
+											</div>
+										</div>
+									</div>
+								</a>								
+							</div>
+							</div>
+							<div class="commercial-slider-item">
+							<div class="commercial-slider-item-inner">
+								<a href="#">
+									<div class="commercial-slider-exh-info text-center">
+										<div class="img-wrapper">
+											<img src="images/map/2.png">
+										</div>
+										<div class="commercial-slider-caption">
+											<div class="commercial-slider-caption-logo">
+												<img src="images/map/slide-logo.png" alt="images">
+											</div>
+											<div class="commercial-slider-caption-info">
+												Лесная сказка
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							</div>
+							<div class="commercial-slider-item">
+							<div class="commercial-slider-item-inner">
+								<a href="#">
+									<div class="commercial-slider-exh-info text-center">
+										<div class="img-wrapper">
+											<img src="images/map/3.png">
+										</div>
+										<div class="commercial-slider-caption">
+											<div class="commercial-slider-caption-logo">
+												<img src="images/map/slide-logo.png" alt="images">
+											</div>
+											<div class="commercial-slider-caption-info">
+												Лесная сказка
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							</div>
+							<div class="commercial-slider-item">
+							<div class="commercial-slider-item-inner">
+								<a href="#">
+									<div class="commercial-slider-exh-info text-center">
+										<div class="img-wrapper">
+											<img src="images/map/1.png">
+										</div>
+										<div class="commercial-slider-caption">
+											<div class="commercial-slider-caption-logo">
+												<img src="images/map/slide-logo.png" alt="images">
+											</div>
+											<div class="commercial-slider-caption-info">
+												Лесная сказка
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							</div>
+							<div class="commercial-slider-item">
+							<div class="commercial-slider-item-inner">
+								<a href="#">
+									<div class="commercial-slider-exh-info text-center">
+										<div class="img-wrapper">
+											<img src="images/map/2.png">
+										</div>
+										<div class="commercial-slider-caption">
+											<div class="commercial-slider-caption-logo">
+												<img src="images/map/slide-logo.png" alt="images">
+											</div>
+											<div class="commercial-slider-caption-info">
+												Лесная сказка
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							</div>
+							<div class="commercial-slider-item">
+							<div class="commercial-slider-item-inner">
+								<a href="#">
+									<div class="commercial-slider-exh-info text-center">
+										<div class="img-wrapper">
+											<img src="images/map/3.png">
+										</div>
+										<div class="commercial-slider-caption">
+											<div class="commercial-slider-caption-logo">
+												<img src="images/map/slide-logo.png" alt="images">
+											</div>
+											<div class="commercial-slider-caption-info">
+												Лесная сказка
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="map-variants">
+				<div class="container">
+					<div class="map-title m-25 text-center">Павильоны выставки<span class="label label-default">8</span></div>					
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="map-variants-item">
+								<div class="map-variants-img"><i class="sprite2 sprite2-var1"></i></div>
+								Кондитерские изделия</div>
+						</div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var2"></i></div>
+							макаронные изделия</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var3"></i></div>
+							Чай и кофе</div></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var4"></i></div>
+							Рыба и морепродукты</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var5"></i></div>
+							Фрукты и овощи</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var6"></i></div>
+							Специи</div></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4"><div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var7"></i></div>
+							Мясо и колбасы</div></div>
+							<div class="col-sm-4">
+							<div class="map-variants-item">
+								<div class="map-variants-img"><i class="sprite2 sprite2-var8"></i></div>
+								Молочные продукты</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var9"></i></div>
+							напитки</div></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var3"></i></div>
+							Чай и кофе</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var1"></i></div>
+							Кондитерские изделия</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var2"></i></div>
+							макаронные изделия</div></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var6"></i></div>
+							Специи</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var4"></i></div>
+							Рыба и морепродукты</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var5"></i></div>
+							Фрукты и овощи</div></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var9"></i></div>
+							напитки</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+							<div class="map-variants-img"><i class="sprite2 sprite2-var7"></i></div>
+							Мясо и колбасы</div></div>
+						<div class="col-sm-4">
+						<div class="map-variants-item">
+						<div class="map-variants-img"><i class="sprite2 sprite2-var8"></i></div>Молочные продукты</div></div>
+					</div>
+				</div>
+			</section>
+			<section class="map-participants">
+			<div class="container">
+			<div class="map-title m-40 text-center">Все участники выставки<span class="label label-default">36</span></div>
+			<div class="form">
+				<div class="row">
+					<div class="col-md-2">
+						<select class="form-control">
+						  <option>Страна</option>
+						  <option>Украина</option>
+						  <option>Россия</option>
+						  <option>Беларусь</option>
+						  <option>Польша</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<span class="form-before">павильон</span>
+						<select class="form-control">
+						  <option></option>
+						  <option>2</option>
+						  <option>3</option>
+						  <option>4</option>
+						  <option>5</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<div class="input-group">
+							<span class="form-before">введите слово для поиска</span>
+				      <input type="text" class="form-control" placeholder="ПОИСК ПО СТЕНЕДАМ">				      
+				      <span class="input-group-btn">
+				      	<button type="button" class="btn" aria-label="Help"><span class="glyphicon glyphicon-search"></span></button>
+				        <button class="btn btn-search" type="button">Искать</button>
+				      </span>
+				    </div><!-- /input-group -->
+					</div>
+					<div class="col-md-4">
+						<div class="input-group">
+							<span class="form-before">введите слово для поиска<span class="form-before-btn">
+							<button type="button" class="btn btn-tooltip" data-container="body" data-toggle="popover" data-placement="top" data-content="Поиск товара или услуги будет проходить на новой странице, на которой будут доступны только зультаты поиска."><span class="glyphicon glyphicon-question-sign"></span></button></span></span>
+							
+				      <input type="text" class="form-control" placeholder="ПОИСК ПО УСЛУГАМ">
+				      <span class="input-group-btn">
+				      <button type="button" class="btn" aria-label="Help"><span class="glyphicon glyphicon-search"></span></button>
+				        <button class="btn btn-search" type="button">Искать</button>
+				      </span>
+				    </div><!-- /input-group -->
+					</div>
+				</div>	
+				</div>
+				<div class="map-participants-info">
+					<span class="map-participants-info-text">Премиум стенды</span>			
+					<span class="map-participants-info-line"></span>		
+				</div>
+
+				<div class="map-participants-premium">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-premium-img">
+										<i class="sprite2 sprite2-epam"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<span class="label label-warning">ТОП-10</span>
+									<div class="map-title">NYSE:EPAM украина</div>
+									<div class="map-subtitle">Украина, Харьков<br>Менеджеров в онлайн: 3 из 5</div>
+									<div class="map-desc">
+										Как и наши клиенты, мы постоянно меняемся, чтобы соответствовать изменениям в технологиях и окружающем мире. Мы гордимся своим двадцатилетним опытом по разработке программного обеспечения, который дает нам возможность решать даже самые сложные задачи
+									</div>
+									<div class="map-btn">
+										<a class="button-base green" href="#" title="Перейти на выставку">Перейти на стенд</a>
+									</div>									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-premium-img">
+										<i class="sprite2 sprite2-plarium"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<span class="label label-warning">ТОП-10</span>
+									<div class="map-title">Plarium</div>
+									<div class="map-subtitle">Украина, Харьков<br>Менеджеров в онлайн: 3 из 5</div>
+									<div class="map-desc">
+										Как и наши клиенты, мы постоянно меняемся, чтобы соответствовать изменениям в технологиях и окружающем мире. Мы гордимся своим двадцатилетним опытом по разработке программного обеспечения, который дает нам возможность решать даже самые сложные задачи
+									</div>
+									<div class="map-btn">
+										<a class="button-base green" href="#" title="Перейти на выставку">Перейти на стенд</a>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-premium-img">
+										<i class="sprite2 sprite2-mic"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<span class="label label-warning">ТОП-10</span>
+									<div class="map-title">microsoft</div>
+									<div class="map-subtitle">Украина, Харьков<br>Менеджеров в онлайн: 3 из 5</div>
+									<div class="map-desc">
+										Как и наши клиенты, мы постоянно меняемся, чтобы соответствовать изменениям в технологиях и окружающем мире. Мы гордимся своим двадцатилетним опытом по разработке программного обеспечения, который дает нам возможность решать даже самые сложные задачи
+									</div>
+									<div class="map-btn">
+										<a class="button-base green" href="#" title="Перейти на выставку">Перейти на стенд</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-premium-img">
+										<i class="sprite2 sprite2-kulinichi"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<span class="label label-warning">ТОП-10</span>
+									<div class="map-title">ооо «Кулиничи»</div>
+									<div class="map-subtitle">Украина, Харьков<br>Менеджеров в онлайн: 3 из 5</div>
+									<div class="map-desc">
+										Как и наши клиенты, мы постоянно меняемся, чтобы соответствовать изменениям в технологиях и окружающем мире. Мы гордимся своим двадцатилетним опытом по разработке программного обеспечения, который дает нам возможность решать даже самые сложные задачи
+									</div>
+									<div class="map-btn">
+										<a class="button-base green" href="#" title="Перейти на выставку">Перейти на стенд</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-participants-standart">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mts"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">МТС Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mir"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Миргородская вода</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-wog"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Заправки WOG</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-atol"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ООО «АТОЛ»</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-oktell"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ОКТЕЛ Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-gran"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ГРАН</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-vidnoye"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Видное.net</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-yeastar"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">yeastar - украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mts"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">МТС Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mir"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Миргородская вода</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-wog"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Заправки WOG</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-atol"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ООО «АТОЛ»</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-oktell"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ОКТЕЛ Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-gran"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ГРАН</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-vidnoye"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Видное.net</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-yeastar"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">yeastar - украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mts"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">МТС Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mir"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Миргородская вода</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-wog"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Заправки WOG</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-atol"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ООО «АТОЛ»</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-oktell"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ОКТЕЛ Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-gran"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ГРАН</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-vidnoye"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Видное.net</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-yeastar"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">yeastar - украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mts"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">МТС Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-mir"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Миргородская вода</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-wog"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Заправки WOG</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-atol"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ООО «АТОЛ»</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-oktell"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ОКТЕЛ Украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-gran"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">ГРАН</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-vidnoye"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">Видное.net</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="map-participants-standart-img">
+										<i class="sprite2 sprite2-yeastar"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="map-title-min">yeastar - украина</div>
+									<div class="map-subtitle">Украина, Харьков</div>
+									<div class="map-link"><a href="#" title="Перейти на выставку">Перейти на стенд</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			</section>
+		</main>
+		<footer class="footer-b" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 copyright">2017 © Expo Universe. ALL Rights Reserved.</div>
+					<div class="col-xs-6">
+						<ul class="footer-menu list-unstyled">
+							<li>
+								<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+									Правила использования
+								</a>
+							</li>
+						</ul>
+						<div class="pull-right">
+							<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/vk.png" alt="vk">
+							</a>
+							<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/fb.png" alt="fb">
+							</a>
+							<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/gp.png" alt="gp">
+							</a>
+							<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/ok.png" alt="ok">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="scripts/slick.min.js"></script>
+		<script>
+			$(document).on('ready', function() {
+			  $('.commercial-slider').slick({
+			  	centerMode: true,
+		  	  autoplay: true,
+		  	  arrows: true,
+		  	  slidesToShow: 3,
+		  	  centerPadding: '1%',
+		  	  cssEase:'ease-in-out',
+				  responsive: [
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 3
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 1
+				      }
+				    }
+				  ]		  
+				});	
+				$('.btn-tooltip').popover({
+					trigger: 'hover'
+				});
+			});
+		</script>
+	</body>
+</html>
