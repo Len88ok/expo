@@ -195,7 +195,7 @@ sup {
   border: none;
   border-bottom: 1px solid #494949;
   color: #000;
-  padding: 9px 10px 8px; }
+  padding: 9px 10px; }
 
 .map-participants .form .btn-tooltip {
   color: #55d17d;
@@ -328,10 +328,11 @@ sup {
 .map-participants-premium-wrap {
   display: inline-block;
   height: 250px;
-  line-height: 250px; }
+  line-height: 300px; }
 
 .map-participants-premium-img {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle; }
 
 .map-participants-standart {
   margin-bottom: 80px; }
@@ -339,8 +340,8 @@ sup {
     font-size: 14px; }
   .map-participants-standart-wrap {
     display: inline-block;
-    vertical-align: middle;
-    height: 250px;
-    line-height: 320px; }
+    height: 75px;
+    line-height: 75px; }
   .map-participants-standart-img {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
