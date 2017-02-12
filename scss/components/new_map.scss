@@ -1,3 +1,23 @@
+body.map-body{
+	font-family: "Open Sans";
+	.popover{
+		background-color: #6c6c6c;
+		border-radius: 2px;
+		box-shadow: 1px 1.7px 3.8px 0.2px rgba(0, 0, 0, 0.23);
+		color: #fff;
+		border-color: #6c6c6c;
+	  &.top > .arrow {
+	    border-top-color: #6c6c6c;
+	    &:after {
+	      border-top-color: #6c6c6c;
+	    }
+	  }
+	}
+}
+sup{
+	top: -1em;
+	margin-left: 3px;
+}
 .commercial-slider{
 	&-exh-info{
 		width: 290px;
@@ -207,6 +227,7 @@
 }
 
 .map-participants{
+	.form{
 	.btn{
     background-color: transparent;
     border-radius: 0;
@@ -224,6 +245,10 @@
 	.btn-search{
 		color: #55d17d;
 	}
+	.btn-icon{
+		padding: 8px 0;
+	}
+}
 }
 .btn.active.focus, 
 .btn.active:focus, 
@@ -246,7 +271,7 @@
 		position: absolute;
 		top: -20px;	
 		color: #a2a2a2;
-	}
+	}	
 }
 
 
@@ -257,6 +282,9 @@
 	}
 	&-40{
 		margin-bottom: 40px;
+	}
+	&-80{
+		margin-bottom: 80px;
 	}
 }
 .map{
@@ -273,13 +301,20 @@
 		margin-bottom: 20px;
 	}
 	&-desc{
-
+		color: #212121;
+		font-size: 13px;
 	}
 	&-title{
 		color: #026fb3;
 		font-size: 18px;
 		font-weight: 700;
 		text-transform: uppercase;
+		line-height: 1.5;
+	}
+	&-subtitle{
+		color: #7b7b7c;
+		font-size: 13px;
+		margin-bottom: 15px;
 	}
 	&-variants{
 		&-item{
@@ -294,7 +329,30 @@
 			margin-top: -5px;
 			vertical-align: top;
 			}
+			&-link{
+				color: #6c6c6c;
+				&:hover{
+					cursor: pointer;
+					color: #6c6c6c;
+					text-decoration: none;
+					border-bottom: 0.75px dashed;
+				}
+			}
 		}
+	&-head{
+		    height: 55px;
+	}
+	&-link{
+		margin-bottom: 20px;
+		a{
+			color: #55d17d;
+			font-size: 13px;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
 	&-participants{
 		&-info{
 			position: relative;
@@ -312,9 +370,41 @@
 				height: 1px;
 				background: #55d17d;
 			}
+			.line2{
+				width: 73%;
+				left: 27%;
+			}
 		}
 		&-premium{
+			.label{
+				border-radius: 10px;
+				margin-bottom: 1em;
+			}
+			.btn{
+				margin: 10px 0 20px;
+			}			
+			&-wrap{
+			display: inline-block;
+			height: 250px;
+			line-height: 250px;
+			}
 			&-img{
+				display: inline-block;
+			}
+		}
+		&-standart{
+			margin-bottom: 80px;
+			.title-min{
+				font-size: 14px;
+			}
+			&-wrap{
+			display: inline-block;
+			vertical-align: middle;
+			height: 250px;
+			line-height: 320px;
+			}
+			&-img{
+				display: inline-block;
 			}
 		}
 	}
