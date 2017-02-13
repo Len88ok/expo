@@ -235,17 +235,27 @@ sup{
     border-bottom: 1px solid #494949;
     color: #000;
     padding: 9px 10px;
+    &:focus{
+    	outline: none;
+    }
 	}
 	.btn-tooltip{
-		color: #55d17d;
+		color: #a2a2a2;
 		padding: 0;
 		border-bottom: 0;
 		font-size: 18px;
+		&:hover{
+			color: #55d17d;
+		}
 	}	
 	.btn-search{
 		color: #55d17d;
+		&:hover{
+			opacity: 0.75;
+		}
 	}
 	.btn-icon{
+		color: #a2a2a2;
 		padding: 8px 0;
 	}
 }
@@ -266,6 +276,10 @@ sup{
 	    border-radius: 0;
 	  	box-shadow: none;
 	    background-color: transparent;
+	    &:focus{
+	    	box-shadow: none;
+	    	border-color: #494949;
+	    }
 	}
 	&-before{
 		position: absolute;
@@ -349,7 +363,8 @@ sup{
 			font-size: 13px;
 			text-decoration: underline;
 			&:hover{
-				text-decoration: none;
+				text-decoration: underline;
+				color: #6c6c6c;
 			}
 		}
 	}

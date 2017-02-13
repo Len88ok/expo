@@ -196,17 +196,24 @@ sup {
   border-bottom: 1px solid #494949;
   color: #000;
   padding: 9px 10px; }
+  .map-participants .form .btn:focus {
+    outline: none; }
 
 .map-participants .form .btn-tooltip {
-  color: #55d17d;
+  color: #a2a2a2;
   padding: 0;
   border-bottom: 0;
   font-size: 18px; }
+  .map-participants .form .btn-tooltip:hover {
+    color: #55d17d; }
 
 .map-participants .form .btn-search {
   color: #55d17d; }
+  .map-participants .form .btn-search:hover {
+    opacity: 0.75; }
 
 .map-participants .form .btn-icon {
+  color: #a2a2a2;
   padding: 8px 0; }
 
 .btn.active.focus,
@@ -225,6 +232,9 @@ sup {
     border-radius: 0;
     box-shadow: none;
     background-color: transparent; }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #494949; }
   .form-before {
     position: absolute;
     top: -20px;
@@ -297,7 +307,8 @@ sup {
     font-size: 13px;
     text-decoration: underline; }
     .map-link a:hover {
-      text-decoration: none; }
+      text-decoration: underline;
+      color: #6c6c6c; }
 
 .map-participants-info {
   position: relative;
