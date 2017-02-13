@@ -38,6 +38,10 @@ sup {
     font-size: 13px;
     text-transform: uppercase; }
 
+@media screen and (max-width: 479px) {
+  .commercial-slider-exh-info {
+    width: 240px; } }
+
 .slick-slide {
   margin-bottom: 30px; }
   .slick-slide .img-wrapper {
@@ -240,6 +244,9 @@ sup {
     top: -20px;
     color: #a2a2a2; }
 
+.m-20 {
+  margin-bottom: 20px; }
+
 .m-25 {
   margin-bottom: 25px; }
 
@@ -252,14 +259,14 @@ sup {
 .map-info {
   text-align: center;
   padding: 0 25%;
-  margin-bottom: 40px; }
+  margin-bottom: 6%; }
 
 .map-heading {
   color: #026fb3;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px; }
+  margin-bottom: 4%; }
 
 .map-desc {
   color: #212121;
@@ -356,3 +363,16 @@ sup {
   .map-participants-standart-img {
     display: inline-block;
     vertical-align: middle; }
+
+@media screen and (max-width: 1199px) {
+  .map-participants-info-line {
+    display: none; }
+  .map-participants-info .line2 {
+    display: none; } }
+
+@media screen and (max-width: 991px) {
+  .map-participants-premium {
+    margin-bottom: 20px; }
+    .map-participants-premium-wrap {
+      height: auto;
+      line-height: 1; } }
