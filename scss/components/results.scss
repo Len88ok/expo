@@ -1,0 +1,98 @@
+.results{
+	&-link{
+		color: #026fb3;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-decoration: underline;
+		margin-bottom: 60px;
+    padding-top: 10px;
+	}
+	.form{
+		margin-bottom: 40px;
+		&-control{
+			  border: none;
+			  border-bottom: 1px solid #494949;
+		    border-radius: 0;
+		  	box-shadow: none;
+		    background-color: transparent;
+        text-transform: uppercase;
+        color: #a2a2a2;
+		    &:focus{
+		    	box-shadow: none;
+		    	border-color: #494949;
+		    }
+		}
+		option{
+			text-transform: uppercase;
+		}
+		&-before{
+			position: absolute;
+			top: -20px;	
+			color: #a2a2a2;
+		}	
+		.btn{
+	    background-color: transparent;
+	    border-radius: 0;
+	    border: none;
+	    border-bottom: 1px solid #494949;
+	    color: #000;
+	    padding: 9px 10px;
+	    &:focus{
+	    	outline: none;
+	    }
+		}
+		.btn-tooltip{
+			color: #a2a2a2;
+			padding: 0;
+			border-bottom: 0;
+			font-size: 18px;
+			&:hover{
+				color: #55d17d;
+			}
+		}	
+		.btn-search{
+			color: #55d17d;
+			&:hover{
+				opacity: 0.75;
+			}
+		}
+		.btn-icon{
+			color: #a2a2a2;
+			padding: 8px 0;
+		}
+	}
+	.thumbnail{		
+		padding: 0;
+		font-size: 12px;
+		color: #fff;
+		border: 1px solid #55d17d;
+		&-info{
+			background-color: #55d17d;
+			padding: 10px 20px;
+			height: 200px;
+			&-heading{
+				font-size: 14px;
+				margin-bottom: 1em;
+			}
+			&-banner{
+				color: #000;
+				padding: 10px 20px;
+				height: 200px;
+			}
+		}
+		& .caption{
+			background-color: #d5d5d5;
+			padding: 15px;
+			border-top: 1px solid #55d17d;
+			a{color:#fff;
+				font-size: 14px;
+				text-transform: uppercase;} 
+		} 
+	}
+	&-sample{
+		&-company{
+			border-bottom: 1px solid #55d17d;
+			margin-bottom: 1em;
+		}
+	}
+}

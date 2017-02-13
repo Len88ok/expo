@@ -235,82 +235,59 @@ sup{
 
 .map-participants{
 	.form{
-	.btn{
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid #494949;
-    color: #000;
-    padding: 9px 10px;
-    &:focus{
-    	outline: none;
-    }
-	}
-	.btn-tooltip{
-		color: #a2a2a2;
-		padding: 0;
-		border-bottom: 0;
-		font-size: 18px;
-		&:hover{
-			color: #55d17d;
-		}
-	}	
-	.btn-search{
-		color: #55d17d;
-		&:hover{
-			opacity: 0.75;
-		}
-	}
-	.btn-icon{
-		color: #a2a2a2;
-		padding: 8px 0;
-	}
-}
-}
-.btn.active.focus, 
-.btn.active:focus, 
-.btn.focus, 
-.btn:active.focus, 
-.btn:active:focus, 
-.btn:focus{
-	outline: none;
-}
-.form{
-	margin-bottom: 40px;
-	&-control{
-		  border: none;
-		  border-bottom: 1px solid #494949;
-	    border-radius: 0;
-	  	box-shadow: none;
-	    background-color: transparent;
-	    &:focus{
-	    	box-shadow: none;
-	    	border-color: #494949;
-	    }
-	}
-	&-before{
-		position: absolute;
-		top: -20px;	
-		color: #a2a2a2;
-	}	
-}
-
-
-//margin
-.m{
-	&-20{
-		margin-bottom: 20px;
-	}
-	&-25{
-		margin-bottom: 25px;
-	}
-	&-40{
 		margin-bottom: 40px;
-	}
-	&-80{
-		margin-bottom: 80px;
+		&-control{
+			  border: none;
+			  border-bottom: 1px solid #494949;
+		    border-radius: 0;
+		  	box-shadow: none;
+		    background-color: transparent;
+		    text-transform: uppercase;
+        color: #a2a2a2;
+		    &:focus{
+		    	box-shadow: none;
+		    	border-color: #494949;
+		    }
+		}
+		&-before{
+			position: absolute;
+			top: -20px;	
+			color: #a2a2a2;
+		}	
+		.btn{
+	    background-color: transparent;
+	    border-radius: 0;
+	    border: none;
+	    border-bottom: 1px solid #494949;
+	    color: #000;
+	    padding: 9px 10px;
+	    &:focus{
+	    	outline: none;
+	    }
+		}
+		.btn-tooltip{
+			color: #a2a2a2;
+			padding: 0;
+			border-bottom: 0;
+			font-size: 18px;
+			&:hover{
+				color: #55d17d;
+			}
+		}	
+		.btn-search{
+			color: #55d17d;
+			&:hover{
+				opacity: 0.75;
+			}
+		}
+		.btn-icon{
+			color: #a2a2a2;
+			padding: 8px 0;
+		}
 	}
 }
+
+
 .map{
 	&-info{
 		text-align: center;
@@ -399,12 +376,8 @@ sup{
 				width: 73%;
 				left: 27%;
 			}
-		}
-		&-premium{
-			.label{
-				border-radius: 10px;
-				margin-bottom: 1em;
-			}
+		}		
+		&-premium{			
 			.btn{
 				margin: 10px 0 20px;
 			}			
@@ -435,7 +408,11 @@ sup{
 		}
 	}
 }
-
+.label{
+			border-radius: 10px;
+			margin-bottom: 1em;
+	    margin-left: 0.5em;
+		}
 
 @media screen and (max-width: 1199px ) {
 	.map{

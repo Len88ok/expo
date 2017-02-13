@@ -193,68 +193,46 @@ sup {
   height: 23px;
   background-position: -257px -419px; }
 
-.map-participants .form .btn {
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px solid #494949;
-  color: #000;
-  padding: 9px 10px; }
-  .map-participants .form .btn:focus {
-    outline: none; }
-
-.map-participants .form .btn-tooltip {
-  color: #a2a2a2;
-  padding: 0;
-  border-bottom: 0;
-  font-size: 18px; }
-  .map-participants .form .btn-tooltip:hover {
-    color: #55d17d; }
-
-.map-participants .form .btn-search {
-  color: #55d17d; }
-  .map-participants .form .btn-search:hover {
-    opacity: 0.75; }
-
-.map-participants .form .btn-icon {
-  color: #a2a2a2;
-  padding: 8px 0; }
-
-.btn.active.focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn:active:focus,
-.btn:focus {
-  outline: none; }
-
-.form {
+.map-participants .form {
   margin-bottom: 40px; }
-  .form-control {
+  .map-participants .form-control {
     border: none;
     border-bottom: 1px solid #494949;
     border-radius: 0;
     box-shadow: none;
-    background-color: transparent; }
-    .form-control:focus {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #a2a2a2; }
+    .map-participants .form-control:focus {
       box-shadow: none;
       border-color: #494949; }
-  .form-before {
+  .map-participants .form-before {
     position: absolute;
     top: -20px;
     color: #a2a2a2; }
-
-.m-20 {
-  margin-bottom: 20px; }
-
-.m-25 {
-  margin-bottom: 25px; }
-
-.m-40 {
-  margin-bottom: 40px; }
-
-.m-80 {
-  margin-bottom: 80px; }
+  .map-participants .form .btn {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #494949;
+    color: #000;
+    padding: 9px 10px; }
+    .map-participants .form .btn:focus {
+      outline: none; }
+  .map-participants .form .btn-tooltip {
+    color: #a2a2a2;
+    padding: 0;
+    border-bottom: 0;
+    font-size: 18px; }
+    .map-participants .form .btn-tooltip:hover {
+      color: #55d17d; }
+  .map-participants .form .btn-search {
+    color: #55d17d; }
+    .map-participants .form .btn-search:hover {
+      opacity: 0.75; }
+  .map-participants .form .btn-icon {
+    color: #a2a2a2;
+    padding: 8px 0; }
 
 .map-info {
   text-align: center;
@@ -336,10 +314,6 @@ sup {
     width: 73%;
     left: 27%; }
 
-.map-participants-premium .label {
-  border-radius: 10px;
-  margin-bottom: 1em; }
-
 .map-participants-premium .btn {
   margin: 10px 0 20px; }
 
@@ -363,6 +337,11 @@ sup {
   .map-participants-standart-img {
     display: inline-block;
     vertical-align: middle; }
+
+.label {
+  border-radius: 10px;
+  margin-bottom: 1em;
+  margin-left: 0.5em; }
 
 @media screen and (max-width: 1199px) {
   .map-participants-info-line {
