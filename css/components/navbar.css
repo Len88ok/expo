@@ -22,6 +22,10 @@
       border-bottom: 3px solid #6c6;
       padding: 0; }
 
+@media (min-width: 768px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block; } }
+
 .navbar-nav {
   padding: 0.5em 0; }
 
