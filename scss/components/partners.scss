@@ -144,6 +144,49 @@
 		}
 	}
 	
+	#myModal{
+		.modal{
+			&-dialog{
+				width: 434px;
+				background-color: white;
+				border: 1px solid #63646d;		
+			}
+			&-footer{
+				text-align: center;
+			}
+			.form-group {
+			    display: flex;
+			    height: 55px;
+			}
+
+			.control-label {
+			    font-size: 16px;
+			    font-weight: 400;
+			    opacity: 0.4;
+			    pointer-events: none;
+			    position: absolute;
+			    transform: translate3d(0, 22px, 0) scale(1);
+			    transform-origin: left top;
+			    transition: 240ms;
+			}
+
+			.form-group.focused .control-label {
+			    opacity: 1;
+			    transform: scale(0.75);
+			}
+
+			.form-control {
+			    align-self: flex-end;
+			}
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.modal{
+			&-dialog{
+				width: 434px;			
+		}
+	}
+	}
 
 
 

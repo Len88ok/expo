@@ -94,3 +94,45 @@
     color: #026fb3; }
     .popover-footer a:hover {
       text-decoration: underline; }
+
+#myModal .modal-dialog {
+  width: 434px;
+  background-color: white;
+  border: 1px solid #63646d; }
+
+#myModal .modal-footer {
+  text-align: center; }
+
+#myModal .modal .form-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 55px; }
+
+#myModal .modal .control-label {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.4;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translate3d(0, 22px, 0) scale(1);
+  transform: translate3d(0, 22px, 0) scale(1);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  transition: 240ms; }
+
+#myModal .modal .form-group.focused .control-label {
+  opacity: 1;
+  -webkit-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  transform: scale(0.75); }
+
+#myModal .modal .form-control {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 434px; } }
