@@ -316,6 +316,14 @@ sup {
       color: #55d17d;
       text-decoration: none;
       border-bottom: 0.75px dashed #55d17d; }
+  .map-variants-btn {
+    width: 125px;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+    color: #55d17d;
+    border-bottom: 1px dashed;
+    margin-bottom: 20px; }
 
 .map-head {
   height: 55px; }
@@ -390,3 +398,10 @@ sup {
     .map-participants-premium-wrap {
       height: auto;
       line-height: 1; } }
+
+@media screen and (max-width: 767px) {
+  .map-variants-wrap {
+    height: 220px;
+    overflow: hidden; }
+  .map-variants-btn {
+    display: block; } }

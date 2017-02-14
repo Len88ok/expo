@@ -725,6 +725,13 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="scripts/main.js"></script>
+	<script>
+	$(document).ready(function(){		
+		$('.form-control').on('focus blur', function (e) {
+		    $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+		}).trigger('blur');
+	});
+	</script>
 
 </body>
 </html>

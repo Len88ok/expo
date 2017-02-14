@@ -377,6 +377,15 @@ sup{
 					border-bottom: 0.75px dashed #55d17d;
 				}
 			}
+			&-btn{
+				width: 125px;
+				margin: 0 auto;
+				display: none;
+  			text-align: center;
+  			color: #55d17d;
+  			border-bottom: 1px dashed;
+  			margin-bottom: 20px;
+			}
 		}
 	&-head{
 		    height: 55px;
@@ -475,6 +484,20 @@ sup{
 				height: auto;
 				line-height: 1;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px ) {
+	.map{
+		&-variants{
+			&-wrap{
+			height: 220px;
+			overflow: hidden;
+		}
+			&-btn{
+				display: block;
 			}
 		}
 	}
