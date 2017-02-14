@@ -26,6 +26,11 @@ sup{
 		margin: 0 auto;
 		box-shadow: 2.5px 4.3px 20px rgba(0, 0, 0, 0.3);
 		transition: all 1s ease-in-out;
+		&:hover{
+			.commercial-slider-caption{
+				opacity: 1;
+			}
+		}	
 	}
 	&-caption{ 
 	opacity: 0;
@@ -57,14 +62,9 @@ sup{
 		height: 220px;
 		img{
 			width: 100%;
-			height: 100%;
-		}
+			height: 100%;					
+		}		
 	}
-	&.slick-current{
-		.commercial-slider-caption{
-			opacity: 1;
-		}
-	}		
 }
 	.slick-prev:before {
 	  content: " " !important;
