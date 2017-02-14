@@ -8,7 +8,13 @@
     padding-top: 10px;
 	}
 	.form{
-		margin-bottom: 40px;
+		&-group{
+			position: relative;
+			margin-bottom: 40px;
+		}
+		.input-group{
+			margin-bottom: 40px;
+		}
 		&-control{
 			  border: none;
 			  border-bottom: 1px solid #494949;
