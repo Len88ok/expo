@@ -20,54 +20,49 @@ sup{
 }
 .commercial-slider{
 	&-exh-info{
-		width: 290px;
-    margin: 0 auto;
-    text-align: center;    
-		background-color: #FFF;
-		border-radius: 5px;
+		position: relative;
+		width: 340px;
+		height: auto;
+		margin: 0 auto;
 		box-shadow: 2.5px 4.3px 20px rgba(0, 0, 0, 0.3);
-    transform: scale(0.8);
 		transition: all 1s ease-in-out;
 	}
 	&-caption{ 
-	display: none;
-	padding: 25px 0;   
-		&-logo{
-			img{
-				max-width: 100%;
-		    margin: 0 auto;
-			}
-		}
-		&-info{
-			color: black;
-			font-size: 13px;
-			text-transform: uppercase;
-		}
+	opacity: 0;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 25%;
+	padding: 15px; 	
+	text-align: left;
+	color: #fff;
+	transition: opacity .5s linear;
+	&-title{
+		font-size: 18px;
+	}	
+	&-info{
+		font-size: 13px;
+	}
 	}
 }
 
 @media screen and (max-width: 479px ) {
-	.commercial-slider{
-	&-exh-info{
-		width: 240px;}
-	}
+
 }
 .slick-slide{
 	margin-bottom: 30px;
 	.img-wrapper{
 		width: 100%;
-		height: 340px;
+		height: 220px;
 		img{
 			width: 100%;
 			height: 100%;
 		}
 	}
 	&.slick-current{
-		.commercial-slider-exh-info{
-			transform: scale(1);
-		}
 		.commercial-slider-caption{
-			display: block;
+			opacity: 1;
 		}
 	}		
 }
@@ -86,6 +81,12 @@ sup{
 	  background-repeat: no-repeat;
 	  width: 20px;
     height: 20px;
+	}
+
+	.slick-dots li button:before{
+		font-size: 50px !important;
+		color: #55d17d !important;
+		top: -20px !important;
 	}
 
 
@@ -251,6 +252,7 @@ sup{
 		}
 		&-before{
 			position: absolute;
+			left: 0;
 			top: -20px;	
 			color: #a2a2a2;
 		}	
@@ -291,19 +293,44 @@ sup{
 .map{
 	&-info{
 		text-align: center;
-		padding: 0 25%;
-		margin-bottom: 6%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 5% 0;
+		color: #fff;
+		margin-bottom: 3%;
+		&-overlay{
+			position: relative;
+			z-index: 1;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				opacity: 0.5;
+				background-color: #000;		
+			}
+		}
 	}
 	&-heading{
-		color: #026fb3;
-		font-size: 24px;
+		font-size: 60px;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin-bottom: 4%;
-	}
+		margin-bottom: 1%;
+		&-divider{
+			width: 170px;
+			height: 0;
+			border-bottom: 2px dotted #fff;
+			margin: 0 auto;
+			margin-bottom: 1.5%;
+		}
+	}	
 	&-desc{
-		color: #212121;
-		font-size: 13px;
+		font-size: 14px;
 	}
 	&-title{
 		color: #026fb3;
@@ -318,6 +345,7 @@ sup{
 		margin-bottom: 15px;
 	}
 	&-variants{
+		margin-bottom: 2%;
 		&-item{
 			text-transform: uppercase;
 			width: 240px;

@@ -16,46 +16,39 @@ sup {
   margin-left: 3px; }
 
 .commercial-slider-exh-info {
-  width: 290px;
+  position: relative;
+  width: 340px;
+  height: auto;
   margin: 0 auto;
-  text-align: center;
-  background-color: #FFF;
-  border-radius: 5px;
   box-shadow: 2.5px 4.3px 20px rgba(0, 0, 0, 0.3);
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
   transition: all 1s ease-in-out; }
 
 .commercial-slider-caption {
-  display: none;
-  padding: 25px 0; }
-  .commercial-slider-caption-logo img {
-    max-width: 100%;
-    margin: 0 auto; }
+  opacity: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 25%;
+  padding: 15px;
+  text-align: left;
+  color: #fff;
+  transition: opacity .5s linear; }
+  .commercial-slider-caption-title {
+    font-size: 18px; }
   .commercial-slider-caption-info {
-    color: black;
-    font-size: 13px;
-    text-transform: uppercase; }
-
-@media screen and (max-width: 479px) {
-  .commercial-slider-exh-info {
-    width: 240px; } }
+    font-size: 13px; }
 
 .slick-slide {
   margin-bottom: 30px; }
   .slick-slide .img-wrapper {
     width: 100%;
-    height: 340px; }
+    height: 220px; }
     .slick-slide .img-wrapper img {
       width: 100%;
       height: 100%; }
-  .slick-slide.slick-current .commercial-slider-exh-info {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
   .slick-slide.slick-current .commercial-slider-caption {
-    display: block; }
+    opacity: 1; }
 
 .slick-prev:before {
   content: " " !important;
@@ -72,6 +65,11 @@ sup {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px; }
+
+.slick-dots li button:before {
+  font-size: 50px !important;
+  color: #55d17d !important;
+  top: -20px !important; }
 
 .sprite2 {
   background-image: url("../../images/map/spritesheet.png");
@@ -208,6 +206,7 @@ sup {
       border-color: #494949; }
   .map-participants .form-before {
     position: absolute;
+    left: 0;
     top: -20px;
     color: #a2a2a2; }
   .map-participants .form .btn {
@@ -236,19 +235,41 @@ sup {
 
 .map-info {
   text-align: center;
-  padding: 0 25%;
-  margin-bottom: 6%; }
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5% 0;
+  color: #fff;
+  margin-bottom: 3%; }
+  .map-info-overlay {
+    position: relative;
+    z-index: 1; }
+    .map-info-overlay:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      opacity: 0.5;
+      background-color: #000; }
 
 .map-heading {
-  color: #026fb3;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 4%; }
+  margin-bottom: 1%; }
+  .map-heading-divider {
+    width: 170px;
+    height: 0;
+    border-bottom: 2px dotted #fff;
+    margin: 0 auto;
+    margin-bottom: 1.5%; }
 
 .map-desc {
-  color: #212121;
-  font-size: 13px; }
+  font-size: 14px; }
 
 .map-title {
   color: #026fb3;
@@ -262,25 +283,25 @@ sup {
   font-size: 13px;
   margin-bottom: 15px; }
 
-.map-variants-item {
-  text-transform: uppercase;
-  width: 240px;
-  margin: 0 auto; }
-
-.map-variants-img {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: -5px;
-  vertical-align: top; }
-
-.map-variants-link {
-  color: #6c6c6c; }
-  .map-variants-link:hover {
-    cursor: pointer;
-    color: #6c6c6c;
-    text-decoration: none;
-    border-bottom: 0.75px dashed; }
+.map-variants {
+  margin-bottom: 2%; }
+  .map-variants-item {
+    text-transform: uppercase;
+    width: 240px;
+    margin: 0 auto; }
+  .map-variants-img {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    vertical-align: top; }
+  .map-variants-link {
+    color: #6c6c6c; }
+    .map-variants-link:hover {
+      cursor: pointer;
+      color: #6c6c6c;
+      text-decoration: none;
+      border-bottom: 0.75px dashed; }
 
 .map-head {
   height: 55px; }
