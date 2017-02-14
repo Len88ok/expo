@@ -296,12 +296,13 @@ sup {
     margin-top: -5px;
     vertical-align: top; }
   .map-variants-link {
-    color: #6c6c6c; }
+    color: #6c6c6c;
+    transition: all .25s linear; }
     .map-variants-link:hover {
       cursor: pointer;
-      color: #6c6c6c;
+      color: #55d17d;
       text-decoration: none;
-      border-bottom: 0.75px dashed; }
+      border-bottom: 0.75px dashed #55d17d; }
 
 .map-head {
   height: 55px; }

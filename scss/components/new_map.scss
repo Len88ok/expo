@@ -360,11 +360,12 @@ sup{
 			}
 			&-link{
 				color: #6c6c6c;
+				transition: all .25s linear;
 				&:hover{
 					cursor: pointer;
-					color: #6c6c6c;
+					color: #55d17d;
 					text-decoration: none;
-					border-bottom: 0.75px dashed;
+					border-bottom: 0.75px dashed #55d17d;
 				}
 			}
 		}
