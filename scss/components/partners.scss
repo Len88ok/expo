@@ -172,7 +172,6 @@
 				text-transform: uppercase;
 			}
 			&-dialog{
-				width: 434px;
 				background-color: white;
 				border: 1px solid #63646d;		
 			}
@@ -235,6 +234,14 @@
 		.modal{
 			&-dialog{
 				width: 434px;			
+		}
+	}
+	}
+	@media screen and (max-width: 767px) {
+		.modal{
+			&-dialog{
+				max-width: 434px;
+				width: 90%;			
 		}
 	}
 	}
