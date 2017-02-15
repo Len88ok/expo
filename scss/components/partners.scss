@@ -149,6 +149,22 @@
 			&-header{
 				border-bottom: none;
 				padding: 30px;
+				background-color: #eef3f5;
+				margin-bottom: 20px;
+				.close{
+					margin-top: -2px;
+					border-radius: 50%;
+					background-color: #fff;
+					width: 70px;
+					height: 70px;
+					position: absolute;
+					top: -35px;
+					right: -35px;
+					opacity: 1;
+					font-size: 50px;
+					font-weight: 100;
+					border: 1px solid #b6b6b6;
+				}
 			}
 			&-title{
 				color: #0567a6;
@@ -163,6 +179,10 @@
 			&-footer{
 				text-align: center;
 				border-top: none;
+				padding-top: 0;
+				.btn{
+					width: 60%;
+				}
 			}			
 			&-body{
 				padding: 0 30px;
@@ -176,6 +196,12 @@
 				    transform-origin: left top;
 				    transition: 240ms;
 				    left: 30px;
+				}
+				.control-icon{
+					display: inline-block;
+					position: absolute;
+					top: 7px;
+					right: 17px;
 				}
 				.form-group.focused .control-label {
 				    opacity: 1;
