@@ -399,8 +399,9 @@ sup {
       line-height: 1; } }
 
 @media screen and (max-width: 767px) {
-  .map-variants-wrap {
-    height: 220px;
-    overflow: hidden; }
   .map-variants-btn {
+    display: block; } }
+
+@media screen and (min-width: 768px) {
+  .collapse {
     display: block; } }

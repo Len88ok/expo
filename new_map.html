@@ -110,13 +110,14 @@
 						<div class="map-variants-item">
 							<div class="map-variants-img"><i class="sprite2 sprite2-var5"></i></div>
 							<a class="map-variants-link">Фрукты и овощи</a></div>
-						</div>
+						</div>						
 						<div class="col-sm-4">
 						<div class="map-variants-item">
 							<div class="map-variants-img"><i class="sprite2 sprite2-var6"></i></div>
 							<a class="map-variants-link">Специи</a></div>
 						</div>
 					</div>
+					<div id="collapse1" class="collapse">
 					<div class="row">
 						<div class="col-sm-4"><div class="map-variants-item">
 							<div class="map-variants-img"><i class="sprite2 sprite2-var7"></i></div>
@@ -172,12 +173,12 @@
 						<div class="map-variants-item">
 						<div class="map-variants-img"><i class="sprite2 sprite2-var8"></i></div>
 						<a class="map-variants-link">Молочные продукты</a></div></div>
+					</div>
 					</div>					
 				</div>
-				<a href="" class="map-variants-btn">Показать всех<sup><span class="badge badge-default">8</span></sup></a>
+				<a data-toggle="collapse" href="#collapse1" class="map-variants-btn">Показать всех<sup><span class="badge badge-default">8</span></sup></a>
 			</div>			
 			</section>
-
 			<section class="map-recommend">
 				<div class="container">
 					<div class="map-title m-25 text-center">рекомендуем посетить</div>
@@ -1114,7 +1115,7 @@
 				});	
 				$('.btn-tooltip').popover({
 					trigger: 'hover'
-				});
+				});				
 			});
 		</script>
 	</body>

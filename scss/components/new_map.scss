@@ -491,16 +491,23 @@ sup{
 @media screen and (max-width: 767px ) {
 	.map{
 		&-variants{
-			&-wrap{
-			height: 220px;
-			overflow: hidden;
-		}
 			&-btn{
 				display: block;
 			}
 		}
 	}
 }
+@media screen and (min-width: 768px ) {
+ .collapse{
+ 	display: block;
+ }
+}
+
+	
+
+
+
+
 
 
 
