@@ -38,6 +38,7 @@
     list-style-type: none; }
 
 .about-advantages {
+  background-color: #ebecff;
   padding: 5.75em 0; }
   .about-advantages-content {
     margin-bottom: 2em; }
@@ -101,47 +102,47 @@
 .line-8 {
   border-color: #ee7103; }
 
-.sprite1 {
+.sprite3 {
   background-image: url(../../images/about/spritesheet.png);
   background-repeat: no-repeat;
   display: block; }
 
-.sprite1-icon-comfort {
+.sprite3-icon-comfort {
   width: 66px;
   height: 66px;
   background-position: -5px -5px; }
 
-.sprite1-icon-easy-conference {
+.sprite3-icon-easy-conference {
   width: 66px;
   height: 66px;
   background-position: -81px -5px; }
 
-.sprite1-icon-efficiency-mark {
+.sprite3-icon-efficiency-mark {
   width: 66px;
   height: 66px;
   background-position: -5px -81px; }
 
-.sprite1-icon-info {
+.sprite3-icon-info {
   width: 66px;
   height: 66px;
   background-position: -81px -81px; }
 
-.sprite1-icon-language {
+.sprite3-icon-language {
   width: 66px;
   height: 66px;
   background-position: -157px -5px; }
 
-.sprite1-icon-many {
+.sprite3-icon-many {
   width: 64px;
   height: 64px;
   background-position: -157px -81px; }
 
-.sprite1-icon-time {
+.sprite3-icon-time {
   width: 66px;
   height: 66px;
   background-position: -157px -155px; }
 
-.sprite1-icon-world {
+.sprite3-icon-world {
   width: 66px;
   height: 66px;
   background-position: -233px -5px; }

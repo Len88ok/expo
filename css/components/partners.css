@@ -95,48 +95,59 @@
     .popover-footer a:hover {
       text-decoration: underline; }
 
+#myModal .modal-header {
+  border-bottom: none;
+  padding: 30px; }
+
+#myModal .modal-title {
+  color: #0567a6;
+  font-size: 18px;
+  text-transform: uppercase; }
+
 #myModal .modal-dialog {
   width: 434px;
   background-color: white;
   border: 1px solid #63646d; }
 
 #myModal .modal-footer {
-  text-align: center; }
+  text-align: center;
+  border-top: none; }
 
-#myModal .modal-body .control-label {
-  font-size: 16px;
-  font-weight: 400;
-  opacity: 0.4;
-  pointer-events: none;
-  position: absolute;
-  -webkit-transform: translate3d(0, 12px, 0) scale(1);
-  transform: translate3d(0, 12px, 0) scale(1);
-  -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
-  transform-origin: left top;
-  transition: 240ms;
-  left: 30px; }
-
-#myModal .modal-body .form-group.focused .control-label {
-  opacity: 1;
-  -webkit-transform: scale(0.75);
-  -ms-transform: scale(0.75);
-  transform: scale(0.75);
-  margin-top: -10px; }
-
-#myModal .modal-body .form-control {
-  border: none;
-  box-shadow: none;
-  border-bottom: 1px solid #000;
-  border-radius: 0;
-  margin-bottom: 20px; }
-
-#myModal .modal-body .form-control::-webkit-input-placeholder {
-  color: transparent;
-  transition: 240ms; }
-
-#myModal .modal-body .form-control:focus::-webkit-input-placeholder {
-  transition: none; }
+#myModal .modal-body {
+  padding: 0 30px; }
+  #myModal .modal-body .control-label {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.4;
+    pointer-events: none;
+    position: absolute;
+    -webkit-transform: translate3d(0, 10px, 0) scale(1);
+    transform: translate3d(0, 10px, 0) scale(1);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    transition: 240ms;
+    left: 30px; }
+  #myModal .modal-body .form-group.focused .control-label {
+    opacity: 1;
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    margin-top: -15px; }
+  #myModal .modal-body .form-control {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    margin-bottom: 25px; }
+  #myModal .modal-body textarea.form-control {
+    border-bottom: none;
+    border: 1px solid #000; }
+  #myModal .modal-body .form-control::-webkit-input-placeholder {
+    color: transparent;
+    transition: 240ms; }
+  #myModal .modal-body .form-control:focus::-webkit-input-placeholder {
+    transition: none; }
 
 @media screen and (min-width: 768px) {
   .modal-dialog {
