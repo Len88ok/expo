@@ -38,6 +38,11 @@
 	.navbar-default .navbar-toggle{
     float: none;
 	}
+	.navbar-brand{
+		float: none;
+    display: block;
+    margin: 0 auto 20px;
+    img{display: inline-block;}}
 }
 
 

@@ -250,7 +250,13 @@ img {
 
 @media screen and (max-width: 479px) {
   .navbar-default .navbar-toggle {
-    float: none; } }
+    float: none; }
+  .navbar-brand {
+    float: none;
+    display: block;
+    margin: 0 auto 20px; }
+    .navbar-brand img {
+      display: inline-block; } }
 
 .navbar-nav {
   padding: 0.5em 0; }

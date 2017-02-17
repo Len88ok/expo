@@ -5,16 +5,16 @@ html {
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 100vh; }
+  height: 100%; }
   .homepage-content {
     position: relative;
     width: 100%;
     height: 100%; }
     .homepage-content-info {
-      position: absolute;
       width: 50%;
-      top: 10%;
-      left: 40%;
+      height: 100%;
+      margin-left: 40%;
+      padding: 2% 0;
       text-align: left; }
       .homepage-content-info h2 {
         color: #026fb3;
@@ -33,7 +33,6 @@ html {
   .homepage-video-container {
     position: relative;
     width: 100%;
-    height: 100%;
     background: url(../../images/bg_home.jpg) no-repeat #edeeff center center;
     background-size: cover;
     z-index: -150; }
@@ -51,7 +50,7 @@ html {
     z-index: -100; }
   .homepage .door .btn-base {
     position: absolute;
-    bottom: 0;
+    bottom: 40%;
     right: 10%;
     z-index: 2;
     padding-right: 80px; }
@@ -84,8 +83,10 @@ html {
     height: 100vh;
     background: url(../../images/bg_home.jpg) no-repeat #edeeff 20% 0;
     background-size: cover; }
+  .homepage .btn-play {
+    display: none; }
   .homepage .door .btn-base {
-    bottom: -90%; } }
+    bottom: 10%; } }
 
 #expohall-invitation {
   -webkit-animation: expohall-invitation 3s linear infinite;
