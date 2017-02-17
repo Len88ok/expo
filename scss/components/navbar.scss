@@ -34,6 +34,13 @@
   }
 }
 
+@media screen and (max-width: 479px ) {
+	.navbar-default .navbar-toggle{
+    float: none;
+	}
+}
+
+
 
 .navbar-nav{
    padding: 0.5em 0;

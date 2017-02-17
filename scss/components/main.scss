@@ -5,9 +5,11 @@ html{
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	height: 100vh;
 	&-content{
 		position: relative;	
 		width: 100%;
+		height: 100%;
 	  &-info{
 	  	position: absolute;
 	  	width: 50%;
@@ -41,7 +43,7 @@ html{
 		&-container{
 				position: relative;
 				width: 100%;
-				height: 500px;
+				height: 100%;
 				background: url(../../images/bg_home.jpg) no-repeat #edeeff center center;
 				background-size: cover;
 				z-index: -150; 

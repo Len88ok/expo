@@ -248,6 +248,10 @@ img {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block; } }
 
+@media screen and (max-width: 479px) {
+  .navbar-default .navbar-toggle {
+    float: none; } }
+
 .navbar-nav {
   padding: 0.5em 0; }
 
@@ -384,10 +388,6 @@ img {
   background: #000; }
 
 #footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background: #272626;
   color: #fff;
   font-size: 12px;
@@ -418,14 +418,12 @@ img {
   list-style: none; }
 
 @media screen and (max-width: 479px) {
-  #footer {
-    position: relative; }
-    #footer ul.footer-menu {
-      float: none; }
-    #footer a.social-networks {
-      margin-right: 5px; }
-    #footer .pull-right {
-      float: none !important;
-      display: inline-block; }
+  #footer ul.footer-menu {
+    float: none; }
+  #footer a.social-networks {
+    margin-right: 5px; }
+  #footer .pull-right {
+    float: none !important;
+    display: inline-block; }
   .copyright {
     text-align: center; } }
