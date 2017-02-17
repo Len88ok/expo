@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box; }
+
 body {
   background-image: linear-gradient(to top, white 0%, white 60%, #e9ebff 100%);
   background-repeat: no-repeat;

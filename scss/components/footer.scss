@@ -1,4 +1,8 @@
 #footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: #272626;
     color: #fff;
     font-size: 12px;
@@ -28,6 +32,7 @@
 .copyright{
 	color: #cfd0e4;
   padding-top: 0;
+  text-align: left;
 }
 
 .list-unstyled{
@@ -35,3 +40,18 @@
   list-style: none;
 } 
 
+@media screen and (max-width: 479px ) {
+    #footer{
+        position: relative;
+        ul.footer-menu{
+            float: none;}
+        a.social-networks{
+            margin-right: 5px;}
+        .pull-right{
+            float: none !important;
+            display: inline-block;}
+    }
+    .copyright{
+      text-align: center;
+    }
+}

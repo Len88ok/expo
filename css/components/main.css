@@ -1,0 +1,121 @@
+html {
+  height: 100%; }
+
+.homepage {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .homepage-content {
+    position: relative;
+    width: 100%; }
+    .homepage-content-info {
+      position: absolute;
+      width: 50%;
+      top: 10%;
+      left: 40%;
+      text-align: left; }
+      .homepage-content-info h2 {
+        color: #026fb3;
+        font-size: 2.5vw;
+        line-height: 1.5;
+        text-align: left;
+        text-transform: uppercase;
+        border: none;
+        padding-bottom: 30px; }
+      .homepage-content-info .btn-play-link {
+        color: #494949; }
+      .homepage-content-info .btn-play:hover .btn-play-link {
+        color: #55d17d; }
+      .homepage-content-info .btn-play:hover .btn-play-icon {
+        background-color: #55d17d; }
+  .homepage-video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url(../../images/bg_home.jpg) no-repeat #edeeff center center;
+    background-size: cover;
+    z-index: -150; }
+  .homepage #homepage-video-bg {
+    position: fixed;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100; }
+  .homepage .door .btn-base {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 2;
+    padding-right: 80px; }
+  .homepage .btn-base.right-arrow {
+    background: url(../../images/arrow-sprite.png) no-repeat 100% -34px; }
+  .homepage .expohall-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: #23527c; }
+    .homepage .expohall-btn:hover {
+      text-decoration: none; }
+
+@media screen and (max-width: 479px) {
+  #homepage-video-bg {
+    display: none; }
+  .homepage-content-info {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    left: auto;
+    text-align: center; }
+    .homepage-content-info h2 {
+      font-size: 6vw;
+      text-align: center;
+      margin-bottom: 80px; }
+  .homepage-video-container {
+    width: 100%;
+    height: 100vh;
+    background: url(../../images/bg_home.jpg) no-repeat #edeeff 20% 0;
+    background-size: cover; }
+  .homepage .door .btn-base {
+    bottom: -90%; } }
+
+#expohall-invitation {
+  -webkit-animation: expohall-invitation 3s linear infinite;
+  animation: expohall-invitation 3s linear infinite; }
+
+#expohall-invitation:hover {
+  background-position: 100% -34px; }
+
+@-webkit-keyframes expohall-invitation {
+  0% {
+    color: #1d7bb4;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    color: #1c7eba;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); }
+  100% {
+    color: #218acb;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes expohall-invitation {
+  0% {
+    color: #1d7bb4;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    color: #1c7eba;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); }
+  100% {
+    color: #218acb;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }

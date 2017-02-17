@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+  box-sizing: border-box; }
+
 body {
   background-image: linear-gradient(to top, white 0%, white 60%, #e9ebff 100%);
   background-repeat: no-repeat;
@@ -381,6 +384,10 @@ img {
   background: #000; }
 
 #footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background: #272626;
   color: #fff;
   font-size: 12px;
@@ -403,8 +410,22 @@ img {
 
 .copyright {
   color: #cfd0e4;
-  padding-top: 0; }
+  padding-top: 0;
+  text-align: left; }
 
 .list-unstyled {
   padding-left: 0;
   list-style: none; }
+
+@media screen and (max-width: 479px) {
+  #footer {
+    position: relative; }
+    #footer ul.footer-menu {
+      float: none; }
+    #footer a.social-networks {
+      margin-right: 5px; }
+    #footer .pull-right {
+      float: none !important;
+      display: inline-block; }
+  .copyright {
+    text-align: center; } }

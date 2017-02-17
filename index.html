@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/screen.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/components/main.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="homepage">
+	<header id="header">
+		<ul class="main-menu authorization-menu non-authorized">
+			<li class="">
+				<a href="#registration" class="popup-open-register">
+					Регистрация
+				</a>
+			</li>
+			<li class="authorization">
+				<a href="#login" class="popup-open-login">
+					Вход
+				</a>
+			</li>
+		</ul>
+		<!--Navbar header-->			
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">		
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+						<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+					</div>	
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">				
+						<ul class="nav navbar-nav">
+							<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+							<li><a class="text-uppercase" href="#">для посетителей</a></li>
+							<li><a class="text-uppercase" href="#">новости</a></li>
+							<li><a class="text-uppercase" href="#">расписание</a></li>
+							<li><a class="text-uppercase" href="#">о проекте</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">О проекте</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Организаторам<br>выставок</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+	</header>
+	<main class="homepage-content">
+	<div class="homepage-content-info">
+      <h2>Международный<br>выставочный портал</h2>
+      <a class="btn-play" title="Смотреть видео">
+        <div class="btn-play-icon"></div>
+        <div class="btn-play-link">
+            <span>Смотреть</span>видео-помощник
+        </div>
+      </a>
+    	<div class="door">
+          <a class="btn-base right-arrow expohall-btn" id="expohall-invitation" title="Экспохолл" href="/exhibition-schedule" style="display: block;">
+              Экспохолл
+          </a>
+          <div class="img-container"></div>
+      </div>
+  </div>
+	<div class="homepage-video-container">
+		<video id="homepage-video-bg" autoplay loop muted>
+		  <source src="https://expouniverse.cf/bundles/sitebundlefrontend/videos/video_main2.mp4" type="video/mp4"/>
+		</video>
+	</div>	
+	</main>
+	<footer class="footer-b" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 copyright">2017 © Expo Universe. ALL Rights Reserved.</div>
+				<div class="col-sm-6">
+					<ul class="footer-menu list-unstyled">
+						<li>
+							<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+								Правила использования
+							</a>
+						</li>
+					</ul>
+					<div class="pull-right">
+						<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+							<img src="images/social_networks/vk.png" alt="vk">
+						</a>
+						<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+							<img src="images/social_networks/fb.png" alt="fb">
+						</a>
+						<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+							<img src="images/social_networks/gp.png" alt="gp">
+						</a>
+						<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+							<img src="images/social_networks/ok.png" alt="ok">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
