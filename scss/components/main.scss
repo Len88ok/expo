@@ -23,7 +23,7 @@ html{
 	  		text-align: left;
 	  		text-transform: uppercase;
 	  		border: none;
-	  		padding-bottom: 30px;
+	  		margin-bottom: 30px;
 	  	}
 	  	.btn-play-link{
 	  		color: #494949;	  		
@@ -115,15 +115,16 @@ html{
 @media screen and (max-width: 767px ) {
 	.homepage{
 	#homepage-video-bg {
-	  top: 0;
-	  left: -50%;
-    transform: translateX(0) translateY(0);
+		left: 88%;
+		top: 68%;
 	} 
 	&-content{
 		&-info{
 			h2{
 				font-size: 30px;
 				margin-bottom: 140px;
+				padding: 30px 0;
+				text-shadow: 1px 1px 2px #000;
 			}
 		}
 	}

@@ -256,10 +256,6 @@ img {
     padding: 5px; } }
 
 @media screen and (max-width: 767px) {
-  .navbar-nav .open .dropdown-menu {
-    text-align: center; } }
-
-@media screen and (max-width: 479px) {
   .navbar-default .navbar-toggle {
     float: none;
     text-align: center;
@@ -271,7 +267,12 @@ img {
     text-align: center;
     margin: 0 auto 20px; }
     .navbar-brand img {
-      display: inline-block; } }
+      display: inline-block; }
+  .navbar-nav .open .dropdown-menu {
+    text-align: center; }
+  .navbar-default .navbar-collapse {
+    background-color: #FFF;
+    opacity: 0.9; } }
 
 .navbar-nav {
   padding: 0.5em 0; }
@@ -314,7 +315,7 @@ img {
   .main-menu.authorization-menu {
     right: 50px; } }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .main-menu.authorization-menu {
     position: static;
     z-index: 1;
