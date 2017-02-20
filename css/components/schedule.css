@@ -156,7 +156,15 @@
   border-radius: 35px !important;
   font-size: 14px;
   color: #262626;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: all .3s linear; }
+
+.filters-links ul li a.filter_links_highlighted:hover,
+.catalog-create-tab-list li.active a:hover,
+.exhibition-stand-filter a.filter-btn.active:hover {
+  background: transparent;
+  color: #262626;
+  border: 1px solid #026fb4; }
 
 @media screen and (max-width: 991px) {
   .filters-links {
