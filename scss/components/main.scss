@@ -74,7 +74,7 @@ html{
 		       
 		.expohall-btn{
 			text-transform: uppercase;
-			font-weight: 700;
+			font-weight: 400;
 			font-size: 20px;
 			color: #23527c;
 			&:hover{
@@ -84,20 +84,33 @@ html{
 }
 @media screen and (max-width: 1169px ) {
 	.homepage{
-	#homepage-video-bg {
-	  width: auto;
-	  left: 65%;
-	  top: 65%;
+		#homepage-video-bg {
+		  width: auto;
+		  left: 65%;
+		  top: 65%;
+		}
 	}
-}
 }
 @media screen and (max-width: 991px ) {
 	.homepage{
-	#homepage-video-bg {
-		left: 75%;
-		top: 75%;
-	}
-}
+		#homepage-video-bg {
+			left: 75%;
+			top: 75%;
+		}
+		&-content{
+			&-info{
+				width: 100%;
+				text-align: center;
+				margin-left: 0;
+				h2{
+					font-size: 4vw;
+					text-align: center;
+					padding-bottom: 80px;
+				}
+			}
+		}
+		.door .btn-base{bottom: 20%;}	
+  }
 }
 @media screen and (max-width: 767px ) {
 	.homepage{
@@ -105,7 +118,8 @@ html{
 	  top: 0;
 	  left: -50%;
     transform: translateX(0) translateY(0);
-	}
+	} 
+	.door .btn-base{bottom: 10%;}	 
 }
 }
 @media screen and (max-width: 479px ) {
@@ -135,11 +149,9 @@ html{
 						background-size: cover;			
 				}
 			}
-			.btn-play{display: none;}
-		}
-		.homepage .door .btn-base{
-			bottom: 10%;
-		}
+			.btn-play-link{display: none;}
+			.btn-play-icon{border: 2px solid #fff;}
+		}		
 }
 
 #expohall-invitation{
@@ -148,7 +160,6 @@ html{
 #expohall-invitation:hover{
 	background-position: 100% -34px;
 }
-
 @keyframes expohall-invitation {
  0% { color: #1d7bb4; transform: scale(1);}
  50% { color: #1c7eba; transform: scale(1.5); }

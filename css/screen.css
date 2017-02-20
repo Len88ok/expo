@@ -251,6 +251,10 @@ img {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block; } }
 
+@media screen and (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    text-align: center; } }
+
 @media screen and (max-width: 479px) {
   .navbar-default .navbar-toggle {
     float: none;
@@ -282,6 +286,12 @@ img {
 .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
   color: #fff;
   background-color: #6c6; }
+
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    border-bottom: 1px solid #6c6; } }
 
 .main-menu.authorization-menu {
   position: absolute;
