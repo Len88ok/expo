@@ -81,7 +81,7 @@ html {
     .homepage-content-info h2 {
       font-size: 4vw;
       text-align: center;
-      padding-bottom: 80px; }
+      margin-bottom: 80px; }
   .homepage .door .btn-base {
     bottom: 20%; } }
 
@@ -93,10 +93,12 @@ html {
     -ms-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0); }
   .homepage-content-info h2 {
-    font-size: 5vw;
+    font-size: 30px;
     margin-bottom: 140px; }
   .homepage .door .btn-base {
     bottom: 10%; }
+  .homepage .btn-play-link {
+    display: none; }
   .homepage .btn-play-icon {
     border: 2px solid #fff; } }
 
@@ -118,9 +120,7 @@ html {
     width: 100%;
     height: 100vh;
     background: url(../../images/bg_home.jpg) no-repeat #edeeff 20% 0;
-    background-size: cover; }
-  .homepage .btn-play-link {
-    display: none; } }
+    background-size: cover; } }
 
 #expohall-invitation {
   -webkit-animation: expohall-invitation 3s linear infinite;
