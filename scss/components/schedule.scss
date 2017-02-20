@@ -39,6 +39,10 @@
 	background: url(../../images/site-sprite.png) no-repeat -27px -445px;
 }
 
+.toggle-filters.non-active{
+	background: url(../../images/site-sprite.png) no-repeat 1px -445px;
+}
+
 .history-filters-outer{
 	float: left;
   width: 95%;
