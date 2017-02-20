@@ -56,6 +56,9 @@ img {
   outline: none; }
 
 .bg-lg {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -250,10 +253,14 @@ img {
 
 @media screen and (max-width: 479px) {
   .navbar-default .navbar-toggle {
-    float: none; }
+    float: none;
+    text-align: center;
+    margin: 0 auto 20px;
+    display: block; }
   .navbar-brand {
     float: none;
     display: block;
+    text-align: center;
     margin: 0 auto 20px; }
     .navbar-brand img {
       display: inline-block; } }
