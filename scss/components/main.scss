@@ -6,6 +6,8 @@ html{
 	padding: 0;
 	text-align: center;
 	height: 100%;
+	background-color: #e9ebff;
+	background-image: none;
 	&-content{
 		position: relative;	
 		width: 100%;
@@ -82,13 +84,35 @@ html{
 			}
 		}
 }
+@media screen and (max-width: 1300px ) {
+	.homepage{
+		#homepage-video-bg {
+			width: auto;
+		}
+	}
+}
 @media screen and (max-width: 1169px ) {
 	.homepage{
 		#homepage-video-bg {
-		  width: auto;
+			width: auto;
 		  left: 65%;
 		  top: 65%;
 		}
+	}
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.homepage{
+	#homepage-video-bg {
+		width: auto;
+		left: 93%;
+		top: 50%;
+	} 
+		.door .btn-base{bottom: 10%;}	 
+		.btn-play-link{display: none;}	
+		.btn-play-icon{border: 2px solid #fff;}
 	}
 }
 @media screen and (max-width: 991px ) {
@@ -112,6 +136,7 @@ html{
 		.door .btn-base{bottom: 20%;}	
   }
 }
+
 @media screen and (max-width: 767px ) {
 	.homepage{
 	#homepage-video-bg {
@@ -169,6 +194,8 @@ html{
 			}		
 		}		
 }
+
+
 
 #expohall-invitation{
   animation: expohall-invitation 3s linear infinite;
