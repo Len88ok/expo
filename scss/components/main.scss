@@ -75,7 +75,7 @@ html{
 		.expohall-btn{
 			text-transform: uppercase;
 			font-weight: 400;
-			font-size: 20px;
+			font-size: 14px;
 			color: #23527c;
 			&:hover{
 				text-decoration: none;
@@ -119,7 +119,16 @@ html{
 	  left: -50%;
     transform: translateX(0) translateY(0);
 	} 
+	&-content{
+		&-info{
+			h2{
+				font-size: 5vw;
+				margin-bottom: 140px;
+			}
+		}
+	}
 	.door .btn-base{bottom: 10%;}	 
+	.btn-play-icon{border: 2px solid #fff;}
 }
 }
 @media screen and (max-width: 479px ) {
@@ -148,9 +157,8 @@ html{
 						background: url(../../images/bg_home.jpg) no-repeat #edeeff 20% 0;
 						background-size: cover;			
 				}
-			}
-			.btn-play-link{display: none;}
-			.btn-play-icon{border: 2px solid #fff;}
+			}		
+				.btn-play-link{display: none;}	
 		}		
 }
 

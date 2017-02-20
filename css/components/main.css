@@ -59,7 +59,7 @@ html {
   .homepage .expohall-btn {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     color: #23527c; }
     .homepage .expohall-btn:hover {
       text-decoration: none; }
@@ -92,8 +92,13 @@ html {
     -webkit-transform: translateX(0) translateY(0);
     -ms-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0); }
+  .homepage-content-info h2 {
+    font-size: 5vw;
+    margin-bottom: 140px; }
   .homepage .door .btn-base {
-    bottom: 10%; } }
+    bottom: 10%; }
+  .homepage .btn-play-icon {
+    border: 2px solid #fff; } }
 
 @media screen and (max-width: 479px) {
   #homepage-video-bg {
@@ -115,9 +120,7 @@ html {
     background: url(../../images/bg_home.jpg) no-repeat #edeeff 20% 0;
     background-size: cover; }
   .homepage .btn-play-link {
-    display: none; }
-  .homepage .btn-play-icon {
-    border: 2px solid #fff; } }
+    display: none; } }
 
 #expohall-invitation {
   -webkit-animation: expohall-invitation 3s linear infinite;
