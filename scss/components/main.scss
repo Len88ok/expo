@@ -115,7 +115,7 @@ html{
 @media screen and (max-width: 767px ) {
 	.homepage{
 	#homepage-video-bg {
-		left: 88%;
+		left: 100%;
 		top: 68%;
 	} 
 	&-content{
@@ -131,6 +131,13 @@ html{
 	.door .btn-base{bottom: 10%;}	 
 	.btn-play-link{display: none;}	
 	.btn-play-icon{border: 2px solid #fff;}
+}
+}
+@media screen and (max-width: 600px ) {
+	.homepage{
+	#homepage-video-bg {
+		left: 120%;
+	} 
 }
 }
 @media screen and (max-width: 479px ) {

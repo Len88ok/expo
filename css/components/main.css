@@ -87,7 +87,7 @@ html {
 
 @media screen and (max-width: 767px) {
   .homepage #homepage-video-bg {
-    left: 88%;
+    left: 100%;
     top: 68%; }
   .homepage-content-info h2 {
     font-size: 30px;
@@ -100,6 +100,10 @@ html {
     display: none; }
   .homepage .btn-play-icon {
     border: 2px solid #fff; } }
+
+@media screen and (max-width: 600px) {
+  .homepage #homepage-video-bg {
+    left: 120%; } }
 
 @media screen and (max-width: 479px) {
   #homepage-video-bg {
