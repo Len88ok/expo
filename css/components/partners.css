@@ -68,7 +68,10 @@
 .popover {
   max-width: 330px;
   text-align: center;
-  z-index: 100; }
+  z-index: 100;
+  border: none;
+  border-radius: 0;
+  box-shadow: none; }
   .popover-dialog {
     font-size: 12px;
     width: 320px;

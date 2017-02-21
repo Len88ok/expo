@@ -30,15 +30,6 @@
 	&-btn{
 		margin-bottom: 10px;
 	}
-	&-general{
-
-	}
-	&-exhibition{
-
-	}
-	&-info{
-		
-	}
 	&-img{
 		height: 200px;
 		line-height: 200px;
@@ -105,6 +96,9 @@
 	max-width: 330px; 
 	text-align: center;
 	z-index: 100;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 		&-dialog{
 						font-size: 12px;
 						width: 320px;

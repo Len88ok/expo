@@ -136,6 +136,7 @@ html {
     .homepage-content-info h2 {
       font-size: 6vw;
       text-align: center;
+      padding: 0;
       margin-bottom: 80px; }
   .homepage-video-container {
     width: 100%;
