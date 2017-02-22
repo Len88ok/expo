@@ -30,7 +30,8 @@
   display: block;
   padding: 9px 39px;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .3s linear; }
 
 .button-base.green-light {
   background: transparent;
