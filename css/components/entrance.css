@@ -161,7 +161,10 @@
   padding: 4% 0 1%; }
 
 .page-section h2 {
-  font-size: 60px;
+  font-size: 48px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 70px;
   text-align: center;
   color: #fdfdff;
