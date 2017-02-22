@@ -22,6 +22,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+a:focus,
+a:hover {
+  text-decoration: none; }
+
 .brand {
   text-align: center;
   padding: 2em 0; }

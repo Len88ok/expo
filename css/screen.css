@@ -23,6 +23,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+a:focus,
+a:hover {
+  text-decoration: none; }
+
 .brand {
   text-align: center;
   padding: 2em 0; }
@@ -63,6 +67,14 @@ img {
 .btn:active:focus,
 .btn:focus {
   outline: none; }
+
+.bg-white {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff; }
 
 .bg-lg {
   position: relative;
@@ -144,6 +156,20 @@ img {
 
 .block-collapse {
   padding: 0 !important; }
+
+.block-overlay {
+  position: relative;
+  z-index: 1; }
+  .block-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.35;
+    background-color: #000; }
 
 .block-info {
   position: relative;
@@ -257,6 +283,28 @@ img {
 .button-base.green-light:hover {
   background: #55d17d;
   color: #fff; }
+
+.button-base.gray {
+  border: 1px solid #d4d4d4;
+  color: #262626;
+  background: #d4d4d4; }
+
+.button-base.white {
+  border: 1px solid #fff;
+  color: #fff; }
+
+.button-base.white:hover {
+  background: #fff;
+  color: #262626; }
+
+.btn-base.left-arrow-white {
+  padding-left: 50px;
+  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -326px;
+  color: #fff; }
+
+.btn-base.left-arrow-white:hover {
+  color: #727272;
+  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -605px; }
 
 .navbar {
   background-color: transparent;

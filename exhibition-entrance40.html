@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="css/screen.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/components/entrance.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="bg-white">
+	<header id="header">
+		<ul class="main-menu authorization-menu non-authorized">
+			<li class="">
+				<a href="#registration" class="popup-open-register">
+					Регистрация
+				</a>
+			</li>
+			<li class="authorization">
+				<a href="#login" class="popup-open-login">
+					Вход
+				</a>
+			</li>
+		</ul>
+		<!--Navbar header-->			
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">		
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+						<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>					
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">				
+						<ul class="nav navbar-nav">
+							<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+							<li><a class="text-uppercase" href="#">для посетителей</a></li>
+							<li><a class="text-uppercase" href="#">новости</a></li>
+							<li><a class="text-uppercase" href="#">расписание</a></li>
+							<li><a class="text-uppercase" href="#">о проекте</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">О проекте</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Партнеры</a></li>
+									<li><a href="#">Организаторам<br>выставок</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</header>
+		<main class="entrance">
+			<div class="content">
+				<div class="page-section exhibition-banner block-overlay" style="background-image: url('images/40/banner-background.jpg')">
+					<div class="container">
+						<a class="btn-base left-arrow-white white expohall-btn" title="Экспохолл" href="/exhibition-schedule">
+							Экспохолл
+						</a>
+						<div class="banner-content">
+							<h2 class="exh-title">Харьков Beauty</h2>
+							<div class="dot-line"></div>
+							<h4>Выставка профессиональной косметики</h4>
+							<div class="ticket-outer">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="paper-ticket buy-ticket" id="ticket-request-btn">
+											<a class="button-base gray inactiveLink" title="Купить билет">Купить билет
+											</a>
+											<div class="ticket-info">
+												<div class="ticket-info-inner">
+													<div class="ticket-info-name">Дата проведения</div>
+													<div class="ticket-info-content">01.02 - 05.02</div>
+												</div>
+												<div class="ticket-info-inner">
+													<div class="ticket-info-name">Время работы</div>
+													<div class="ticket-info-content">10:00 - 18:00</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="central-col-outer">
+											<div class="dot-line align-left"></div>
+											<a class="button-base white" id="show-price-popup" href="#exhibition-price">Прайс</a>
+											<div class="dot-line align-right"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="paper-ticket invitation-ticket">
+											<a class="button-base gray inactiveLink">Разместить стенд</a>
+											<div class="ticket-info">
+												<div class="ticket-info-inner">
+													<div class="ticket-info-name">Прием заявок до</div>
+													<div class="ticket-info-content">10.01.2017</div>
+												</div>
+												<div class="ticket-info-inner">
+													<div class="ticket-info-name">Статус</div>
+													<div class="ticket-info-content">Архивная</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="shadow-detail"></div>
+						</div>
+					</div>
+				</div>
+
+						<div class="page-section exhibition-theme">
+							<div class="container">
+								<h3><span class="h3-inner">Тематика выставки</span><span class="dot-line"></span></h3>
+								<div class="page-container-inner">
+									<p style="text-align:justify"><strong>Выставочная компания&nbsp;«ADT»</strong>&nbsp;была основана в 2005 году и на данный момент провела 115 выставочных мероприятий. Ежегодно, в среднем, мы проводим около 15 различных выставок и ярмарок в Харькове.<br>
+									Наши традиционные&nbsp;«Ярмарки моды и красоты»&nbsp;в харьковском Дворце Спорта имеют широкий круг постоянных посетителей, ожидающих наши мероприятия. У нас всегда участвуют отечественные производители, которых мы стремимся всячески поддерживать. Харьковчане очень любят и ждут наши ярмарки.&nbsp;</p>							
+								</div>
+								<div class="video-link-outer">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/fyTYLm7rRmU" frameborder="1" allowfullscreen=""></iframe>
+								</div>
+							</div>
+						</div>
+
+						<div class="page-section exhibition-organizer">
+							<div class="cover-background">
+								<div class="container">
+									<div class="logo-organizer">
+										<div class="company-logo-outer">
+											<div class="company-logo">
+												<div class="company-logo-inner">
+												<img alt="Logo" src="images/40/57445f0979c9f.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="name-organizer">ADT</div>
+									</div>
+									<div class="about-organizer">
+									<h4>Коротко об организаторе</h4>
+									<div class="about-organizer-text-container">
+										<p> </p><p style="text-align:justify">2-4 сентября&nbsp;2016&nbsp;года в самом сердце города, в 5-ти звездочном отеле&nbsp;Premier Palace Hotel Kharkiv&nbsp;состоится самое значимое мероприятие индустрии красоты Харькова и Восточной Украины – выставка-продажа&nbsp;«Харьков Beauty-2016».</p>
+
+										<p style="text-align:justify">Выставка, созданная для людей, заботящихся о своей внешности и здоровье, для людей,&nbsp;стремящихся к эстетике и совершенству. За 3 дня выставки нас традиционно посещает<br>
+											10 000 — 11 000 посетителей, мы прилагаем все свои силы и умения, чтобы количество&nbsp;гостей увеличивалось и дальше.</p>
+
+										<p style="text-align:justify">Наша выставка славится разнообразнейшей программой и новаторскими мероприятиями, которые уже потом распространяются по другим городам Украины. Это и “пул”<br>
+										мероприятий по ногтевой эстетике и косметологии, и специализированные&nbsp;бизнес-тренинги, и зрелищные парикмахерские шоу-программы и многое другое.</p>
+
+										<p style="text-align:justify">Становитесь участником нашей выставки “Харьков-BEAUTY”, и мы с радостью создадим&nbsp;для Вас три прекрасных дня, наполненных красотой, улыбками от посетителей — ваших<br>
+											будущих клиентов! Позвольте нам позаботиться о Вас и о Ваших гостях, чтобы Ваше&nbsp;участие было максимально полезным и приятным!</p> <p></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="page-section participants">
+							<div id="navagation_panel" class="map-navigation-panel exhibitor-panel-close panel-close">
+								<div class="container">
+									<h2>Посмотреть список участников</h2>
+									<div class="loading"></div>
+									<div class="navigation-outer">
+										<div class="navigation-button-container">
+											<div class="navigation-button">
+												<button id="toggle_navigation"></button>
+											</div>
+										</div>
+										<div class="navigation_inner" id="navigation_inner" style="display: none;">
+											<div class="navigation_body">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>   
+							<div class="exhibition-banner block-overlay" style="background-image: url('images/40/banner-background.jpg')">
+								<div class="container">
+									<div class="banner-content">
+										<div class="ticket-outer">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="paper-ticket buy-ticket" id="ticket-request-btn">
+														<a class="button-base gray inactiveLink" title="Купить билет">Купить билет
+														</a>
+														<div class="ticket-info">
+															<div class="ticket-info-inner">
+																<div class="ticket-info-name">Дата проведения</div>
+																<div class="ticket-info-content">01.02 - 05.02</div>
+															</div>
+															<div class="ticket-info-inner">
+																<div class="ticket-info-name">Время работы</div>
+																<div class="ticket-info-content">10:00 - 18:00</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-4">													
+												</div>
+												<div class="col-md-4">
+													<div class="paper-ticket invitation-ticket">
+														<a class="button-base gray inactiveLink">Разместить стенд</a>
+														<div class="ticket-info">
+															<div class="ticket-info-inner">
+																<div class="ticket-info-name">Прием заявок до</div>
+																<div class="ticket-info-content">10.01.2017</div>
+															</div>
+															<div class="ticket-info-inner">
+																<div class="ticket-info-name">Статус</div>
+																<div class="ticket-info-content">Архивная</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="shadow-detail"></div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+							<div class="page-section exhibition-partners">
+								<div class="container">
+									<h3><span class="h3-inner">Партнеры выставки</span><span class="dot-line"></span>
+									</h3>
+									<div class="page-container-inner">
+										<div class="partner-slick-slider">
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/57.jpg">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/58.jpg">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/59.jpg">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/60.jpeg">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/61.jpg">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/62.jpg">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/63.png">
+												</div>
+											</div>
+											<div class="partner-slick-slide">
+												<div class="img-container">
+													<img class="img-responsive" src="images/40/64.png">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+					</div>
+				</main>
+
+				<footer class="footer-b" id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6 copyright">2017 © Expo Universe. ALL Rights Reserved.</div>
+							<div class="col-xs-6">
+								<ul class="footer-menu list-unstyled">
+									<li>
+										<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+											Правила использования
+										</a>
+									</li>
+								</ul>
+								<div class="pull-right">
+									<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+										<img src="images/social_networks/vk.png" alt="vk">
+									</a>
+									<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+										<img src="images/social_networks/fb.png" alt="fb">
+									</a>
+									<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+										<img src="images/social_networks/gp.png" alt="gp">
+									</a>
+									<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+										<img src="images/social_networks/ok.png" alt="ok">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<script src="scripts/slick.min.js"></script>
+			<script>
+				$(document).on('ready', function() {
+					$('.partner-slick-slider').slick({
+			  	  arrows: false,
+			  	  dots: false,
+					  infinite: true,
+					  speed: 300,
+					  slidesToShow: 5,
+					  slidesToScroll: 1,
+					  responsive: [
+					    {
+					      breakpoint: 768,
+					      settings: {
+					        slidesToShow: 3
+					      }
+					    },
+					    {
+					      breakpoint: 480,
+					      settings: {
+					        slidesToShow: 3
+					      }
+					    }
+					  ]
+					});	
+				});
+			</script>
+		</div>
+	</body>
+	</html>

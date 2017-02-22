@@ -42,3 +42,25 @@
 .button-base.green-light:hover {
   background: #55d17d;
   color: #fff; }
+
+.button-base.gray {
+  border: 1px solid #d4d4d4;
+  color: #262626;
+  background: #d4d4d4; }
+
+.button-base.white {
+  border: 1px solid #fff;
+  color: #fff; }
+
+.button-base.white:hover {
+  background: #fff;
+  color: #262626; }
+
+.btn-base.left-arrow-white {
+  padding-left: 50px;
+  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -326px;
+  color: #fff; }
+
+.btn-base.left-arrow-white:hover {
+  color: #727272;
+  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -605px; }

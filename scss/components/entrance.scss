@@ -1,0 +1,188 @@
+.entrance{
+	.img-container {  top: 0; bottom: 0; left: 0; right: 0; height: 110px; text-align:center; /* Align center inline elements */ font: 0/0 a; }
+	.img-container:before { content: ' '; display: inline-block; vertical-align: middle; height: 100%; }
+	.img-container img { vertical-align: middle; display: inline-block; }
+	.slick-slide img { height: auto; max-height: 110px; }
+	.slick-slide { outline: none; }
+	.not-active-banner { pointer-events: none; cursor: default !important; }
+}
+
+.exhibition-entrance .shadow-detail { bottom: -3px; box-shadow: 0 -1px 10px #000; height: 3px; left: 0; position: absolute; right: 0; width: 100%; z-index: 1; }
+.exhibition-banner { 
+	position: relative; 
+	width: 100%; 
+	height: 425px;
+  overflow: hidden;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 100%; } 
+.exhibition-banner.page-section { padding: 0; }
+.exhibition-banner h4 { color: #fff; font-size: 14px; line-height: 1.5; text-align: center; padding-top: 20px;  margin-bottom: 80px;  text-shadow: 1px 1px 10px #000;}
+.exhibition-banner .dot-line { width: 170px; margin: 0 auto; border-top: 3px dotted #fff; }
+.exhibition-banner .ticket-outer .central-col-outer .dot-line { position: absolute; top: 79px; }
+.exhibition-banner .ticket-outer .central-col-outer .dot-line.align-right { right: 254px; }
+.exhibition-banner .ticket-outer .central-col-outer .dot-line.align-left { left: 254px; }
+.exhibition-banner .btn-base.expohall-btn { position: absolute; top: 40px; left: 10%; text-transform: uppercase; }
+/*----------*/
+.page-container-inner { width: 90%; margin: 0 auto; }
+.ticket-outer { position: relative; height: 370px; width: 85%; margin: 0 auto; }
+.ticket-outer .button-base { display: inline-block; }
+.dot-line { height: 3px; border-top: 3px dotted #d4d5da; }
+.ticket-outer .central-col-outer .button-base { width: 176px; }
+.paper-ticket { z-index: 1; width: 100%; height: 270px; text-align: center; background-position: 0 0; background-size: 100%; background-repeat: no-repeat; }
+.ticket-outer .central-col-outer { left: 0; right: 0; text-align: center; margin-top: 62px; }
+.paper-ticket.buy-ticket { left: 0; background-image: url("../../images/40/ticket-bg.png"); }
+.paper-ticket.invitation-ticket { right: 0; background-image: url("../../images/40/invitation.png"); }
+.ticket-info { overflow: hidden; text-align: left; padding: 8% 0 0 8%; }
+.ticket-info-inner { float: left; width: 50%; padding-left: 5%;}
+.ticket-info-inner:first-child { border-right: 1px solid #d4d5da; padding-left: 0;}
+.paper-ticket .ticket-info-name { font-size: 14px; line-height: 1.5; color: #df134d; text-transform: uppercase; }
+.paper-ticket .ticket-info-content { font-size: 18px; line-height: 1.5; }
+.paper-ticket .button-base { width: 70%; margin-top: 54px; padding: 9px 10px; }
+/*----------*/
+.page-section { padding: 80px 0 10px; }
+.page-section h2 { font-size: 60px; line-height: 70px; text-align: center; color: #fdfdff; margin-bottom: 25px; max-height: 143px; overflow: hidden; text-shadow: 1px 1px 10px #000; }
+.page-section h3 { font-size: 36px; line-height: 1.5; text-align: center; position: relative; margin-bottom: 33px; max-height: 52px; overflow: hidden; }
+.page-section h3 .dot-line { position: absolute; right: 0; left: 0; top: 50%; width: 100%; }
+.page-section h3 .h3-inner { background: #fff; padding: 0 30px; position: relative; z-index: 1;}
+.page-section-inner { height: 100%; overflow: hidden; position: relative; z-index: 5; }
+.page-section .about-organizer h4 { font-size: 36px; line-height: 1.5; padding-bottom: 10px; }
+.page-section.exhibition-theme { padding: 90px 0 10px; }                                   
+.page-section.exhibition-theme p { text-align: center; color: #a2a2a2; font-size: 14px; line-height: 21px; padding-top: 10px; }
+.page-section.exhibition-theme p:first-child { padding-top: 0; }
+.page-section.exhibition-theme .video-link-outer { border: 1px solid; width: 470px; height: 266px; margin: 55px auto 0; overflow: hidden; }
+.page-section.participants { position: relative; height: 304px; padding: 0; margin-top: 40px; }
+.page-section.participants .page-section-inner { min-height: 304px; }
+.page-section.participants .exhibition-banner{
+	height: 304px;
+}
+.page-section.participants .ticket-outer{
+	top: 130px;
+}
+.page-section.participants .map-navigation-panel { bottom: 304px; } 
+.page-section.participants .map-navigation-panel.panel-open { height: 490px; } 
+.page-section.participants .map-navigation-panel h2 { margin-bottom: 0; max-height: none; }
+.page-section.participants .map-navigation-panel .navigation_body { margin-top: 0; max-height: 350px; }
+.page-section.participants .map-navigation-panel .filter-result-stand-info { margin-top: 0; margin-bottom: 50px; }
+.page-section.participants .map-navigation-panel .filter-company-info h4 { font-size: 14px; line-height: 22px; color: #6c6c6c; text-transform: uppercase; height: 40px; overflow: hidden; }
+
+.page-section.exhibition-partners { padding-bottom: 20px; }
+.page-section.exhibition-organizer { position: relative; margin-top: 110px; background: url("../../images/40/default-bg-organizer.png") no-repeat; }
+.page-section.exhibition-organizer { padding: 0; }
+.page-section.exhibition-organizer .container { padding-top: 92px; padding-bottom: 50px; }
+.page-section.exhibition-organizer .cover-background { background: url("../../images/40/white-cover.png") repeat-y right top; background-size: 55.5% 100%; }
+.page-section.exhibition-pavilions .industries-list-outer { overflow: hidden; }
+.page-section.exhibition-pavilions .industries-list-outer .button-outer { text-align: center; padding-top: 69px; }
+.page-section.exhibition-pavilions .industry-list li { overflow: hidden; min-height: 60px; }
+.page-section.exhibition-pavilions .industry-list li .industry-title { max-width: none; }
+.page-section.exhibition-pavilions .industry-list li .industry-title:hover { color: #6c6c6c; }    
+.logo-organizer { float: left; width: 480px; min-height: 100px; padding-left: 100px; }
+.logo-organizer .name-organizer { color: #fff; font-size: 14px; line-height: 21px; text-align: center; padding-top: 25px; width: 270px; }
+.logo-organizer .company-logo-outer { width: 270px; height: 270px; overflow: hidden; margin: 0; }
+.logo-organizer .company-logo { margin: 0 auto; width: 100%; }
+.about-organizer-text-container { max-height: 169px; overflow-x: hidden; overflow-y: auto; padding-right: 17px; }
+.about-organizer-text-container p { line-height: 1.5; }
+.about-organizer { float: left; width: 55%; padding-left: 120px; margin-top: -15px; }
+.about-organizer .btn-play { margin-top: 65px; }
+/*--- Map navigation panel ---*/
+.map-navigation-panel { width: 100%; height: 55px; position: absolute; bottom: 25px; background: #fff; z-index: 4; box-shadow: 2px 0 10px -3px #999; }
+.map-navigation-panel .navigation-outer { position: relative; padding-top: 27px;  }
+.map-navigation-panel .navigation-button-container { position: absolute; left: 50%; margin-left: -40px; top: -117px; height: 55px; overflow: hidden; padding-top: 5px; }
+.map-navigation-panel.panel-close .navigation-button-container, .map-navigation-panel.exhibitor-panel-close .navigation-button-container { top: -91px; }
+.map-navigation-panel.panel-close h2, .map-navigation-panel.exhibitor-panel-close h2 { padding-top: 11px; text-shadow: none; margin: 0;}       
+.map-navigation-panel .navigation-button { width: 85px; height: 85px; margin: 0 auto; padding-top: 14px; text-align: center; border-radius: 42px !important; box-shadow: 2px 0 10px -3px #999; background: #fff; }
+.map-navigation-panel .navigation-button .closed button { width: 34px; height: 34px; background: url("../../images/site-sprite.png") no-repeat 7px -623px #fff;  }
+.map-navigation-panel .navigation-button button { background: url("../../images/site-sprite.png") no-repeat -21px -439px #fff;  width: 34px; height: 34px; outline: none; border: none;}
+.map-navigation-panel .navigation-button.closed button { background-position: 7px -624px; }
+body .map-navigation-panel h2 { font-size: 18px; line-height: 36px; color: #026fb3; text-align: center; text-transform: uppercase; padding-top: 27px; }
+/*-----------------------------------------------------------------*/
+
+@media screen and (max-width: 1169px ) {
+	.exhibition-banner .dot-line{
+		display: none;}
+}
+@media screen and (max-width: 991px ) {
+	.exhibition-banner{
+		overflow: visible;
+		height: auto;
+		background-size: cover;}
+	.page-section h2 {
+		font-size: 40px;
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: 0;
+		max-height: auto;
+		overflow: visible;
+		padding-top: 15%;}
+	.exhibition-banner h4{
+		margin-bottom: 0;}
+	.ticket-outer { 
+		height: 500px;
+		width: 50%;}
+	.paper-ticket{
+		height: 200px;}
+	.ticket-outer .central-col-outer .button-base{
+		border: 1px solid #d4d4d4;
+		color: #262626;
+		background: transparent;
+	}
+	.ticket-outer .central-col-outer{
+		margin: 5% 0;
+	}
+	.ticket-outer .central-col-outer .button-base:hover{
+		color: #fff;
+		background: #d4d4d4;
+	}
+	.page-section.exhibition-theme{
+		padding-top: 0;
+	}
+	.page-section.exhibition-theme .video-link-outer{
+		width: 90%;		
+	}
+	.page-section.exhibition-organizer{
+		margin-top: 20px;
+	}
+	.page-section.exhibition-organizer .container{
+		padding-top: 20px;		
+	}
+	.logo-organizer{
+		width: 45%;
+	 padding-left: 10px;
+	}
+	.logo-organizer .company-logo-outer{
+		width: 75%;
+		height: 75%;
+	}
+	.logo-organizer .name-organizer{
+		text-align: left;
+	}
+	.about-organizer{
+		width: 55%;
+    padding-left: 10px;
+	}
+	.page-section .about-organizer h4{
+		font-size: 20px;
+	}
+	.about-organizer-text-container{
+		padding-right: 0;
+	}
+	.page-section.participants .exhibition-banner{
+		height: 420px;
+	}
+	.page-section.exhibition-partners{
+		padding-bottom: 20px;
+    padding-top: 120px;
+	}
+	.page-section.participants .ticket-outer{
+		top: 0;
+	}
+}  
+@media screen and (max-width: 600px ) {
+	.ticket-outer { 
+		width: 65%;}
+}   
+
+@media screen and (max-width: 479px ) {
+	.ticket-outer { 
+		width: 85%;}
+} 
