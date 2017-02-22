@@ -29,7 +29,7 @@
   pointer-events: none;
   cursor: default !important; }
 
-.exhibition-entrance .shadow-detail {
+.banner-content .shadow-detail {
   bottom: -3px;
   box-shadow: 0 -1px 10px #000;
   height: 3px;

@@ -7,7 +7,7 @@
 	.not-active-banner { pointer-events: none; cursor: default !important; }
 }
 
-.exhibition-entrance .shadow-detail { bottom: -3px; box-shadow: 0 -1px 10px #000; height: 3px; left: 0; position: absolute; right: 0; width: 100%; z-index: 1; }
+.banner-content .shadow-detail { bottom: -3px; box-shadow: 0 -1px 10px #000; height: 3px; left: 0; position: absolute; right: 0; width: 100%; z-index: 1; }
 .exhibition-banner { 
 	position: relative; 
 	width: 100%; 
@@ -16,6 +16,7 @@
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: 100%; } 
+
 .exhibition-banner.page-section { padding: 0; }
 .exhibition-banner h4 { color: #fff; font-size: 14px; line-height: 1.5; text-align: center; padding-top: 20px;  margin-bottom: 80px;  text-shadow: 1px 1px 10px #000;}
 .exhibition-banner .dot-line { width: 170px; margin: 0 auto; border-top: 3px dotted #fff; }
