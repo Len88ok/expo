@@ -303,8 +303,8 @@ a:hover {
   color: #fff; }
 
 .btn-base.left-arrow-white:hover {
-  color: #727272;
-  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -605px; }
+  color: #026fb3;
+  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -5px; }
 
 .navbar {
   background-color: transparent;
@@ -504,7 +504,7 @@ a:hover {
   background: #272626;
   color: #fff;
   font-size: 12px;
-  padding: 4px 0;
+  padding: 10px 0;
   display: block;
   margin: 0;
   outline: none;
