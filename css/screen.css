@@ -294,7 +294,8 @@ img {
     float: none;
     text-align: center;
     margin: 10px auto;
-    display: block; }
+    display: block;
+    border-color: #b2b2b2; }
   .navbar-brand {
     float: none;
     display: block;
@@ -309,7 +310,8 @@ img {
     opacity: 0.9; } }
 
 .navbar-nav {
-  padding: 0.5em 0; }
+  padding: 0.5em 0;
+  text-align: center; }
 
 .navbar-default .navbar-nav li > a:hover,
 .navbar-default .navbar-nav li > a:focus {
