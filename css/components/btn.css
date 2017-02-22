@@ -16,3 +16,28 @@
     background-color: transparent;
     border-color: #fff;
     padding: 9px 40px; }
+
+.button-base,
+.button-base:active,
+.button-base:visited,
+.button-base:focus {
+  border-radius: 35px !important;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding: 9px 39px;
+  overflow: hidden;
+  cursor: pointer; }
+
+.button-base.green-light {
+  background: transparent;
+  border: 1px solid #55d17d;
+  color: #55d17d;
+  display: inline-block; }
+
+.button-base.green-light:hover {
+  background: #55d17d;
+  color: #fff; }

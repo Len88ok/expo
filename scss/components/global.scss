@@ -16,6 +16,8 @@ body{
 margin: 0;
 }
 ul,ol{
+	list-style-type: none;
+	margin: 0;
 	padding-left: 0;
 }
 img {
@@ -36,6 +38,14 @@ img {
     padding-top: 4px;
 		}
 	}
+}
+
+.page-title{
+	color: #026fb3;
+	font-size: 24px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 //margin

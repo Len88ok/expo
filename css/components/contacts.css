@@ -1,0 +1,98 @@
+.bg-contacts {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../../images/contacts/bg-contacts-page.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #ebecff;
+  background-size: cover; }
+
+.contacts-list .contacts-list-item {
+  padding-bottom: 30px;
+  overflow: hidden; }
+
+.contacts-list .contact-item-title {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #026fb3;
+  text-transform: uppercase;
+  padding-bottom: 25px; }
+
+.contacts-list .contact-item-container {
+  overflow: hidden;
+  padding-bottom: 12px; }
+
+.contacts-list .contact-item-photo {
+  float: left;
+  width: 140px;
+  height: 140px;
+  overflow: hidden; }
+
+.contacts-list .contact-item-photo img {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+.contacts-list .contact-item-name {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  display: block; }
+
+.contacts-list .contact-item-phones {
+  padding-bottom: 5px; }
+
+.contacts-list .contact-item-info-outer {
+  overflow: hidden;
+  margin-top: -5px; }
+
+.contacts-list .contact-item-info {
+  float: left;
+  width: 68%;
+  padding-left: 30px;
+  line-height: 1.5; }
+
+.contacts-list .contact-item-email {
+  color: #026fb3;
+  text-decoration: underline; }
+
+.contacts-list .contact-item-email:hover {
+  text-decoration: none; }
+
+.contacts-list .button-base,
+.contacts-list .button-base:active,
+.contacts-list .button-base:visited,
+.contacts-list .button-base:focus {
+  padding: 9px 26px; }
+
+.contacts-list .contact-item-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700; }
+
+.contacts-list {
+  position: relative;
+  z-index: 1;
+  padding: 20px 10px; }
+  .contacts-list:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.6;
+    background: #fff;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5); }
+
+.contacts-list .contacts-list-item {
+  text-align: center; }
+
+@media screen and (max-width: 767px) {
+  .contacts-list .contact-item-photo {
+    float: none;
+    margin: 0 auto; }
+  .contacts-list .contact-item-info {
+    float: none;
+    width: 100%; } }
