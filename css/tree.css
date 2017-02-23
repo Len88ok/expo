@@ -1,0 +1,36 @@
+body {
+  background-color: #ccc; }
+
+.jstree .dropdown {
+  z-index: 1;
+  margin-right: 10px; }
+
+.jstree a {
+  color: #000; }
+
+.jstree a:focus,
+.jstree a:hover {
+  color: #55d17d; }
+
+#tree {
+  width: 400px; }
+
+.jstree-proton .jstree-wholerow-clicked {
+  background-image: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+
+.jstree-proton .jstree-clicked {
+  color: #55d17d; }
+
+.jstree-proton .jstree-wholerow-hovered {
+  background: #fff; }
+
+.jstree-proton .jstree-hovered {
+  color: #55d17d; }
+
+.jstree-anchor:hover {
+  color: #55d17d; }
+
+.jstree-proton .jstree-themeicon {
+  background-size: 0; }

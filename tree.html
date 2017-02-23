@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/themes/proton/style.min.css" />
+  <link rel="stylesheet" href="css/tree.css">
+  <script src="dist/libs/jquery.js"></script>
+  <script src="dist/jstree.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="tree"></div>
+  <div class="dropdown pull-right">
+    <a data-toggle="dropdown" href="#"><span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Submenu</a></li>
+    </ul>
+  </div>
+  <script>
+  var menu = $('.dropdown').hide();
+    $('#tree').jstree({
+      'plugins': ["dnd", "state", "wholerow", "types"],
+      'core': {
+          'data': [
+                  "Раздел 1",                    
+                  {"text": "Раздел 2"},
+                  {"text": "Раздел 3",
+                  "children": [{
+                      "text": "Подраздел 3.1", 
+                      "state": {
+                          'opened': true,
+                          'selected': true
+                      }
+                  }, {
+                      "text": "Подраздел 3.2",
+                      "icon": "glyphicon glyphicon-menu-down",
+                          "children": [{
+                              "text": "Товар 1"},
+                              "Товар 1"
+                          ]                                
+                      }
+                  ]
+              }
+          ],
+          'themes': {
+              'name': 'proton',
+              'responsive': true
+          }
+      }
+  });
+ $('#tree').on('hover_node.jstree', function (e, data) {
+      data.instance.get_node(data.node, true).prepend(menu.show());
+  });
+  </script>
+  </body>
+</html>
