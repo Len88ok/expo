@@ -7,7 +7,7 @@
   <title>Expo</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/themes/proton/style.min.css" />
-    <link href="css/screen.css" rel="stylesheet">
+  <link href="css/screen.css" rel="stylesheet">
   <link rel="stylesheet" href="css/tree.css">
   <script src="dist/libs/jquery.js"></script>
   <script src="dist/jstree.min.js"></script>
@@ -17,7 +17,7 @@
 <aside class="tree-bar">
   <div id="tree"></div>
   <div class="dropdown pull-right">
-    <a data-toggle="dropdown" href="#"><span class="caret"></span></a>
+    <a data-toggle="dropdown" href="#"><span class="dropdown-icon"></span></a>
     <ul class="dropdown-menu" role="menu">
       <li><a href="#">Добавить подраздел</a></li>      
       <li><a href="#">Добавить товар</a></li>
@@ -49,7 +49,7 @@
 
   var menu = $('.dropdown').hide();
     $('#tree').jstree({
-      'plugins': ["dnd", "state", "wholerow", "types", "search"],
+      'plugins': ["dnd", "state", "types", "search"],
       'core': {
           'data': [
                   "Раздел 1",                    
