@@ -13,22 +13,48 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+<aside class="tree-bar">
   <div id="tree"></div>
   <div class="dropdown pull-right">
     <a data-toggle="dropdown" href="#"><span class="caret"></span></a>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Submenu</a></li>
+      <li><a href="#">Добавить подраздел</a></li>      
+      <li><a href="#">Добавить товар</a></li>
+      <li><a href="#">Редактировать название</a></li>
+      <li><a href="#">Добавить раздел</a></li>
     </ul>
   </div>
+  <div class="form">
+      <input class="search-input form-control">
+  </div>
+</aside>  
+
+  <!-- <div class="dropdown dropdown-goods pull-right">
+    <a data-toggle="dropdown" href="#"><span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">     
+      <li><a href="#">Редактировать товар</a></li>
+      <li><a href="#">Удалить товар</a></li>
+      <li><a href="#">Создать копию</a></li>
+    </ul>
+  </div> -->
   <script>
+  $(document).ready(function(){   
+
+  $(".search-input").keyup(function() {
+      var searchString = $(this).val();
+      console.log(searchString);
+      $('#jstree').jstree('search', searchString);
+  });
+
   var menu = $('.dropdown').hide();
     $('#tree').jstree({
-      'plugins': ["dnd", "state", "wholerow", "types"],
+      'plugins': ["dnd", "state", "wholerow", "types", "search"],
       'core': {
           'data': [
                   "Раздел 1",                    
                   {"text": "Раздел 2"},
                   {"text": "Раздел 3",
+                  // "icon": "glyphicon glyphicon-menu-down",
                   "children": [{
                       "text": "Подраздел 3.1", 
                       "state": {
@@ -37,7 +63,7 @@
                       }
                   }, {
                       "text": "Подраздел 3.2",
-                      "icon": "glyphicon glyphicon-menu-down",
+                      // "icon": "glyphicon glyphicon-menu-down",
                           "children": [{
                               "text": "Товар 1"},
                               "Товар 1"
@@ -46,14 +72,23 @@
                   ]
               }
           ],
+          "search": {
+
+              "case_insensitive": true,
+              "show_only_matches" : true
+
+
+          },
           'themes': {
               'name': 'proton',
               'responsive': true
           }
       }
   });
- $('#tree').on('hover_node.jstree', function (e, data) {
-      data.instance.get_node(data.node, true).prepend(menu.show());
+   $('#tree').on('hover_node.jstree', function (e, data) {
+        data.instance.get_node(data.node, true).prepend(menu.show());
+    });
+
   });
   </script>
   </body>

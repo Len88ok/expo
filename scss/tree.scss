@@ -1,6 +1,3 @@
-body{
-  background-color: #ccc;
-}
 .jstree {
 	.dropdown { z-index:1; margin-right:10px; }
 	a {
@@ -11,24 +8,53 @@ body{
 			color: #55d17d;
 	}
 }
-#tree { width:400px;}
+.tree-bar { width:400px; background-color: #ccc;}
 
 .jstree-proton .jstree-wholerow-clicked{
 	background-image: none;
 	background-color: #fff;
-	box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-	
+	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.37);
 }
+.jstree-wholerow:hover~.jstree-anchor:after{
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url(../images/tree/icon1.png) !important;
+	background-repeat: no-repeat !important;
+	font-size: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	right: -22px;
+}
+	.jstree-anchor:hover{
+		&:after{
+		content: '';
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		background-image: url(../images/tree/icon1.png) !important;
+		background-repeat: no-repeat !important;
+		font-size: 0;
+		position: absolute;
+		top: 50%;
+		margin-top: -7px;
+		right: -22px;
+	}
+}
+
 .jstree-proton .jstree-clicked{
-	color: #55d17d;
+	color: #55d17d;	
 }
 .jstree-proton .jstree-wholerow-hovered {
   background: #fff;  
 }
 
 .jstree-proton .jstree-hovered{
-	color: #55d17d;
+	color: #55d17d;	
 }
+
 
 .jstree-anchor:hover{
 	color:#55d17d; 
@@ -37,3 +63,19 @@ body{
 .jstree-proton .jstree-themeicon{
 	background-size: 0;
 }
+
+.jstree-proton>.jstree-no-dots .jstree-open>.jstree-ocl{
+	background-position: -2px -68px;
+}
+
+.search-input{
+	border-bottom: 2px solid #55d17d;
+
+}
+
+.form-control:focus{
+	border-color: #55d17d;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(36,233,39,.6);
+}
+    
