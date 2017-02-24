@@ -86,9 +86,10 @@
           }
       }
   });
-   $('#tree').on('hover_node.jstree', function (e, data) {
-        data.instance.get_node(data.node, true).prepend(menu.show());
-    });
+
+  $('#tree').on('hover_node.jstree', function (e, data) {
+      data.instance.get_node(data.node, true).children('.jstree-anchor').prepend(menu.show());
+  });
 
   });
   </script>
