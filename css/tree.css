@@ -62,6 +62,9 @@
 .jstree-proton > .jstree-no-dots .jstree-open > .jstree-ocl {
   background-position: -2px -68px; }
 
+.jstree-proton .jstree-icon {
+  margin-right: -5px; }
+
 .search-input {
   border-bottom: 2px solid #55d17d; }
 
