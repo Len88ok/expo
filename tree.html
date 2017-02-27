@@ -16,7 +16,7 @@
 <body>
 <aside class="tree-bar">
   <div id="tree"></div>
-  <div class="dropdown pull-right">
+  <div class="dropdown dropdown-part pull-right">
     <a data-toggle="dropdown" href="#"><span class="dropdown-icon"></span></a>
     <ul class="dropdown-menu" role="menu">
       <li><a href="#">Добавить подраздел</a></li>      
@@ -30,14 +30,14 @@
   </div>
 </aside>  
 
-  <!-- <div class="dropdown dropdown-goods pull-right">
-    <a data-toggle="dropdown" href="#"><span class="caret"></span></a>
-    <ul class="dropdown-menu" role="menu">     
-      <li><a href="#">Редактировать товар</a></li>
-      <li><a href="#">Удалить товар</a></li>
-      <li><a href="#">Создать копию</a></li>
-    </ul>
-  </div> -->
+<div class="dropdown dropdown-goods pull-right">
+  <a data-toggle="dropdown" href="#"><span class="dropdown-goods-icon"></span></a>
+  <ul class="dropdown-menu" role="menu">     
+    <li><a href="#">Редактировать товар</a></li>
+    <li><a href="#">Удалить товар</a></li>
+    <li><a href="#">Создать копию</a></li>
+  </ul>
+</div>
   <script>
   $(document).ready(function(){   
 
@@ -47,7 +47,8 @@
       $('#jstree').jstree('search', searchString);
   });
 
-  var menu = $('.dropdown').hide();
+  var menu = $('.dropdown-part');
+  var drop = $('.dropdown-goods');
     $('#tree').jstree({
       'plugins': ["dnd", "state", "types", "search"],
       'core': {
@@ -64,21 +65,20 @@
                       }
                   }, {
                       "text": "Подраздел 3.2",
+                      "id" : "good",
                       // "icon": "glyphicon glyphicon-menu-down",
-                          "children": [{
-                              "text": "Товар 1"},
-                              "Товар 1"
+                          "children": [
+                              { "text" : "Товар 1" },
+                              { "text" : "Товар 2" },
+                              { "text" : "Товар 3" }
                           ]                                
                       }
                   ]
               }
           ],
           "search": {
-
               "case_insensitive": true,
               "show_only_matches" : true
-
-
           },
           'themes': {
               'name': 'proton',
@@ -87,10 +87,10 @@
       }
   });
 
-  $('#tree').on('hover_node.jstree', function (e, data) {
-      data.instance.get_node(data.node, true).children('.jstree-anchor').prepend(menu.show());
-  });
-
+    $('#tree').on('hover_node.jstree', function (e, data) {
+        data.instance.get_node(data.node, true).children('.jstree-anchor').prepend(menu.show());
+       // data.instance.get_node(data.node, true).find('#good > ul > li > .jstree-anchor').prepend(drop.show()); 
+    });
   });
   </script>
   </body>

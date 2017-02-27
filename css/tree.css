@@ -64,7 +64,8 @@
   color: #fff;
   background-color: #6c6; }
 
-.dropdown-icon {
+.dropdown-icon,
+.dropdown-goods-icon {
   display: inline-block;
   margin-left: 5px;
   vertical-align: middle;
@@ -72,3 +73,9 @@
   height: 18px;
   background-image: url(../images/tree/icon1.png) !important;
   background-repeat: no-repeat !important; }
+
+.dropdown-part {
+  display: none; }
+
+.dropdown-part {
+  display: none; }

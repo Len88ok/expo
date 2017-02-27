@@ -130,13 +130,13 @@ $(document).ready(function(){
 		var on = 0;
 		function load() {
 			if(on == 0) {
-				$(".cover").show().fadeTo(500,.5);
+				$(".cover").fadeTo(500, 0.5);
 				on = 1;
 			}
 		}
 		function off() {
 			if(on == 1) {
-				$(".cover").fadeOut("normal");
+				$(".cover").fadeOut(500);
 				on = 0;
 			}
 		}
