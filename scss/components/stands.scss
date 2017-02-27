@@ -91,20 +91,14 @@
     &-add{
         position: relative;
         height: 240px;
+        text-align: center;  
         &-link{
             display: inline-block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-left: -45px;
-            width: 90px;
-            height: 90px;
-            background-image: url("../../images/plus.png");
-            background-repeat: no-repeat;
-            background-position: center center;
+            font-size: 280px; 
+            line-height: 1;
+
             &:hover{
-                -webkit-filter: grayscale(1);
-                filter: grayscale(1);
+                color: #bebebe;
             }
         }       
 
