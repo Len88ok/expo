@@ -162,44 +162,6 @@
 }
 
 
-.sprite {
-    background-image: url(../../images/spritesheet.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    margin: 3px;
-    opacity: 1;
-    transition: opacity .3s linear;
-    &:hover{
-        opacity: 0.5;
-    }
-}
-
-.sprite-card-icon1 {
-    width: 30px;
-    height: 30px;
-    background-position: -5px -5px;
-}
-
-.sprite-card-icon2 {
-    width: 30px;
-    height: 30px;
-    background-position: -5px -45px;
-}
-
-.sprite-card-icon3 {
-    width: 30px;
-    height: 30px;
-    background-position: -5px -85px;
-}
-
-.sprite-card-icon4 {
-    width: 25px;
-    height: 30px;
-    background-position: -5px -125px;
-}
-
-
-
 @media (min-width: 768px){
     #ModalStand{
        .modal-dialog{

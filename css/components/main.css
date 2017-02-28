@@ -66,13 +66,12 @@ html {
     .homepage .expohall-btn:hover {
       text-decoration: none; }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1279px) {
   .homepage #homepage-video-bg {
     width: auto; } }
 
 @media screen and (max-width: 1169px) {
   .homepage #homepage-video-bg {
-    width: auto;
     left: 65%;
     top: 65%; } }
 

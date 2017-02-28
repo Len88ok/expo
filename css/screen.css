@@ -54,6 +54,9 @@ a:hover {
 .m-40 {
   margin-bottom: 40px; }
 
+.m-60 {
+  margin-bottom: 60px; }
+
 .m-80 {
   margin-bottom: 80px; }
 
@@ -426,7 +429,7 @@ a:hover {
 .video-section-letter {
   padding-top: 11px;
   text-align: center;
-  margin-left: 53px;
+  margin-left: 5px;
   margin-top: 15px;
   background: #f39c12;
   color: #fff;
@@ -499,6 +502,256 @@ a:hover {
   top: 0px;
   left: 0px;
   background: #000; }
+
+.sprite3 {
+  background-image: url(../images/about/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite3-icon-comfort {
+  width: 66px;
+  height: 66px;
+  background-position: -5px -5px; }
+
+.sprite3-icon-easy-conference {
+  width: 66px;
+  height: 66px;
+  background-position: -81px -5px; }
+
+.sprite3-icon-efficiency-mark {
+  width: 66px;
+  height: 66px;
+  background-position: -5px -81px; }
+
+.sprite3-icon-info {
+  width: 66px;
+  height: 66px;
+  background-position: -81px -81px; }
+
+.sprite3-icon-language {
+  width: 66px;
+  height: 66px;
+  background-position: -157px -5px; }
+
+.sprite3-icon-many {
+  width: 64px;
+  height: 64px;
+  background-position: -157px -81px; }
+
+.sprite3-icon-time {
+  width: 66px;
+  height: 66px;
+  background-position: -157px -155px; }
+
+.sprite3-icon-world {
+  width: 66px;
+  height: 66px;
+  background-position: -233px -5px; }
+
+.sprite2 {
+  background-image: url("../images/map/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite2-atol {
+  width: 67px;
+  height: 42px;
+  background-position: -10px -10px; }
+
+.sprite2-cake {
+  width: 30px;
+  height: 30px;
+  background-position: -97px -10px; }
+
+.sprite2-epam {
+  width: 231px;
+  height: 82px;
+  background-position: -147px -10px; }
+
+.sprite2-gran {
+  width: 67px;
+  height: 39px;
+  background-position: -398px -10px; }
+
+.sprite2-kulinichi {
+  width: 238px;
+  height: 238px;
+  background-position: -10px -112px; }
+
+.sprite2-mic {
+  width: 227px;
+  height: 152px;
+  background-position: -485px -10px; }
+
+.sprite2-mir {
+  width: 70px;
+  height: 18px;
+  background-position: -268px -182px; }
+
+.sprite2-mts {
+  width: 70px;
+  height: 36px;
+  background-position: -358px -182px; }
+
+.sprite2-oktell {
+  width: 68px;
+  height: 20px;
+  background-position: -448px -182px; }
+
+.sprite2-plarium {
+  width: 226px;
+  height: 177px;
+  background-position: -448px -222px; }
+
+.sprite2-slide-logo {
+  width: 51px;
+  height: 38px;
+  background-position: -10px -419px; }
+
+.sprite2-var1 {
+  width: 30px;
+  height: 30px;
+  background-position: -694px -182px; }
+
+.sprite2-var2 {
+  width: 30px;
+  height: 30px;
+  background-position: -268px -232px; }
+
+.sprite2-var3 {
+  width: 30px;
+  height: 30px;
+  background-position: -694px -232px; }
+
+.sprite2-var4 {
+  width: 33px;
+  height: 33px;
+  background-position: -268px -282px; }
+
+.sprite2-var5 {
+  width: 30px;
+  height: 30px;
+  background-position: -321px -282px; }
+
+.sprite2-var6 {
+  width: 30px;
+  height: 30px;
+  background-position: -371px -282px; }
+
+.sprite2-var7 {
+  width: 30px;
+  height: 30px;
+  background-position: -694px -282px; }
+
+.sprite2-var8 {
+  width: 30px;
+  height: 30px;
+  background-position: -321px -332px; }
+
+.sprite2-var9 {
+  width: 30px;
+  height: 30px;
+  background-position: -371px -332px; }
+
+.sprite2-vidnoye {
+  width: 70px;
+  height: 53px;
+  background-position: -81px -419px; }
+
+.sprite2-wog {
+  width: 66px;
+  height: 66px;
+  background-position: -171px -419px; }
+
+.sprite2-yeastar {
+  width: 70px;
+  height: 23px;
+  background-position: -257px -419px; }
+
+.sprite {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 3px;
+  opacity: 1;
+  transition: opacity .3s linear; }
+  .sprite:hover {
+    opacity: 0.5; }
+
+.sprite-card-icon1 {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -5px; }
+
+.sprite-card-icon2 {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -45px; }
+
+.sprite-card-icon3 {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -85px; }
+
+.sprite-card-icon4 {
+  width: 25px;
+  height: 30px;
+  background-position: -5px -125px; }
+
+.sprite4 {
+  background-image: url(../images/application/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block; }
+
+.sprite4-basket {
+  width: 18px;
+  height: 23px;
+  background-position: -10px -10px; }
+
+.sprite4-basket-h {
+  width: 40px;
+  height: 40px;
+  background-position: -10px -53px; }
+
+.sprite4-checked {
+  width: 22px;
+  height: 16px;
+  background-position: -10px -113px; }
+
+.sprite4-checked-b {
+  width: 41px;
+  height: 34px;
+  background-position: -10px -149px; }
+
+.sprite4-checked-t {
+  width: 31px;
+  height: 28px;
+  background-position: -10px -203px; }
+
+.sprite4-close {
+  width: 27px;
+  height: 27px;
+  background-position: -10px -251px; }
+
+.sprite4-danger {
+  width: 37px;
+  height: 37px;
+  background-position: -10px -298px; }
+
+.sprite4-mini-check {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -355px; }
+
+.sprite4-pencil {
+  width: 22px;
+  height: 26px;
+  background-position: -10px -385px; }
+
+.sprite4-pencil-h {
+  width: 40px;
+  height: 40px;
+  background-position: -10px -431px; }
 
 #footer {
   background: #272626;

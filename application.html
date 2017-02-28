@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expo</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/screen.css" rel="stylesheet">
+	<link href="css/components/application.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="application">
+	
+		<div class="row m-60">
+		<div class="container">	
+			<div class="col-md-2">
+				<a class="btn-base back-btn" title="Назад" href="#">Назад</a>
+			</div>
+			<div class="col-md-10">
+				<div class="application-wrap-line">
+					<div class="application-heading">
+						заявка на участие в выставке
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row m-80">
+	<div class="container">	
+		<div class="col-md-8 col-md-offset-2">
+			<div class="application-wrap-line">
+				<div class="application-title">Выбор павильона</div>
+				<div class="application-text">Выберите один или несколько павильонов выставки.
+				Стенд вашей копании будет размещен в выбранных павильонах.</div>
+			</div>			
+			<div class="application-caption">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="application-caption-text pull-left">Павильон еще не выбран</div> 
+					</div>
+					<div class="col-md-6">
+						<a class="button-base green-light application-btn pull-right" title="Добавить" href="#">Добавить павильон</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>	
+	</div>
+
+	<div class="application-tarifs">
+		<div class="application-title">Выберите тарифный план</div>
+			<div class="application-tarifs-item application-tarifs-item-choosed">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="application-tarifs-name">
+							Стандартный
+							<span class="glyphicon glyphicon-question-sign"></span>		
+						</div>
+					</div>
+					<div class="col-md-6">
+					<div class="application-wrap-line">
+						<div class="application-tarifs-info">
+							Размещение в блоке «Стандартные стенды» в виде стандартного
+							логотипа  и возможностью  перейти на    страницу   с   описанием 
+							вашей   компании и  предлагаемых вами  вакансиях (в  стоимость
+							входит рекламный пакет «Minimal»)
+						</div>
+					</div>
+				</div>
+					<div class="col-md-2">
+						<div class="application-tarifs-price">1000 грн</div>
+					</div>
+					<div class="col-md-2">
+						<a class="button-base green-light application-btn application-btn-choosed" title="Выбрано" href="#">Выбрано</a>
+					</div>
+				</div>
+			</div>
+			<div class="application-tarifs-item">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="application-tarifs-name">
+							Премиум
+							<span class="glyphicon glyphicon-question-sign"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+					<div class="application-wrap-line">
+						<div class="application-tarifs-info">
+							Размещение в блоке  «Преимум стенды» в виде крупного баннера
+							логотипа и непосредственного описания   вашей компании . 
+							Преимущественная позиция размещения по сравнению со
+							стандартными стендами увеличивает вероятность перехода на 
+							ваш стенд (в стоимость входит  рекламный пакет «Minimal»)
+						</div>
+					</div>
+					</div>
+					<div class="col-md-2">
+						<div class="application-tarifs-price">
+							1000 грн
+						</div>
+					</div>
+					<div class="col-md-2">
+						<a class="button-base green-light application-btn" title="Назад" href="#">Выбрать тариф</a>
+					</div>
+				</div>
+			</div>
+			<div class="application-tarifs-item">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="application-tarifs-name">
+							Топ - 10
+							<span class="glyphicon glyphicon-question-sign"></span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="application-tarifs-info">
+							Размещение в ТОПе блока «Премиум стенды» - всегда на  первых
+							позициях.  Самое  преимущественное  размещение  (в  стоимость
+							входит рекламный пакет «Minimal») Количество мест ограничено! 
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="application-tarifs-price">
+							1500 грн
+						</div>
+					</div>
+					<div class="col-md-2">
+						<a class="button-base green-light application-btn" title="Назад" href="#">Выбрать тариф</a>
+					</div>
+				</div>
+			</div>
+	</div>
+
+		<div class="application-managers">
+			<div class="application-title">Выбор менеджера на выставке</div>
+			<div class="application-text text-center">Выберите одного или нескольких менеджеров.</div>
+			<div class="application-managers-item">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="application-managers-photo">
+							<img src="images/application/photo-1-manager.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="application-managers-info">
+							<div class="application-managers-name">Алексей Волков</div>
+							<div class="application-managers-phone">+38 067 123 45 67</div>
+							<div class="application-managers-email">alexander.alexandrov@gmail.com</div>
+							<div class="application-managers-skype">Skype: confectum_alex</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="application-managers-controls">
+							<div class="application-managers-edit">
+								<i class="sprite4 sprite4-pencil"></i>
+							</div>
+							<div class="application-managers-delete">
+								<i class="sprite4 sprite4-basket"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<a class="button-base green-light application-btn application-btn-choosed" title="Назад" href="#">Выбрать менеджера</a>
+					</div>
+				</div>
+			</div>
+			<div class="application-managers-item">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="application-managers-photo">
+							<img src="images/application/photo-2-manager.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="application-managers-info">
+							<div class="application-managers-name">Алексей Волков</div>
+							<div class="application-managers-phone">+38 067 123 45 67</div>
+							<div class="application-managers-email">alexander.alexandrov@gmail.com</div>
+							<div class="application-managers-skype">Skype: confectum_alex</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="application-managers-controls">
+							<div class="application-managers-edit">
+								<i class="sprite4 sprite4-pencil"></i>
+							</div>
+							<div class="application-managers-delete">
+								<i class="sprite4 sprite4-basket"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<a class="button-base green-light application-btn application-btn-choosed" title="Назад" href="#">Выбрать менеджера</a>
+					</div>
+				</div>
+			</div>
+			<div class="application-managers-item">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="application-managers-photo">
+							<img src="images/application/photo-3-manager.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="application-managers-info">
+							<div class="application-managers-name">Алексей Волков</div>
+							<div class="application-managers-phone">+38 067 123 45 67</div>
+							<div class="application-managers-email">alexander.alexandrov@gmail.com</div>
+							<div class="application-managers-skype">Skype: confectum_alex</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="application-managers-controls">
+							<div class="application-managers-edit">
+								<i class="sprite4 sprite4-pencil"></i>
+							</div>
+							<div class="application-managers-delete">
+								<i class="sprite4 sprite4-basket"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<a class="button-base green-light application-btn application-btn-choosed" title="Назад" href="#">Выбрать менеджера</a>
+					</div>
+				</div>
+			</div>
+			<div class="application-managers-item">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="application-managers-photo">
+							<img src="images/application/photo-4-manager.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="application-managers-info">
+							<div class="application-managers-name">Алексей Волков</div>
+							<div class="application-managers-phone">+38 067 123 45 67</div>
+							<div class="application-managers-email">alexander.alexandrov@gmail.com</div>
+							<div class="application-managers-skype">Skype: confectum_alex</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="application-managers-controls">
+							<div class="application-managers-edit">
+								<i class="sprite4 sprite4-pencil"></i>
+							</div>
+							<div class="application-managers-delete">
+								<i class="sprite4 sprite4-basket"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<a class="button-base green-light application-btn application-btn-choosed" title="Назад" href="#">Выбрать менеджера</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="application-advertisement">
+				<div class="application-title">Услуги рекламы</div>
+				<div class="application-text text-center">Вы можете дополнить ваш стенд рекламными услугами.<br/>
+				Пакет “Minimal” входит в стоимость участия</div>
+			<div class="table-responsive">
+				<table class="table table-striped">
+				  <thead>
+			      <tr>
+			        <th>Мы предлагаем</th>
+			        <th class="application-minimal">Пакет “Minimal”<br/> Включен в стоимость участия</th>
+			        <th class="application-medium">Пакет “Medium”<br/> 600 грн</th>
+			        <th class="application-prime">Пакет “prime”<br/> 1000 грн</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+	          <tr>
+	            <td class="application-services">Проведение рекламной кампании для привлечения
+									целевой аудитории на выставку.</td>
+	            <td class="application-minimal"><i class="sprite4 sprite4-checked-b"></i></td>
+	            <td class="application-medium"><i class="sprite4 sprite4-checked-t"></i></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Реклама вашей компании в наших профильных
+									группах в соц. сетях: Вконтакте, Facebook, Instagram.</td>
+	            <td class="application-minimal"><i class="sprite4 sprite4-checked-b"></i></td>
+	            <td class="application-medium"><i class="sprite4 sprite4-checked-t"></i></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Размещение в рекламном слайдере на странице
+							входа на выставку.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"><i class="sprite4 sprite4-checked-t"></i></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Участие Вашей компании в анонсе мероприятия
+							на медиа-порталах Харькова.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"><i class="sprite4 sprite4-checked-t"></i></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Размещение вашей компании в печатных
+							пригласительных на выставку.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"><i class="sprite4 sprite4-checked-t"></i></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Размещение логотипа вашей компании
+							на печатных рекламных афишах.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"><i class="sprite4 sprite4-checked-t"></i></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Размещение логотипа вашей компании в рекламных
+							постах сообществ Харькова в соц. сетях: VK, FB.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Размещение в рекламном слайдере на главной
+							странице выставки.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services">Участие логотипа Вашей компании в рекламном
+							видео-ролике выставки.</td>
+	            <td class="application-minimal"></td>
+	            <td class="application-medium"></td>
+	            <td class="application-prime"><i class="sprite4 sprite4-checked-t"></i></td>
+	          </tr>
+	          <tr>
+	            <td class="application-services text-center">Выбрать пакет</td>
+	            <td class="application-minimal"><a class="button-base green-light application-btn application-btn-choosed" title="Выбрано" href="#">Выбрано</a></td>
+	            <td class="application-medium"><a class="button-base green-light application-btn" title="Выбрать" href="#">Выбрать тариф</a></td>
+	            <td class="application-prime"><a class="button-base green-light application-btn" title="Выбрать" href="#">Выбрать тариф</a></td>
+	          </tr>
+	        </tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="application-summary">			
+						<div class="application-title green">Выбранно</div>
+						<div class="application-wrap-line">
+							<div class="row">
+								<div class="col-md-7"><div class="application-summary-heading">Тарифный план “Стандартный”</div></div>
+								<div class="col-md-5 text-right"><div class="application-summary-price">1300 грн</div></div>
+							</div>				
+						</div>
+						<div class="application-wrap-line">
+							<div class="row">
+								<div class="col-md-7"><div class="application-summary-heading">Рекламный пакет “Minimal”.</div></div>
+								<div class="col-md-5 text-right"><div class="application-summary-price"><span>Включен в стоимость участия</span></div></div>
+							</div>				
+						</div>
+						<div class="row">
+							<div class="col-md-7"><div class="application-summary-heading"><strong>Итого:</strong></div></div>
+							<div class="col-md-5 text-right"><div class="application-summary-price"><strong>1300 грн</strong></div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="application-agreement">
+						<input type="checkbox" id="agree">
+						<label for="#agree">Я ознакомлен и согласен с условиями  <a href="#">Публичного договора оферты</a></label>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+		<div class="application-submit text-center">
+			<a class="button-base green-light application-btn application-submit-btn" title="Выбрано" href="#">Отправить заявку</a>
+		</div>
+
+</section>
+
+
+
+
+
+
+<!-- 		
+<i class="sprite2 sprite2-var1"></i> -->
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

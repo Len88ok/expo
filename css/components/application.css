@@ -1,0 +1,110 @@
+.back-btn {
+  color: #1c7ebb;
+  font-size: 1.4rem;
+  padding-left: 3em;
+  text-transform: uppercase;
+  background: url(../../images/arrow-sprite.png) no-repeat scroll 0 -5px; }
+
+.application {
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  color: #646464;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75), 0 0 24px rgba(38, 52, 142, 0.39); }
+  .application-heading {
+    color: #026fb3;
+    font-size: 2.4rem;
+    line-height: 2.5em;
+    text-transform: uppercase; }
+  .application-wrap-line {
+    border-bottom: 1px solid #55d17d;
+    margin-bottom: 1em; }
+  .application-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 0.5em; }
+    .application-title.green {
+      color: #55d17d; }
+  .application-text {
+    color: #6c6c6c;
+    font-size: 1.4rem;
+    line-height: 1.125em;
+    margin-bottom: 1em; }
+  .application-caption-text {
+    font-size: 1.2rem; }
+  .application-btn {
+    text-transform: capitalize;
+    width: 171px;
+    padding: 9px;
+    color: #646464 !important; }
+    .application-btn:active, .application-btn:hover, .application-btn:focus {
+      text-transform: capitalize;
+      padding: 9px; }
+  .application-tarifs {
+    width: 90%;
+    margin: 0 auto 5em;
+    background-color: #eefdff;
+    border: 1px solid #29ddf6;
+    padding: 1.5em; }
+    .application-tarifs .application-btn {
+      margin-left: -1.75em; }
+    .application-tarifs-item {
+      margin-bottom: 2em; }
+    .application-tarifs-info {
+      padding-bottom: 1.5em; }
+    .application-tarifs-price {
+      color: #28b957;
+      font-size: 2rem; }
+    .application-tarifs-name {
+      color: #026fb3;
+      font-size: 16px;
+      text-transform: uppercase; }
+      .application-tarifs-name span {
+        color: #c2cbcd; }
+  .application-managers {
+    width: 80%;
+    margin: 0 auto 5em;
+    border-bottom: 1px solid cyan; }
+    .application-managers .application-text {
+      margin-bottom: 3em; }
+    .application-managers-item {
+      margin-bottom: 2em;
+      color: #96a3af; }
+    .application-managers-name {
+      color: #646464;
+      text-transform: uppercase; }
+    .application-managers-edit {
+      margin-bottom: .8em; }
+  .application-advertisement {
+    width: 90%;
+    margin: 0 auto; }
+  .application .table th {
+    text-align: center; }
+  .application-minimal {
+    text-align: center; }
+  .application-medium {
+    text-align: center; }
+  .application-prime {
+    text-align: center; }
+  .application-services.text-center {
+    font-size: 2.4rem; }
+  .application-summary {
+    border: 1px dashed cyan;
+    padding: 1em 2.5em;
+    font-size: 1.6rem; }
+    .application-summary .application-wrap-line {
+      margin-bottom: 2em; }
+    .application-summary-heading strong {
+      font-size: 2.4rem;
+      color: #55d17d; }
+    .application-summary-price {
+      color: #55d17d; }
+      .application-summary-price span {
+        font-size: 1.2rem; }
+      .application-summary-price strong {
+        font-size: 2.4rem; }
+  .application-submit .application-btn {
+    font-size: 24px;
+    width: 330px;
+    padding: 20px; }
