@@ -68,6 +68,21 @@
 			}			
 		}
 	}
+	&-delete{
+		.sprite4-basket-h{
+			display: none;
+		}
+		&:hover{
+			.sprite4-basket-h{
+				display: inline-block;
+				margin-top: -10px;
+		    margin-left: -10px;
+			}
+			.sprite4-basket{
+				display: none;
+			}
+		}
+	}
 	&-pavilion{
 		&-icon{
 			i{
@@ -76,23 +91,7 @@
 		}
 		&-name{
 			color: #55d17d;
-		}
-		&-delete{
-			.sprite4-basket-h{
-				display: none;
-			}
-			&:hover{
-				.sprite4-basket-h{
-					display: inline-block;
-					margin-top: -10px;
-			    margin-left: -10px;
-				}
-				.sprite4-basket{
-					display: none;
-				}
-			}
-
-		}
+		}		
 	}
 	&-tarifs{
 		width: 90%;
