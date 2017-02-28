@@ -52,6 +52,46 @@
 		&:focus{
 			text-transform: capitalize;
 			padding: 9px;
+			color: #fff !important;
+		}
+		&-choosed{
+			background-color: #28b957 !important;
+			color: #fff !important;
+			&:before{
+				content: '';
+				display: inline-block;
+				width: 22px;
+				height: 16px;
+				background-image: url(../../images/application/spritesheet.png) !important;
+				background-repeat: no-repeat !important;
+				background-position: -10px -113px !important;
+			}			
+		}
+	}
+	&-pavilion{
+		&-icon{
+			i{
+				display: inline-block;
+			}
+		}
+		&-name{
+			color: #55d17d;
+		}
+		&-delete{
+			.sprite4-basket-h{
+				display: none;
+			}
+			&:hover{
+				.sprite4-basket-h{
+					display: inline-block;
+					margin-top: -10px;
+			    margin-left: -10px;
+				}
+				.sprite4-basket{
+					display: none;
+				}
+			}
+
 		}
 	}
 	&-tarifs{
@@ -65,8 +105,13 @@
 		}
 		&-item{
 			margin-bottom: 2em;		
-			&-choosed{
-
+			&-choosed{				
+				.application-tarifs-name{
+					color: #28b957;
+				}
+				.application-tarifs-info{
+					color: #28b957;
+				}
 			}	
 		}
 		&-info{

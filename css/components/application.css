@@ -40,7 +40,31 @@
     color: #646464 !important; }
     .application-btn:active, .application-btn:hover, .application-btn:focus {
       text-transform: capitalize;
-      padding: 9px; }
+      padding: 9px;
+      color: #fff !important; }
+    .application-btn-choosed {
+      background-color: #28b957 !important;
+      color: #fff !important; }
+      .application-btn-choosed:before {
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 16px;
+        background-image: url(../../images/application/spritesheet.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: -10px -113px !important; }
+  .application-pavilion-icon i {
+    display: inline-block; }
+  .application-pavilion-name {
+    color: #55d17d; }
+  .application-pavilion-delete .sprite4-basket-h {
+    display: none; }
+  .application-pavilion-delete:hover .sprite4-basket-h {
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: -10px; }
+  .application-pavilion-delete:hover .sprite4-basket {
+    display: none; }
   .application-tarifs {
     width: 90%;
     margin: 0 auto 5em;
@@ -51,6 +75,10 @@
       margin-left: -1.75em; }
     .application-tarifs-item {
       margin-bottom: 2em; }
+      .application-tarifs-item-choosed .application-tarifs-name {
+        color: #28b957; }
+      .application-tarifs-item-choosed .application-tarifs-info {
+        color: #28b957; }
     .application-tarifs-info {
       padding-bottom: 1.5em; }
     .application-tarifs-price {
