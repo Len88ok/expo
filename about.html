@@ -336,11 +336,47 @@
 			</div>
 		</footer>
 
+		<div id="scroller"></div>		
+		<style>
+			#scroller{
+			    position: fixed;    
+			    /** позиция кнопки scroll to top **/
+			    bottom: 0;
+			    right: 0;
+			    z-index: 100;   
+			    /** картинка кнопки наверх**/
+			    background: transparent url(images/upwards-arrow.png) no-repeat left top;  
+			    width: 32px;
+			    height: 32px;
+			    cursor: pointer;
+			    /** скрываем кнопку в начале **/
+			    display:none;
+			}
+			</style>
+			
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){   
+			    $(window).scroll(function () {
+			        if ($(this).scrollTop() > 0) {
+			            $('#scroller').fadeIn();
+			        } else {
+			            $('#scroller').fadeOut();
+			        }
+			    });
+			    $('#scroller').click(function () {
+			        $('body,html').animate({
+			            scrollTop: 0
+			        }, 400);
+			        return false;
+			    });
+			});
+			</script>
+
 
 	</body>
 	</html>
