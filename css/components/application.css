@@ -220,6 +220,47 @@
     font-size: 24px;
     width: 30%;
     padding: 20px; }
+  .application-modal-dialog {
+    width: 50%;
+    margin: 3em auto;
+    padding: 2em 4em;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75), 0 0 24px rgba(38, 52, 142, 0.39); }
+  .application-modal-content {
+    border: 1px solid #00deff; }
+  .application-modal-wrap {
+    padding: 2em 5em 0; }
+  .application-modal-title {
+    color: #55d17d;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.813em; }
+  .application-modal-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-bottom: .5em; }
+  .application-modal-email {
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: .25em; }
+    .application-modal-email span {
+      font-weight: 800; }
+  .application-modal-info {
+    margin-bottom: 3em; }
+  .application-modal-footer {
+    color: #668ff7; }
+    .application-modal-footer span {
+      border-bottom: 1px solid #55d17d;
+      display: inline-block;
+      padding: 5px 20px; }
+  .application-modal-logo {
+    text-align: right;
+    margin-bottom: 1em;
+    margin-right: 1em; }
+    .application-modal-logo img {
+      display: inline-block; }
 
 .table-bordered > tbody > tr > td,
 .table-bordered > tbody > tr > th,
@@ -249,5 +290,12 @@
     padding: 0; }
   .application-managers {
     text-align: center; }
+  .application-modal-dialog {
+    width: 90%;
+    padding: 1em 2em; }
+  .application-modal-wrap {
+    padding: 1em 2.5em 0; }
+  .application-modal-title {
+    line-height: 1.5em; }
   .application-submit .application-btn {
     width: 50%; } }
