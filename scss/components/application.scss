@@ -286,13 +286,11 @@
 	&-submit{
 		.application-btn{
 			font-size: 24px;
-			width: 330px;
+			width: 30%;
 			padding: 20px;
 		}
 	}
-
 }
-
 
 .table-bordered>tbody>tr>td, 
 .table-bordered>tbody>tr>th, 
@@ -305,5 +303,26 @@
 }
 
 .table-striped>tbody>tr:nth-of-type(odd){
-		background-color: #ebebeb;
-	}
+	background-color: #ebebeb;
+}
+
+@media screen and (max-width: 767px ) {
+  .application-tarifs .application-btn{
+  	margin-left: 0;
+  }
+  .application{
+  	.application-managers-info,
+  	.application-managers-controls,
+  	.application-managers-btn{
+  		    height: auto;
+  		    padding: 0;
+  	}
+  	&-managers{
+	    text-align: center;
+  	}
+  }	
+  .application-submit .application-btn{
+  	width: 50%;
+  }
+}
+
