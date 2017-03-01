@@ -216,9 +216,11 @@
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #ebebeb; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .application-tarifs .application-btn {
-    margin-left: 0; }
+    margin-left: 0; } }
+
+@media screen and (max-width: 767px) {
   .application .application-managers-info,
   .application .application-managers-controls,
   .application .application-managers-btn {
