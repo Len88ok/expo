@@ -13,6 +13,23 @@
 	color: #646464;	
 	border-radius: 2px;
 	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75), 0 0 24px rgba(38, 52, 142, 0.39);
+	.alert{
+		position: absolute;
+		right: -32%;
+		top: 0;
+		border: 2px dashed yellow;
+		background-color: transparent;
+		span{
+			vertical-align: top;
+	    display: inline-block;
+	    line-height: 3;
+      color: red;
+      padding-left: 1em;
+		}
+	}
+	&-with-alert{
+		position: relative;
+	}
 	&-heading{
 		color: #026fb3;
 		font-size: 2.4rem;
@@ -254,6 +271,9 @@
 	}
 	&-agreement{
 		margin-bottom: 5em;
+		.alert{
+		right: auto;
+    top: 25px;}
 		&-checkbox {
 		  cursor: pointer;
 		  input[type="checkbox"] {
@@ -305,10 +325,16 @@
 .table-striped>tbody>tr:nth-of-type(odd){
 	background-color: #ebebeb;
 }
-@media screen and (max-width: 991px ) {
- .application-tarifs .application-btn{
- 	margin-left: 0;
- }
+
+@media screen and (max-width: 1179px ) {
+ .application{
+	 .alert{position: static;}
+	}
+}
+	@media screen and (max-width: 991px ) {
+	 .application-tarifs .application-btn{
+	 	margin-left: 0;
+	 }
 }
 @media screen and (max-width: 767px ) {
   .application{
@@ -321,6 +347,7 @@
   	&-managers{
 	    text-align: center;
   	}
+
   }	
   .application-submit .application-btn{
   	width: 50%;

@@ -38,11 +38,17 @@
 	<div class="row m-80">
 	<div class="container">	
 		<div class="col-sm-8 col-sm-offset-2">
+		<div class="application-with-alert">
 			<div class="application-wrap-line">
 				<div class="application-title">Выбор павильона</div>
 				<div class="application-text">Выберите один или несколько павильонов выставки.
 				Стенд вашей копании будет размещен в выбранных павильонах.</div>
 			</div>
+			<div class="alert alert-danger" role="alert">
+			<i class="sprite4 sprite4-danger"></i>
+			  <span>Выберите павильоны выставки!</span>
+			</div>
+		</div>			
 			<div class="application-pavilion-chosed">
 				<div class="application-wrap-line">
 					<div class="row">
@@ -68,7 +74,7 @@
 						<a class="button-base green-light application-btn pull-right" title="Добавить" href="#">Добавить павильон</a>
 					</div>
 				</div>		
-			</div>
+			</div>			
 		</div>
 	</div>	
 	</div>
@@ -158,8 +164,19 @@
 	</div>
 
 		<div class="application-managers">
-			<div class="application-title">Выбор менеджера на выставке</div>
-			<div class="application-text text-center">Выберите одного или нескольких менеджеров.</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="application-with-alert">
+					<div class="application-title">Выбор менеджера на выставке</div>
+					<div class="application-text text-center">Выберите одного или нескольких менеджеров.</div>
+					<div class="alert alert-danger" role="alert">
+					<i class="sprite4 sprite4-danger"></i>
+					<span>Выберите менеджера выставки!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+			
 			<div class="application-managers-item">
 				<div class="row">
 					<div class="col-sm-3">
@@ -400,12 +417,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
+				<div class="application-with-alert">
 					<div class="application-agreement">
 						<label class='application-agreement-checkbox'>
 				     <input type='checkbox' autocomplete="off" id="agree" checked>
 				     <span>Я ознакомлен и согласен с условиями  <a href="#">Публичного договора оферты</a></span>
-				    </label>						
-					</div>
+				    </label>
+				    <div class="alert alert-danger" role="alert">
+				    <i class="sprite4 sprite4-danger"></i>
+				    <span> Вы не согласились с Публичным договором оферты!</span>
+				    </div>						
+					</div>	
+				</div>				
 				</div>
 			</div>			
 		</div>
