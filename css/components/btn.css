@@ -64,3 +64,14 @@
 .btn-base.left-arrow-white:hover {
   color: #026fb3;
   background: url(../images/arrow-sprite.png) no-repeat scroll 0 -5px; }
+
+.btn-base.left-arrow {
+  padding-left: 50px;
+  background: url(../images/arrow-sprite.png) no-repeat 0px -3px; }
+
+.btn-base:hover {
+  color: #55d17d; }
+
+.btn-base.left-arrow:hover {
+  background: url(../images/arrow-sprite.png) no-repeat 0px -62px;
+  cursor: pointer; }

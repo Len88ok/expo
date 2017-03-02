@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="css/screen.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/components/entrance.css">
+	<link rel="stylesheet" href="css/components/price-popup.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -101,10 +102,10 @@
 									<div class="col-md-4">
 										<div class="central-col-outer">
 											<div class="dot-line align-left"></div>
-											<a class="button-base white" id="show-price-popup" href="#exhibition-price">Прайс</a>
+											<a href="modal-price" class="button-base white" role="button" data-toggle="modal" data-target="#modal-price">Прайс</a>
 											<div class="dot-line align-right"></div>
 										</div>
-									</div>
+									</div>									
 									<div class="col-md-4">
 										<div class="paper-ticket invitation-ticket">
 											<a class="button-base gray inactiveLink">Разместить стенд</a>
@@ -126,6 +127,124 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Modal Price-->
+				<div id="modal-price" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn-base left-arrow" data-dismiss="modal" aria-hidden="true">Назад</button>	
+							</div>
+							<div class="modal-body">
+							<div class="page-title">Прайс</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="price-list-outer">
+	                    <div class="page-sub-title">Для Экспонента</div>
+	                    <ul class="price-list">
+	                        <li>
+	                            <span class="dscr">Стандартный стенд</span>
+
+	                            <div class="cost-outer">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">1000</span>
+	                            </div>
+	                        </li>
+	                        <li style="position: relative;">
+	                            <span class="in-developing-text zero" style="left: 66px;">В разработке</span>                        
+	                            <span class="dscr">Премиум стенд</span>
+
+	                            <div class="cost-outer" style="opacity: 0;">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">2000</span>
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <span class="dscr">Размещение на странице общей карты выставки</span>
+
+	                            <div class="cost-outer">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">100</span>
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <span class="dscr">Размещение на первых страницах карты павильона выставки</span>
+
+	                            <div class="cost-outer">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">100</span>
+	                            </div>
+	                        </li>
+	                        <li style="position: relative;">
+	                            <span class="in-developing-text first" style="left: 198px;">В разработке</span>                        
+	                            <span class="dscr">Помощь менеджера при создании стенда</span>
+
+	                            <div class="cost-outer" style="opacity: 0;">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">100</span>
+	                            </div>
+	                        </li>
+	                        <li style="position: relative;">
+	                            <span class="dscr">Размещение рекламного слайдера экспонента на выставке</span>
+
+	                            <div class="cost-outer" style="opacity: 0;">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">100</span>
+	                            </div>
+	                        </li>
+	                        <li style="position: relative;">
+	                            <span class="in-developing-text second" style="left: 72px;">В разработке</span>                        
+	                            <span class="dscr">Скачать каталог</span>
+
+	                            <div class="cost-outer" style="opacity: 0;">
+	                                <span class="cost-article">от</span>
+	                                <span class="currency uah"></span>
+	                                <span class="cost">25</span>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+									</div>
+									<div class="col-md-6">
+										<div class="price-list-outer">
+	                    <div class="page-sub-title">Для Посетителя</div>
+	                    <ul class="price-list">
+	                        <li>
+	                            <span class="dscr">Билет</span>
+
+	                            <div class="cost-outer">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">0</span>
+	                            </div>
+	                        </li>
+	                        <li style="position: relative;">
+	                            <span class="in-developing-text third" style="left: 153px;">В разработке</span>
+	                            <span class="dscr">Скачать каталог участников</span>
+
+	                            <div class="cost-outer" style="opacity: 0;">
+	                                <span class="currency uah"></span>
+	                                <span class="cost">5</span>
+	                            </div>
+	                        </li>
+	                    </ul>
+	                </div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">									
+								<div class="stamp-outer">
+	                <a href="/" title="Expo Universe" class="site-logo">
+	                    <div class="site-logo-img">
+	                        <img alt="Expo Universe" src="images/logo.png">
+	                    </div>
+	                </a>
+
+	                <div class="stamp"></div>
+	            </div>
+							</div>
+						</div>
+					</div>
+				</div><!-- end Modal-->
 
 						<div class="page-section exhibition-theme">
 							<div class="container">

@@ -95,7 +95,8 @@
   margin: 0 auto; }
 
 .ticket-outer .button-base {
-  display: inline-block; }
+  display: inline-block;
+  outline: none; }
 
 .dot-line {
   height: 3px;
