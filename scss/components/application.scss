@@ -94,8 +94,8 @@
 		&:hover{
 			.sprite4-pencil-h{
 				display: inline-block;
-				margin-top: -5px;
-		    margin-left: -10px;
+				margin-top: -6px;
+		    margin-left: -9px;
 			}
 			.sprite4-pencil{
 				display: none;
@@ -109,8 +109,8 @@
 		&:hover{
 			.sprite4-basket-h{
 				display: inline-block;
-				margin-top: -10px;
-		    margin-left: -10px;
+				margin-top: -9px;
+    		margin-left: -11px;
 			}
 			.sprite4-basket{
 				display: none;
@@ -177,13 +177,14 @@
 		&-name{
 			color: #646464;
 			text-transform: uppercase;
-		}
+		}		
 	}
 	.application-managers-info,
 	.application-managers-controls,
 	.application-managers-btn{
 			    height: 130px;
 		    padding: 1.5em 0;
+		    margin-bottom: 1em;
 	}
 
 	    
@@ -386,22 +387,39 @@
 	 .alert{position: static;}
 	}
 }
-	@media screen and (max-width: 991px ) {
-	 .application-tarifs .application-btn{
-	 	margin-left: 0;
+@media screen and (max-width: 991px ) {
+ .application{
+	 &-tarifs-btn{
+	 	.application-btn{
+		 	margin-left: 0;
+		 }
+	 	text-align: center;
 	 }
+	 &-modal{
+	 	&-dialog{
+	 		width: 70%;
+	 	}
+	 }
+	}
+	.application-submit .application-btn{
+		width: 40%;
+	}
 }
 @media screen and (max-width: 767px ) {
   .application{
   	.application-managers-info,
-  	.application-managers-controls,
   	.application-managers-btn{
   		    height: auto;
   		    padding: 0;
   	}
+  	.application-managers-controls{
+  		height: 60px;
+  		padding: 0;
+  	}
   	&-managers{
 	    text-align: center;
   	}
+
   	&-modal{
   		&-dialog{
   			width: 90%;
@@ -414,10 +432,32 @@
   			line-height: 1.5em;
   		}
   	}
+  		&-edit{
+  	    height: 30px;
+  			margin-bottom: 10px;
+  			.sprite4-pencil-h{
+  				display: none;
+  			}
+  			&:hover{
+  				.sprite4-pencil-h{
+  			    margin-left: -5px;
+  				}
+  			}
+  		}
+  		&-delete{
+  			&:hover{
+  				.sprite4-basket-h{
+  	    		margin-left: -5px;
+  				}
+  			}
+  		}
 
   }	
   .application-submit .application-btn{
-  	width: 50%;
+  	width: 60%;
+  }
+  .application-modal-logo{
+  	text-align: center;
   }
 }
 

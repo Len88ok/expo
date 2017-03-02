@@ -74,16 +74,16 @@
       display: none; }
     .application-edit:hover .sprite4-pencil-h {
       display: inline-block;
-      margin-top: -5px;
-      margin-left: -10px; }
+      margin-top: -6px;
+      margin-left: -9px; }
     .application-edit:hover .sprite4-pencil {
       display: none; }
   .application-delete .sprite4-basket-h {
     display: none; }
   .application-delete:hover .sprite4-basket-h {
     display: inline-block;
-    margin-top: -10px;
-    margin-left: -10px; }
+    margin-top: -9px;
+    margin-left: -11px; }
   .application-delete:hover .sprite4-basket {
     display: none; }
   .application-pavilion-icon i {
@@ -131,7 +131,8 @@
   .application .application-managers-controls,
   .application .application-managers-btn {
     height: 130px;
-    padding: 1.5em 0; }
+    padding: 1.5em 0;
+    margin-bottom: 1em; }
   .application-advertisement {
     width: 90%;
     margin: 0 auto; }
@@ -279,14 +280,22 @@
     position: static; } }
 
 @media screen and (max-width: 991px) {
-  .application-tarifs .application-btn {
-    margin-left: 0; } }
+  .application-tarifs-btn {
+    text-align: center; }
+    .application-tarifs-btn .application-btn {
+      margin-left: 0; }
+  .application-modal-dialog {
+    width: 70%; }
+  .application-submit .application-btn {
+    width: 40%; } }
 
 @media screen and (max-width: 767px) {
   .application .application-managers-info,
-  .application .application-managers-controls,
   .application .application-managers-btn {
     height: auto;
+    padding: 0; }
+  .application .application-managers-controls {
+    height: 60px;
     padding: 0; }
   .application-managers {
     text-align: center; }
@@ -297,5 +306,16 @@
     padding: 0 2.5em; }
   .application-modal-title {
     line-height: 1.5em; }
+  .application-edit {
+    height: 30px;
+    margin-bottom: 10px; }
+    .application-edit .sprite4-pencil-h {
+      display: none; }
+    .application-edit:hover .sprite4-pencil-h {
+      margin-left: -5px; }
+  .application-delete:hover .sprite4-basket-h {
+    margin-left: -5px; }
   .application-submit .application-btn {
-    width: 50%; } }
+    width: 60%; }
+  .application-modal-logo {
+    text-align: center; } }
