@@ -65,6 +65,8 @@
 				</div>
 			</nav>
 	</header>
+	
+	<div class="tv" id="tv"></div>
 	<main class="homepage-content">
 	<div class="homepage-content-info">
       <h2>Международный<br>выставочный портал</h2>
@@ -82,11 +84,23 @@
       </div>
   </div>
 	<div class="homepage-video-container">
-		<video id="homepage-video-bg" autoplay loop muted>
+		<video id="homepage-video-bg" autoplay loop volume muted>
 		  <source src="https://expouniverse.cf/bundles/sitebundlefrontend/videos/video_main2.mp4" type="video/mp4"/>
 		</video>
 	</div>	
+	<input type="hidden" id="main-video" value="F8_LlA3b_r8?rel=0&autoplay=1&loop=1">
+	<input type="hidden" id="support-video" value="https://www.youtube.com/embed/g6x8aU5Thhk"/>
+	<div id="closeControls" class="hidden" style="position: absolute; z-index: 9999999999; top:20px; right:20px;">
+      <a class="close-video-main"></a>
+  </div>
+  <div id="voiceControls" class="hidden" style="position: absolute; z-index: 9999999999;">
+      <a id="mute" class="unmute"></a>
+      <a id="unmute" class="mute" style="display:none;"></a>
+  </div>
 	</main>
+
+
+
 	<footer class="footer-b" id="footer">
 		<div class="container">
 			<div class="row">
@@ -121,5 +135,66 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+	<script type="text/javascript">
+
+	    $(function () {
+
+	        var tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 1, fs: 0};
+
+	        function onYouTubePlayerAPIReady(){
+	            var link = $('#support-video').val();
+	            var videoId = link.split('/').pop();
+	            tv = new YT.Player('tv', {videoId: videoId, events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
+	        }
+
+	        function onPlayerReady(){
+	            $('#voiceControls, #closeControls').removeClass('hidden');
+	            tv.playVideo();
+	            tv.unMute();
+
+	            $(document).on('click', '#mute', function () {
+	                $('#mute').hide();
+	                $('#unmute').show();
+	                tv.mute();
+	            });
+
+	            $(document).on('click', '#unmute', function () {
+	                $('#unmute').hide();
+	                $('#mute').show();
+	                tv.unMute();
+	            });
+
+	            $(document).on('click', '.close-video-main', function() {
+	                $('#voiceControls, #closeControls').addClass('hidden');
+	                $('#unmute').hide();$('#mute').show();
+	                $('video, .homepage-content-info, .expohall-btn').css('display', 'block');
+	                $('.main-menu.authorization-menu').show();
+	                tv.destroy();
+	                tv.mute();
+	            });
+	        }
+
+	        function onPlayerStateChange(e) {
+	            if (e.data === 1){
+	                $('#tv').addClass('active');
+	            } else if (e.data === 0) {
+	                $('video, .main-title, .expohall-btn').css('display', 'block');
+	                $('#unmute').hide();$('#mute').show();
+	                $('#voiceControls, #closeControls').addClass('hidden');
+	                $('.main-menu.authorization-menu').hide();
+	                e.target.destroy();
+	            }
+	        }
+
+	        $('.btn-play').on('click', function () {
+
+	            $('video, .homepage-content-info, .expohall-btn').css('display', 'none');
+	            $('.main-menu.authorization-menu').hide();
+	            onYouTubePlayerAPIReady();
+	        });
+	    });
+	</script>
 </body>
 </html>
