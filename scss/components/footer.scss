@@ -51,7 +51,7 @@
 }
 
 .terms-of-usage{
-    padding: 4em 0;
+    padding: 3em 2em;
     ul{
         list-style-type: disc;
         padding-left: 40px;
@@ -70,6 +70,7 @@
 }
 #rules-modal-print{
     position: fixed;
+    margin-left: -20px;
 }
 #rules-modal{
     padding-right: 0px !important;

@@ -806,7 +806,7 @@ a:hover {
     text-align: center; } }
 
 .terms-of-usage {
-  padding: 4em 0; }
+  padding: 3em 2em; }
   .terms-of-usage ul {
     list-style-type: disc;
     padding-left: 40px; }
@@ -820,7 +820,8 @@ a:hover {
   display: none; }
 
 #rules-modal-print {
-  position: fixed; }
+  position: fixed;
+  margin-left: -20px; }
 
 #rules-modal {
   padding-right: 0px !important; }
