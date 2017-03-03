@@ -16,11 +16,12 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body style="background-color: #e9ebff; background-image: none;">
 <div id="main-content">
 <div class="content">
 <div class="container">
-<div class="terms-of-usage">
+<a id='rules-modal-print' class="btn-base"><img src="images/application/png/001-technology.png" alt=""></a>
+<div class="terms-of-usage" id="rules_to_print">
 	<div class="text-center">
 		<div>
 			<img src="https://expouniverse.cf/bundles/sitebundlefrontend/images/logo.png" alt="Expo Universe">
@@ -203,6 +204,25 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+				<script>
+				$(document).on('ready', function() {
+				    $('#rules-modal-print').click(function(){
+				        var printing_css='<style media=print></style>';
+				        var html_to_print=printing_css+$('#rules_to_print').html();
+				        var iframe=$('<iframe id="rules-modal_frame">');
+				        $('body').append(iframe);
+				        var doc = $('#rules-modal_frame')[0].contentDocument || $('#rules-modal_frame')[0].contentWindow.document;
+				        var win = $('#rules-modal_frame')[0].contentWindow || $('#rules-modal_frame')[0];
+				        doc.getElementsByTagName('body')[0].innerHTML=html_to_print;
+				        win.print();
+				        $('iframe').remove();
+				    });
+				});
+				</script>
 
 
 			</body>
