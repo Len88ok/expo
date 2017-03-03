@@ -805,6 +805,12 @@ a:hover {
   .copyright {
     text-align: center; } }
 
+.terms-of-usage {
+  padding: 3em 0; }
+  .terms-of-usage ul {
+    list-style-type: disc;
+    padding-left: 40px; }
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 

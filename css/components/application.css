@@ -13,11 +13,13 @@
   border-radius: 2px;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75), 0 0 24px rgba(38, 52, 142, 0.39); }
   .application .alert {
-    position: absolute;
-    right: -32%;
-    top: 0;
-    border: 2px dashed yellow;
-    background-color: transparent; }
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 5px; }
+    .application .alert-wrap {
+      border: 2px dashed yellow;
+      padding-left: 30px; }
     .application .alert span {
       vertical-align: top;
       display: inline-block;
@@ -66,8 +68,10 @@
         height: 16px;
         background-image: url(../../images/application/spritesheet.png) !important;
         background-repeat: no-repeat !important;
-        background-position: -10px -113px !important; }
+        background-position: -10px -113px !important;
+        margin-right: 8px; }
   .application-edit {
+    cursor: pointer;
     height: 30px;
     margin-bottom: 10px; }
     .application-edit .sprite4-pencil-h {
@@ -78,18 +82,22 @@
       margin-left: -9px; }
     .application-edit:hover .sprite4-pencil {
       display: none; }
-  .application-delete .sprite4-basket-h {
-    display: none; }
-  .application-delete:hover .sprite4-basket-h {
-    display: inline-block;
-    margin-top: -9px;
-    margin-left: -11px; }
-  .application-delete:hover .sprite4-basket {
-    display: none; }
+  .application-delete {
+    cursor: pointer; }
+    .application-delete .sprite4-basket-h {
+      display: none; }
+    .application-delete:hover .sprite4-basket-h {
+      display: inline-block;
+      margin-top: -9px;
+      margin-left: -11px; }
+    .application-delete:hover .sprite4-basket {
+      display: none; }
   .application-pavilion-icon i {
     display: inline-block; }
   .application-pavilion-name {
     color: #55d17d; }
+  .application-pavilion-item {
+    height: 40px; }
   .application-tarifs {
     width: 90%;
     margin: 0 auto 5em;
@@ -145,6 +153,9 @@
       vertical-align: middle; }
     .application .table-bordered {
       border-color: cyan; }
+    .application .table thead tr:first-child,
+    .application .table tbody tr:last-child {
+      background-color: #eefdff; }
   .application-services {
     padding-left: 1.5em !important; }
   .application-minimal {
@@ -192,9 +203,6 @@
         border-bottom: 1px solid #00deff; }
   .application-agreement {
     margin-bottom: 5em; }
-    .application-agreement .alert {
-      right: auto;
-      top: 25px; }
     .application-agreement-checkbox {
       cursor: pointer; }
       .application-agreement-checkbox input[type="checkbox"] {

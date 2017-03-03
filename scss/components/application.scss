@@ -14,11 +14,14 @@
 	border-radius: 2px;
 	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.75), 0 0 24px rgba(38, 52, 142, 0.39);
 	.alert{
-		position: absolute;
-		right: -32%;
-		top: 0;
-		border: 2px dashed yellow;
+		&-wrap{
+			border: 2px dashed yellow;
+	    padding-left: 30px;
+		}
+		border: none;
 		background-color: transparent;
+		padding: 5px;
+		margin-bottom: 5px;
 		span{
 			vertical-align: top;
 	    display: inline-block;
@@ -82,10 +85,12 @@
 				background-image: url(../../images/application/spritesheet.png) !important;
 				background-repeat: no-repeat !important;
 				background-position: -10px -113px !important;
+		    margin-right: 8px;
 			}			
 		}
 	}
 	&-edit{
+		cursor: pointer;
     height: 30px;
 		margin-bottom: 10px;
 		.sprite4-pencil-h{
@@ -103,6 +108,7 @@
 		}
 	}
 	&-delete{
+		cursor: pointer;
 		.sprite4-basket-h{
 			display: none;
 		}
@@ -126,6 +132,9 @@
 		&-name{
 			color: #55d17d;
 		}		
+		&-item{
+			height: 40px;
+		}
 	}
 	&-tarifs{
 		width: 90%;
@@ -204,6 +213,10 @@
 		&-bordered{
 			border-color: cyan;
 		}
+		thead tr:first-child,
+		tbody tr:last-child{
+			background-color: #eefdff;
+		}
 	}	
 
 	&-services{
@@ -272,9 +285,6 @@
 	}
 	&-agreement{
 		margin-bottom: 5em;
-		.alert{
-		right: auto;
-    top: 25px;}
 		&-checkbox {
 		  cursor: pointer;
 		  input[type="checkbox"] {
@@ -459,5 +469,6 @@
   .application-modal-logo{
   	text-align: center;
   }
+
 }
 

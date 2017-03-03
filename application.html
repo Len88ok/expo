@@ -38,26 +38,20 @@
 	<div class="row m-80">
 	<div class="container">	
 		<div class="col-sm-8 col-sm-offset-2">
-		<div class="application-with-alert">
 			<div class="application-wrap-line">
 				<div class="application-title">Выбор павильона</div>
 				<div class="application-text">Выберите один или несколько павильонов выставки.
 				Стенд вашей копании будет размещен в выбранных павильонах.</div>
 			</div>
-			<div class="alert alert-danger" role="alert">
-			<i class="sprite4 sprite4-danger"></i>
-			  <span>Выберите павильоны выставки!</span>
-			</div>
-		</div>			
 			<div class="application-pavilion-chosed">
-				<div class="application-wrap-line">
+				<div class="application-wrap-line application-pavilion-item">
 					<div class="row">
 						<div class="col-xs-2 col-sm-1"><div class="application-pavilion-icon"><i class="sprite2 sprite2-var1"></i></div></div>
 						<div class="col-xs-8 col-sm-10"><div class="application-pavilion-name">Кондитерские изделия</div></div>
 						<div class="col-xs-2 col-sm-1"><div class="application-delete"><i class="sprite4 sprite4-basket"></i><i class="sprite4 sprite4-basket-h"></i></div></div>
 					</div>
 				</div>
-				<div class="application-wrap-line">
+				<div class="application-wrap-line application-pavilion-item">
 					<div class="row">
 						<div class="col-xs-2 col-sm-1"><div class="application-pavilion-icon"><i class="sprite2 sprite2-var1"></i></div></div>
 						<div class="col-xs-8 col-sm-10"><div class="application-pavilion-name">Кондитерские изделия</div></div>
@@ -174,12 +168,7 @@
 			<div class="col-sm-8 col-sm-offset-2">
 				<div class="application-with-alert">
 					<div class="application-title">Выбор менеджера на выставке</div>
-					<div class="application-text text-center">Выберите одного или нескольких менеджеров.</div>
-					<div class="alert alert-danger" role="alert">
-					<i class="sprite4 sprite4-danger"></i>
-					<span>Выберите менеджера выставки!</span>
-					</div>
-				</div>
+					<div class="application-text text-center">Выберите одного или нескольких менеджеров.</div></div>
 			</div>
 		</div>
 			
@@ -203,7 +192,6 @@
 							<div class="application-edit">
 								<i class="sprite4 sprite4-pencil"></i><i class="sprite4 sprite4-pencil-h"></i>
 							</div>
-							<div class="application-delete"><i class="sprite4 sprite4-basket"></i><i class="sprite4 sprite4-basket-h"></i></div>
 						</div>
 					</div>
 					<div class="col-sm-3">
@@ -233,7 +221,6 @@
 							<div class="application-edit">
 								<i class="sprite4 sprite4-pencil"></i><i class="sprite4 sprite4-pencil-h"></i>
 							</div>
-							<div class="application-delete"><i class="sprite4 sprite4-basket"></i><i class="sprite4 sprite4-basket-h"></i></div>
 						</div>
 					</div>
 					<div class="col-sm-3">
@@ -263,7 +250,6 @@
 							<div class="application-edit">
 								<i class="sprite4 sprite4-pencil"></i><i class="sprite4 sprite4-pencil-h"></i>
 							</div>
-							<div class="application-delete"><i class="sprite4 sprite4-basket"></i><i class="sprite4 sprite4-basket-h"></i></div>
 						</div>
 					</div>
 					<div class="col-sm-3">
@@ -293,7 +279,6 @@
 							<div class="application-edit">
 								<i class="sprite4 sprite4-pencil"></i><i class="sprite4 sprite4-pencil-h"></i>
 							</div>
-							<div class="application-delete"><i class="sprite4 sprite4-basket"></i><i class="sprite4 sprite4-basket-h"></i></div>
 						</div>
 					</div>
 					<div class="col-sm-3">
@@ -429,10 +414,20 @@
 				     <input type='checkbox' autocomplete="off" id="agree" checked>
 				     <span>Я ознакомлен и согласен с условиями  <a href="#">Публичного договора оферты</a></span>
 				    </label>
-				    <div class="alert alert-danger" role="alert">
-				    <i class="sprite4 sprite4-danger"></i>
-				    <span> Вы не согласились с Публичным договором оферты!</span>
-				    </div>						
+				    <div class="alert-wrap">
+					    <div class="alert alert-danger" role="alert">
+					    <i class="sprite4 sprite4-danger"></i>
+					    <span> Вы не согласились с Публичным договором оферты!</span>
+					    </div>	
+					    <div class="alert alert-danger" role="alert">
+					    <i class="sprite4 sprite4-danger"></i>
+					    <span>Выберите менеджера выставки!</span>
+					    </div>	
+					    <div class="alert alert-danger" role="alert">
+					    <i class="sprite4 sprite4-danger"></i>
+					      <span>Выберите павильоны выставки!</span>
+					    </div>
+					  </div>	
 					</div>	
 				</div>				
 				</div>
