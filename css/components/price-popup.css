@@ -27,6 +27,15 @@
   #modal-price .close:hover {
     color: #55d17d; }
 
+#modal-price #modal-print {
+  cursor: pointer; }
+  #modal-price #modal-print img {
+    margin-top: -5px;
+    float: right; }
+    #modal-price #modal-print img:hover {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+
 #modal-price .page-sub-title {
   text-align: left;
   padding-bottom: 7px;
@@ -97,6 +106,23 @@
   right: 33px;
   bottom: 8px;
   width: 134px;
-  height: 134px;
-  overflow: hidden;
-  background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/stamp.png) no-repeat scroll 0 0; }
+  height: 134px; }
+
+#modal-print_frame {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  #modal-price .modal-dialog {
+    width: 90%;
+    margin: 0 auto; }
+  #modal-price .modal-content {
+    padding: 10px; }
+  #modal-price .modal-footer {
+    padding: 50px 0; }
+  #modal-price .page-sub-title {
+    text-align: center;
+    padding-left: 0; }
+  #modal-price .cost {
+    font-size: 18px; }
+  #modal-price .stamp {
+    right: 0; } }

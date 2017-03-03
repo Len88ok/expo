@@ -56,10 +56,10 @@
       text-transform: capitalize;
       padding: 9px;
       color: #fff !important; }
-    .application-btn-choosed {
+    .application-btn-chosen {
       background-color: #28b957 !important;
       color: #fff !important; }
-      .application-btn-choosed:before {
+      .application-btn-chosen:before {
         content: '';
         display: inline-block;
         width: 22px;
@@ -100,9 +100,9 @@
       margin-left: -1.75em; }
     .application-tarifs-item {
       margin-bottom: 2em; }
-      .application-tarifs-item-choosed .application-tarifs-name {
+      .application-tarifs-item-chosen .application-tarifs-name {
         color: #28b957; }
-      .application-tarifs-item-choosed .application-tarifs-info {
+      .application-tarifs-item-chosen .application-tarifs-info {
         color: #28b957; }
     .application-tarifs-info {
       padding-bottom: 1.5em; }

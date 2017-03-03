@@ -33,6 +33,18 @@
 		}
 	}
 
+	#modal-print{
+		cursor: pointer;
+		img{
+			margin-top: -5px;
+	    float: right;
+	    &:hover{
+	    	-webkit-filter: grayscale(100%);
+    	   filter: grayscale(100%);
+	    }
+		}
+	}
+
 	.page-sub-title{
 		text-align: left;
 		padding-bottom: 7px;
@@ -115,11 +127,40 @@
 		bottom: 8px;
 		width: 134px;
 		height: 134px;
-		overflow: hidden;
-		background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/stamp.png) no-repeat scroll 0 0;
-	}
+	}	
+}
 
-	
+
+#modal-print_frame{
+    display: none;
+}
+
+
+@media screen and (max-width: 767px ) {
+	#modal-price{
+		.modal{		
+			&-dialog{
+				width: 90%;
+				margin: 0 auto;
+			}
+			&-content{
+				padding: 10px;
+			}
+			&-footer{
+				 padding: 50px 0;
+			}
+		}
+		.page-sub-title{
+			text-align: center;
+			padding-left: 0;
+		}
+		.cost{
+			font-size: 18px;
+		}
+		.stamp{
+			right: 0;
+		}
+	}
 }
 
 
