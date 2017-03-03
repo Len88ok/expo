@@ -15,17 +15,25 @@
   .application .alert {
     border: none;
     background-color: transparent;
-    padding: 5px;
-    margin-bottom: 5px; }
+    padding: 0;
+    margin-bottom: 0; }
     .application .alert-wrap {
       border: 2px dashed yellow;
       padding-left: 30px; }
     .application .alert span {
       vertical-align: top;
       display: inline-block;
-      line-height: 3;
+      line-height: 2;
       color: red;
-      padding-left: 1em; }
+      padding-left: 1em;
+      font-size: 12px; }
+    .application .alert-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../../images/application/danger.png");
+      background-size: 100%;
+      background-repeat: no-repeat; }
   .application-with-alert {
     position: relative; }
   .application-heading {
@@ -204,7 +212,8 @@
   .application-agreement {
     margin-bottom: 5em; }
     .application-agreement-checkbox {
-      cursor: pointer; }
+      cursor: pointer;
+      margin-bottom: 2em; }
       .application-agreement-checkbox input[type="checkbox"] {
         display: none; }
       .application-agreement-checkbox span {
