@@ -71,6 +71,9 @@
 #rules-modal-print{
     position: fixed;
     margin-left: -20px;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 #rules-modal{
     padding-right: 0px !important;

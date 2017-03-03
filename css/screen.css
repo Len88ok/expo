@@ -822,6 +822,8 @@ a:hover {
 #rules-modal-print {
   position: fixed;
   margin-left: -20px; }
+  #rules-modal-print:hover {
+    opacity: 0.8; }
 
 #rules-modal {
   padding-right: 0px !important; }
