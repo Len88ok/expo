@@ -851,6 +851,12 @@ a:hover {
       #rules-modal .modal-body .close:focus {
         outline: none; }
 
+@media screen and (max-width: 767px) {
+  .modal-body .close {
+    right: 7%; }
+  #rules-modal-print {
+    margin-left: -12px; } }
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 

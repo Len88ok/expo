@@ -111,3 +111,15 @@
     }
 } 
 
+@media screen and (max-width: 767px ) {
+    .modal{          
+        &-body{
+            .close{
+                right: 7%;
+            }
+        }
+    }
+    #rules-modal-print{
+        margin-left: -12px;
+    }
+}
