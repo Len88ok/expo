@@ -810,6 +810,13 @@ a:hover {
   .terms-of-usage ul {
     list-style-type: disc;
     padding-left: 40px; }
+  .terms-of-usage .logo-dscr {
+    text-transform: none;
+    color: #026fb3;
+    font-size: 9px;
+    line-height: 11px;
+    display: block;
+    padding-top: 4px; }
 
 .show-terms-of-usage {
   outline: none; }
