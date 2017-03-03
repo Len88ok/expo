@@ -192,6 +192,9 @@
   .application-services.text-center {
     font-size: 2.4rem;
     padding-left: 0 !important; }
+  .application-services span {
+    float: right;
+    margin-top: -8px; }
   .application-summary {
     border: 1px dashed cyan;
     padding: 1em 2.5em;
