@@ -70,7 +70,6 @@ a:hover {
 .bg-white {
   position: relative;
   width: 100%;
-  min-height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff; }
@@ -81,8 +80,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #ebecff;
-  background-size: cover;
-  overflow: hidden; }
+  background-size: cover; }
 
 .bg-paper {
   background-repeat: no-repeat;
