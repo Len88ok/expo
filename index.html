@@ -68,13 +68,13 @@
 	</header>
 	
 	
-	<div id="closeControls" class="hidden" style="position: absolute; z-index: 9999999999; top:20px; right:20px;">
+	<div id="closeControls" class="hidden" style="position: absolute; z-index: 9999999999; top:0; right:0;">
       <a class="close-video-main"></a>
   </div>
-  <div id="voiceControls" class="hidden" style="position: absolute; bottom: 20px; left: 20px; z-index: 9999999999;">
+  <!-- <div id="voiceControls" class="hidden" style="position: absolute; bottom: 20px; left: 20px; z-index: 9999999999;">
       <a id="mute" class="unmute"></a>
       <a id="unmute" class="mute" style="display:none;"></a>
-  </div>
+  </div> -->
 	<main class="homepage-content">
 	<div class="homepage-content-info">
       <h2>Международный<br>выставочный портал</h2>
@@ -97,7 +97,8 @@
 		</video>
 	</div>	
 	<input type="hidden" id="main-video" value="F8_LlA3b_r8?rel=0&autoplay=1&loop=1">
-	<input type="hidden" id="support-video" value="https://www.youtube.com/embed/g6x8aU5Thhk"/>			
+	<input type="hidden" id="support-video" value="https://www.youtube.com/embed/g6x8aU5Thhk"/>		
+
 	</main>
 
 
@@ -146,7 +147,7 @@
 
 	    $(function () {
 
-	        var tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 2, disablekb: 1, enablejsapi: 1, iv_load_policy: 1, fs: 0, modestbranding: 0};
+	        var tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 2, disablekb: 1, enablejsapi: 1, iv_load_policy: 1, fs: 0, color: 'white'};
 
 	        function onYouTubePlayerAPIReady(){
 	            var link = $('#support-video').val();
@@ -179,6 +180,7 @@
 	                tv.destroy();
 	                tv.mute();
 	            });
+
 	        }
 
 	        function onPlayerStateChange(e) {
