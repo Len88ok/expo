@@ -1,3 +1,7 @@
+header {
+  position: relative;
+  z-index: 200; }
+
 .navbar {
   background-color: transparent;
   border: none; }

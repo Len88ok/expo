@@ -312,6 +312,10 @@ a:hover {
   background: url(../images/arrow-sprite.png) no-repeat 0px -62px;
   cursor: pointer; }
 
+header {
+  position: relative;
+  z-index: 500; }
+
 .navbar {
   background-color: transparent;
   border: none; }
