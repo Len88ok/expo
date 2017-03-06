@@ -16,6 +16,7 @@
 <![endif]-->
 </head>
 <body class="homepage">
+<div class="tv" id="tv"></div>
 	<header id="header">
 		<ul class="main-menu authorization-menu non-authorized">
 			<li class="">
@@ -66,7 +67,14 @@
 			</nav>
 	</header>
 	
-	<div class="tv" id="tv"></div>
+	
+	<div id="closeControls" class="hidden" style="position: absolute; z-index: 9999999999; top:20px; right:20px;">
+      <a class="close-video-main"></a>
+  </div>
+  <div id="voiceControls" class="hidden" style="position: absolute; bottom: 20px; left: 20px; z-index: 9999999999;">
+      <a id="mute" class="unmute"></a>
+      <a id="unmute" class="mute" style="display:none;"></a>
+  </div>
 	<main class="homepage-content">
 	<div class="homepage-content-info">
       <h2>Международный<br>выставочный портал</h2>
@@ -89,15 +97,12 @@
 		</video>
 	</div>	
 	<input type="hidden" id="main-video" value="F8_LlA3b_r8?rel=0&autoplay=1&loop=1">
-	<input type="hidden" id="support-video" value="https://www.youtube.com/embed/g6x8aU5Thhk"/>
-	<div id="closeControls" class="hidden" style="position: absolute; z-index: 9999999999; top:20px; right:20px;">
-      <a class="close-video-main"></a>
-  </div>
-  <div id="voiceControls" class="hidden" style="position: absolute; z-index: 9999999999;">
-      <a id="mute" class="unmute"></a>
-      <a id="unmute" class="mute" style="display:none;"></a>
-  </div>
+	<input type="hidden" id="support-video" value="https://www.youtube.com/embed/g6x8aU5Thhk"/>			
 	</main>
+
+
+
+
 
 
 
@@ -141,7 +146,7 @@
 
 	    $(function () {
 
-	        var tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 1, iv_load_policy: 1, fs: 0};
+	        var tv, playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 2, disablekb: 1, enablejsapi: 1, iv_load_policy: 1, fs: 0, modestbranding: 0};
 
 	        function onYouTubePlayerAPIReady(){
 	            var link = $('#support-video').val();
@@ -169,7 +174,7 @@
 	            $(document).on('click', '.close-video-main', function() {
 	                $('#voiceControls, #closeControls').addClass('hidden');
 	                $('#unmute').hide();$('#mute').show();
-	                $('video, .homepage-content-info, .expohall-btn').css('display', 'block');
+	                $('header, video, .homepage-content-info, .expohall-btn').css('display', 'block');
 	                $('.main-menu.authorization-menu').show();
 	                tv.destroy();
 	                tv.mute();
@@ -180,7 +185,7 @@
 	            if (e.data === 1){
 	                $('#tv').addClass('active');
 	            } else if (e.data === 0) {
-	                $('video, .main-title, .expohall-btn').css('display', 'block');
+	                $('header, video, .main-title, .expohall-btn').css('display', 'block');
 	                $('#unmute').hide();$('#mute').show();
 	                $('#voiceControls, #closeControls').addClass('hidden');
 	                $('.main-menu.authorization-menu').hide();
@@ -190,7 +195,7 @@
 
 	        $('.btn-play').on('click', function () {
 
-	            $('video, .homepage-content-info, .expohall-btn').css('display', 'none');
+	            $('header, video, .homepage-content-info, .expohall-btn').css('display', 'none');
 	            $('.main-menu.authorization-menu').hide();
 	            onYouTubePlayerAPIReady();
 	        });

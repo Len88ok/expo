@@ -1,6 +1,50 @@
 html {
   height: 100%;
 }
+
+#tv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.close-video-main{
+	z-index: 999999999999;
+  display: block;
+  height: 23px;
+  width: 23px;
+  margin: 10px 15px 0 0;
+  background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/close-icon.png) no-repeat;
+  background-size: cover;
+}
+
+.mute, .unmute{
+	color: transparent;
+	width: 29px;
+	height: 24px;
+	display: block;
+	margin: -50px 0 0 25px;
+}    
+
+.mute{
+    background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/sound-off.svg) no-repeat;
+    background-size: cover;
+}
+
+.unmute{
+	background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/sound-on.svg) no-repeat;
+	background-size: cover;
+}
+
+.ytp-right-controls .yt-uix-sessionlink{
+	display: none !important;
+}
+
+    
 .homepage{	
 	margin: 0;
 	padding: 0;
@@ -13,6 +57,8 @@ html {
 		width: 100%;
 		height: 100%;
 	  &-info{
+	  	position: relative;
+	  	z-index: 2;
 	  	width: 50%;
 	  	height: 100%;
 	  	margin-left: 40%;
