@@ -16,7 +16,7 @@ html {
   height: 25px;
   width: 25px;
   margin: 10px 15px 0 0;
-  background: url(../../images/close.svg) no-repeat;
+  background: url(../../images/svg/close.svg) no-repeat;
   background-size: cover; }
 
 .mute, .unmute {
