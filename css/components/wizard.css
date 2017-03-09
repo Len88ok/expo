@@ -183,7 +183,8 @@
   #wizard-steps .step-left-content {
     width: 100%; }
   #wizard-steps .step-wrap {
-    height: 550px; }
+    height: auto;
+    padding-bottom: 65px; }
   #wizard-steps .step-next {
     left: 50%;
     margin-left: -65px; }
