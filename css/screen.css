@@ -314,7 +314,7 @@ a:hover {
 
 header {
   position: relative;
-  z-index: 500; }
+  z-index: 200; }
 
 .navbar {
   background-color: transparent;
