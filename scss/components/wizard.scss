@@ -95,7 +95,39 @@
 				list-style-type: decimal;
 				padding-left: 20px;
 			}
-		}		
+		}	
+		&-video{
+			&-wrap{
+				width: 124px;
+				margin-top: 20px;
+			}			
+			height: 125px;
+			border: 1px solid #55d17d;
+			background-color: #000000;
+			text-align: center;
+			padding: 25px;
+			position: relative;
+			z-index: 1;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;
+				opacity: 0.37;
+				background-color: inherit;	
+			}
+			&-heading{
+				font-size: 12px;
+				font-weight: 600;
+				text-align: center;
+			}
+			.btn-play{
+				padding: 0;
+			}
+		}	
 		&-title{
 			font-size: 24px;
 			font-weight: 400;

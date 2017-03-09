@@ -76,6 +76,34 @@
     list-style-type: decimal;
     padding-left: 20px; }
 
+#wizard-steps .step-video {
+  height: 125px;
+  border: 1px solid #55d17d;
+  background-color: #000000;
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  z-index: 1; }
+  #wizard-steps .step-video-wrap {
+    width: 124px;
+    margin-top: 20px; }
+  #wizard-steps .step-video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.37;
+    background-color: inherit; }
+  #wizard-steps .step-video-heading {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center; }
+  #wizard-steps .step-video .btn-play {
+    padding: 0; }
+
 #wizard-steps .step-title {
   font-size: 24px;
   font-weight: 400;
