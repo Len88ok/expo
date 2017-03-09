@@ -47,7 +47,7 @@
 						        	<h4>О Мастере</h4>
 						          <p>Для создания стенда нужно пройти 5 простых шага. После чего вы сможете подать заявку
 											на участие в выбранной выставке, либо сохранить созданный стенд и продолжить позже.</p> 
-											<p><ul>	
+											<p><ul class="wizard-about-btns">	
 											 На каждом шаге Мастера создания стенда доступны кнопки: 
 												<li>“Просмотр” –  предварительный просмотр в соответствии с заполненными шагами.</li>
 												<li>“Сохранить” – сохранение стенда со всей заполненной информацией.</li>
@@ -58,7 +58,7 @@
 												Вся внесенная информация автоматически сохраняется.
 												При совершении ошибки или не заполнив обязательное поле будут выведены подсказки.
 											</p>								
-										</div>
+										</div>										
 					        </div>
 				          <div class="tab-pane fade active in" id="step1">
 					          <ul class="step-line clearfix">
@@ -95,7 +95,7 @@
 					          	<li><p>Шаг 5</p><span></span></li>
 					          </ul>
 					          <div class="step-wrap">  
-					          	<h4>Шаг 3. О комапании</h4>
+					          	<h4>Шаг 3. О компании</h4>
 					            <p>На третьем шаге вы вносите информацию о вашей компании, которая будет
 												отображаться посетителям на выставках.
 												<h5>Данный шаг имеет три этапа:</h5>
@@ -156,13 +156,13 @@
 									<li class=""><a href="#wizardHelp" data-toggle="tab">О Мастере</a></li>
 								  <li class="active"><a href="#step1" data-toggle="tab">Шаг 1. Дизайн</a></li>
 								  <li class=""><a href="#step2" data-toggle="tab">Шаг 2. Контакты</a></li>
-								  <li class=""><a href="#step3" data-toggle="tab">Шаг 3. О комапании</a></li>
+								  <li class=""><a href="#step3" data-toggle="tab">Шаг 3. О компании</a></li>
 								  <li class=""><a href="#step4" data-toggle="tab">Шаг 4. Каталог</a></li>
 								  <li class=""><a href="#step5" data-toggle="tab">Шаг 5. Менеджеры</a></li>								  
-								</ul>
-								<div class="step-next">  
-									<a href="#" role="button" class="btn"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>								  	
-								</div>
+								</ul>	
+								<div class="step-next"> 
+									<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>					  	
+								</div>							
 						 	</div>
 						 </div>	  
 			    </div>
@@ -176,7 +176,13 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+	<script>
+		$(document).ready(function() {
+			 $('.btnNext').click(function(){
+				  $('.nav-tabs > .active').next('li').find('a').trigger('click');
+				});
+		});
+	</script>
 
 </body>
 </html>

@@ -80,6 +80,10 @@
 		margin-top: -15px;
 		margin-right: 10px;
 		color: #55d17d;
+		outline: none;
+		&:focus{
+			outline: none;
+		}
 	}
 	.step{
 		&-wrap{
@@ -87,6 +91,10 @@
 			height: 350px;
 			padding: 10px 40px;
 			border: 1px solid #55d17d;
+			ol{
+				list-style-type: decimal;
+				padding-left: 20px;
+			}
 		}		
 		&-title{
 			font-size: 24px;
@@ -142,6 +150,7 @@
 	.nav-tabs>li.active>a, 
 	.nav-tabs>li.active>a:focus, 
 	.nav-tabs>li.active>a:hover{
+		font-weight: 600;
 		border: none;		
 		border-bottom: 1px solid #55d17d;
 	}
@@ -149,6 +158,12 @@
 		background-color: transparent;
 		border: none;
 		border-bottom: 1px solid #55d17d;
+	}
+
+	.wizard-about-btns{
+		li{
+			padding-left: 20px;
+		}
 	}
 }
 
