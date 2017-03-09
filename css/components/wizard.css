@@ -187,6 +187,7 @@
     padding-bottom: 65px; }
   #wizard-steps .step-next {
     left: 50%;
+    bottom: 30px;
     margin-left: -65px; }
   #wizard-steps .nav-tabs {
     margin-bottom: 0;
