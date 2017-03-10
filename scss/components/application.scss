@@ -496,6 +496,7 @@
 	.modal{
 		&-dialog{
 			width: 90%;
+			    margin: 0 auto;
 		}
 		&-content{
 			padding: 50px 100px;
@@ -525,7 +526,7 @@
 		    line-height: 11px;
 		    transform: rotate(-90deg);
 		    top: 45%;
-		    left: -20%;
+		    left: -200px;
 		    text-align: center;
 		    vertical-align: middle;
 		    line-height: 6;
@@ -549,10 +550,39 @@
 		    line-height: 11px;
 		    transform: rotate(-90deg);
 		    top: 45%;
-		    left: -20%;
+		    left: -200px;
 		    text-align: center;
 		    vertical-align: middle;
 		    line-height: 6;
+		}
+	}
+}
+
+@media screen and (max-width: 767px ) {
+	#standartModal,
+	#premiumModal{
+		.modal{
+			&-content{
+				padding: 0 25px;
+			}
+		}
+	}
+	#standartModal{
+		.map-participants-standart{
+			&:before{
+			    height: 60px;
+			    top: 200px;
+			    left: -200px;
+			}
+		}
+	}
+	#premiumModal{
+		.map-participants-standart{
+			&:before{
+			    height: 60px;
+			    top: 200px;
+			    left: -200px;
+			}
 		}
 	}
 }
