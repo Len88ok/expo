@@ -363,6 +363,10 @@
 #premiumModal .map-participants-standart {
   padding: 10px 60px; }
 
+#standartModal .map-title,
+#premiumModal .map-title {
+  height: 50px; }
+
 #premiumModal .map-participants-premium {
   border: 2px dashed #e74c3c;
   position: relative; }
