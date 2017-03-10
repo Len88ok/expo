@@ -363,8 +363,8 @@
 #premiumModal .map-participants-standart {
   padding: 10px 60px; }
 
-#standartModal .map-title,
-#premiumModal .map-title {
+#standartModal .map-participants-premium .map-title,
+#premiumModal .map-participants-premium .map-title {
   height: 50px; }
 
 #premiumModal .map-participants-premium {
