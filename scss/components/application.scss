@@ -227,11 +227,6 @@
 			background-color: #eefdff;
 		}
 	}	
-
-	&-services{
-		padding-left: 1.5em !important;
-	}
-
 	&-minimal{
 	 text-align: center;
 	 color: #28b957;
@@ -261,6 +256,8 @@
 		text-align: center;
 	}
 	&-services{
+		padding-left: 1.5em !important;
+		padding-right: 1.5em !important;
 		&.text-center{
 			font-size: 2.4rem;
 			padding-left: 0 !important;
@@ -268,6 +265,7 @@
 		span{
 			float: right;
 			margin-top: -8px;
+			margin-right: -10px;
 		}
 	} 
 

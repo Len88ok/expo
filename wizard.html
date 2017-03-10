@@ -1,196 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Expo</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="css/screen.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/components/wizard.css">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<main>
-	<div class="container">
-	
-		<div class="wizard-btn">
-			<a href="wizard-steps" role="button" class="btn" data-toggle="modal" data-target="#wizard-steps">мастер создания стенда</a>
-		</div>
-		<div id="wizard-steps" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="step-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&#215;</button>
-						<h4 class="step-title">Добавить филиал</h4>
-					</div>
-					<div class="step-tabs">	
-					  	<div class="step-right-content">
-					 		<ul id="wizardTab" class="nav nav-tabs">
-					 			<li class=""><a href="#wizardHelp" data-toggle="tab">О Мастере</a></li>
-					 		  <li class="active"><a href="#step1" data-toggle="tab">Шаг 1. Дизайн</a></li>
-					 		  <li class=""><a href="#step2" data-toggle="tab">Шаг 2. Контакты</a></li>
-					 		  <li class=""><a href="#step3" data-toggle="tab">Шаг 3. О компании</a></li>
-					 		  <li class=""><a href="#step4" data-toggle="tab">Шаг 4. Каталог</a></li>
-					 		  <li class=""><a href="#step5" data-toggle="tab">Шаг 5. Менеджеры</a></li>								  
-					 		</ul>	
-					 		<div class="step-next"> 
-					 			<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>					  	
-					 		</div>							
-					  	</div>
-						 	<div class="step-left-content">
-				        <div id="wizardTabContent" class="tab-content">
-					        <div class="tab-pane fade" id="wizardHelp">
-						        <ul class="step-line clearfix">
-						        	<li><p>Шаг 1</p><span></span></li>
-						        	<li><p>Шаг 2</p><span></span></li>
-						        	<li><p>Шаг 3</p><span></span></li>
-						        	<li><p>Шаг 4</p><span></span></li>
-						        	<li><p>Шаг 5</p><span></span></li>
-						        </ul>
-						        <div class="step-wrap"> 
-						        	<h4>О Мастере</h4>
-						          <p>Для создания стенда нужно пройти 5 простых шага. После чего вы сможете подать заявку
-											на участие в выбранной выставке, либо сохранить созданный стенд и продолжить позже.</p> 
-											<p><ul class="wizard-about-btns">	
-											 На каждом шаге Мастера создания стенда доступны кнопки: 
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Expo</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="css/screen.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/components/wizard.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<main>
+		<div class="container">
+			
+			<div class="wizard-btn">
+				<a href="wizard-steps" role="button" class="btn" data-toggle="modal" data-target="#wizard-steps">мастер создания стенда</a>
+			</div>
+			<div id="wizard-steps" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="step-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&#215;</button>
+							<h4 class="step-title">Добавить филиал</h4>
+						</div>
+						<div class="step-tabs">
+							<div class="step-right-content">
+								<ul id="wizardTab" class="nav nav-tabs">
+									<li class=""><a href="#wizardHelp" data-toggle="tab">О Мастере</a></li>
+									<li class="active"><a href="#step1" data-toggle="tab">Шаг 1. Дизайн</a></li>
+									<li class=""><a href="#step2" data-toggle="tab">Шаг 2. Контакты</a></li>
+									<li class=""><a href="#step3" data-toggle="tab">Шаг 3. О компании</a></li>
+									<li class=""><a href="#step4" data-toggle="tab">Шаг 4. Каталог</a></li>
+									<li class=""><a href="#step5" data-toggle="tab">Шаг 5. Менеджеры</a></li>
+								</ul>
+															
+							</div>
+							<div class="step-left-content">
+								<div id="wizardTabContent" class="tab-content">
+									<div class="tab-pane fade" id="wizardHelp">
+										<ul class="step-line clearfix">
+											<li><p>Шаг 1</p><span></span></li>
+											<li><p>Шаг 2</p><span></span></li>
+											<li><p>Шаг 3</p><span></span></li>
+											<li><p>Шаг 4</p><span></span></li>
+											<li><p>Шаг 5</p><span></span></li>
+										</ul>
+										<div class="step-wrap">
+											<h4>О Мастере</h4>
+											<p>Для создания стенда нужно пройти 5 простых шага. После чего вы сможете подать заявку
+											на участие в выбранной выставке, либо сохранить созданный стенд и продолжить позже.</p>
+											<p><ul class="wizard-about-btns">
+												На каждом шаге Мастера создания стенда доступны кнопки:
 												<li>“Просмотр” –  предварительный просмотр в соответствии с заполненными шагами.</li>
 												<li>“Сохранить” – сохранение стенда со всей заполненной информацией.</li>
-											 	<li> Стрелки “Назад” и “Далее” – переключение между шагами, также можно 							 осуществлять переход нажимая на иконку шага.</li>
+												<li> Стрелки “Назад” и “Далее” – переключение между шагами, также можно 							 осуществлять переход нажимая на иконку шага.</li>
 												<li>“Помощь” – вызывает это окно.</li>
 											</ul></p>
 											<p>
 												Вся внесенная информация автоматически сохраняется.
 												При совершении ошибки или не заполнив обязательное поле будут выведены подсказки.
-											</p>								
-										</div>										
-					        </div>
-				          <div class="tab-pane fade active in" id="step1">
-					          <ul class="step-line clearfix">
-					          	<li class="active"><p>Шаг 1</p><span></span></li>
-					          	<li><p>Шаг 2</p><span></span></li>
-					          	<li><p>Шаг 3</p><span></span></li>
-					          	<li><p>Шаг 4</p><span></span></li>
-					          	<li><p>Шаг 5</p><span></span></li>
-					          </ul>
-					          <div class="step-wrap"> 
-					          	<h4>Шаг 1. Дизайн</h4>
-					            <p>Доступны семь видов дизайна виртуального стенда. Для осуществления выбора, наведите мышкой на стенд и нажмите на галочку.</p>
-					           </div>
-				          </div>
-				          <div class="tab-pane fade" id="step2">
-					          <ul class="step-line clearfix">
-					          	<li><p>Шаг 1</p><span></span></li>
-					          	<li class="active"><p>Шаг 2</p><span></span></li>
-					          	<li><p>Шаг 3</p><span></span></li>
-					          	<li><p>Шаг 4</p><span></span></li>
-					          	<li><p>Шаг 5</p><span></span></li>
-					          </ul>
-					          <div class="step-wrap"> 
-					          	<h4>Шаг 2. Контакты</h4>
-					            <p>Внесение контактных данных компании. Есть возможность загрузить логотип вашей компании и добавить информации о филиалах (если таковые есть).</p>
-
-					            <div class="step-video-wrap">
-					            	<div class="step-video-heading">Добавить филиал</div>					            
-						            <div class="step-video" style="background-image: url(images/wizard/bg-video.png);">
-						            	<a class="btn-play" title="Смотреть видео">
-						            	  <div class="btn-play-icon"></div>
-						            	</a>
-						            </div>
-					            </div>
-					          </div>
-				          </div>
-				          <div class="tab-pane fade" id="step3">
-					          <ul class="step-line clearfix">
-					          	<li><p>Шаг 1</p><span></span></li>
-					          	<li><p>Шаг 2</p><span></span></li>
-					          	<li class="active"><p>Шаг 3</p><span></span></li>
-					          	<li><p>Шаг 4</p><span></span></li>
-					          	<li><p>Шаг 5</p><span></span></li>
-					          </ul>
-					          <div class="step-wrap">  
-					          	<h4>Шаг 3. О компании</h4>
-					            <p>На третьем шаге вы вносите информацию о вашей компании, которая будет
+											</p>
+										</div>
+										<div class="step-next">
+											<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</div>
+									</div>
+									<div class="tab-pane fade active in" id="step1">
+										<ul class="step-line clearfix">
+											<li class="active"><p>Шаг 1</p><span></span></li>
+											<li><p>Шаг 2</p><span></span></li>
+											<li><p>Шаг 3</p><span></span></li>
+											<li><p>Шаг 4</p><span></span></li>
+											<li><p>Шаг 5</p><span></span></li>
+										</ul>
+										<div class="step-wrap">
+											<h4>Шаг 1. Дизайн</h4>
+											<p>Доступны семь видов дизайна виртуального стенда. Для осуществления выбора, наведите мышкой на стенд и нажмите на галочку.</p>
+										</div>
+										<div class="step-next">
+											<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="step2">
+										<ul class="step-line clearfix">
+											<li><p>Шаг 1</p><span></span></li>
+											<li class="active"><p>Шаг 2</p><span></span></li>
+											<li><p>Шаг 3</p><span></span></li>
+											<li><p>Шаг 4</p><span></span></li>
+											<li><p>Шаг 5</p><span></span></li>
+										</ul>
+										<div class="step-wrap">
+											<h4>Шаг 2. Контакты</h4>
+											<p>Внесение контактных данных компании. Есть возможность загрузить логотип вашей компании и добавить информации о филиалах (если таковые есть).</p>
+											<div class="step-video-wrap">
+												<div class="step-video-heading">Добавить филиал</div>
+												<div class="step-video" style="background-image: url(images/wizard/bg-video.png);">
+													<a class="btn-play" title="Смотреть видео">
+														<div class="btn-play-icon"></div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="step-next">
+											<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="step3">
+										<ul class="step-line clearfix">
+											<li><p>Шаг 1</p><span></span></li>
+											<li><p>Шаг 2</p><span></span></li>
+											<li class="active"><p>Шаг 3</p><span></span></li>
+											<li><p>Шаг 4</p><span></span></li>
+											<li><p>Шаг 5</p><span></span></li>
+										</ul>
+										<div class="step-wrap">
+											<h4>Шаг 3. О компании</h4>
+											<p>На третьем шаге вы вносите информацию о вашей компании, которая будет
 												отображаться посетителям на выставках.
 												<h5>Данный шаг имеет три этапа:</h5>
 												<ol>
 													<li>Редактор –  описание деятельности компании, так же вы можете добавить
-												    к описанию изображения и презентационный видеоролик.</li>
+													к описанию изображения и презентационный видеоролик.</li>
 													<li>Сертификаты, Документы и Награды –  возможность загрузки сертификатов,
-												   документов и наград вашей компании.</li>
+													документов и наград вашей компании.</li>
 													<li>Фотогалерея компании – возможность загрузки фотографий.</li>
-												</ol>					
+												</ol>
 											</p>
 										</div>
-				          </div>
-				          <div class="tab-pane fade" id="step4">
-					          <ul class="step-line clearfix">
-					          	<li><p>Шаг 1</p><span></span></li>
-					          	<li><p>Шаг 2</p><span></span></li>
-					          	<li><p>Шаг 3</p><span></span></li>
-					          	<li class="active"><p>Шаг 4</p><span></span></li>
-					          	<li><p>Шаг 5</p><span></span></li>
-					          </ul>
-					          <div class="step-wrap">            
-					          	<h4>Шаг 4. Каталог</h4>
-					            <p>Создание товара. Нажмите кнопку «Создать раздел». При наведении мышкой на
+										<div class="step-next">
+											<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="step4">
+										<ul class="step-line clearfix">
+											<li><p>Шаг 1</p><span></span></li>
+											<li><p>Шаг 2</p><span></span></li>
+											<li><p>Шаг 3</p><span></span></li>
+											<li class="active"><p>Шаг 4</p><span></span></li>
+											<li><p>Шаг 5</p><span></span></li>
+										</ul>
+										<div class="step-wrap">
+											<h4>Шаг 4. Каталог</h4>
+											<p>Создание товара. Нажмите кнопку «Создать раздел». При наведении мышкой на
 											раздел появляется иконка «Шестеренка», при наведении на неё появляется меню.</p>
-
 											<p>В меню выбираете создать товар, или создать подраздел. При создании товара
-											заполняете описание, цену, фото. Поставив галочку «На витрину» стенд будет
-											отображаться на полках виртуального стенда на главной странице стенда.
+												заполняете описание, цену, фото. Поставив галочку «На витрину» стенд будет
+												отображаться на полках виртуального стенда на главной странице стенда.
 											После создания  доступна возможность редактирования.</p>
 										</div>
-				          </div>
-				          <div class="tab-pane fade" id="step5">
-					          <ul class="step-line clearfix">
-					          	<li><p>Шаг 1</p><span></span></li>
-					          	<li><p>Шаг 2</p><span></span></li>
-					          	<li><p>Шаг 3</p><span></span></li>
-					          	<li><p>Шаг 4</p><span></span></li>
-					          	<li class="active"><p>Шаг 5</p><span></span></li>
-					          </ul>
-					          <div class="step-wrap"> 
-					          	<h4>Шаг 5. Менеджеры</h4>
-					            <p>В пятом шаге Вы выбираете менеджеров стенда, которые будут представителями
+										<div class="step-next">
+											<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="step5">
+										<ul class="step-line clearfix">
+											<li><p>Шаг 1</p><span></span></li>
+											<li><p>Шаг 2</p><span></span></li>
+											<li><p>Шаг 3</p><span></span></li>
+											<li><p>Шаг 4</p><span></span></li>
+											<li class="active"><p>Шаг 5</p><span></span></li>
+										</ul>
+										<div class="step-wrap">
+											<h4>Шаг 5. Менеджеры</h4>
+											<p>В пятом шаге Вы выбираете менеджеров стенда, которые будут представителями
 												стенда вашей компании на выставке. Вносятся данные менеджера. Пароли и адреса
-												электронной почты передайте каждому менеджеру для их доступа к стенду!</p>
-
+											электронной почты передайте каждому менеджеру для их доступа к стенду!</p>
 											<p>После заполнения всех необходимых полей, нажимаем на кнопку “Завершить”, после
-												чего будет выбор: сохранить и разместить стенд на выставке, либо сохранить стенд 
-												и продолжить позже. 
+												чего будет выбор: сохранить и разместить стенд на выставке, либо сохранить стенд
+												и продолжить позже.
 											</p>
 											<p>Успешной выставки!</p>
 										</div>
-				          </div>
-				        </div>
-			 	
-						 </div>	  
-			    </div>
-		    </div>
-	    </div>
-    </div>
-	</div>
-	</main>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<script>
-		$(document).ready(function() {
-			 $('.btnNext').click(function(){
-				  $('.nav-tabs > .active').next('li').find('a').trigger('click');
-				});
-		});
-	</script>
-
-</body>
+										<div class="step-next">
+											<a href="#" role="button" class="btn btnNext"><span class="step-next-text">Далее</span><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+										</div>
+										<div class="step-last">
+											<button type="button" class="btn btnLast" data-dismiss="modal">Закрыть</button>
+										</div>	
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function() { 
+				$('.btnNext').click(function(){ 
+					$('.nav-tabs > .active').next('li').find('a').trigger('click'); 
+				}); 
+				$('.nav-tabs > li:last-child a').click(function(e){ 
+					e.preventDefault();
+					$('.btnNext:last').removeClass('hidden');
+  				$('.btnNext:last').addClass('hidden');
+  				$('.step-last').show();
+				}); 
+			});
+		</script>
+	</body>
 </html>
