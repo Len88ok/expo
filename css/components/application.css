@@ -416,8 +416,10 @@
   #standartModal .map-participants-standart:before {
     height: 60px;
     top: 200px;
-    left: -200px; }
+    left: -200px;
+    line-height: 4; }
   #premiumModal .map-participants-standart:before {
     height: 60px;
     top: 200px;
-    left: -200px; } }
+    left: -200px;
+    line-height: 4; } }
