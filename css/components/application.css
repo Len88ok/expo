@@ -164,8 +164,6 @@
     .application .table thead tr:first-child,
     .application .table tbody tr:last-child {
       background-color: #eefdff; }
-  .application-services {
-    padding-left: 1.5em !important; }
   .application-minimal {
     text-align: center;
     color: #28b957;
@@ -189,12 +187,16 @@
     text-align: center; }
   .application-prime {
     text-align: center; }
-  .application-services.text-center {
-    font-size: 2.4rem;
-    padding-left: 0 !important; }
-  .application-services span {
-    float: right;
-    margin-top: -8px; }
+  .application-services {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important; }
+    .application-services.text-center {
+      font-size: 2.4rem;
+      padding-left: 0 !important; }
+    .application-services span {
+      float: right;
+      margin-top: -8px;
+      margin-right: -10px; }
   .application-summary {
     border: 1px dashed cyan;
     padding: 1em 2.5em;
@@ -339,3 +341,16 @@
     width: 60%; }
   .application-modal-logo {
     text-align: center; } }
+
+.modal-btn {
+  outline: none; }
+  .modal-btn:focus {
+    outline: none; }
+
+#standartModal .modal-dialog,
+#premiumModal .modal-dialog {
+  width: 90%; }
+
+#standartModal .modal-content,
+#premiumModal .modal-content {
+  padding: 20px; }

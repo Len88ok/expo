@@ -484,3 +484,21 @@
 
 }
 
+
+.modal-btn{
+	outline: none;
+	&:focus{
+		outline: none;
+	}
+}
+#standartModal,
+#premiumModal{
+	.modal{
+		&-dialog{
+			width: 90%;
+		}
+		&-content{
+			padding: 20px;
+		}		
+	}
+}
