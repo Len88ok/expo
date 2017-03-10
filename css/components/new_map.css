@@ -224,6 +224,11 @@ sup {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px; }
+  .map-participants-info-text {
+    background: #fff;
+    display: inline-block;
+    z-index: 10000;
+    position: relative; }
   .map-participants-info-line {
     position: absolute;
     top: 16px;
@@ -231,7 +236,8 @@ sup {
     display: block;
     width: 78%;
     height: 1px;
-    background: #55d17d; }
+    background: #55d17d;
+    z-index: 0; }
   .map-participants-info .line2 {
     width: 73%;
     left: 27%; }

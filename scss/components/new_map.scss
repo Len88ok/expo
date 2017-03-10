@@ -265,7 +265,14 @@ sup{
 			font-size: 24px;
 			font-weight: 700;
 			text-transform: uppercase;
-	    margin-bottom: 20px;
+		    margin-bottom: 20px;
+		    &-text{
+		    	background: #fff;
+	    	    display: inline-block;
+	    	    z-index: 10000;
+	    	    position: relative;
+	  
+		    }
 			&-line{
 				position: absolute;
 				top: 16px;
@@ -274,6 +281,7 @@ sup{
 				width: 78%;
 				height: 1px;
 				background: #55d17d;
+				z-index: 0;
 			}
 			.line2{
 				width: 73%;
