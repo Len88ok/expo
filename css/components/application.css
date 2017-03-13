@@ -349,22 +349,27 @@
     outline: none; }
 
 #standartModal .modal-dialog,
-#premiumModal .modal-dialog {
+#premiumModal .modal-dialog,
+#topModal .modal-dialog {
   width: 90%;
   margin: 0 auto; }
 
 #standartModal .modal-content,
-#premiumModal .modal-content {
+#premiumModal .modal-content,
+#topModal .modal-content {
   padding: 50px 100px; }
 
 #standartModal .map-participants-premium,
 #standartModal .map-participants-standart,
 #premiumModal .map-participants-premium,
-#premiumModal .map-participants-standart {
+#premiumModal .map-participants-standart,
+#topModal .map-participants-premium,
+#topModal .map-participants-standart {
   padding: 10px 60px; }
 
 #standartModal .map-participants-premium .map-title,
-#premiumModal .map-participants-premium .map-title {
+#premiumModal .map-participants-premium .map-title,
+#topModal .map-participants-premium .map-title {
   height: 50px; }
 
 #premiumModal .map-participants-premium {
@@ -413,9 +418,38 @@
     vertical-align: middle;
     line-height: 6; }
 
+#topModal .map-participants-top-wrap {
+  border: 2px dashed #e74c3c;
+  position: relative;
+  padding: 73px 20px 0;
+  margin: -73px -20px 0; }
+  #topModal .map-participants-top-wrap:before {
+    content: "ТОП";
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 45%;
+    left: -101px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3; }
+
+#topModal .map-participants-wrap-transparent {
+  border: 2px dashed transparent; }
+
 @media screen and (max-width: 767px) {
   #standartModal .modal-content,
-  #premiumModal .modal-content {
+  #premiumModal .modal-content,
+  #topModal .modal-content {
     padding: 0 25px; }
   #standartModal .map-participants-standart:before {
     height: 60px;

@@ -492,7 +492,8 @@
 	}
 }
 #standartModal,
-#premiumModal{
+#premiumModal,
+#topModal{
 	.modal{
 		&-dialog{
 			width: 90%;
@@ -563,9 +564,40 @@
 	}
 }
 
+#topModal{
+	.map-participants-top-wrap{
+		border: 2px dashed #e74c3c;
+		position: relative;
+		padding: 73px 20px 0;
+	    margin: -73px -20px 0;
+		&:before{
+			content: "ТОП";
+		    position: absolute;
+		    display: inline-block;
+		    width: 200px;
+		    height: 40px;
+		    background-color: #e74c3c;
+		    color: #fff;
+		    font-size: 14px;
+		    font-weight: 600;
+		    line-height: 11px;
+		    transform: rotate(-90deg);
+		    top: 45%;
+		    left: -101px;
+		    text-align: center;
+		    vertical-align: middle;
+		    line-height: 3;
+		}
+	}
+	.map-participants-wrap-transparent{
+		border: 2px dashed transparent;
+	}
+}
+
 @media screen and (max-width: 767px ) {
 	#standartModal,
-	#premiumModal{
+	#premiumModal,
+	#topModal{
 		.modal{
 			&-content{
 				padding: 0 25px;
@@ -591,5 +623,7 @@
 			    line-height: 4;
 			}
 		}
+	}
+	#topModal{
 	}
 }
