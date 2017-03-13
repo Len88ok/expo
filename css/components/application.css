@@ -508,3 +508,11 @@
 
 #sliderModal .slick-prev, #sliderModal .slick-next {
   top: 45%; }
+
+@media screen and (max-width: 767px) {
+  #sliderModal .modal-main {
+    padding: 30px; }
+  #sliderModal .modal-heading {
+    padding: 30px; }
+  #sliderModal .modal-slider-wrap {
+    padding: 20px 0; } }

@@ -680,3 +680,20 @@
 		top: 45%;
 	}
 }
+
+@media screen and (max-width: 767px ) {
+	#sliderModal{
+	.modal{
+		&-main{
+			padding: 30px;
+		}
+		&-heading{
+			padding: 30px;
+		}
+		&-slider{
+			&-wrap{
+			    padding: 20px 0;
+			}
+		}
+	}}
+}
