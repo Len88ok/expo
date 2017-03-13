@@ -379,8 +379,8 @@
     content: "Тариф ПРЕМИУМ";
     position: absolute;
     display: inline-block;
-    width: 400px;
-    height: 80px;
+    width: 250px;
+    height: 70px;
     background-color: #e74c3c;
     color: #fff;
     font-size: 14px;
@@ -390,10 +390,10 @@
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     top: 45%;
-    left: -200px;
+    left: -126px;
     text-align: center;
     vertical-align: middle;
-    line-height: 6; }
+    line-height: 5; }
 
 #standartModal .map-participants-standart {
   border: 2px dashed #e74c3c;
@@ -402,8 +402,8 @@
     content: "Тариф СТАНДАРТ";
     position: absolute;
     display: inline-block;
-    width: 400px;
-    height: 80px;
+    width: 250px;
+    height: 70px;
     background-color: #e74c3c;
     color: #fff;
     font-size: 14px;
@@ -412,11 +412,11 @@
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    top: 45%;
-    left: -200px;
+    top: 40%;
+    left: -126px;
     text-align: center;
     vertical-align: middle;
-    line-height: 6; }
+    line-height: 5; }
 
 #topModal .map-participants-top-wrap {
   border: 2px dashed #e74c3c;
@@ -453,11 +453,11 @@
     padding: 0 25px; }
   #standartModal .map-participants-standart:before {
     height: 60px;
-    top: 200px;
-    left: -200px;
+    top: 98px;
+    left: -122px;
     line-height: 4; }
-  #premiumModal .map-participants-standart:before {
+  #premiumModal .map-participants-premium:before {
     height: 60px;
-    top: 200px;
-    left: -200px;
+    top: 98px;
+    left: -122px;
     line-height: 4; } }
