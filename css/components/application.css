@@ -48,7 +48,8 @@
   .application-title {
     text-align: center;
     font-size: 2.4rem;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    text-transform: uppercase; }
     .application-title.green {
       color: #55d17d; }
   .application-text {
@@ -59,12 +60,12 @@
   .application-caption-text {
     font-size: 1.2rem; }
   .application-btn {
-    text-transform: capitalize;
+    text-transform: none;
     width: 171px;
     padding: 9px;
     color: #646464 !important; }
     .application-btn:active, .application-btn:hover, .application-btn:focus {
-      text-transform: capitalize;
+      text-transform: none;
       padding: 9px;
       color: #fff !important; }
     .application-btn-chosen {
