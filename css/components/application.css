@@ -197,7 +197,8 @@
     .application-services span {
       float: right;
       margin-top: -8px;
-      margin-right: -10px; }
+      margin-right: -10px;
+      color: #c2cbcd; }
   .application-summary {
     border: 1px dashed cyan;
     padding: 1em 2.5em;
@@ -461,3 +462,49 @@
     top: 98px;
     left: -122px;
     line-height: 4; } }
+
+#sliderModal button.close {
+  outline: none; }
+  #sliderModal button.close:focus {
+    outline: none; }
+
+#sliderModal a {
+  color: #FFF; }
+
+#sliderModal .modal-dialog {
+  width: 80%;
+  margin: 0 auto; }
+
+#sliderModal .modal-content {
+  padding: 8px; }
+
+#sliderModal .modal-main {
+  padding: 30px 60px; }
+
+#sliderModal .modal-heading {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  border-bottom: 1px solid #55d17d;
+  margin: 0 60px;
+  padding: 30px 0; }
+
+#sliderModal .modal-info {
+  margin-bottom: 50px; }
+
+#sliderModal .modal-slider-wrap {
+  height: auto;
+  box-shadow: 0 0 24px rgba(38, 52, 142, 0.39);
+  padding: 20px 40px; }
+
+#sliderModal .slick-dotted.slick-slider {
+  margin-bottom: 0 !important; }
+
+#sliderModal .commercial-slider-exh-info {
+  width: 260px; }
+
+#sliderModal .slick-slide .img-wrapper {
+  height: 200px; }
+
+#sliderModal .slick-prev, #sliderModal .slick-next {
+  top: 45%; }
