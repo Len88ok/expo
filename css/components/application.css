@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .back-btn {
   color: #1c7ebb;
   font-size: 1.4rem;
@@ -377,8 +376,7 @@
 #premiumModal .map-participants-premium {
   border: 2px dashed #e74c3c;
   position: relative; }
-  #premiumModal .map-participants-premium:before {
-    content: "Тариф ПРЕМИУМ";
+  #premiumModal .map-participants-premium .tarif-label {
     position: absolute;
     display: inline-block;
     width: 250px;
@@ -387,7 +385,6 @@
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    line-height: 11px;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -400,8 +397,7 @@
 #standartModal .map-participants-standart {
   border: 2px dashed #e74c3c;
   position: relative; }
-  #standartModal .map-participants-standart:before {
-    content: "Тариф СТАНДАРТ";
+  #standartModal .map-participants-standart .tarif-label {
     position: absolute;
     display: inline-block;
     width: 250px;
@@ -410,7 +406,6 @@
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    line-height: 11px;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -425,8 +420,7 @@
   position: relative;
   padding: 73px 20px 0;
   margin: -73px -20px 0; }
-  #topModal .map-participants-top-wrap:before {
-    content: "ТОП";
+  #topModal .map-participants-top-wrap .tarif-label {
     position: absolute;
     display: inline-block;
     width: 200px;
@@ -435,7 +429,6 @@
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    line-height: 11px;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);

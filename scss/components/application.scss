@@ -521,8 +521,7 @@
 	.map-participants-premium{
 		border: 2px dashed #e74c3c;
 		position: relative;
-		&:before{
-			content: "Тариф ПРЕМИУМ";
+		.tarif-label{
 		    position: absolute;
 		    display: inline-block;
 		    width: 250px;
@@ -531,7 +530,6 @@
 		    color: #fff;
 		    font-size: 14px;
 		    font-weight: 600;
-		    line-height: 11px;
 		    transform: rotate(-90deg);
 		    top: 45%;
 		    left: -126px;
@@ -545,8 +543,7 @@
 	.map-participants-standart{
 		border: 2px dashed #e74c3c;
 		position: relative;
-		&:before{
-			content: "Тариф СТАНДАРТ";
+		.tarif-label{
 		    position: absolute;
 		    display: inline-block;
 		    width: 250px;
@@ -555,7 +552,6 @@
 		    color: #fff;
 		    font-size: 14px;
 		    font-weight: 600;
-		    line-height: 11px;
 		    transform: rotate(-90deg);
 		    top: 40%;
 		    left: -126px;
@@ -572,8 +568,7 @@
 		position: relative;
 		padding: 73px 20px 0;
 	    margin: -73px -20px 0;
-		&:before{
-			content: "ТОП";
+		.tarif-label{
 		    position: absolute;
 		    display: inline-block;
 		    width: 200px;
@@ -582,7 +577,6 @@
 		    color: #fff;
 		    font-size: 14px;
 		    font-weight: 600;
-		    line-height: 11px;
 		    transform: rotate(-90deg);
 		    top: 45%;
 		    left: -101px;
