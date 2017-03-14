@@ -373,6 +373,29 @@
 #topModal .map-participants-premium .map-title {
   height: 50px; }
 
+#standartModal .map-participants-premium-wrap,
+#premiumModal .map-participants-premium-wrap,
+#topModal .map-participants-premium-wrap {
+  line-height: 250px; }
+
+#standartModal .map-participants-premium-img,
+#premiumModal .map-participants-premium-img,
+#topModal .map-participants-premium-img {
+  background-image: url("../../images/application/logo-lg.png");
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+#standartModal .map-participants-standart-img,
+#premiumModal .map-participants-standart-img,
+#topModal .map-participants-standart-img {
+  background-image: url("../../images/application/logo-min.png");
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
 #premiumModal .map-participants-premium {
   border: 2px dashed #e74c3c;
   position: relative; }

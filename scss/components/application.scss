@@ -513,6 +513,25 @@
 		.map-title{
 			height: 50px;
 		}
+		&-wrap{
+			line-height: 250px;	
+		}
+		&-img{
+			background-image: url('../../images/application/logo-lg.png');
+			width: 200px;
+		    height: 200px;
+		    background-repeat: no-repeat;
+		    background-size: 100%;
+		}
+	}
+	.map-participants-standart{
+		&-img{
+			background-image: url('../../images/application/logo-min.png');
+			width: 60px;
+		    height: 60px;
+		    background-repeat: no-repeat;
+		    background-size: 100%;
+		}
 	}
 	
 }
@@ -536,7 +555,7 @@
 		    text-align: center;
 		    vertical-align: middle;
 		    line-height: 5;
-		}
+		}		
 	}
 }
 #standartModal{
