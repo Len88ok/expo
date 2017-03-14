@@ -523,6 +523,15 @@
 		    background-repeat: no-repeat;
 		    background-size: 100%;
 		}
+		.map-btn{
+			.btn{
+				cursor: auto;
+				&:hover{
+					color: #fff;
+					background-color: #55d17d;
+				}
+			}
+		}
 	}
 	.map-participants-standart{
 		&-img{
@@ -531,6 +540,11 @@
 		    height: 60px;
 		    background-repeat: no-repeat;
 		    background-size: 100%;
+		}
+		.map-link{
+			color: #55d17d;
+		    font-size: 13px;
+		    text-decoration: underline;
 		}
 	}
 	

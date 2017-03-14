@@ -387,6 +387,16 @@
   background-repeat: no-repeat;
   background-size: 100%; }
 
+#standartModal .map-participants-premium .map-btn .btn,
+#premiumModal .map-participants-premium .map-btn .btn,
+#topModal .map-participants-premium .map-btn .btn {
+  cursor: auto; }
+  #standartModal .map-participants-premium .map-btn .btn:hover,
+  #premiumModal .map-participants-premium .map-btn .btn:hover,
+  #topModal .map-participants-premium .map-btn .btn:hover {
+    color: #fff;
+    background-color: #55d17d; }
+
 #standartModal .map-participants-standart-img,
 #premiumModal .map-participants-standart-img,
 #topModal .map-participants-standart-img {
@@ -395,6 +405,13 @@
   height: 60px;
   background-repeat: no-repeat;
   background-size: 100%; }
+
+#standartModal .map-participants-standart .map-link,
+#premiumModal .map-participants-standart .map-link,
+#topModal .map-participants-standart .map-link {
+  color: #55d17d;
+  font-size: 13px;
+  text-decoration: underline; }
 
 #premiumModal .map-participants-premium {
   border: 2px dashed #e74c3c;
