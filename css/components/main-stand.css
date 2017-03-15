@@ -18,6 +18,10 @@ body {
     overflow-y: visible; }
   .main-stand .left-nav {
     height: 64%; }
+  .main-stand #main-content.bg-stand .logo-wrapper {
+    bottom: 100px;
+    margin: 0 auto;
+    top: auto; }
   .main-stand #main-content.bg-stand .buttons-wrapper {
     bottom: 55px;
     top: auto; }
@@ -34,8 +38,6 @@ body {
     padding-top: 150px; }
   .manager-slider {
     top: 40%; }
-  #main-content.bg-stand .logo-wrapper {
-    margin-top: 300px; }
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 12px; }
   .navbar-brand {
@@ -62,9 +64,15 @@ body {
   #online-help-btn {
     display: none; }
   #main-content.bg-stand .logo-wrapper {
-    margin-top: 100px; }
+    top: 100px;
+    bottom: 0; }
   .company-name {
-    display: none; } }
+    display: none; }
+  .manager-slider .manager-slick-slider .slick-next {
+    left: 190px; }
+  .manager-slider .manager-slick-slider .slick-prev {
+    left: auto;
+    right: 185px; } }
 
 @media screen and (max-width: 350px) {
   .main-stand #main-content.bg-stand .buttons-wrapper {
