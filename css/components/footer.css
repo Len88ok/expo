@@ -1,4 +1,22 @@
+html,
+body {
+  height: 100%; }
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  height: 1px; }
+
+.wrapper > .content {
+  padding-bottom: 45px;
+  height: 100%; }
+
 #footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
   background: #272626;
   color: #fff;
   font-size: 12px;
@@ -29,21 +47,30 @@
   list-style: none; }
 
 @media screen and (max-width: 479px) {
-  #footer ul.footer-menu {
-    float: none; }
-  #footer a.social-networks {
-    margin-right: 5px; }
-  #footer .pull-right {
-    float: none !important;
-    display: inline-block; }
+  #footer {
+    height: 60px; }
+    #footer ul.footer-menu {
+      float: none; }
+    #footer a.social-networks {
+      margin-right: 5px; }
+    #footer .pull-right {
+      float: none !important;
+      display: inline-block; }
   .copyright {
     text-align: center; } }
 
 .terms-of-usage {
-  padding: 3em 0; }
+  padding: 3em 2em; }
   .terms-of-usage ul {
     list-style-type: disc;
     padding-left: 40px; }
+  .terms-of-usage .logo-dscr {
+    text-transform: none;
+    color: #026fb3;
+    font-size: 9px;
+    line-height: 11px;
+    display: block;
+    padding-top: 4px; }
 
 .show-terms-of-usage {
   outline: none; }
@@ -52,6 +79,12 @@
 
 #rules-modal_frame {
   display: none; }
+
+#rules-modal-print {
+  position: fixed;
+  margin-left: -20px; }
+  #rules-modal-print:hover {
+    opacity: 0.8; }
 
 #rules-modal {
   padding-right: 0px !important; }
@@ -64,17 +97,24 @@
     width: 98%; }
   #rules-modal .modal-content {
     padding: 0;
-    background-color: #eff0ff; }
-  #rules-modal .modal-header {
-    padding: 15px; }
-    #rules-modal .modal-header .close {
+    background-color: #e9ebff; }
+  #rules-modal .modal-body {
+    padding: 10px 0; }
+    #rules-modal .modal-body .close {
       color: #55d17d;
       font-size: 40px;
       opacity: 1;
-      outline: none; }
-      #rules-modal .modal-header .close:hover {
+      outline: none;
+      position: absolute;
+      right: 3%; }
+      #rules-modal .modal-body .close:hover {
         opacity: 0.8; }
-      #rules-modal .modal-header .close:focus {
+      #rules-modal .modal-body .close:focus {
         outline: none; }
-  #rules-modal .modal-body {
-    padding: 0; }
+
+@media screen and (max-width: 767px) {
+  .modal-body .close {
+    right: 7%;
+    top: 0; }
+  #rules-modal-print {
+    margin-left: -12px; } }

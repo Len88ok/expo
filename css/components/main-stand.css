@@ -1,8 +1,48 @@
-.main-stand #header {
-  padding-left: 200px; }
+body {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: auto; }
 
-.main-stand .main-menu.authorization-menu {
-  padding: 0.5em; }
+.main-stand {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: #e2e4ff !important;
+  background-size: cover !important; }
+  .main-stand #header {
+    left: 200px; }
+  .main-stand .main-menu.authorization-menu {
+    padding: 0.5em;
+    margin-right: 0; }
+  .main-stand .cd-section {
+    padding-left: 0;
+    overflow-y: visible; }
+  .main-stand .left-nav {
+    height: 64%; }
+  .main-stand #main-content.bg-stand .buttons-wrapper {
+    bottom: 55px;
+    top: auto; }
 
-.main-stand .cd-section {
-  padding-left: 0; }
+@media screen and (max-width: 991px) {
+  .left-panel-button:hover,
+  .left-panel {
+    width: 120px; }
+  .main-stand #header {
+    left: 120px; }
+  .navbar {
+    margin-top: 45px; }
+  .main-stand .main-menu.authorization-menu {
+    position: absolute;
+    right: 50%;
+    margin-right: -50px; }
+  .cd-main {
+    padding-left: 120px; }
+  #main-content {
+    padding-top: 150px; }
+  .manager-slider {
+    top: 40%; }
+  #main-content.bg-stand .logo-wrapper {
+    margin-top: 295px; } }
+
+@media screen and (max-width: 767px) {
+  .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
+    font-size: 12px; } }

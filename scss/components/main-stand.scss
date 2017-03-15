@@ -1,12 +1,66 @@
+body{
+  min-width: 100%;
+  max-width: 100%;
+  min-height: auto;
+}
 .main-stand{
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: #e2e4ff !important; 
+  background-size: cover !important;
   #header{
-    padding-left: 200px;
+    left: 200px;
   }
   .main-menu.authorization-menu{
     padding: 0.5em;
+    margin-right: 0;
   }
   .cd-section{
     padding-left: 0;
-    
+    overflow-y: visible;
+  }
+  .left-nav{height: 64%;}
+  #main-content.bg-stand .buttons-wrapper{
+    bottom: 55px;
+    top: auto;
+  }
+}
+
+@media screen and (max-width: 991px ) {
+  .left-panel-button:hover,
+  .left-panel{
+    width: 120px;    
+  }
+  .main-stand #header{
+    left: 120px;
+  }
+  .navbar{
+    margin-top: 45px;
+  }
+  .main-stand .main-menu.authorization-menu{
+    position: absolute;
+    right: 50%;
+    margin-right: -50px;
+  }
+  .cd-main{
+    padding-left: 120px;
+  }
+  #main-content{
+    padding-top: 150px;
+  }
+  .manager-slider{
+    top: 40%;
+  }
+  #main-content.bg-stand .logo-wrapper{
+    margin-top: 295px;
+  }
+  
+}
+
+@media screen and (max-width: 767px ) {
+  .main-stand{
+    .btn-base, .btn-base:active, .btn-base:visited, .btn-base:focus{
+      font-size: 12px;
+    }
   }
 }

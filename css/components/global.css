@@ -22,6 +22,12 @@ a:focus,
 a:hover {
   text-decoration: none; }
 
+@media only screen and (max-width: 1200px) and (min-width: 0) {
+  .container {
+    width: 90% !important;
+    min-width: auto !important;
+    margin: 0 auto; } }
+
 .brand {
   text-align: center;
   padding: 2em 0; }
