@@ -1,0 +1,7 @@
+body {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: auto; }
+
+.company-info #header {
+  left: 200px; }
