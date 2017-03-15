@@ -4,7 +4,31 @@ body{
   min-height: auto;
 }
 .company-info{
-  #header{
-    left: 200px;
+  #main-content.stand-page{
+    min-width: 100%; 
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;  
+    
   }
 }
+
+@media screen and (max-width: 1300px ) {
+  .page-title-wrapper{
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1169px ) {
+  .page-title-wrapper{
+    height: 162px;
+    padding-top: 40px;
+  }
+  .opacity-color-cover{
+    height: 245px;
+  }
+}
+
+
+
+
