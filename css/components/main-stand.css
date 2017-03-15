@@ -28,12 +28,6 @@ body {
     width: 120px; }
   .main-stand #header {
     left: 120px; }
-  .navbar {
-    margin-top: 45px; }
-  .main-stand .main-menu.authorization-menu {
-    position: absolute;
-    right: 50%;
-    margin-right: -50px; }
   .cd-main {
     padding-left: 120px; }
   #main-content {
@@ -41,14 +35,42 @@ body {
   .manager-slider {
     top: 40%; }
   #main-content.bg-stand .logo-wrapper {
-    margin-top: 95px; }
+    margin-top: 300px; }
+  .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
+    font-size: 12px; }
+  .navbar-brand {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-header {
+    float: none; } }
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    margin-top: 45px; }
+  .main-stand .main-menu.authorization-menu {
+    position: absolute;
+    right: 50%;
+    margin-right: -50px; } }
+
+@media screen and (max-width: 478px) {
+  .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
+    font-size: 10px; }
+  #online-help-btn {
+    display: none; }
+  #main-content.bg-stand .logo-wrapper {
+    margin-top: 100px; }
   .company-name {
     display: none; } }
 
-@media screen and (max-width: 767px) {
-  .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
-    font-size: 12px; } }
-
-@media screen and (max-width: 767px) {
-  .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
-    font-size: 10px; } }
+@media screen and (max-width: 350px) {
+  .main-stand #main-content.bg-stand .buttons-wrapper {
+    bottom: 85px;
+    top: auto; }
+  .main-stand .btn-base.left-arrow {
+    padding-left: 30px; }
+  .main-stand .btn-base.right-arrow {
+    padding-right: 42px; } }

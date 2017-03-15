@@ -1,3 +1,7 @@
+@media (min-width: 992px) {
+  navbar-toggle {
+    display: none; } }
+
 header {
   position: relative;
   z-index: 200; }

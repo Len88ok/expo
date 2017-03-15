@@ -318,6 +318,10 @@ a:hover {
   background: url(../images/arrow-sprite.png) no-repeat 0px -62px;
   cursor: pointer; }
 
+@media (min-width: 992px) {
+  navbar-toggle {
+    display: none; } }
+
 header {
   position: relative;
   z-index: 200; }
