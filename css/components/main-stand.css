@@ -26,6 +26,10 @@ body {
     bottom: 55px;
     top: auto; }
 
+@media screen and (max-width: 1169px) {
+  #main-content {
+    padding-top: 125px; } }
+
 @media screen and (max-width: 991px) {
   .left-panel-button:hover,
   .left-panel {
