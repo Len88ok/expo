@@ -52,7 +52,10 @@ body{
     top: 40%;
   }
   #main-content.bg-stand .logo-wrapper{
-    margin-top: 295px;
+    margin-top: 95px;
+  }
+  .company-name{
+    display: none;
   }
   
 }
@@ -61,6 +64,13 @@ body{
   .main-stand{
     .btn-base, .btn-base:active, .btn-base:visited, .btn-base:focus{
       font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 767px ) {
+  .main-stand{
+    .btn-base, .btn-base:active, .btn-base:visited, .btn-base:focus{
+      font-size: 10px;
     }
   }
 }

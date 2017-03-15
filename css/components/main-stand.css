@@ -41,8 +41,14 @@ body {
   .manager-slider {
     top: 40%; }
   #main-content.bg-stand .logo-wrapper {
-    margin-top: 295px; } }
+    margin-top: 95px; }
+  .company-name {
+    display: none; } }
 
 @media screen and (max-width: 767px) {
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 12px; } }
+
+@media screen and (max-width: 767px) {
+  .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
+    font-size: 10px; } }
