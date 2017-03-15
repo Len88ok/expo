@@ -65,11 +65,11 @@ body {
 @media screen and (max-width: 478px) {
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 10px; }
-  #online-help-btn {
-    display: none; }
-  #main-content.bg-stand .logo-wrapper {
+  .main-stand #main-content.bg-stand .logo-wrapper {
     top: 100px;
     bottom: auto; }
+  #online-help-btn {
+    display: none; }
   .company-name {
     display: none; }
   .manager-slider .manager-slick-slider .slick-next {

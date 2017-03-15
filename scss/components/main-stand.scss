@@ -93,14 +93,15 @@ body{
     .btn-base, .btn-base:active, .btn-base:visited, .btn-base:focus{
       font-size: 10px;
     }
+     #main-content.bg-stand .logo-wrapper{
+    top: 100px;
+    bottom: auto;
+  }
   }
   #online-help-btn{
     display: none;
   }
-  #main-content.bg-stand .logo-wrapper{
-    top: 100px;
-    bottom: auto;
-  }
+ 
   .company-name{
     display: none;
   }
