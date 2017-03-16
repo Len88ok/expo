@@ -43,3 +43,7 @@
 
 .stand-catalog .cd-main {
   padding-left: 0; }
+
+@media screen and (max-width: 991px) {
+  .stand-catalog .cd-main {
+    padding-left: 120px; } }

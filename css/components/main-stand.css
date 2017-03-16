@@ -21,6 +21,8 @@
 @media screen and (max-width: 991px) {
   #main-content {
     padding-top: 150px; }
+  .main-stand .cd-main {
+    padding-left: 120px; }
   .manager-slider {
     top: 205px; }
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
