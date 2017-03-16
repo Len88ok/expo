@@ -1,0 +1,57 @@
+.jstree-ocl{
+  cursor: pointer;
+  height: 40px !important;
+  width: 40px !important;
+  position: absolute !important;
+  right: 0;
+  z-index: 3;
+}
+
+.jstree-default .jstree-themeicon{
+	display: none;
+}
+
+.jstree-anchor .jstree-checkbox, 
+.jstree-leaf .jstree-anchor .jstree-checkbox,
+.jstree-default .jstree-checkbox:hover{
+  float: left;
+  height: 20px !important;
+  width: 20px !important;
+  margin-top: 3px !important;
+  margin-right: 10px;
+  background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/catalog-tree-sprite.png) no-repeat 0 0 #fff;
+}
+
+.jstree-default.jstree-checkbox-selection .jstree-clicked>.jstree-checkbox, 
+.jstree-default .jstree-checked>.jstree-checkbox{
+  background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/catalog-tree-sprite.png) no-repeat 0 -49px #fff !important;
+}
+
+.jstree-default>.jstree-no-dots .jstree-closed>.jstree-ocl {
+  background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/catalog-tree-sprite.png) no-repeat 100% -93px !important;
+}
+
+.jstree-default>.jstree-no-dots .jstree-open>.jstree-ocl {
+    background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/catalog-tree-sprite.png) no-repeat scroll 99% -139px !important;
+}
+
+.jstree-default >.jstree-container-ul >.jstree-node{
+  background: #eaecf0;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  text-transform: none;
+}
+
+.jstree-default .jstree-wholerow-hovered,
+.jstree-default-responsive .jstree-wholerow-hovered {
+	margin-left: 10px;
+  background: #eaecf0;
+}
+
+
+.stand-catalog{
+	.cd-main{
+		padding-left: 0;
+	}
+}
