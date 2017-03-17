@@ -5,9 +5,7 @@ body {
 
 @media screen and (max-width: 1300px) {
   .page-title-wrapper {
-    padding-top: 20px; }
-  body .wrapper {
-    height: auto; } }
+    padding-top: 20px; } }
 
 @media screen and (max-width: 1169px) {
   .page-title-wrapper {

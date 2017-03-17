@@ -46,13 +46,11 @@ html {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	height: 100%;
 	background-color: #e9ebff;
 	background-image: none;
 	&-content{
 		position: relative;	
 		width: 100%;
-		height: 100%;
 	  &-info{
 	  	position: relative;
 	  	z-index: 2;
@@ -68,7 +66,6 @@ html {
 	  		text-align: left;
 	  		text-transform: uppercase;
 	  		border: none;
-	  		margin-bottom: 30px;
 	  	}
 	  	.btn-play-link{
 	  		color: #494949;	  		
@@ -173,7 +170,6 @@ html {
 				h2{
 					font-size: 4vw;
 					text-align: center;
-					margin-bottom: 80px;
 				}
 			}
 		}
@@ -191,7 +187,6 @@ html {
 		&-info{
 			h2{
 				font-size: 30px;
-				margin-bottom: 140px;
 				padding: 30px 0;
 				text-shadow: 1px 1px 2px #000;
 			}
@@ -225,7 +220,6 @@ html {
 			  		font-size: 6vw;
 	  		    text-align: center;
 	  		    padding: 0;
-	  		    margin-bottom: 80px;
 			  	}
 			  }
 			}
