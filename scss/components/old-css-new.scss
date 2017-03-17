@@ -13,7 +13,7 @@ body{
 @media screen and (max-width: 1169px ) {
   .page-title-wrapper{
     height: 182px;
-    padding-top: 60px;
+    padding-top: 10px;
   }
   .opacity-color-cover{
     height: 265px;
@@ -74,6 +74,16 @@ body{
   .page-content-area-outer{
     padding-bottom: 50px;
   }
+  #main-content.bg-catalog .button-outer{
+    float: none;
+    .button-base, 
+    .button-base:active, 
+    .button-base:visited, 
+    .button-base:focus{
+      width: 180px;
+      padding: 5px 10px;
+    }    
+  }
 }
 
 
@@ -95,6 +105,9 @@ body{
   }
   #main-content.bg-contacts .btn-base {
    height: auto;
+  }
+  #main-content.stand-page .page-title-wrapper .btn-base {
+    margin-top: 0;
   }
   
 }
