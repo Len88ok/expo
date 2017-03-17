@@ -69,4 +69,6 @@ body {
   .main-menu.authorization-menu {
     position: absolute;
     right: 50%;
-    margin-right: -50px; } }
+    margin-right: -50px; }
+  #main-content.bg-contacts .btn-base {
+    height: auto; } }
