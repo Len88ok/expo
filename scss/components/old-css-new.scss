@@ -51,7 +51,7 @@ body{
 }
 
 
-@media screen and (max-width: 991px ) {  
+@media screen and (max-width: 991px ) {    
   .left-panel-button:hover,
   .left-panel{
     width: 120px;    
@@ -108,6 +108,9 @@ body{
   }
   #main-content.stand-page .page-title-wrapper .btn-base {
     margin-top: 0;
+  }
+  .page-title-wrapper{
+    padding-top: 60px;
   }
   
 }

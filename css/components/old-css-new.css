@@ -81,4 +81,6 @@ body {
   #main-content.bg-contacts .btn-base {
     height: auto; }
   #main-content.stand-page .page-title-wrapper .btn-base {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .page-title-wrapper {
+    padding-top: 60px; } }
