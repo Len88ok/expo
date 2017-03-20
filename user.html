@@ -1,222 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Expo</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="css/screen.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/components/user.css">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expo</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/screen.css" rel="stylesheet">
+<link rel="stylesheet" href="css/components/user.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
 <body>
 <div class="wrapper">
 <div class="content">
-	<header id="header">
-		<ul class="main-menu authorization-menu non-authorized">
-			<li class="">
-				<a href="#registration" class="popup-open-register">
-					Регистрация
-				</a>
-			</li>
-			<li class="authorization">
-				<a href="#login" class="popup-open-login">
-					Вход
-				</a>
-			</li>
-		</ul>
-		<!--Navbar header-->
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
-						<span class="navbar-brand-dscr">международный выставочный портал</span></a>
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>					
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav">
-							<li><a class="text-uppercase" href="#">для экспонентов</a></li>
-							<li><a class="text-uppercase" href="#">для посетителей</a></li>
-							<li><a class="text-uppercase" href="#">новости</a></li>
-							<li><a class="text-uppercase" href="#">расписание</a></li>
-							<li><a class="text-uppercase" href="#">о проекте</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">О проекте</a></li>
-									<li><a href="#">Контакты</a></li>
-									<li><a href="#">Партнеры</a></li>
-									<li><a href="#">Организаторам<br>выставок</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div>
-			</nav>
-		</header>
-		<div class="block-info-light block-info-light-overlay bg-under">
-			<div class="container">
-				<div class="block-info-title">ЕхроUniverse – интернет-платформа для проведения международных<br> выставок различных тематик в виртуальном формате с возможностью<br> моментального делового общения в режиме онлайн</div>
-			</div>	
+<header id="header">
+<ul class="main-menu authorization-menu non-authorized">
+<li class="">
+	<a href="#registration" class="popup-open-register">
+		Регистрация
+	</a>
+</li>
+<li class="authorization">
+	<a href="#login" class="popup-open-login">
+		Вход
+	</a>
+</li>
+</ul>
+<!--Navbar header-->
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+			<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
 		</div>
-
-		<div class="phase">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="phase-outer">
-							<div class="block-info block-info-blue">
-								<div class="block-info-blue-title">Три простых этапа</div>
-								<div class="block-info-blue-desc">Чтобы стать полноправным участником портала "EXPOUNIVERSE"</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="phase-line"></div>
-									<div class="phase-number-outer"><div class="phase-number">1</div></div>
-									<div class="phase-caption">Зарегистрируйтесь,<br> чтобы иметь расширенные<br> возможности на портале.<br> Регистрация – бесплатно!</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="phase-line"></div>
-									<div class="phase-number-outer"><div class="phase-number">2</div></div>
-									<div class="phase-caption">Выберите выставки и посещайте их,<br>не выходя их своего дома или офиса,<br> сохраняйте информацию и контакты<br>в своем личном кабинете</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="phase-number-outer"><div class="phase-number">3</div></div>
-									<div class="phase-caption">Общайтесь на виртуальных стендах<br> онлайн с синхронным переводом,<br> консультируйтесь, заключайте<br> контракты</div>
-								</div>
-							</div>                                  
-						</div>
-					</div>
-					<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
-						<div id="carousel-id" class="carousel slide" data-ride="carousel">							
-							<div class="carousel-inner">
-								<div class="item">
-									<img src="images/slider1.png">
-									<div class="carousel-caption">
-										<div class="carousel-caption-heading"><a href="#">Международная он-лайн выставка франчайзинга и оборудования для торговли 2016</a></div>
-										<div class="carousel-caption-period">Период: 10.03 - 20.12.2015</div>	
-									</div>
-								</div>
-								<div class="item">
-									<img src="images/slider1.png">
-									<div class="carousel-caption">
-										<div class="carousel-caption-heading"><a href="#">Выставка фруктов  “Фрутинни” Все  фрукты планеты в одном месте</a></div>
-										<div class="carousel-caption-period">Период: 10.03 - 20.12.2015</div>	
-									</div>
-								</div>
-								<div class="item active">
-									<img src="images/slider1.png">
-									<div class="carousel-caption">
-										<div class="carousel-caption-heading"><a href="#">Слайдер 3</a></div>
-										<div class="carousel-caption-period">Период: 10.03 - 20.12.2015</div>	
-									</div>
-								</div>
-							</div>
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-id" data-slide-to="1"></li>
-								<li data-target="#carousel-id" data-slide-to="2"></li>
-							</ol>						   
-						</div>
-						<div class="carousel-after-btn">
-							<a class="btn" href="#"">Расписание выставок</a>
-						</div>
-					</div>
-				</div>
-			</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+				<li><a class="text-uppercase" href="#">для посетителей</a></li>
+				<li><a class="text-uppercase" href="#">новости</a></li>
+				<li><a class="text-uppercase" href="#">расписание</a></li>
+				<li><a class="text-uppercase" href="#">о проекте</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">О проекте</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li><a href="#">Организаторам<br>выставок</a></li>
+					</ul>
+				</li>
+			</ul>
+			</div><!-- /.navbar-collapse -->
 		</div>
-		<div class="video-section-wrapper">
-			<div class="video-section-inner-bg">
-				<div class="container">
+	</nav>
+</header>
+<div class="block-info-light block-info-light-overlay bg-under">
+	<div class="container">
+		<div class="block-info-title">ЕхроUniverse – интернет-платформа для проведения международных<br> выставок различных тематик в виртуальном формате с возможностью<br> моментального делового общения в режиме онлайн</div>
+	</div>
+</div>
+<div class="phase">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				<div class="phase-outer">
+					<div class="block-info block-info-blue">
+						<div class="block-info-blue-title">Три простых этапа</div>
+						<div class="block-info-blue-desc">Чтобы стать полноправным участником портала "EXPOUNIVERSE"</div>
+					</div>
 					<div class="row">
-						<div class="col-sm-5">
-							<div class="video-section-title">
-								Посмотрите видео
-								<span>демонстрирующее работу портала</span>
-							</div>
+						<div class="col-sm-4">
+							<div class="phase-line"></div>
+							<div class="phase-number-outer"><div class="phase-number">1</div></div>
+							<div class="phase-caption">Зарегистрируйтесь,<br> чтобы иметь расширенные<br> возможности на портале.<br> Регистрация – бесплатно!</div>
 						</div>
-						<div class="col-sm-3">
-							<a href="https://www.youtube.com/embed/S7c93IFSMMw?controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;autoplay=1" class="btn-play">
-								<div class="btn-play-icon"></div>
-								<div class="btn-play-link">
-									<span>Смотреть</span>возможности портала
-								</div>
-							</a>
+						<div class="col-sm-4">
+							<div class="phase-line"></div>
+							<div class="phase-number-outer"><div class="phase-number">2</div></div>
+							<div class="phase-caption">Выберите выставки и посещайте их,<br>не выходя их своего дома или офиса,<br> сохраняйте информацию и контакты<br>в своем личном кабинете</div>
 						</div>
-						<div class="col-sm-1"><div class="video-section-letter">и</div></div>
-						<div class="col-sm-3">
-							<a href="https://www.youtube.com/embed/87Ixvo8HoIM?autoplay=1&amp;controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1" data-stopat-time="136" class="btn-play">
-								<div class="btn-play-icon"></div>
-								<div class="btn-play-link">
-									<span>Смотреть</span>регистрация
-								</div>
-							</a>
+						<div class="col-sm-4">
+							<div class="phase-number-outer"><div class="phase-number">3</div></div>
+							<div class="phase-caption">Общайтесь на виртуальных стендах<br> онлайн с синхронным переводом,<br> консультируйтесь, заключайте<br> контракты</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="opportunities">
-			<div class="block-info block-info-blue">Возможности учасника</div>
-			<div class="feature-block">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="feature">
-							<div class="feature-inline">
-								<a href="#"><img src="images/icon-inline1.png" alt="icon"></a>
-							</div>            
-							<div class="feature-content"> 
-								<span class="green">Участие в международных выставках,не покидая своего дома или офиса</span><br>
-								экономия денег, времени и сил на переезды, визы, представительские расходы            
-							</div> 
+			<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0">
+				<div id="carousel-id" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="item">
+							<img src="images/slider1.png">
+							<div class="carousel-caption">
+								<div class="carousel-caption-heading"><a href="#">Международная он-лайн выставка франчайзинга и оборудования для торговли 2016</a></div>
+								<div class="carousel-caption-period">Период: 10.03 - 20.12.2015</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/slider1.png">
+							<div class="carousel-caption">
+								<div class="carousel-caption-heading"><a href="#">Выставка фруктов  “Фрутинни” Все  фрукты планеты в одном месте</a></div>
+								<div class="carousel-caption-period">Период: 10.03 - 20.12.2015</div>
+							</div>
+						</div>
+						<div class="item active">
+							<img src="images/slider1.png">
+							<div class="carousel-caption">
+								<div class="carousel-caption-heading"><a href="#">Слайдер 3</a></div>
+								<div class="carousel-caption-period">Период: 10.03 - 20.12.2015</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="feature">
-							<div class="feature-inline">
-								<a href="#"><img src="images/icon-inline2.png" alt="icon"></a>
-							</div>              
-							<div class="feature-content"> 
-								<span class="orange">Представить на выставке весь ассортимент товаром и услуг,</span><br> без ограничения площади и возможностей транспортировки статистики и аналитики портала         
-							</div> 
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-id" data-slide-to="1"></li>
+						<li data-target="#carousel-id" data-slide-to="2"></li>
+					</ol>
+				</div>
+				<div class="carousel-after-btn">
+					<a class="btn" href="#"">Расписание выставок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="video-section-wrapper">
+	<div class="video-section-inner-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="video-section-title">
+						Посмотрите видео
+						<span>демонстрирующее работу портала</span>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<a href="https://www.youtube.com/embed/S7c93IFSMMw?controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;autoplay=1" class="btn-play">
+						<div class="btn-play-icon"></div>
+						<div class="btn-play-link">
+							<span>Смотреть</span>возможности портала
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-1"><div class="video-section-letter">и</div></div>
+				<div class="col-sm-3">
+					<a href="https://www.youtube.com/embed/87Ixvo8HoIM?autoplay=1&amp;controls=0&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1" data-stopat-time="136" class="btn-play">
+						<div class="btn-play-icon"></div>
+						<div class="btn-play-link">
+							<span>Смотреть</span>регистрация
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="opportunities">
+	<div class="block-info block-info-blue">Возможности учасника</div>
+	<div class="feature-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="feature">
+						<div class="feature-inline">
+							<a href="#"><img src="images/icon-inline1.png" alt="icon"></a>
+						</div>
+						<div class="feature-content">
+							<span class="green">Участие в международных выставках,не покидая своего дома или офиса</span><br>
+							экономия денег, времени и сил на переезды, визы, представительские расходы
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="feature">
-							<div class="feature-inline">
-								<a href="#"><img src="images/icon-inline3.png" alt="icon"></a>
-							</div>             
-							<div class="feature-content"> 
-								<span class="blue">Отсутствие языковых барьеров при общении с иностранными партнерами </span><br> функция автоматического перевода обеспечивает надлежащий уровень понимания            
-							</div> 
+				<div class="col-sm-6">
+					<div class="feature">
+						<div class="feature-inline">
+							<a href="#"><img src="images/icon-inline2.png" alt="icon"></a>
+						</div>
+						<div class="feature-content">
+							<span class="orange">Представить на выставке весь ассортимент товаром и услуг,</span><br> без ограничения площади и возможностей транспортировки статистики и аналитики портала
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="feature">
-							<div class="feature-inline">
-								<a href="#"><img src="images/icon-inline4.png" alt="icon"></a>
-							</div>            
-							<div class="feature-content"> 
-								<span class="violet">Участие в виртуальных семинарах, конференциях, презентациях </span><br> онлайн трансляция деловой программы выставок в реальном времени статистики и аналитики портала</div> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="feature">
+						<div class="feature-inline">
+							<a href="#"><img src="images/icon-inline3.png" alt="icon"></a>
+						</div>
+						<div class="feature-content">
+							<span class="blue">Отсутствие языковых барьеров при общении с иностранными партнерами </span><br> функция автоматического перевода обеспечивает надлежащий уровень понимания
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="feature">
+						<div class="feature-inline">
+							<a href="#"><img src="images/icon-inline4.png" alt="icon"></a>
+						</div>
+						<div class="feature-content">
+							<span class="violet">Участие в виртуальных семинарах, конференциях, презентациях </span><br> онлайн трансляция деловой программы выставок в реальном времени статистики и аналитики портала</div>
 						</div>
 					</div>
 				</div>
@@ -225,156 +222,149 @@
 						<div class="feature">
 							<div class="feature-inline">
 								<a href="#"><img src="images/icon-inline5.png" alt="icon"></a>
-							</div>             
-							<div class="feature-content"> 
-								<span class="rose">Общение на стендах в реальном времени</span><br> виртуальная комната онлайн-переговоров на каждом стенде</div> 
+							</div>
+							<div class="feature-content">
+								<span class="rose">Общение на стендах в реальном времени</span><br> виртуальная комната онлайн-переговоров на каждом стенде</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="feature">
+								<div class="feature-inline">
+									<a href="#"><img src="images/icon-inline6.png" alt="icon"></a>
+								</div>
+								<div class="feature-content">
+									<span class="red">Электронная база Ваших контактов на выставке</span><br> удобная оценка эффективности от участия в выставках на основании статистики и аналитики портала</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="feature">
-							<div class="feature-inline">
-								<a href="#"><img src="images/icon-inline6.png" alt="icon"></a>
-							</div>             
-							<div class="feature-content"> 
-								<span class="red">Электронная база Ваших контактов на выставке</span><br> удобная оценка эффективности от участия в выставках на основании статистики и аналитики портала</div> 
-						</div>
-					</div>
-				</div>		
+				</div>
 			</div>
-		</div>
-		</div>
-
-
-		<div class="block-info-light bg-orange">
-			<div class="container">
-				Вы можете абсолютно бесплатно создать стенд  своей компании в Вашем личном кабинете. <br>
-				Чтобы он стал доступен посетителям, нужно всего лишь разместить его на выставках портала и обеспечить
-				присутствие своего представителя на  стенде онлайн в дни проведения выставок
-		</div></div>
-
-		<div class="stand">
-			<div class="block-info block-info-blue">КАК СОЗДАТЬ СТЕНД СВОЕЙ КОМПАНИИ?</div>
-			<div class="feature-block">
+			<div class="block-info-light bg-orange">
+				<div class="container">
+					Вы можете абсолютно бесплатно создать стенд  своей компании в Вашем личном кабинете. <br>
+					Чтобы он стал доступен посетителям, нужно всего лишь разместить его на выставках портала и обеспечить
+					присутствие своего представителя на  стенде онлайн в дни проведения выставок
+				</div></div>
+				<div class="stand">
+					<div class="block-info block-info-blue">КАК СОЗДАТЬ СТЕНД СВОЕЙ КОМПАНИИ?</div>
+					<div class="feature-block">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="feature">
+										<div class="feature-icon">
+											<a href="#"><img src="images/icon-stand1.png" alt="icon"></a>
+										</div>
+										<div class="feature-content">
+											<span class="feature-steps">ШАГ 1</span>
+											<span class="blue">Внесите всю необходимую<br> информацию о компании,<br></span>
+											включая описание, контакты, фото, <br>видеоролики и презентации
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="feature">
+										<div class="feature-icon">
+											<a href="#"><img src="images/icon-stand2.png" alt="icon"></a>
+										</div>
+										<div class="feature-content">
+											<span class="feature-steps">ШАГ 2</span>
+											<span class="orange">Сделайте внешний вид вашего<br> стенда уникальным<br></span>и соответствующим корпоративному стилю
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="feature">
+										<div class="feature-icon">
+											<a href="#"><img src="images/icon-stand3.png" alt="icon"></a>
+										</div>
+										<div class="feature-content">
+											<span class="feature-steps">ШАГ 3</span>
+											<span class="violet">Создайте удобный каталог<br>товаров и услуг<br></span>с подробной информацией и удобной фильтрацией
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="feature">
+										<div class="feature-icon">
+											<a href="#"><img src="images/icon-stand4.png" alt="icon"></a>
+										</div>
+										<div class="feature-content">
+											<span class="feature-steps">ШАГ 4</span>
+											<span class="green">Присоедините представителей<br> вашей компании,</span><br>оторые смогут общаться на стенде с посетителями
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="feature">
+										<div class="feature-icon">
+											<a href="#"><img src="images/icon-stand5.png" alt="icon"></a>
+										</div>
+										<div class="feature-content">
+											<span class="feature-steps">ШАГ 5</span>
+											<span class="rose">Размещайте стенд</span><br>на любой заинтересовавшей Вас выставке<br> на портале
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="feature">
+										<div class="feature-icon">
+											<a href="#"><img src="images/icon-stand6.png" alt="icon"></a>
+										</div>
+										<div class="feature-content">
+											<span class="feature-steps">ШАГ 6</span>
+											<span class="red"> Заключайте сделки <br> по всему миру<br></span> с помощью портала ExpoUniverse
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-info-light block-info-light-overlay bg-under">
+					<div class="container">
+						<div class="block-info-title">ЕхроUniver максимально передает атмосферу выставочного <br>центра с возможностью без дополнительных усилий посетить <br>любую выставку, независимо от места её проведения</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer-b" id="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="feature">
-								<div class="feature-icon">
-									<a href="#"><img src="images/icon-stand1.png" alt="icon"></a>
-								</div>            
-								<div class="feature-content"> 
-								<span class="feature-steps">ШАГ 1</span>
-									<span class="blue">Внесите всю необходимую<br> информацию о компании,<br></span> 
-									включая описание, контакты, фото, <br>видеоролики и презентации              
-								</div> 
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="feature">
-								<div class="feature-icon">
-									<a href="#"><img src="images/icon-stand2.png" alt="icon"></a>
-								</div>            
-								<div class="feature-content"> 
-									<span class="feature-steps">ШАГ 2</span>
-									<span class="orange">Сделайте внешний вид вашего<br> стенда уникальным<br></span>и соответствующим корпоративному стилю          
-								</div> 
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="feature">
-								<div class="feature-icon">
-									<a href="#"><img src="images/icon-stand3.png" alt="icon"></a>
-								</div>            
-								<div class="feature-content"> 
-									<span class="feature-steps">ШАГ 3</span>
-									<span class="violet">Создайте удобный каталог<br>товаров и услуг<br></span>с подробной информацией и удобной фильтрацией          
-								</div> 
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="feature">
-								<div class="feature-icon">
-									<a href="#"><img src="images/icon-stand4.png" alt="icon"></a>
-								</div>            
-								<div class="feature-content"> 
-									<span class="feature-steps">ШАГ 4</span>
-									<span class="green">Присоедините представителей<br> вашей компании,</span><br>оторые смогут общаться на стенде с посетителями        
-								</div> 
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="feature">
-								<div class="feature-icon">
-									<a href="#"><img src="images/icon-stand5.png" alt="icon"></a>
-								</div>            
-								<div class="feature-content"> 
-								<span class="feature-steps">ШАГ 5</span>
-								<span class="rose">Размещайте стенд</span><br>на любой заинтересовавшей Вас выставке<br> на портале           
-								</div> 
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="feature">
-								<div class="feature-icon">
-									<a href="#"><img src="images/icon-stand6.png" alt="icon"></a>
-								</div>            
-								<div class="feature-content"> 
-								<span class="feature-steps">ШАГ 6</span>
-								<span class="red"> Заключайте сделки <br> по всему миру<br></span> с помощью портала ExpoUniverse           
-								</div> 
-							</div>
-						</div>
-					</div>		
-				</div>
-			</div>
-		</div>
-
-		<div class="block-info-light block-info-light-overlay bg-under">
-			<div class="container">
-				<div class="block-info-title">ЕхроUniver максимально передает атмосферу выставочного <br>центра с возможностью без дополнительных усилий посетить <br>любую выставку, независимо от места её проведения</div>
-			</div>
-		</div>
-
-		<footer class="footer-b" id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 copyright">2017 © Expo Universe. ALL Rights Reserved.</div>
-					<div class="col-xs-6">
-						<ul class="footer-menu list-unstyled">
-							<li>
-								<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
-									Правила использования
+						<div class="col-xs-6 copyright">2017 © Expo Universe. ALL Rights Reserved.</div>
+						<div class="col-xs-6">
+							<ul class="footer-menu list-unstyled">
+								<li>
+									<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+										Правила использования
+									</a>
+								</li>
+							</ul>
+							<div class="pull-right">
+								<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/vk.png" alt="vk">
 								</a>
-							</li>
-						</ul>
-						<div class="pull-right">
-							<a href="https://vk.com" target="_blank" class="pull-left social-networks">
-								<img src="images/social_networks/vk.png" alt="vk">
-							</a>
-							<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
-								<img src="images/social_networks/fb.png" alt="fb">
-							</a>
-							<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
-								<img src="images/social_networks/gp.png" alt="gp">
-							</a>
-							<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
-								<img src="images/social_networks/ok.png" alt="ok">
-							</a>
+								<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/fb.png" alt="fb">
+								</a>
+								<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/gp.png" alt="gp">
+								</a>
+								<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/ok.png" alt="ok">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</div>
-	</div>
-
-
+			</footer>
+			
+		</div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 	</body>
-	</html>
+</html>

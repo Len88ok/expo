@@ -1,4 +1,7 @@
 .main-stand{
+  .wrapper{
+    height: 1px;
+  }
   .cd-main{
     background-repeat: no-repeat !important;
     background-position: center center !important;
@@ -8,7 +11,7 @@
   } 
   
   #main-content.bg-stand .logo-wrapper{
-    bottom: 100px;
+    bottom: 50px;
     margin: 0 auto;
     top: auto;    
   }

@@ -18,3 +18,23 @@
 		}
 	}
 }
+
+
+
+@media screen and (max-width: 767px){
+	.catalog-wrapper .catalog-items-list-outer {
+	    height: 330px;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+	.catalog-wrapper .catalog-items-list {
+	    width: 90%;
+	    margin: auto;
+	}
+	.catalog-wrapper .catalog-items-list li{
+		width: 100%;
+	}
+
+}
+

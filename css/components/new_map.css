@@ -1,5 +1,7 @@
 body.map-body {
   font-family: "Open Sans"; }
+  body.map-body .wrapper {
+    height: auto; }
   body.map-body .popover {
     background-color: #6c6c6c;
     border-radius: 2px;

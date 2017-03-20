@@ -48,3 +48,9 @@
 	margin-left: 10px;
   background: #eaecf0;
 }
+
+@media screen and (max-width: 767px){
+  .jstree-default-responsive .jstree-anchor{
+    font-size: 0.8em;   
+  }
+}
