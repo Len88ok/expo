@@ -20,7 +20,8 @@
 }
 
 
-@media only screen and (max-height: 720px) and (min-height: 0){
+
+@media screen and (max-width: 767px){
 	.catalog-wrapper .catalog-items-list-outer {
 	    height: 330px;
 	    width: 100%;
