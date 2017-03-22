@@ -791,7 +791,7 @@ body {
   background: #272626;
   color: #fff;
   font-size: 12px;
-  padding: 0.5em 0 .25em;
+  padding: 0.5em 0 0;
   display: block;
   margin: 0;
   outline: none;
@@ -802,7 +802,7 @@ body {
   #footer ul.footer-menu {
     float: right;
     margin: 0;
-    padding: 0; }
+    padding: 0.5em 0 0; }
     #footer ul.footer-menu li {
       margin-left: 0; }
   #footer a.social-networks {
