@@ -798,11 +798,11 @@ body {
   z-index: 1;
   line-height: 1.4em; }
   #footer .footer-right {
-    padding: 0.5em 0; }
+    padding: 0.25em 0; }
   #footer ul.footer-menu {
     float: right;
     margin: 0;
-    padding: 0.5em 0 0; }
+    padding: 0.25em 0 0; }
     #footer ul.footer-menu li {
       margin-left: 0; }
   #footer a.social-networks {
