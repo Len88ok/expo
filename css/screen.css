@@ -780,7 +780,7 @@ body {
   overflow: hidden; }
 
 .wrapper > .content {
-  padding-bottom: 45px;
+  padding-bottom: 60px;
   height: 100%; }
 
 #footer {
@@ -795,7 +795,10 @@ body {
   display: block;
   margin: 0;
   outline: none;
+  z-index: 1;
   line-height: 2em; }
+  #footer .footer-left {
+    padding: 1em 0; }
   #footer ul.footer-menu {
     float: right;
     margin: 0;
