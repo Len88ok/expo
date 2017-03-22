@@ -20,14 +20,14 @@ body{
     background: #272626;
     color: #fff;
     font-size: 12px;
-    padding: 3px 0 1.5px;
+    padding: 0.5em 0 .25em;
     display: block;
     margin: 0;
     outline: none;    
     z-index: 1;
-    line-height: 2em;   
-    .footer-left{
-        padding: 1em 0;
+    line-height: 1.4em;   
+    .footer-right{
+        padding: 0.5em 0;
     } 
     ul.footer-menu{
     	float: right;
