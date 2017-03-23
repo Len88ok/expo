@@ -825,7 +825,9 @@ body {
 @media screen and (max-width: 767px) {
   #footer {
     height: auto;
-    text-align: center; } }
+    text-align: center; }
+  .wrapper > .content {
+    padding-bottom: 120px; } }
 
 @media screen and (max-width: 479px) {
   #footer ul.footer-menu {

@@ -64,6 +64,9 @@ body{
         height: auto;
             text-align: center;
     } 
+    .wrapper > .content{
+         padding-bottom: 120px;
+     }  
 }
 
 @media screen and (max-width: 479px ) {

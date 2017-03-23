@@ -42,13 +42,31 @@
 		margin-top: 20px;
 	}
 	.form-control{		
-		padding: 8px 70px 8px 90px;
+		text-align: center;
+		padding: 8px 20px;
 		margin-right: 30px;
 	}
 	.btn{
 		&:hover{
 			color: #ffffff;
 			border-color: #ffffff;
+		}
+	}
+}
+
+@media screen and (max-width: 767px ) {
+	.exhibition-subscribe{
+		.form-control{		
+			width: 70%;
+			margin: 0 auto 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 479px ) {
+	.exhibition-subscribe{
+		.form-control{		
+			width: 90%;
 		}
 	}
 }
