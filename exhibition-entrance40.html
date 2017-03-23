@@ -386,20 +386,29 @@
 							</section>
 
 							<section class="exhibition-subscribe text-center">
+							<div class="exhibition-subscribe-before">
 								<div class="exhibition-subscribe-heading">
 									Напомнить о выставке
 								</div>
 								<div class="exhibition-subscribe-info">
 									Укажите свой email, что бы мы смогли напомнить вам о начале выставки
 								</div>
+							</div>
+							<div class="exhibition-subscribe-after">
+								<div class="exhibition-subscribe-heading">
+									Напоминание оформлено
+								</div>
+								<div class="exhibition-subscribe-info-dark">
+									Мы позаботимся чтобы вы ничего не пропустили
+								</div>
+							</div>								
 								<div class="exhibition-subscribe-form">
 									<form class="form-inline">
 								    <input type="email" class="form-control" id="InputEmail" placeholder="Введите Ваш Email">
-								  	<button type="submit" class="btn">Подписаться</button>
+								  	<a href="javascript:void(0)" type="submit" class="btn" id="subscribe-btn">Подписаться</a>
 									</form>
 								</div>
 							</section>
-
 							<div class="page-section exhibition-partners">
 								<div class="container">
 									<h3><span class="h3-inner">Партнеры выставки</span><span class="dot-line"></span>
@@ -450,7 +459,6 @@
 									</div>
 								</div>
 							</div>
-
 					</div>
 				</main>
 			</div>
@@ -531,6 +539,16 @@
 			        $('iframe').remove();
 			    });
 			});
+			</script>
+
+			<script>
+					$(document).ready(function(){
+						$('#subscribe-btn').on ('click', function(){
+							$('.exhibition-subscribe-form').fadeOut(0).delay(3000).fadeIn(500);
+							$('.exhibition-subscribe-before').fadeOut(0).delay(3000).fadeIn(500);
+							$('.exhibition-subscribe-after').fadeIn(0).delay(2500).fadeOut(500);
+						});
+					});
 			</script>
 
 	</body>
