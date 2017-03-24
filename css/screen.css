@@ -373,7 +373,10 @@ header {
     .navbar-brand img {
       display: inline-block; }
   .navbar-nav .open .dropdown-menu {
-    text-align: center; }
+    text-align: center;
+    position: initial;
+    float: none;
+     }
   .navbar-default .navbar-collapse {
     background-color: #FFF;
     opacity: 0.9; } }

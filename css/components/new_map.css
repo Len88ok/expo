@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body.map-body {
   font-family: "Open Sans"; }
   body.map-body .wrapper {
@@ -128,6 +129,18 @@ sup {
   color: #a2a2a2;
   padding: 8px 0; }
 
+/* хром, сафари */
+.map-variants-item::-webkit-scrollbar {
+  width: 0; }
+
+/* ie 10+ */
+.map-variants-item {
+  -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.map-variants-item {
+  overflow: -moz-scrollbars-none; }
+
 .map-info {
   text-align: center;
   background-repeat: no-repeat;
@@ -183,16 +196,20 @@ sup {
   .map-variants-item {
     text-transform: uppercase;
     width: 240px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 92px;
+    overflow-y: scroll;
+    padding-top: 10px; }
   .map-variants-img {
     display: inline-block;
     margin-right: 20px;
-    margin-bottom: 20px;
     margin-top: -5px;
     vertical-align: top; }
   .map-variants-link {
     color: #6c6c6c;
-    transition: all .25s linear; }
+    transition: all .25s linear;
+    line-height: 2; }
     .map-variants-link:hover {
       cursor: pointer;
       color: #55d17d;

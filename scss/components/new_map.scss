@@ -159,6 +159,17 @@ sup{
 }
 
 
+/* хром, сафари */
+.map-variants-item::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.map-variants-item { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.map-variants-item { overflow: -moz-scrollbars-none; }
+
+
+
 .map{
 	&-info{
 		text-align: center;
@@ -219,17 +230,21 @@ sup{
 			text-transform: uppercase;
 			width: 240px;
 			margin: 0 auto;
+		    margin-bottom: 20px;
+		    height: 92px;
+		    overflow-y: scroll;
+		    padding-top: 10px;
 		}
 		&-img{
 			display: inline-block;
 			margin-right: 20px;
-			margin-bottom: 20px;
 			margin-top: -5px;
 			vertical-align: top;
 			}
 			&-link{
 				color: #6c6c6c;
 				transition: all .25s linear;
+				line-height: 2;
 				&:hover{
 					cursor: pointer;
 					color: #55d17d;
@@ -322,6 +337,8 @@ sup{
 		}
 	}
 }
+
+
 .label{
 			border-radius: 10px;
 			margin-bottom: 1em;
@@ -370,6 +387,7 @@ sup{
  	display: block;
  }
 }
+
 
 	
 
