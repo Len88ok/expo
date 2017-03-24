@@ -198,9 +198,8 @@ sup {
     width: 240px;
     margin: 0 auto;
     margin-bottom: 20px;
-    height: 92px;
-    overflow-y: scroll;
-    padding-top: 10px; }
+    padding-top: 10px;
+    word-break: break-all; }
   .map-variants-img {
     display: inline-block;
     margin-right: 20px;
