@@ -41,6 +41,10 @@ body {
     #main-content.stand-page .button-base.white:hover {
       background-color: #FFF; }
 
+#main-content.stand-page .page-title-button-wrapper .btn-base:hover {
+  color: #727272;
+  background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/arrow-sprite.png) no-repeat scroll 0 -605px; }
+
 @media screen and (max-width: 991px) {
   .left-panel-button:hover,
   .left-panel {
@@ -57,7 +61,8 @@ body {
   #main-content.bg-catalog .page-title-wrapper .button-base {
     margin-top: 0; }
   .page-content-area-outer {
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    border: 0; }
   #main-content.bg-catalog .button-outer {
     float: none; }
     #main-content.bg-catalog .button-outer .button-base,
@@ -88,4 +93,14 @@ body {
   a.button-question:visited,
   a.button-question:active,
   a.button-question:focus {
-    bottom: 90px; } }
+    bottom: 90px; }
+  .company-contacts .icons {
+    float: none;
+    margin: 0 auto; }
+  #main-content.bg-contacts .company-contacts {
+    width: 180px; }
+  .company-contacts .dscr {
+    width: 100%;
+    padding-left: 0; }
+  .company-contacts .phone .dscr-outer {
+    padding-left: 0; } }

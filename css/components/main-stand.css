@@ -31,6 +31,10 @@
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 12px; } }
 
+@media screen and (max-width: 767px) {
+  .main-stand #main-content.bg-stand .logo-wrapper {
+    bottom: 30px; } }
+
 @media screen and (max-width: 478px) {
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 10px; }

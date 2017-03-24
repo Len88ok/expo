@@ -47,7 +47,13 @@
   }   
 }
 
-
+@media screen and (max-width: 767px ) { 
+  .main-stand{
+    #main-content.bg-stand .logo-wrapper{
+      bottom: 30px; 
+    }
+  }
+}
 
 @media screen and (max-width: 478px ) {
   .main-stand{

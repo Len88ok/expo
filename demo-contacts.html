@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expo</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="css/old-all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/screen.css" rel="stylesheet">
+<link rel="stylesheet" href="css/components/old-css-new.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="stand-contacts">
+<div class="wrapper">
+	<div class="content">
+		<header id="header">
+			<ul class="main-menu authorization-menu non-authorized">
+				<li class="">
+					<a href="#registration" title="Регистрация" class="popup-open-register">
+						<span class="glyphicon glyphicon-user"></span>
+					</a>
+				</li>
+				<li class="authorization">
+					<a href="#login" title="Вход" class="popup-open-login">
+						<span class="glyphicon glyphicon-log-in"></span>
+					</a>
+				</li>
+			</ul>
+			<!--Navbar header-->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+							<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+								<li><a class="text-uppercase" href="#">для посетителей</a></li>
+								<li><a class="text-uppercase" href="#">новости</a></li>
+								<li><a class="text-uppercase" href="#">расписание</a></li>
+								<li><a class="text-uppercase" href="#">о проекте</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">О проекте</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Партнеры</a></li>
+										<li><a href="#">Организаторам<br>выставок</a></li>
+									</ul>
+								</li>
+							</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					</nav>
+				</header>
+				<nav class="cd-side-navigation">
+					<div class="left-panel">
+              <a href="/exhibition-map?show=37&amp;industry=117&amp;stand=230" class="left-panel-button" title="Карта">
+                <span>Карта</span>
+              </a>
+              <div class="stand-info">
+                <p class="stand-industry">
+                  <span class="stand-info-title">Выставка:&nbsp;</span>
+                  <span class="stand-info-details">Expofood</span>
+                </p>
+                <p class="stand-number">
+                  <span class="stand-info-title">Павильон</span>
+                  <span class="stand-info-details-img industry-img plate"></span>
+                </p>
+              </div>
+              <ul class="left-nav">
+                <li>
+                  <a href="/stand/230/company-info" data-menu="/stand/230/company-info" title="О компании" class="sliding_link">
+                    <span class="icon-logo">
+                      <span class="company-logo">
+                        <span class="company-logo-inner">
+                          <img src="https://expouniverse.cf/media/cache/max_80_strip/uploads/stand/57149537c91c1.png" alt="О компании">
+                        </span>
+                      </span>
+                    </span>
+                    <span>О компании</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#login-request" class="popup-open-login-request" data-menu="/stand/230/contact">
+                    <span class="left-panel-icon icon-mail"></span>
+                    <span>Контакты</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#login-request" class="popup-open-login-request" data-menu="/view-stand-catalog/230" data-page_script="/js/catalog?itemsAmount=0&amp;meetingroom=0&amp;stand_id=230">
+                    <span class="left-panel-icon icon-catalog"></span>
+                    <span>Каталог</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#login-request" class="popup-open-login-request" data-menu="/stand-documents/230" data-page_script="/js/document">
+                    <span class="left-panel-icon icon-docs"></span>
+                    <span>Сертификаты</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+				</nav>
+				<input type="hidden" id="stand_id" value="230">
+				<main class="cd-main">
+				<section class="cd-section index visible">
+					<div id="main-content" class="bg-contacts stand-page" style="background-image: url('https://expouniverse.cf/bundles/sitebundlefrontend/images/bg-documents.jpg');">
+						<div class="content">
+							<div class="opacity-color-cover" style="    background-color: #1c7dba;"></div>
+							<div class="container page-title-wrapper">
+								<div class="row">
+									<div class="col-md-offset-1 col-md-3 page-title-button-wrapper">
+										<a href="#" data-menu="/stand/230" data-page_script="/js/stand" title="Вернуться на стенд" class="sliding_link btn-base white left-arrow-white back-to-stand">
+											Вернуться на стенд
+										</a>
+									</div>
+									<div class="col-md-4">
+										<div class="company-name">Контакты<span>ТМ «CONFEСTUM»</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="page-content-area">
+								<div class="page-content-area-outer">
+									<div class="page-content-area-inner">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-offset-1 col-md-10">
+													<div class="company-logo-outer">
+														<div class="company-logo">
+															<div class="company-logo-inner">
+																<img src="https://expouniverse.cf/media/cache/max_170_strip/uploads/stand/57149537c91c1.png">
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="company-contacts">
+															<div class="address"><span class="icons"></span><span class="dscr">РОССИЯ, 308025, Г. БЕЛГОРОД, УЛ. МИРНАЯ, Д. 10.</span></div>
+															<div class="e-mail"><span class="icons"></span><span class="dscr">INFO@CONFECTUM.ORG</span></div>
+															<div class="phone">
+																<span class="icons"></span>
+																<div class="dscr-outer">
+																	<span class="dscr"><b>7-4722- 22-97-63</b></span><br/>
+																	<span class="dscr"><b>7-050- 222-97-63</b></span>
+																</div>
+															</div>
+															<div class="web-site"><span class="icons"></span><span class="dscr" style="width: auto">HTTP://CONFECTUM.ORG/</span></div>
+														</div>
+													</div>
+													<div class="company-dscr">
+														<p></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				</main>
+			</div>
+			<footer class="footer-b" id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 copyright">Expo Universe © 2017. Все права защищены.<br/> Администрация сайта не несет ответственности за содержание размещенных объявлений.</div>
+						<div class="col-sm-6 footer-right">
+							<ul class="footer-menu list-unstyled">
+								<li>
+									<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+										Правила использования
+									</a>
+								</li>
+							</ul>
+							<div class="pull-right">
+								<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/vk.png" alt="vk">
+								</a>
+								<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/fb.png" alt="fb">
+								</a>
+								<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/gp.png" alt="gp">
+								</a>
+								<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/ok.png" alt="ok">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
