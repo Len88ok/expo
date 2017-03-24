@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expo</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="css/old-all.css" rel="stylesheet">
+<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/screen.css" rel="stylesheet">
+<link rel="stylesheet" href="css/components/jstree-catalog.css">
+<link rel="stylesheet" href="css/components/old-css-new.css">
+<link rel="stylesheet" href="css/components/stand-catalog.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="stand-catalog">
+<div class="wrapper">
+	<div class="content">
+		<header id="header">
+			<ul class="main-menu authorization-menu non-authorized">
+				<li class="">
+					<a href="#registration" title="Регистрация" class="popup-open-register">
+						<span class="glyphicon glyphicon-user"></span>
+					</a>
+				</li>
+				<li class="authorization">
+					<a href="#login" title="Вход" class="popup-open-login">
+						<span class="glyphicon glyphicon-log-in"></span>
+					</a>
+				</li>
+			</ul>
+			<!--Navbar header-->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+							<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+								<li><a class="text-uppercase" href="#">для посетителей</a></li>
+								<li><a class="text-uppercase" href="#">новости</a></li>
+								<li><a class="text-uppercase" href="#">расписание</a></li>
+								<li><a class="text-uppercase" href="#">о проекте</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">О проекте</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Партнеры</a></li>
+										<li><a href="#">Организаторам<br>выставок</a></li>
+									</ul>
+								</li>
+							</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					</nav>
+				</header>
+				<nav class="cd-side-navigation">
+					<div class="left-panel">
+						<a href="/exhibition-map?show=37&amp;industry=117&amp;stand=230" class="left-panel-button" title="Карта">
+							<span>Карта</span>
+						</a>
+						<div class="stand-info">
+							<p class="stand-industry">
+								<span class="stand-info-title">Выставка:&nbsp;</span>
+								<span class="stand-info-details">Expofood</span>
+							</p>
+							<p class="stand-number">
+								<span class="stand-info-title">Павильон</span>
+								<span class="stand-info-details-img industry-img plate"></span>
+							</p>
+						</div>
+						<ul class="left-nav">
+							<li>
+								<a href="/stand/230/company-info" data-menu="/stand/230/company-info" title="О компании" class="sliding_link">
+									<span class="icon-logo">
+										<span class="company-logo">
+											<span class="company-logo-inner">
+												<img src="https://expouniverse.cf/media/cache/max_80_strip/uploads/stand/57149537c91c1.png" alt="О компании">
+											</span>
+										</span>
+									</span>
+									<span>О компании</span>
+								</a>
+							</li>
+							<li>
+								<a href="#login-request" class="popup-open-login-request" data-menu="/stand/230/contact">
+									<span class="left-panel-icon icon-mail"></span>
+									<span>Контакты</span>
+								</a>
+							</li>
+							<li>
+								<a href="#login-request" class="popup-open-login-request" data-menu="/view-stand-catalog/230" data-page_script="/js/catalog?itemsAmount=0&amp;meetingroom=0&amp;stand_id=230">
+									<span class="left-panel-icon icon-catalog"></span>
+									<span>Каталог</span>
+								</a>
+							</li>
+							<li>
+								<a href="#login-request" class="popup-open-login-request" data-menu="/stand-documents/230" data-page_script="/js/document">
+									<span class="left-panel-icon icon-docs"></span>
+									<span>Сертификаты</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<input type="hidden" id="stand_id" value="230">
+				<main class="cd-main">
+				<section class="cd-section index visible">
+					<div id="main-content" class="bg-catalog stand-page" style="background-image: url('https://expouniverse.cf/skins-background/11/1468992223573c3f83c149b.jpeg');">
+						<div class="content">
+							<div class="opacity-color-cover" style="background-color: #1c7dba;"></div>
+							<div class="container page-title-wrapper">
+								<div class="row">
+									<div class="col-md-offset-1 col-md-3 page-title-button-wrapper">
+										<a href="#" data-menu="/stand/230" data-page_script="/js/stand" title="Вернуться на стенд" class="sliding_link btn-base white left-arrow-white back-to-stand">
+											Вернуться на стенд
+										</a>
+									</div>
+									<div class="col-md-5">
+										<div class="company-name">Каталог стенда<span>Інспе</span></div>
+									</div>
+									<div class="col-md-3">
+										<div class="button-wrapper">
+											<a class="btn upl-cat-btn uploadCatalog-popup button-base white">Скачать каталог</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="page-content-area catalog-wrapper">
+								<div class="page-content-area-outer">
+									<div class="page-content-area-inner">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-offset-1 col-md-4">
+													<div class="catalog-tree-container">
+														<div id="jstree"></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="catalog-search-outer">
+														<div class="catalog-search">
+															<div class="input-group">
+																<input type="text" id="itemsFilter" class="form-control" placeholder="Поиск">
+																<div class="input-group-addon"></div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-items-list-outer">
+														<div class="row">
+															<div class="loading"></div>
+																<ul class="catalog-items-list" id="item_container">
+																 <li class="col-xs-6" id="item_264">
+																	<div class="stand_catalog_item_wrap-outer">
+																		<a title="Добавить в закладки" id="264" class="bookmark " data-type="catalog">
+																		</a>
+																		<div class="stand_catalog_item_wrap">
+																			<div class="item-title">
+																				<a href="/demo-stand/item-view/264" class="itemView" data-id="264">"Тучки-штучки" </a>
+																			</div>
+																			<div class="item-description">
+																				<span><p>Зефир жевательный с ароматом ванили</p>
+																			</span>
+																		</div>
+																		<div class="item-image">
+																			<a data-id="264" href="/demo-stand/item-view/264" class="itemView">
+																				<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/264/56c2d8c69ad7a_copy.png">
+																			</a>
+																		</div>
+																	</div>
+																	<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+																	
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_267">
+																<div class="stand_catalog_item_wrap-outer">
+																	<a title="Добавить в закладки" id="267" class="bookmark " data-type="catalog">
+																	</a>
+																	<div class="stand_catalog_item_wrap">
+																		<div class="item-title">
+																			<a href="/demo-stand/item-view/267" class="itemView" data-id="267">"Мультисы"</a>
+																		</div>
+																		<div class="item-description">
+																			<span><p>Зефир жевательный</p>
+																		</span>
+																	</div>
+																	<div class="item-image">
+																		<a data-id="267" href="/demo-stand/item-view/267" class="itemView">
+																			<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/267/56c2dc718d721_copy.png">
+																		</a>
+																	</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_268">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="268" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																	<div class="item-title">
+																		<a href="/demo-stand/item-view/268" class="itemView" data-id="268">"Жевательные мелки" со вкусом земляники</a>
+																	</div>
+																	<div class="item-description">
+																		<span><p>"Жевательные мелки" со вкусом земляники</p>
+																		<p>Зефир жевательный с ароматом земляники</p>
+																	</span>
+																</div>
+																<div class="item-image">
+																	<a data-id="268" href="/demo-stand/item-view/268" class="itemView">
+																		<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/268/56c2dc94d29fd_copy.png">
+																	</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_269">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="269" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																	<a href="/demo-stand/item-view/269" class="itemView" data-id="269">"Жевательные мелки" со вкусом яблока</a>
+																</div>
+																<div class="item-description">
+																	<span><p>"Жевательные мелки" со вкусом яблока</p>
+																	<p>Зефир жевательный с ароматом яблока</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="269" href="/demo-stand/item-view/269" class="itemView">
+																	<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/269/56c2dca84cdb6_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_270">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="270" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/270" class="itemView" data-id="270">"Веселые пружинки" со вкусом клубники</a>
+																</div>
+																<div class="item-description">
+																<span><p>"Веселые пружинки" со вкусом клубники</p>
+																<p>Зефир жевательный со вкусом клубники</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="270" href="/demo-stand/item-view/270" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/270/56c2dcba8810f_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_271">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="271" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/271" class="itemView" data-id="271">"Веселые пружинки" со вкусом лимона</a>
+																</div>
+																<div class="item-description">
+																<span><p>"Веселые пружинки" со вкусом лимона</p>
+																<p>Зефир жевательный со вкусом лимона</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="271" href="/demo-stand/item-view/271" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/271/56c2dccf45ae1_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_272">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="272" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/272" class="itemView" data-id="272">"Лесная сказка" со вкусом абрикоса</a>
+																</div>
+																<div class="item-description">
+																<span><p>"Лесная сказка" со вкусом абрикоса</p>
+																<p>Зефир жевательный с ароматом абрикоса</p>
+																<p>&nbsp;</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="272" href="/demo-stand/item-view/272" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/272/56c2dd7616962_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_273">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="273" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/273" class="itemView" data-id="273">"Мелки"</a>
+																</div>
+																<div class="item-description">
+																<span><p>Зефир жевательный белый с ароматом ванили. Используется как наполнитель в мороженное</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="273" href="/demo-stand/item-view/273" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/273/56c2dddf01f2a_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_170">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="170" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/170" class="itemView" data-id="170">«ХРУМЧИК С САХАРОМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>«ХРУМЧИК С САХАРОМ»</p>
+																<p>Печенье имеет прямоугольную форму, слоеную структуру, поверхность изделия покрыта кристаллами сахара</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="170" href="/demo-stand/item-view/170" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/170/56c2df75a24df_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_171">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="171" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/171" class="itemView" data-id="171">«К ЧАЮ ОТ КОНФЕКТУМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>«К ЧАЮ ОТ КОНФЕКТУМ»</p>
+																<p>Изделие имеющее слоёную структуру, удлиненной прямоугольной формы, поверхность изделия декорирована кунжутом</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="171" href="/demo-stand/item-view/171" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/171/56c2dfa3a4bf6_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_172">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="172" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/172" class="itemView" data-id="172">«САХАРНОЕ ОТ КОНФЕКТУМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>«САХАРНОЕ ОТ КОНФЕКТУМ»</p>
+																<p>Нежное слоеное изделие прямоугольной формы в виде решётки,поверхность изделия посыпана сахаром</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="172" href="/demo-stand/item-view/172" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/172/56c2dfd9a204b_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_173">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="173" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/173" class="itemView" data-id="173">«ГУРМАН»</a>
+																</div>
+																<div class="item-description">
+																<span><p>«ГУРМАН»</p>
+																<p>Изделие состоит из слоеного и песочного теста с добавлением какао, корицы и имбиря. Поверхность декорирована карамелизированным сахаром</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="173" href="/demo-stand/item-view/173" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/173/56c2ed0355049_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_174">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="174" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/174" class="itemView" data-id="174">«ПЕЧЕНЬЕ ЗАТЯЖНОЕ С ИЗЮМОМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>«ПЕЧЕНЬЕ ЗАТЯЖНОЕ С ИЗЮМОМ»</p>
+																<p>Печенье имеет прямоугольную форму, оригинальный внешний вид и содержит большое количество изюма (более 30 %).</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="174" href="/demo-stand/item-view/174" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/174/56c2ed9ceec19_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_175">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="175" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/175" class="itemView" data-id="175">«ИЗЮМИНКА ОТ КОНФЕКТУМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Изделие прямоугольной формы имеющее слоёную структуру с добавлением изюма. Поверхность изделия декорирована кристаллами сахара</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="175" href="/demo-stand/item-view/175" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/175/56c2ed423bf7e_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_176">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="176" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/176" class="itemView" data-id="176">«ЗЛАКОВОЕ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Печенье с семечками кунжута и подсолнечника.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="176" href="/demo-stand/item-view/176" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/176/56c2edb11290b_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_177">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="177" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/177" class="itemView" data-id="177">«ЗЕРНОВОЕ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Сдобное изделие с кунжутом, семечками подсолнечника, льна и изюмом</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="177" href="/demo-stand/item-view/177" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/177/56c2edc8164d3_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_178">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="178" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/178" class="itemView" data-id="178">«ХРУСТЯЩИЕ ЛОМТИКИ» С КАКАО</a>
+																</div>
+																<div class="item-description">
+																<span><p>Слоеное печенье с прослойкой из песочного теста с добавлением какао.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="178" href="/demo-stand/item-view/178" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/178/56c2ede11cb00_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_179">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="179" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/179" class="itemView" data-id="179">«ХРУСТЯЩИЕ ЛОМТИКИ» ГРИЛЬЯЖНЫЕ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Слоеное печенье с прослойкой из песочного теста,с семечками подсолнечника и кунжутом.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="179" href="/demo-stand/item-view/179" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/179/56c2edf8e20f5_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_180">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="180" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/180" class="itemView" data-id="180">«МЕДОВЫЕ СОТЫ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Слоеное печенье без начинки прямоугольной формы, щедро пропитанное сиропом, своим внешним видом напоминает пчелиные соты</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="180" href="/demo-stand/item-view/180" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/180/56c2ee1910f2a_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_181">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="181" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/181" class="itemView" data-id="181">«БОНОПАРТИК» МЕДОВЫЙ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Слоеное изделие пропитанное медовым сиропом, сверху присыпанное золотой крошкой</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="181" href="/demo-stand/item-view/181" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/181/56c2ee2cd661d_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_182">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="182" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/182" class="itemView" data-id="182">ВАФЛИ "ПИЧИНГЕР" СО ВКУСОМ ТОПЛЕНОГО МОЛОКА</a>
+																</div>
+																<div class="item-description">
+																<span><p>Вафли домашние с нежной начинкой со вкусом топленого молока.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="182" href="/demo-stand/item-view/182" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/182/56c2ee57a0b84_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_183">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="183" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/183" class="itemView" data-id="183">ВАФЛИ "ПИЧИНГЕР" СО ВКУСОМ КАРАМЕЛИ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Вафли домашние с нежной начинкой со вкусом карамели.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="183" href="/demo-stand/item-view/183" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/183/56c2ee687339a_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_184">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="184" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/184" class="itemView" data-id="184">ВАФЛИ "ПИЧИНГЕР ПРАЖСКИЙ"</a>
+																</div>
+																<div class="item-description">
+																<span><p>Вафли домашние с нежной начинкой с карамельно-шоколадным вкусом.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="184" href="/demo-stand/item-view/184" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/184/56c2ee74b6dde_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_185">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="185" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/185" class="itemView" data-id="185">ВАФЛИ "ПИЧИНГЕР ДЕЛИС"</a>
+																</div>
+																<div class="item-description">
+																<span><p>Вафли домашние с нежной начинкой с карамельно-молочным вкусом.</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="185" href="/demo-stand/item-view/185" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/185/56c2ee82401da_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_186">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="186" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/186" class="itemView" data-id="186">«КОМПЛИМЕНТ» С КАКАО</a>
+																</div>
+																<div class="item-description">
+																<span><p>Сэндвичи из шоколадно-медовых коржей с нежной молочно-кремовой начинкой</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="186" href="/demo-stand/item-view/186" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/186/56c2eea43e77f_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_187">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="187" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/187" class="itemView" data-id="187">«КОМПЛИМЕНТ» КЛАССИЧЕСКИЙ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Сэндвичи из классических медовых коржей с нежной молочно-кремовой начинкой</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="187" href="/demo-stand/item-view/187" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/187/56c2eeb08e147_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_188">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="188" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/188" class="itemView" data-id="188">«КОМПЛИМЕНТ» АССОРТИ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Ассорти из классических и шоколадных медовых коржей с нежной молочно-кремовой начинкой</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="188" href="/demo-stand/item-view/188" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/188/56c2eec1ae3da_copy.png">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_189">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="189" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/189" class="itemView" data-id="189">«КРЫМСКИЙ ЛЕС»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные вафельные конфеты с ярким ореховым вкусом</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="189" href="/demo-stand/item-view/189" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/189/56c2ef112ec27_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_190">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="190" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/190" class="itemView" data-id="190">«СКАЗОЧНЫЕ БРАТЦЫ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные вафельные конфеты с ароматом коньяка и шоколада</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="190" href="/demo-stand/item-view/190" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/190/56c2ef322aa96_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_191">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="191" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/191" class="itemView" data-id="191">«АНАНАСНЫЕ ОТ «КОНФЕКТУМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные вафельные конфеты со вкусом ананаса</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="191" href="/demo-stand/item-view/191" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/191/56c2ef4751261_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_192">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="192" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/192" class="itemView" data-id="192">«ГДЕ-ТО НА БЕЛОМ СВЕТЕ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные вафельные конфеты с молочно-сливочным вкусом</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="192" href="/demo-stand/item-view/192" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/192/56c2efc646f23_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_193">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="193" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/193" class="itemView" data-id="193">«ПО СКАЗОЧНОЙ ДОРОЖКЕ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные вафельные конфеты с молочно-ореховым вкусом</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="193" href="/demo-stand/item-view/193" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/193/56c2eff0d68f0_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_194">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="194" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/194" class="itemView" data-id="194">«ЗООКРЫМ ФАЗАНЫ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные вафельные конфеты с добавлением какао с ароматом ананаса</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="194" href="/demo-stand/item-view/194" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/194/56c2efffbc51f_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_195">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="195" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/195" class="itemView" data-id="195">«КУНЖУТНАЯ ОТ КОНФЕКТУМ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированная кондитерской глазурью конфета, с легким ароматом ванили и добавлением жаренного кунжута</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="195" href="/demo-stand/item-view/195" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/195/56c2f1ff3b3c0_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_196">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="196" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/196" class="itemView" data-id="196">«КРЫМСКИЙ ОРЕШЕК»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные конфеты с начинкой с добавлением дробленого арахиса и ванили</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="196" href="/demo-stand/item-view/196" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/196/56c2f0d00f37a_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_197">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="197" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/197" class="itemView" data-id="197">«МАКОВЕЙ»</a>
+																</div>
+																<div class="item-description">
+																<span><p>Глазированные конфеты с начинкой со вкусом рома</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="197" href="/demo-stand/item-view/197" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/197/56c2f0de21b9f_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_198">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="198" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/198" class="itemView" data-id="198">«БАТОНЧИК ОТ КОНФЕКТУМ» МОЛОЧНЫЙ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Неглазированные конфеты состоящие из массы типа пралине с добавлением сухого молока и молочной сыворотки</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="198" href="/demo-stand/item-view/198" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/198/56c2f1e0e6e0a_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																<li class="col-xs-6" id="item_199">
+																<div class="stand_catalog_item_wrap-outer">
+																<a title="Добавить в закладки" id="199" class="bookmark " data-type="catalog">
+																</a>
+																<div class="stand_catalog_item_wrap">
+																<div class="item-title">
+																<a href="/demo-stand/item-view/199" class="itemView" data-id="199">«КРЫМУША» С АРОМАТОМ ВАНИЛИ</a>
+																</div>
+																<div class="item-description">
+																<span><p>Неглазированные конфеты с ароматом ванили</p>
+																</span>
+																</div>
+																<div class="item-image">
+																<a data-id="199" href="/demo-stand/item-view/199" class="itemView">
+																<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="https://expouniverse.cf/media/cache/max_130_strip/uploads/stand/catalog/199/56c2f12503ee8_copy.jpg">
+																</a>
+																</div>
+																</div>
+																<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>
+
+																</div>
+																</li>
+																</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<input type="hidden" value="230" id="stand">
+							<div style="display: none">
+								<style type="text/css">
+									.catalog-item-upload-popup.fancybox-overlay { background: rgba(0, 0, 0, 0) url("/bundles/sitebundlebackend/images/fancybox/fancybox_overlay-light.png") repeat scroll 0 0 !important; }
+									.catalog-item-upload-popup .fancybox-close { right: -34px !important; top: -34px !important; background: url('/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png') -80px 0px !important; }
+									.catalog-item-upload-popup.fancybox-close:hover { background: url('/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png') -80px -81px !important; }
+								</style>
+								<div id="download-catalog" class="common-popup download-catalog-popup" style="width: 570px;">
+									<div class="title">Скачать каталог</div>
+									<div class="popup-inner">
+										<div class="popup-content">
+											Вы можете скачать отфильтрованный каталог. Скачаны будут только те позиции, которые выбраны в древовидной структуре каталога
+										</div>
+										<div class="button-wrapper">
+											<a href="/download-stand-catalog" data-type="1" class="uploadCatalog button-base green">
+												Скачать отфильтрованный каталог
+											</a>
+											<a href="/download-stand-catalog" data-type="0" class="uploadCatalog button-base green">
+												Скачать полный каталог
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				</main>
+			</div>
+			<footer class="footer-b" id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 copyright">Expo Universe © 2017. Все права защищены.<br/> Администрация сайта не несет ответственности за содержание размещенных объявлений.</div>
+						<div class="col-xs-6 footer-left">
+							<ul class="footer-menu list-unstyled">
+								<li>
+									<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+										Правила использования
+									</a>
+								</li>
+							</ul>
+							<div class="pull-right">
+								<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/vk.png" alt="vk">
+								</a>
+								<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/fb.png" alt="fb">
+								</a>
+								<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/gp.png" alt="gp">
+								</a>
+								<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+									<img src="images/social_networks/ok.png" alt="ok">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="dist/jstree.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="scripts/catalog.js"></script>
+	<!-- 	<script>
+			$(document).ready(function(){
+				$('.catalogtree').jstree({
+				'plugins': ['themes', 'html_data', 'checkbox', 'types', 'wholerow', 'unique'],
+				"checkbox" : {
+					"keep_selected_style" : true
+				},
+				'core': {
+						'multiple': true,
+		"animation": true,
+		"check_callback": true,
+		"themes": {"stripes": true},
+				'data': [
+						{"text" : "Kettenbach GMB",
+						"children": [
+					{ "text": "Identium" },
+					{ "text": "Panasil" },
+					{ "text": "Panasil initial contact Х" },
+					{ "text": "Futar D" },
+					{ "text": "Visalys Temp" },
+					{ "text": "Visalys Core" }
+			]},
+			{"text": "Kavo наконечники",
+			"children": [
+			{"text": "Pana-Max M4 турбінний наконечник"},
+					{"text": "S-Max M турбінний наконечник"},
+					{"text": "Ti-Max Z турбінний наконечник"},
+					{"text": "S-MAX M кутовий підвищуючий наконечник"},
+					{"text": "S-MAX M кутовий наконечник"}
+			]},
+			{"text": "Інструменти",
+			"children": [
+			{"text": "Ручка для дзеркала 124-001"},
+					{"text": "Зонд двосторонній EXD11/127"},
+					{"text": "Зонд односторонній EXS97"},
+					{"text": "Зонд пародонтальний односторонній PCPUNC157"},
+					{"text": "Зонд пародонтальний односторонній PCP11.5B78<"},
+					{"text": "Скейлер серповидний двосторонній, SH6/79"}
+			]},
+			{"text": "RONDOflex",
+			"children": [
+			{"text": "RONDOflex plus 360 "},
+					{"text": "RONDOFLEX абразивний порошок 27 µm"},
+					{"text": "RONDOFLEX абразивний порошок 50 µm"}
+			]},
+			{"text": "Обладнання",
+			"children": [
+			{"text": "Varios 970 LUX ультразвуковий скалер"},
+					{"text": "Surgic Pro+ хірургічний мікромотор"},
+					{"text": "INTRAmatic 20 ES"},
+					{"text": "EXPERTmatic LUX E25 L"},
+					{"text": "MASTERtorque LUX M9000 L"},
+					{"text": "KaVo QUATTROcare 2124 A прилад<"},
+					{"text": "PROPHYflex 3"},
+					{"text": "Puma Eli Комплектація Light"},
+					{"text": "Цифрова установка Skema 6"}
+			]},
+			{"text": "Ivoclar Vivadent",
+			"children": [
+			{"text": "Adhese Universal VivaPen"},
+					{"text": "Tetric N Bond Адгезив"},
+					{"text": "Tetric N-Bond Self-Etch Адгезив"},
+					{"text": "Syntac Адгезивна система"},
+					{"text": "IPS Empress Direct Композит промо набір"},
+					{"text": "IPS Empress Direct Композит  базовий набір"},
+					{"text": "Tetric EvoCeram Композит"},
+					{"text": "Tetric N-Ceram Композит"},
+					{"text": "TE-Econom Plus Intro Pack композит"}
+			]}
+				],
+				"types": {
+			"#": {
+			"max_depth": 5,
+			"valid_children": ["root"]
+			},
+			"folder": {
+			"max_depth": 5,
+			"valid_children": ["root"]
+			},
+			"root": {
+			"icon": "/static/3.1.1/assets/images/tree_icon.png",
+			"valid_children": ["default"]
+			},
+			"default": {
+			"valid_children": ["default", "file"]
+			},
+			"file": {
+			"icon": "glyphicon glyphicon-file",
+			"valid_children": []
+			}
+			},
+				'themes': {
+				'name': 'default',
+				'responsive': true,
+				"dots": true,
+				"icons": true
+				}
+				}
+				});
+			});
+		</script> -->
+
+	</body>
+</html>

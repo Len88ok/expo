@@ -72,6 +72,9 @@ body {
       width: 180px;
       padding: 5px 10px; } }
 
+.stand-contacts .cd-main {
+  padding-left: 0; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-header {
     float: none; } }
