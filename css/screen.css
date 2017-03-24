@@ -373,10 +373,7 @@ header {
     .navbar-brand img {
       display: inline-block; }
   .navbar-nav .open .dropdown-menu {
-    text-align: center;
-    position: initial;
-    float: none;
-     }
+    text-align: center; }
   .navbar-default .navbar-collapse {
     background-color: #FFF;
     opacity: 0.9; } }
@@ -798,7 +795,7 @@ body {
   display: block;
   margin: 0;
   outline: none;
-  z-index: 1;
+  z-index: 4;
   line-height: 1.4em; }
   #footer .footer-right {
     padding: 0.25em 0; }

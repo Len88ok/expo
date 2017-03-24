@@ -83,4 +83,9 @@ body {
   #main-content.stand-page .page-title-wrapper .btn-base {
     margin-top: 0; }
   .page-title-wrapper {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  .button-question,
+  a.button-question:visited,
+  a.button-question:active,
+  a.button-question:focus {
+    bottom: 90px; } }
