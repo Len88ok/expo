@@ -11,7 +11,8 @@
 .main-stand #main-content.bg-stand .logo-wrapper {
   bottom: 50px;
   margin: 0 auto;
-  top: auto; }
+  top: auto;
+  height: 110px; }
 
 .main-stand #main-content.bg-stand .buttons-wrapper {
   bottom: 55px;
