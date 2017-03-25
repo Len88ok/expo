@@ -160,7 +160,11 @@ body {
   .certificates .background-hover {
     height: 100%; }
   .certificate-icon {
-    margin: 10% auto; } }
+    margin: 10% auto; }
+  .authorization-popup.registration-form .button-base {
+    padding: 9px;
+    font-size: 12px;
+    margin-top: 0; } }
 
 @media only screen and (max-width: 1680px) and (min-width: 0) {
   #main-content.bg-documents .certificates-list {

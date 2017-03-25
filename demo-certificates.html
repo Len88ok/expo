@@ -288,35 +288,35 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script type="text/javascript">
+	    <script type="text/javascript">
 
-    $(function(){
+	    $(function(){
 
-        $('.fancybox').attr('rel', 'gallery').fancybox({
-	            padding         : 0,
-	            margin          : [ 50, 100, 10, 100],
-	            openEffect	    : 'elastic',
-	            closeEffect	    : 'elastic',
-	            transitionIn    : 'elastic',
-	            transitionOut   : 'elastic',
-	            iframe : {
-	                preload: false
-	            },
-	            afterLoad: function () {
-	                $('a.fancybox-prev').remove();
-	                $('a.fancybox-next').remove();
-	            },
-	            afterShow: function() {
-	                $(".fancybox-title").wrapInner('<div></div>').show();
-	                $(".fancybox-wrap").hover(function() {
-	                    $(".fancybox-title").show();
-	                }, function() {
-	                    $(".fancybox-title").hide();
-	                });
-	            }
-	        });
-	    });
+	        $('.fancybox').attr('rel', 'gallery').fancybox({
+		            padding         : 0,
+		            margin          : [ 50, 100, 10, 100],
+		            openEffect	    : 'elastic',
+		            closeEffect	    : 'elastic',
+		            transitionIn    : 'elastic',
+		            transitionOut   : 'elastic',
+		            iframe : {
+		                preload: false
+		            },
+		            afterLoad: function () {
+		                $('a.fancybox-prev').remove();
+		                $('a.fancybox-next').remove();
+		            },
+		            afterShow: function() {
+		                $(".fancybox-title").wrapInner('<div></div>').show();
+		                $(".fancybox-wrap").hover(function() {
+		                    $(".fancybox-title").show();
+		                }, function() {
+		                    $(".fancybox-title").hide();
+		                });
+		            }
+		        });
+		    });
 
-		</script>
+			</script>
 	</body>
 </html>

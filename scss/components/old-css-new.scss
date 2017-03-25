@@ -134,8 +134,6 @@ body{
 }
 
 
-
-
 @media (min-width: 768px) and (max-width: 991px){
   .navbar-header{
     float: none;
@@ -212,6 +210,11 @@ body{
   }
   .certificate-icon{
     margin: 10% auto;
+  }
+  .authorization-popup.registration-form .button-base{
+    padding: 9px;
+    font-size: 12px;
+    margin-top: 0;
   }
 }
 

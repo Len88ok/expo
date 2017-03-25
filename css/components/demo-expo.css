@@ -7,6 +7,21 @@
     top: auto;
     bottom: 0; } }
 
+.button-base-outer .popup-open-demostand {
+  position: absolute;
+  bottom: 165px;
+  left: 50%;
+  margin-left: -140px; }
+
+.authorization-popup .popup-open-login.button-base {
+  margin-left: 74px; }
+
+#demostandPopup{
+  width: 500px;
+}
+#main-content.bg-stand .button-base:hover {
+  background-color: #FFF; }
+
 .jstree-default .jstree-node {
   margin-left: 0; }
 
@@ -19,14 +34,33 @@
 .jstree-default.jstree-checkbox-no-clicked > .jstree-wholerow-ul .jstree-wholerow-clicked {
   background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/vertical-line.png) repeat-y 30px 0; }
 
+@media screen and (max-width: 991px) {
+  .button-base-outer .popup-open-demostand {
+    bottom: 100px; } }
+
 @media screen and (max-width: 478px) {
   .catalog-tree-container {
     margin-left: -20px; }
   .parent-level .jstree-anchor {
     font-size: 11px; }
   .jstree-anchor span.tree-item-name-outer {
-    padding: 8px 2px 0 0; } }
+    padding: 8px 2px 0 0; }
+  #main-content.bg-stand .button-base {
+    padding: 9px 18px;
+    font-size: 12px; }
+  .button-base-outer .popup-open-demostand {
+    margin-left: -100px; }
+  .authorization-popup .popup-open-login.button-base,
+  .authorization-popup .popup-open-register.button-base {
+    margin: 10px auto;
+    float: none; }
+    #demostandPopup{
+      width: 95%;} }
 
 @media screen and (max-width: 350px) {
+  #main-content.bg-stand .button-base {
+    font-size: 10px; }
+  .button-base-outer .popup-open-demostand {
+    margin-left: -95px; }
   .parent-level .jstree-anchor {
     font-size: 10px; } }

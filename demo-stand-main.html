@@ -1,223 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Expo</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-        <link href="css/old-all.css" rel="stylesheet">
-        <link rel="stylesheet" href="dist/themes/default/style.min.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="css/screen.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/components/old-css-new.css">
-        <link rel="stylesheet" href="css/components/main-stand.css">
-        <link rel="stylesheet" type="text/css" href="css/components/demo-expo.css">
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body class="main-stand">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expo</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="css/old-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/themes/default/style.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+    <link href="css/screen.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/components/old-css-new.css">
+    <link rel="stylesheet" href="css/components/main-stand.css">
+    <link rel="stylesheet" href="css/components/stand-catalog.css">
+    <link rel="stylesheet" type="text/css" href="css/components/demo-expo.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="main-stand">
     <div class="wrapper">
       <div class="content">
-          <header id="header">
-            <ul class="main-menu authorization-menu non-authorized">
-                <li class="">
-                    <a href="#registration" title="Регистрация" class="popup-open-register">
-                        <span class="glyphicon glyphicon-user"></span>
-                    </a>
-                </li>
-                <li class="authorization">
-                    <a href="#login" title="Вход" class="popup-open-login">
-                        <span class="glyphicon glyphicon-log-in"></span>
-                    </a>
-                </li>
-            </ul>
-            <!--Navbar header-->
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
-                            <span class="navbar-brand-dscr">международный выставочный портал</span></a>
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse navbar-ex1-collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a class="text-uppercase" href="#">для экспонентов</a></li>
-                                <li><a class="text-uppercase" href="#">для посетителей</a></li>
-                                <li><a class="text-uppercase" href="#">новости</a></li>
-                                <li><a class="text-uppercase" href="#">расписание</a></li>
-                                <li><a class="text-uppercase" href="#">о проекте</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">О проекте</a></li>
-                                        <li><a href="#">Контакты</a></li>
-                                        <li><a href="#">Партнеры</a></li>
-                                        <li><a href="#">Организаторам<br>выставок</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            </div><!-- /.navbar-collapse -->
-                        </div>
-                    </nav>
-                </header>
-                    <nav class="cd-side-navigation">
-            <div class="left-panel">
-              <a href="/exhibition-map?show=37&amp;industry=117&amp;stand=230" class="left-panel-button" title="Карта">
-                <span>Карта</span>
+        <header id="header">
+          <ul class="main-menu authorization-menu non-authorized">
+            <li class="">
+              <a href="#registration" title="Регистрация" class="popup-open-register">
+                <span class="glyphicon glyphicon-user"></span>
               </a>
-              <div class="stand-info">
-                <p class="stand-industry">
-                  <span class="stand-info-title">Выставка:&nbsp;</span>
-                  <span class="stand-info-details">Expofood</span>
-                </p>
-                <p class="stand-number">
-                  <span class="stand-info-title">Павильон</span>
-                  <span class="stand-info-details-img industry-img plate"></span>
-                </p>
-              </div>
-              <ul class="left-nav">
-                <li>
-                  <a href="/stand/230/company-info" data-menu="/stand/230/company-info" title="О компании" class="sliding_link">
-                    <span class="icon-logo">
-                      <span class="company-logo">
-                        <span class="company-logo-inner">
-                          <img src="https://expouniverse.cf/media/cache/max_80_strip/uploads/stand/57149537c91c1.png" alt="О компании">
+            </li>
+            <li class="authorization">
+              <a href="#login" title="Вход" class="popup-open-login">
+                <span class="glyphicon glyphicon-log-in"></span>
+              </a>
+            </li>
+          </ul>
+          <!--Navbar header-->
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+                  <span class="navbar-brand-dscr">международный выставочный портал</span></a>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a class="text-uppercase" href="#">для экспонентов</a></li>
+                    <li><a class="text-uppercase" href="#">для посетителей</a></li>
+                    <li><a class="text-uppercase" href="#">новости</a></li>
+                    <li><a class="text-uppercase" href="#">расписание</a></li>
+                    <li><a class="text-uppercase" href="#">о проекте</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Организаторам<br>выставок</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div>
+              </nav>
+            </header>
+            <nav class="cd-side-navigation">
+              <div class="left-panel">
+                <a href="/exhibition-map?show=37&amp;industry=117&amp;stand=230" class="left-panel-button" title="Карта">
+                  <span>Карта</span>
+                </a>
+                <div class="stand-info">
+                  <p class="stand-industry">
+                    <span class="stand-info-title">Выставка:&nbsp;</span>
+                    <span class="stand-info-details">Expofood</span>
+                  </p>
+                  <p class="stand-number">
+                    <span class="stand-info-title">Павильон</span>
+                    <span class="stand-info-details-img industry-img plate"></span>
+                  </p>
+                </div>
+                <ul class="left-nav">
+                  <li>
+                    <a href="demo-about.html" data-menu="/stand/230/company-info" title="О компании" class="sliding_link">
+                      <span class="icon-logo">
+                        <span class="company-logo">
+                          <span class="company-logo-inner">
+                            <img src="https://expouniverse.cf/media/cache/max_80_strip/uploads/stand/57149537c91c1.png" alt="О компании">
+                          </span>
                         </span>
                       </span>
-                    </span>
-                    <span>О компании</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#login-request" class="popup-open-login-request" data-menu="/stand/230/contact">
-                    <span class="left-panel-icon icon-mail"></span>
-                    <span>Контакты</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#login-request" class="popup-open-login-request" data-menu="/view-stand-catalog/230" data-page_script="/js/catalog?itemsAmount=0&amp;meetingroom=0&amp;stand_id=230">
-                    <span class="left-panel-icon icon-catalog"></span>
-                    <span>Каталог</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#login-request" class="popup-open-login-request" data-menu="/stand-documents/230" data-page_script="/js/document">
-                    <span class="left-panel-icon icon-docs"></span>
-                    <span>Сертификаты</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <input type="hidden" id="stand_id" value="230">
-          <main class="cd-main" style="background: url('https://expouniverse.cf/skins/bg-stand_default.jpg')">
-          <section class="cd-section index visible">
-            <div id="main-content" class="bg-stand" >
-              <div class="content">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-sm-offset-3 col-sm-6">
-                      <div class="company-name">
-                        <strong>ТМ «CONFEСTUM»</strong>
-                      </div>
-                      <a title="Добавить в закладки" id="230" class="bookmark " data-type="stand">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="manager-slider">
-                    <div class="manager-slick-slider">
-                      <div class="manager-slider-item">
-                        <div class="slick-slider-item-wrapper">
-                          <div class="slick-slider-item-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/342/342_copy.jpeg">
-                          </div>
-                          <div id="" class="sm-status-offline"></div>
+                      <span>О компании</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#login-request" class="popup-open-login-request" data-menu="demo-contacts.html">
+                      <span class="left-panel-icon icon-mail"></span>
+                      <span>Контакты</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#login-request" class="popup-open-login-request" data-menu="de
+                    " data-page_script="/js/catalog?itemsAmount=0&amp;meetingroom=0&amp;stand_id=230">
+                      <span class="left-panel-icon icon-catalog"></span>
+                      <span>Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#login-request" class="popup-open-login-request" data-menu="demo-certificates.html" data-page_script="/js/document">
+                      <span class="left-panel-icon icon-docs"></span>
+                      <span>Сертификаты</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <input type="hidden" id="stand_id" value="230">
+            <main class="cd-main" style="background: url('https://expouniverse.cf/skins/bg-stand_default.jpg')">
+            <section class="cd-section index visible">
+              <div id="main-content" class="bg-stand" >
+                <div class="content">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-offset-3 col-sm-6">
+                        <div class="company-name">
+                          <strong>ТМ «CONFEСTUM»</strong>
                         </div>
-                        <div class="slick-slider-item-info">
-                          <span class="manager-name">Валерий Вощевский</span>
-                          <span class="manager-position">Менеджер</span>
-                        </div>
-                      </div>
-                      <div class="manager-slider-item">
-                        <div class="slick-slider-item-wrapper">
-                          <div class="slick-slider-item-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/343/343_copy.jpeg">
-                          </div>
-                          <div id="sm_587" class="sm-status-offline"></div>
-                        </div>
-                        <div class="slick-slider-item-info">
-                          <span class="manager-name">Вячеслав Кириленко</span>
-                          <span class="manager-position">Менеджер</span>
-                        </div>
-                      </div> 
-                      <div class="manager-slider-item">
-                        <div class="slick-slider-item-wrapper">
-                          <div class="slick-slider-item-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/344/344_copy.jpeg">
-                          </div>
-                          <div id="" class="sm-status-offline"></div>
-                        </div>
-                        <div class="slick-slider-item-info">
-                          <span class="manager-name">Анна Онищенко</span>
-                          <span class="manager-position">Менеджер</span>
-                        </div>
-                      </div>
-                      <div class="manager-slider-item">
-                        <div class="slick-slider-item-wrapper">
-                          <div class="slick-slider-item-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/342/342_copy.jpeg">
-                          </div>
-                          <div id="" class="sm-status-offline"></div>
-                        </div>
-                        <div class="slick-slider-item-info">
-                          <span class="manager-name">Валерий Вощевский</span>
-                          <span class="manager-position">Менеджер</span>
-                        </div>
-                      </div>
-                      <div class="manager-slider-item">
-                        <div class="slick-slider-item-wrapper">
-                          <div class="slick-slider-item-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/343/343_copy.jpeg">
-                          </div>
-                          <div id="sm_587" class="sm-status-offline"></div>
-                        </div>
-                        <div class="slick-slider-item-info">
-                          <span class="manager-name">Вячеслав Кириленко</span>
-                          <span class="manager-position">Менеджер</span>
-                        </div>
-                      </div> 
-                      <div class="manager-slider-item">
-                        <div class="slick-slider-item-wrapper">
-                          <div class="slick-slider-item-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/344/344_copy.jpeg">
-                          </div>
-                          <div id="" class="sm-status-offline"></div>
-                        </div>
-                        <div class="slick-slider-item-info">
-                          <<span class="manager-name">Анна Онищенко</span>
-                          <span class="manager-position">Менеджер</span>
-                        </div>
+                        <a title="Добавить в закладки" id="230" class="bookmark " data-type="stand">
+                        </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="row logo-wrapper">
-                    <div class="col-sm-offset-4 col-sm-4">
-                      <div class="company-logo-outer">
-                        <div class="company-logo">
-                          <div class="company-logo-inner">
-                            <img src="https://expouniverse.cf/media/cache/max_170_strip/uploads/stand/57149537c91c1.png" alt="Логотип компании">
+                    <div class="manager-slider">
+                      <div class="manager-slick-slider">
+                        <div class="manager-slider-item">
+                          <div class="slick-slider-item-wrapper">
+                            <div class="slick-slider-item-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/342/342_copy.jpeg">
+                            </div>
+                            <div id="" class="sm-status-offline"></div>
+                          </div>
+                          <div class="slick-slider-item-info">
+                            <span class="manager-name">Валерий Вощевский</span>
+                            <span class="manager-position">Менеджер</span>
+                          </div>
+                        </div>
+                        <div class="manager-slider-item">
+                          <div class="slick-slider-item-wrapper">
+                            <div class="slick-slider-item-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/343/343_copy.jpeg">
+                            </div>
+                            <div id="sm_587" class="sm-status-offline"></div>
+                          </div>
+                          <div class="slick-slider-item-info">
+                            <span class="manager-name">Вячеслав Кириленко</span>
+                            <span class="manager-position">Менеджер</span>
+                          </div>
+                        </div>
+                        <div class="manager-slider-item">
+                          <div class="slick-slider-item-wrapper">
+                            <div class="slick-slider-item-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/344/344_copy.jpeg">
+                            </div>
+                            <div id="" class="sm-status-offline"></div>
+                          </div>
+                          <div class="slick-slider-item-info">
+                            <span class="manager-name">Анна Онищенко</span>
+                            <span class="manager-position">Менеджер</span>
+                          </div>
+                        </div>
+                        <div class="manager-slider-item">
+                          <div class="slick-slider-item-wrapper">
+                            <div class="slick-slider-item-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/342/342_copy.jpeg">
+                            </div>
+                            <div id="" class="sm-status-offline"></div>
+                          </div>
+                          <div class="slick-slider-item-info">
+                            <span class="manager-name">Валерий Вощевский</span>
+                            <span class="manager-position">Менеджер</span>
+                          </div>
+                        </div>
+                        <div class="manager-slider-item">
+                          <div class="slick-slider-item-wrapper">
+                            <div class="slick-slider-item-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/343/343_copy.jpeg">
+                            </div>
+                            <div id="sm_587" class="sm-status-offline"></div>
+                          </div>
+                          <div class="slick-slider-item-info">
+                            <span class="manager-name">Вячеслав Кириленко</span>
+                            <span class="manager-position">Менеджер</span>
+                          </div>
+                        </div>
+                        <div class="manager-slider-item">
+                          <div class="slick-slider-item-wrapper">
+                            <div class="slick-slider-item-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_110_strip/uploads/images/user/344/344_copy.jpeg">
+                            </div>
+                            <div id="" class="sm-status-offline"></div>
+                          </div>
+                          <div class="slick-slider-item-info">
+                            <<span class="manager-name">Анна Онищенко</span>
+                            <span class="manager-position">Менеджер</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="button-base-outer">
+                        <a href="#demostandPopup" class="button-base green popup-open-demostand">Связаться с менеджером</a>
+                    </div>
+                    <div class="row logo-wrapper">
+                      <div class="col-sm-offset-4 col-sm-4">
+                        <div class="company-logo-outer">
+                          <div class="company-logo">
+                            <div class="company-logo-inner">
+                              <img src="https://expouniverse.cf/media/cache/max_170_strip/uploads/stand/57149537c91c1.png" alt="Логотип компании">
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -225,70 +232,209 @@
                   </div>
                 </div>
               </div>
+            </section>
+            </main>
+            <div id="online-help-btn" class="button-question active" title="Задать вопрос">
+              <span class="button-question-inner">
+                Задать вопрос
+              </span>
             </div>
-          </section>
-          </main>
-          <div id="online-help-btn" class="button-question active" title="Задать вопрос">
-            <span class="button-question-inner">
-              Задать вопрос
-            </span>
           </div>
         </div>
-      </div>
-      <footer class="footer-b" id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 copyright">Expo Universe © 2017. Все права защищены.<br/> Администрация сайта не несет ответственности за содержание размещенных объявлений.</div>
-            <div class="col-sm-6 footer-right">
-              <ul class="footer-menu list-unstyled">
-                <li>
-                  <a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
-                    Правила использования
+        <footer class="footer-b" id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 copyright">Expo Universe © 2017. Все права защищены.<br/> Администрация сайта не несет ответственности за содержание размещенных объявлений.</div>
+              <div class="col-sm-6 footer-right">
+                <ul class="footer-menu list-unstyled">
+                  <li>
+                    <a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+                      Правила использования
+                    </a>
+                  </li>
+                </ul>
+                <div class="pull-right">
+                  <a href="https://vk.com" target="_blank" class="pull-left social-networks">
+                    <img src="images/social_networks/vk.png" alt="vk">
                   </a>
-                </li>
-              </ul>
-              <div class="pull-right">
-                <a href="https://vk.com" target="_blank" class="pull-left social-networks">
-                  <img src="images/social_networks/vk.png" alt="vk">
+                  <a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+                    <img src="images/social_networks/fb.png" alt="fb">
+                  </a>
+                  <a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+                    <img src="images/social_networks/gp.png" alt="gp">
+                  </a>
+                  <a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+                    <img src="images/social_networks/ok.png" alt="ok">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div style="display: none;" id="login"></div>
+        <div style="display: none;" id="registration">
+          <style type="text/css">
+          .fancybox-overlay { background: rgba(0, 0, 0, 0) url("/bundles/sitebundlebackend/images/fancybox/fancybox_overlay-light.png") repeat scroll 0 0; }
+          .fancybox-skin { background: transparent; padding: 0 !important; }
+          .fancybox-outer { border: none; }
+          .fancybox-inner { overflow: hidden !important; }
+          .fancybox-close { right: -34px !important; top: -34px !important; background: url('/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png') -80px 0px; }
+          .fancybox-close:hover { background: url('/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png') -80px -81px; }
+          </style>
+          <div class="authorization-popup registration-form" style="width: 100%;">
+            <div class="title">Регистрация</div>
+            <form action="/registration/visitor" id="registrationForm" method="post" novalidate="novalidate" class="form-horizontal form-without-legend" role="form">
+              <div class="error-global">
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer without-label field-valid">
+                <div class="form-group-inner">
+                  <input type="text" id="fos_user_registration_form_firstname" name="fos_user_registration_form[firstname]" required="required" maxlength="64" placeholder="Имя">
+                  <div class="input-details">
+                    <span class="necessary-string-icon"></span>
+                    <span class="wrong-password hidden"></span>
+                    <span class="success-password hidden"></span>
+                  </div>
+                </div>
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer without-label field-valid">
+                <div class="form-group-inner">
+                  <input type="text" id="fos_user_registration_form_lastname" name="fos_user_registration_form[lastname]" required="required" maxlength="64" placeholder="Фамилия">
+                  <div class="input-details">
+                    <span class="necessary-string-icon"></span>
+                    <span class="wrong-password hidden"></span>
+                    <span class="success-password hidden"></span>
+                  </div>
+                </div>
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer without-label field-valid">
+                <div class="form-group-inner">
+                  <input type="text" id="fos_user_registration_form_company" name="fos_user_registration_form[company]" placeholder="Название компании" maxlength="255">
+                </div>
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer without-label field-valid">
+                <div class="form-group-inner">
+                  <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required" placeholder="Email">
+                  <div class="input-details">
+                    <span class="necessary-string-icon"></span>
+                    <span class="wrong-password hidden"></span>
+                    <span class="success-password hidden"></span>
+                  </div>
+                </div>
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer field-valid">
+                <div class="form-group-inner">
+                  <label for="fos_user_registration_form_plainPassword_first">Пароль</label>
+                  <input type="password" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]">
+                  <div class="input-details">
+                    <span class="wrong-password hidden"></span>
+                    <span class="success-password hidden"></span>
+                    <a class="show-password show-password-first" onclick="showPassword(this);" title="Показать пароль"></a>
+                  </div>
+                </div>
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer field-valid">
+                <div class="form-group-inner">
+                  <label for="fos_user_registration_form_plainPassword_second">Подтверждение пароля</label>
+                  <input type="password" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]">
+                  <div class="input-details">
+                    <span class="wrong-password hidden"></span>
+                    <span class="success-password hidden"></span>
+                    <a class="show-password" onclick="showPassword(this);" title="Показать пароль"></a>
+                  </div>
+                </div>
+                <div class="error-text"></div>
+              </div>
+              <div class="form-group-outer field-valid">
+                <div class="checkbox-label-container i-agree">
+                  <div class="icheckbox" style="position: relative;"><input type="checkbox" id="fos_user_registration_form_termsOfUser" name="fos_user_registration_form[termsOfUser]" required="required" value="1" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                  <label for="fos_user_registration_form_termsOfUser" class="required">Я согласен с</label>
+                  <a href="https://expouniverse.cf/info/terms-of-usage" class="terms-of-use-link show-terms-of-usage reopen-register-form" title="правилами пользования">
+                  правилами пользования</a>
+                </div>
+              </div>
+              <div class="form-group-outer field-valid">
+                <input type="submit" class="button-base green" id="regFormBtn" title="Отправить" name="_submit" value="Отправить">
+              </div>
+              <div id="goExhReg">
+                <input type="hidden" id="fos_user_registration_form_goExhReg" name="fos_user_registration_form[goExhReg]">
+              </div>
+            </form>
+          </div>
+          <script type="text/javascript" src="/js/6220c15.js"></script>
+        </div>
+        <div style="display: none;" id="confirmation">
+          <div id="confirmation" class="common-popup entrance-page-popup" style="width: 100%;">
+            <div class="title">Активация аккаунта</div>
+            <div class="popup-inner">
+              <div class="popup-content">
+                <p>
+                  Ваш аккаунт уже активирован. Выполните вход.
+                </p>
+              </div>
+              <div class="button-wrapper">
+                <a href="#login" class="button-base green popup-open">
+                  Войти
                 </a>
-                <a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
-                  <img src="images/social_networks/fb.png" alt="fb">
-                </a>
-                <a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
-                  <img src="images/social_networks/gp.png" alt="gp">
-                </a>
-                <a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
-                  <img src="images/social_networks/ok.png" alt="ok">
-                </a>
+              </div>
+            </div>
+          </div>                
+        </div>
+        <div style="display: none;" id="register_request">
+          <div class="authorization-popup login-form" style="width: 100%; min-height: initial;">
+            <div class="title">ВХОД / РЕГИСТРАЦИЯ</div>
+            <div class="text-center margin-top-20">Информация доступна только зарегистрированному пользователю</div>
+            <div class="text-center margin-top-20">
+              <a href="#login" class="popup-open-login button-base green">ВХОД</a>
+              <a href="#registration" class="popup-open-register button-base green">РЕГИСТРАЦИЯ</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div style="display: none;" id="demostandPopup">
+          <div class="demostand-popup common-popup">
+            <div class="title">Демонстрационный стенд</div>
+            <div class="popup-inner">
+              <p style="padding: 20px;"><span>Это демонстрационный стенд. Чтобы принять участие в реальной выставке, перейдите к расписанию выставок.</span></p>
+              <div class="button-wrapper">
+                <div class="button-base-outer">
+                  <a href="/exhibition-schedule" class="button-base green" title="">Расписание выставок</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
-    <script src="scripts/slick.min.js"></script>
-    <script>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="scripts/slick.min.js"></script>
+      <script>
       $('.manager-slick-slider').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        adaptiveHeight: true,
-        responsive: [
-          {
-            breakpoint: 1366,
-            settings: {
-              arrows: true,
-              slidesToShow: 1
-            }
-          }
-         ]
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      responsive: [
+      {
+      breakpoint: 1366,
+      settings: {
+      arrows: true,
+      slidesToShow: 1
+      }
+      }
+      ]
       });
-    </script>
-  </body>
-</html>
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="scripts/demo-popups.js"></script>
+    </body>
+  </html>

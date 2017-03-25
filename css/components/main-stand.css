@@ -31,11 +31,11 @@
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 12px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .main-stand #main-content.bg-stand .logo-wrapper {
-    bottom: 30px; } }
+    bottom: 0; } }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 479px) {
   .main-stand .btn-base, .main-stand .btn-base:active, .main-stand .btn-base:visited, .main-stand .btn-base:focus {
     font-size: 10px; }
   .main-stand #main-content.bg-stand .logo-wrapper {
