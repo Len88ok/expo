@@ -6,3 +6,27 @@
   .main-stand #main-content.bg-stand .logo-wrapper {
     top: auto;
     bottom: 0; } }
+
+.jstree-default .jstree-node {
+  margin-left: 0; }
+
+.jstree-anchor span.tree-item-name-outer {
+  padding: 8px 2px 5px 12px; }
+
+.jstree-default .jstree-icon:empty {
+  height: 21px; }
+
+.jstree-default.jstree-checkbox-no-clicked > .jstree-wholerow-ul .jstree-wholerow-clicked {
+  background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/vertical-line.png) repeat-y 30px 0; }
+
+@media screen and (max-width: 478px) {
+  .catalog-tree-container {
+    margin-left: -20px; }
+  .parent-level .jstree-anchor {
+    font-size: 11px; }
+  .jstree-anchor span.tree-item-name-outer {
+    padding: 8px 2px 0 0; } }
+
+@media screen and (max-width: 350px) {
+  .parent-level .jstree-anchor {
+    font-size: 10px; } }

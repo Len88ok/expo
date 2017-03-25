@@ -45,6 +45,37 @@ body {
   color: #727272;
   background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/arrow-sprite.png) no-repeat scroll 0 -605px; }
 
+.certification-inner-container {
+  height: 350px;
+  width: 100%;
+  position: relative; }
+
+.certification-inner-image {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.certificates .stat-info {
+  padding-right: 20px;
+  padding-top: 55px; }
+
+.certificates .certificates-list {
+  padding: 0 50px; }
+
+.fancybox-close {
+  background-image: url(https://expouniverse.cf/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png);
+  top: -35px;
+  right: -35px;
+  width: 70px;
+  height: 70px; }
+
 @media screen and (max-width: 991px) {
   .left-panel-button:hover,
   .left-panel {
@@ -106,4 +137,32 @@ body {
     width: 100%;
     padding-left: 0; }
   .company-contacts .phone .dscr-outer {
-    padding-left: 0; } }
+    padding-left: 0; }
+  #main-content.stand-page .page-title-wrapper .company-name {
+    font-size: 14px; }
+  #main-content.bg-catalog .page-title-wrapper .button-base {
+    padding: 5px;
+    width: 150px;
+    float: none;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 479px) {
+  .certificates .certificates-list {
+    padding: 0; }
+  .certificates-list li .certificate {
+    height: auto; }
+  .certification-inner-container {
+    height: 200px; }
+  #main-content.bg-documents .stat-info {
+    padding-top: 10px;
+    float: none;
+    text-align: center; }
+  .certificates .background-hover {
+    height: 100%; }
+  .certificate-icon {
+    margin: 10% auto; } }
+
+@media only screen and (max-width: 1680px) and (min-width: 0) {
+  #main-content.bg-documents .certificates-list {
+    width: 100%;
+    margin: 0 auto; } }
