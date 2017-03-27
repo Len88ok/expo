@@ -186,6 +186,13 @@
 		width: 80%;
 		margin: 0 auto 5em;
 		border-bottom: 1px solid cyan;
+		&-photo{
+	    width: 130px;
+	    height: 130px;
+	    margin: 0 auto 5px;
+	    border-radius: 50%;
+	    overflow: hidden;
+		}
 		.application-text{
 			margin-bottom: 3em;
 		}
