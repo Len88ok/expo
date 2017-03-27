@@ -317,6 +317,11 @@ sup{
 			&-img{
 				display: inline-block;
 				vertical-align: middle;
+				background-image: url('../../images/application/logo-lg.png');
+				width: 200px;
+		    height: 200px;
+		    background-repeat: no-repeat;
+		    background-size: 100%;
 			}
 		}
 		&-standart{
@@ -332,6 +337,11 @@ sup{
 			&-img{
 				display: inline-block;
 				vertical-align: middle;
+				background-image: url('../../images/application/logo-min.png');
+				width: 60px;
+		    height: 60px;
+		    background-repeat: no-repeat;
+		    background-size: 100%;
 			}
 		}
 	}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="css/screen.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/components/entrance.css">
+	<link rel="stylesheet" href="css/components/price-popup.css">
+	<link rel="stylesheet" href="css/components/exhibition-counter.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link href="css/components/map-hint.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="bg-white">
+	<div class="wrapper">
+		<div class="content">
+			<header id="header">
+				<ul class="main-menu authorization-menu non-authorized">
+					<li class="">
+						<a href="#registration" class="popup-open-register">
+							Регистрация
+						</a>
+					</li>
+					<li class="authorization">
+						<a href="#login" class="popup-open-login">
+							Вход
+						</a>
+					</li>
+				</ul>
+				<!--Navbar header-->			
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container">		
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+								<span class="navbar-brand-dscr">международный выставочный портал</span></a>
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>					
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-ex1-collapse">				
+								<ul class="nav navbar-nav">
+									<li><a class="text-uppercase" href="#">для экспонентов</a></li>
+									<li><a class="text-uppercase" href="#">для посетителей</a></li>
+									<li><a class="text-uppercase" href="#">новости</a></li>
+									<li><a class="text-uppercase" href="#">расписание</a></li>
+									<li><a class="text-uppercase" href="#">о проекте</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">контакты<b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">О проекте</a></li>
+											<li><a href="#">Контакты</a></li>
+											<li><a href="#">Партнеры</a></li>
+											<li><a href="#">Организаторам<br>выставок</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+				</nav>
+			</header>
+			<main class="entrance">
+				<div class="content">
+					<div class="page-section exhibition-banner block-overlay" style="background-image: url('images/40/banner-background.jpg')">
+						<div class="container">
+							<a class="btn-base left-arrow-white white expohall-btn" title="Экспохолл" href="/exhibition-schedule">
+								Экспохолл
+							</a>
+							<div class="banner-content">
+								<h2 class="exh-title">Харьков Beauty</h2>
+								<div class="dot-line"></div>
+								<h4>Выставка профессиональной косметики</h4>
+								<div class="ticket-outer">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="paper-ticket buy-ticket" id="ticket-request-btn">
+											<div class="wrap-btn-hint">
+												<a class="button-base btn inactiveLink" title="Купить билет">Купить билет
+												</a>
+											</div>
+												<div class="ticket-info">
+													<div class="ticket-info-inner">
+														<div class="ticket-info-name">Дата проведения</div>
+														<div class="ticket-info-content">01.02 - 05.02</div>
+													</div>
+													<div class="ticket-info-inner">
+														<div class="ticket-info-name">Время работы</div>
+														<div class="ticket-info-content">10:00 - 18:00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="central-col-outer">
+												<div class="dot-line align-left"></div>
+												<a href="modal-price" class="button-base white" role="button" data-toggle="modal" data-target="#modal-price">Прайс</a>
+												<div class="dot-line align-right"></div>
+											</div>
+										</div>									
+										<div class="col-md-4">
+											<div class="paper-ticket invitation-ticket">
+												<a class="button-base btn inactiveLink">Разместить стенд</a>
+												<div class="ticket-info">
+													<div class="ticket-info-inner">
+														<div class="ticket-info-name">Прием заявок до</div>
+														<div class="ticket-info-content">10.01.2017</div>
+													</div>
+													<div class="ticket-info-inner">
+														<div class="ticket-info-name">Статус</div>
+														<div class="ticket-info-content">Архивная</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="shadow-detail"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- Modal Price-->				
+					<div id="modal-price" class="modal fade">				
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close btn-base left-arrow" data-dismiss="modal" aria-hidden="true">Назад</button>	
+									<a id='modal-print' class="btn-base"><img src="images/application/png/001-technology.png" alt=""></a>
+								</div>
+								<div id="to_print">
+									<div class="modal-body">
+									<div class="page-title">Прайс</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="price-list-outer">
+			                    <div class="page-sub-title">Для Экспонента</div>
+			                    <ul class="price-list">
+			                        <li>
+			                            <span class="dscr">Стандартный стенд</span>
+
+			                            <div class="cost-outer">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">1000</span>
+			                            </div>
+			                        </li>
+			                        <li style="position: relative;">
+			                            <span class="in-developing-text zero" style="left: 66px;">В разработке</span>                        
+			                            <span class="dscr">Премиум стенд</span>
+
+			                            <div class="cost-outer" style="opacity: 0;">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">2000</span>
+			                            </div>
+			                        </li>
+			                        <li>
+			                            <span class="dscr">Размещение на странице общей карты выставки</span>
+
+			                            <div class="cost-outer">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">100</span>
+			                            </div>
+			                        </li>
+			                        <li>
+			                            <span class="dscr">Размещение на первых страницах карты павильона выставки</span>
+
+			                            <div class="cost-outer">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">100</span>
+			                            </div>
+			                        </li>
+			                        <li style="position: relative;">
+			                            <span class="in-developing-text first" style="left: 198px;">В разработке</span>                        
+			                            <span class="dscr">Помощь менеджера при создании стенда</span>
+
+			                            <div class="cost-outer" style="opacity: 0;">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">100</span>
+			                            </div>
+			                        </li>
+			                        <li style="position: relative;">
+			                            <span class="dscr">Размещение рекламного слайдера экспонента на выставке</span>
+
+			                            <div class="cost-outer" style="opacity: 0;">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">100</span>
+			                            </div>
+			                        </li>
+			                        <li style="position: relative;">
+			                            <span class="in-developing-text second" style="left: 72px;">В разработке</span>                        
+			                            <span class="dscr">Скачать каталог</span>
+
+			                            <div class="cost-outer" style="opacity: 0;">
+			                                <span class="cost-article">от</span>
+			                                <span class="currency uah"></span>
+			                                <span class="cost">25</span>
+			                            </div>
+			                        </li>
+			                    </ul>
+			                </div>
+											</div>
+											<div class="col-md-6">
+												<div class="price-list-outer">
+			                    <div class="page-sub-title">Для Посетителя</div>
+			                    <ul class="price-list">
+			                        <li>
+			                            <span class="dscr">Билет</span>
+
+			                            <div class="cost-outer">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">0</span>
+			                            </div>
+			                        </li>
+			                        <li style="position: relative;">
+			                            <span class="in-developing-text third" style="left: 153px;">В разработке</span>
+			                            <span class="dscr">Скачать каталог участников</span>
+
+			                            <div class="cost-outer" style="opacity: 0;">
+			                                <span class="currency uah"></span>
+			                                <span class="cost">5</span>
+			                            </div>
+			                        </li>
+			                    </ul>
+			                </div>
+											</div>
+										</div>
+									</div>
+								<div class="modal-footer">									
+									<div class="stamp-outer">
+		                <a href="/" title="Expo Universe" class="site-logo">
+		                    <div class="site-logo-img">
+		                        <img alt="Expo Universe" src="https://expouniverse.cf/bundles/sitebundlefrontend/images/logo.png">
+		                    </div>
+		                </a>
+		                <div class="stamp"><img src="https://expouniverse.cf/bundles/sitebundlefrontend/images/stamp.png" alt="stamp"></div>
+		            	</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- end Modal-->
+				<div class="map-hint">
+					<div class="map-hint-closed">
+						<div class="map-hint-header">
+							<span>Подсказки ДЕМО-ВЫСТАВКИ</span>
+							<a href="#" class="pull-right map-hint-open"><i class="sprite-hint sprite-hint-arrow-show"></i></a>
+						</div>
+					</div>
+					<div class="map-hint-opened">
+						<div class="map-hint-header">
+							<span>Подсказки ДЕМО-ВЫСТАВКИ</span>
+							<a href="#" class="pull-right map-hint-close"><i class="sprite-hint sprite-hint-close-icon"></i></a>
+						</div>					
+						<div class="map-hint-content">
+							<div class="map-hint-content-heading">Страница перехода на выставку</div>
+							<div class="map-hint-content-info"><p>Для того чтобы попасть на выствоку нажмите кнопку
+								<span class="text-uppercase">ПЕРЕЙТИ НА ВЫСТАВКУ</span></p></div>								
+							<div class="map-hint-content-img">
+								<i class="sprite-hint sprite-hint-long-arrow"></i>
+								<img src="images/map/hint-img.png" alt="hint-img">
+							</div>
+						</div>
+					</div>
+				</div>		
+			</main>			
+		</div>		
+		<footer class="footer-b" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 copyright">Expo Universe © 2017. Все права защищены.<br/> Администрация сайта не несет ответственности за содержание размещенных объявлений.</div>
+					<div class="col-sm-6 footer-right">
+						<ul class="footer-menu list-unstyled">
+							<li>
+								<a title="Правила использования" class="show-terms-of-usage" href="https://expouniverse.cf/info/terms-of-usage">
+									Правила использования
+								</a>
+							</li>
+						</ul>
+						<div class="pull-right">
+							<a href="https://vk.com" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/vk.png" alt="vk">
+							</a>
+							<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/fb.png" alt="fb">
+							</a>
+							<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/gp.png" alt="gp">
+							</a>
+							<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
+								<img src="images/social_networks/ok.png" alt="ok">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			$(document).on('ready', function() {
+				$('.map-hint-close').click(function(){						
+					$('.map-hint-opened').hide();
+					$('.map-hint-closed').show();
+				});
+				$('.map-hint-open').click(function(){						
+					$('.map-hint-closed').hide();
+					$('.map-hint-opened').show();
+				});
+			});
+		</script>
+		<script>
+		$(document).on('ready', function() {
+		    $('#modal-print').click(function(){
+		        var printing_css='<style media=print>ul{list-style-type:none;}.page-title{text-align:center; color:#026fb3; font-size:24px; text-transform:uppercase;} .page-sub-title{text-align:center; color:#026fb3; font-size:18px;} .price-list li:first-child{border-top:1px solid #d5d5d5;} 	.price-list li{display:table; width:60%; margin:0 auto; border:1px solid #d5d5d5; border-width:0 1px 1px; color:#262626; padding: 12px 25px;}.price-list li .dscr, .cost-oute{display:table-cell; height:100%; vertical-align:middle;}.stamp-outer{text-align:center;} 	.in-developing-text { color:#a2a2a2; font-size:11px; line-height:13px; position:absolute; top:0px; left:0px; text-transform:lowercase;}.cost-outer{text-align:right;}.stamp{margin-top:20px;};</style>';
+		        var html_to_print=printing_css+$('#to_print').html();
+		        var iframe=$('<iframe id="modal-print_frame">');
+		        $('body').append(iframe);
+		        var doc = $('#modal-print_frame')[0].contentDocument || $('#modal-print_frame')[0].contentWindow.document;
+		        var win = $('#modal-print_frame')[0].contentWindow || $('#modal-print_frame')[0];
+		        doc.getElementsByTagName('body')[0].innerHTML=html_to_print;
+		        win.print();
+		        $('iframe').remove();
+		    });
+		});
+		</script>
+</body>
+</html>

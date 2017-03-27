@@ -270,7 +270,12 @@ sup {
 
 .map-participants-premium-img {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-image: url("../../images/application/logo-lg.png");
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 .map-participants-standart {
   margin-bottom: 80px; }
@@ -282,7 +287,12 @@ sup {
     line-height: 75px; }
   .map-participants-standart-img {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    background-image: url("../../images/application/logo-min.png");
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100%; }
 
 .label {
   border-radius: 10px;
