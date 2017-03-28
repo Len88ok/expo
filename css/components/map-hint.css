@@ -130,7 +130,14 @@
   .map-hint-content,
   .map .map-hint-content {
     padding: .5em;
-    height: 280px; } }
+    height: 280px; }
+  .map-hint-content-img {
+    margin-top: 70px; }
+  .map-hint-content-img i {
+    top: -78px;
+    left: -4px; }
+  .paper-ticket .ticket-info-content {
+    font-size: 12px; } }
 
 .sprite-hint {
   background-image: url(../../images/map/spritesheet-icons.png);
@@ -145,7 +152,7 @@
 .sprite-hint-close-icon {
   width: 36px;
   height: 34px;
-  background-position: -5px -41px; }
+  background-position: -5px -45px; }
 
 .sprite-hint-left-arrow {
   width: 24px;
