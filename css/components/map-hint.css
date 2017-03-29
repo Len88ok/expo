@@ -54,18 +54,18 @@
     .map .map-hint-prev .btn {
       padding: 5px 15px; }
       .map .map-hint-prev .btn:hover .sprite-hint-left-arrow {
-        background-position: -5px -119px; }
+        background-position: -8px -119px; }
   .map .map-hint-next {
     display: inline-block; }
     .map .map-hint-next .btn {
       padding: 5px 15px; }
       .map .map-hint-next .btn:hover .sprite-hint-right-arrow {
-        background-position: -5px -348px; }
+        background-position: -6px -348px; }
 
 .map .map-hint-content {
-  height: 320px; }
+  height: 330px; }
   .map .map-hint-content-info {
-    margin-bottom: 60px; }
+    height: 175px; }
 
 .map .map-hint-next-text,
 .map .map-hint-prev-text {
@@ -100,14 +100,15 @@
   .map-hint {
     width: 200px; }
   .map-hint p {
-    font-size: 12px; }
+    font-size: 11px; }
   .map-hint-close {
-    margin-top: -25px; }
+    margin-top: -19px; }
   .map-hint-open {
     margin-top: -6px; }
   .map-hint-content-heading {
     font-size: 14px;
-    margin: 0; }
+    margin: 0;
+    height: 40px; }
   .map-hint-content-info h4 {
     font-size: 16px; }
   .map .map-hint-content-info {
@@ -120,14 +121,14 @@
     font-size: 14px; }
   .map .map-hint-next-text,
   .map .map-hint-prev-text {
-    font-size: 12px; }
+    display: none; }
   .map .map-hint-prev .btn,
   .map .map-hint-next .btn {
     padding: 2px 8px; }
   .map-hint-content,
   .map .map-hint-content {
     padding: .5em;
-    height: 280px; }
+    height: 270px; }
   .map-hint-content-img {
     margin-top: 70px; }
   .map-hint-content-img i {
@@ -152,14 +153,14 @@
   background-position: -5px -45px; }
 
 .sprite-hint-left-arrow {
-  width: 24px;
+  width: 20px;
   height: 24px;
-  background-position: -5px -85px; }
+  background-position: -8px -85px; }
 
 .sprite-hint-left-arrow_green {
-  width: 24px;
+  width: 20px;
   height: 24px;
-  background-position: -5px -119px; }
+  background-position: -8px -119px; }
 
 .sprite-hint-long-arrow {
   width: 62px;
@@ -172,11 +173,11 @@
   background-position: -5px -290px; }
 
 .sprite-hint-right-arrow {
-  width: 24px;
+  width: 20px;
   height: 24px;
-  background-position: -5px -314px; }
+  background-position: -6px -314px; }
 
 .sprite-hint-right-arrow_green {
-  width: 24px;
+  width: 20px;
   height: 24px;
-  background-position: -5px -348px; }
+  background-position: -6px -348px; }

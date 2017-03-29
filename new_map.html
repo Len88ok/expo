@@ -118,10 +118,10 @@
 												<h4>Павильоны</h4>
 												<p>Разделы выставки по направлениям. В павильонах размещены стенды компаний, представляющие свой товар или услугу в этой сфере деятельности.</p></div>
 												<div class="row">
-													<div class="col-sm-3">
+													<div class="col-xs-4 col-sm-3">
 														<div class="map-hint-page">1 из 4</div> 
 													</div>
-													<div class="col-sm-offset-5 col-sm-3 text-right">
+													<div class="col-xs-offset-4 col-sm-offset-5 col-sm-3 text-right">
 														<div class="map-hint-next">
 															<a href="#recommend" role="button" class="btn"><span class="map-hint-next-text">Далее</span><i class="sprite-hint sprite-hint-right-arrow"></i></a>
 														</div>
@@ -148,12 +148,12 @@
 					  						<div class="map-hint-content-heading">Cтраница выставки</div>
 					  						<div class="map-hint-content-info">
 					  						<h4>Рекомендуем посетить</h4>
-					  						<p>Разделы выставки по направлениям. В павильонах размещены стенды компаний, представляющие свой товар или услугу в этой сфере деятельности.</p></div>
+					  						<p>На стенд компании можно перейти, нажав на ее рекламный баннер.</p></div>
 					  						<div class="row">
-					  							<div class="col-sm-3">
+					  							<div class="col-xs-4 col-sm-3">
 					  								<div class="map-hint-page">2 из 4</div> 
 					  							</div>
-					  							<div class="col-sm-offset-2 col-sm-7 text-right">
+					  							<div class="col-xs-offset-1 col-sm-offset-2 col-sm-7 text-right">
 						  							<div class="map-hint-prev">
 						  								<a href="#variants" role="button" class="btn"><i class="sprite-hint sprite-hint-left-arrow"></i><span class="map-hint-prev-text">Назад</span></a>
 														</div>
@@ -183,14 +183,14 @@
 					  						<div class="map-hint-content-heading">Страница выставки</div>
 					  						<div class="map-hint-content-info">
 					  						<h4>Все участники выставки</h4>
-					  						<p>Разделы выставки по направлениям. В павильонах размещены стенды компаний, представляющие свой товар или услугу в этой сфере деятельности.</p></div>
+					  						<p>Переходите на стенды, выбрав компании из списка участников выставки. Удобная фильтрация облегчит поиск стендов интересующих вас компаний. Имеется возможность поиска по наименованию товаров или услуг, представленных на выставке.</p></div>
 					  						<div class="row">
-					  							<div class="col-sm-3">
+					  							<div class="col-xs-4 col-sm-3">
 					  								<div class="map-hint-page">3 из 4</div> 
 					  							</div>
-					  							<div class="col-sm-offset-2 col-sm-7 text-right">
+					  							<div class="col-xs-offset-1 col-sm-offset-2 col-sm-7 text-right">
 						  							<div class="map-hint-prev">
-						  								<a href="#recommend" role="button" class="btn"><i class="sprite-hint sprite-hint-left-arrow"></i><span class="map-hint-prev-text">Назад</span></a>
+						  								<a href="#variants" role="button" class="btn"><i class="sprite-hint sprite-hint-left-arrow"></i><span class="map-hint-prev-text">Назад</span></a>
 														</div>	
 					  								<div class="map-hint-next">
 					  									<a href="#participants-premium" role="button" class="btn"><span class="map-hint-next-text">Далее</span><i class="sprite-hint sprite-hint-right-arrow"></i></a>
@@ -220,10 +220,10 @@
 					  						<h4>Премиум стенды</h4>
 					  						<p>Разделы выставки по направлениям. В павильонах размещены стенды компаний, представляющие свой товар или услугу в этой сфере деятельности.</p></div>
 					  						<div class="row">
-					  							<div class="col-sm-3">
+					  							<div class="col-xs-4 col-sm-3">
 					  								<div class="map-hint-page">4 из 4</div> 
 					  							</div>
-					  							<div class="col-sm-offset-5 col-sm-3 text-right">
+					  							<div class="col-xs-offset-4 col-sm-offset-5 col-sm-3 text-right">
 						  							<div class="map-hint-prev">
 						  								<a href="#participants" role="button" class="btn"><i class="sprite-hint sprite-hint-left-arrow"></i><span class="map-hint-prev-text">Назад</span></a>
 														</div>			  								
@@ -1242,7 +1242,7 @@
 				$(".tab-content").on("click","a", function (e) {
 			        e.preventDefault();
 			        var id  = $(this).attr('href'),
-			            top = $(id).offset().top;
+			            top = $(id).offset().top-100;
 			        $('body,html').animate({scrollTop: top}, 500);
 			    });
 
