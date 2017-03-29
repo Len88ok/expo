@@ -92,6 +92,9 @@ body{
   height: 70px;
 }
 
+.stand-contacts .cd-main{
+  padding-left: 0;
+}
 
 @media screen and (max-width: 991px ) {    
   .left-panel-button:hover,
@@ -103,6 +106,9 @@ body{
   }  
   .cd-main{
     padding-left: 120px;
+  }
+  .stand-contacts .cd-main {
+      padding-left: 120px;
   }
   .navbar-brand{
     float: none;
@@ -127,10 +133,6 @@ body{
       padding: 5px 10px;
     }    
   }
-}
-
-.stand-contacts .cd-main{
-  padding-left: 0;
 }
 
 
@@ -226,3 +228,9 @@ body{
   }
 }
 
+@media only screen and (max-width: 1680px) and (min-width: 0){
+  .company-logo-outer {
+      width: 120px;
+      height: 120px;
+  }
+}

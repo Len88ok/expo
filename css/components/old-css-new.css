@@ -76,6 +76,9 @@ body {
   width: 70px;
   height: 70px; }
 
+.stand-contacts .cd-main {
+  padding-left: 0; }
+
 @media screen and (max-width: 991px) {
   .left-panel-button:hover,
   .left-panel {
@@ -83,6 +86,8 @@ body {
   #header {
     left: 120px; }
   .cd-main {
+    padding-left: 120px; }
+  .stand-contacts .cd-main {
     padding-left: 120px; }
   .navbar-brand {
     float: none;
@@ -102,9 +107,6 @@ body {
     #main-content.bg-catalog .button-outer .button-base:focus {
       width: 180px;
       padding: 5px 10px; } }
-
-.stand-contacts .cd-main {
-  padding-left: 0; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-header {
@@ -170,3 +172,8 @@ body {
   #main-content.bg-documents .certificates-list {
     width: 100%;
     margin: 0 auto; } }
+
+@media only screen and (max-width: 1680px) and (min-width: 0) {
+  .company-logo-outer {
+    width: 120px;
+    height: 120px; } }

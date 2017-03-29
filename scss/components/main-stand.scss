@@ -11,7 +11,7 @@
   } 
   
   #main-content.bg-stand .logo-wrapper{
-    bottom: 50px;
+    bottom: 130px;
     margin: 0 auto;
     top: auto;  
     height: 110px;  
@@ -22,16 +22,22 @@
   }
 }
 
+@media only screen and (max-width: 1680px) and (min-width: 0){
+  .manager-slider {
+      top: 140px;
+  }
+}
 
-@media screen and (max-width: 1169px ) {
+
+@media screen and (max-width: 1200px ) {
   #main-content{
-    padding-top: 125px;
+    padding-top: 100px;
   }
 }
 
 @media screen and (max-width: 991px ) {  
   #main-content{
-    padding-top: 150px;
+    padding-top: 110px;
   }
   .main-stand{
     .cd-main{
@@ -39,7 +45,7 @@
     }
   }
   .manager-slider{
-    top: 205px;
+    top: 175px;
   }  
   .main-stand{
     .btn-base, .btn-base:active, .btn-base:visited, .btn-base:focus{
@@ -53,6 +59,12 @@
     #main-content.bg-stand .logo-wrapper{
       bottom: 0; 
     }
+  }
+}
+
+@media screen and (max-width: 767px ) {
+  #main-content{
+    padding-top: 150px;
   }
 }
 
@@ -96,4 +108,6 @@
     }
   }
 }
+
+
   

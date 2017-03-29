@@ -1,24 +1,39 @@
 @media screen and (max-width: 767px) {
   .wrapper > .content {
-    padding-bottom: 90px; } }
+    padding-bottom: 65px; } }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 479px) {
   .main-stand #main-content.bg-stand .logo-wrapper {
     top: auto;
     bottom: 0; } }
 
-.button-base-outer .popup-open-demostand {
+.main-stand .button-base-outer {
   position: absolute;
-  bottom: 165px;
+  top: 300px;
   left: 50%;
-  margin-left: -140px; }
+  margin-left: -282px;
+  width: 564px; }
+  .main-stand .button-base-outer .video-call-text {
+    display: inline-block;
+    vertical-align: top; }
+  .main-stand .button-base-outer .video-call-icon {
+    background-image: url(../../images/stand/ic-camera.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-position: center center;
+    margin-right: 10px; }
+  .main-stand .button-base-outer .button-base {
+    text-transform: none;
+    width: 100%;
+    height: 40px; }
+    .main-stand .button-base-outer .button-base:hover .video-call-icon {
+      background-image: url(../../images/stand/ic-camera-green.png); }
 
 .authorization-popup .popup-open-login.button-base {
   margin-left: 74px; }
 
-#demostandPopup{
-  width: 500px;
-}
 #main-content.bg-stand .button-base:hover {
   background-color: #FFF; }
 
@@ -36,7 +51,18 @@
 
 @media screen and (max-width: 991px) {
   .button-base-outer .popup-open-demostand {
-    bottom: 100px; } }
+    bottom: 100px; }
+  .main-stand .button-base-outer {
+    left: 50%;
+    margin-left: -145px;
+    width: 290px; }
+  .main-stand .button-base-outer {
+    top: 335px; }
+  .main-stand .button-base-outer .button-base {
+    width: 250px; }
+  #main-content.bg-stand .button-base {
+    padding: 9px 18px;
+    font-size: 12px; } }
 
 @media screen and (max-width: 478px) {
   .catalog-tree-container {
@@ -45,22 +71,13 @@
     font-size: 11px; }
   .jstree-anchor span.tree-item-name-outer {
     padding: 8px 2px 0 0; }
-  #main-content.bg-stand .button-base {
-    padding: 9px 18px;
-    font-size: 12px; }
-  .button-base-outer .popup-open-demostand {
-    margin-left: -100px; }
   .authorization-popup .popup-open-login.button-base,
   .authorization-popup .popup-open-register.button-base {
     margin: 10px auto;
-    float: none; }
-    #demostandPopup{
-      width: 95%;} }
+    float: none; } }
 
 @media screen and (max-width: 350px) {
   #main-content.bg-stand .button-base {
     font-size: 10px; }
-  .button-base-outer .popup-open-demostand {
-    margin-left: -95px; }
   .parent-level .jstree-anchor {
     font-size: 10px; } }

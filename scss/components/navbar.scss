@@ -1,15 +1,3 @@
-// Navbar collapse
-//** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     992px;
-//** Point at which the navbar begins collapsing.
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
-
-@media (min-width: $grid-float-breakpoint) {
-	navbar-toggle{
-		display: none;
-	}
-}
-
 header{
 	position: relative;
 	z-index: 200;
@@ -52,11 +40,12 @@ header{
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1169px) {
 	.navbar{
 		&-nav{
 			li>a{
 				padding: 5px;
+  			font-size: 12px;
 		}
 	}
 }
