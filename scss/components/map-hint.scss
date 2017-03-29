@@ -5,7 +5,7 @@
 .map-hint-block{
 	position: fixed;
 	right: 1%;
-	top: 200px;
+	bottom: 50px;
 	z-index: 10001;
 }
 
@@ -44,7 +44,6 @@
 	}
 	&-closed{
 		display: none;
-		margin-top: 135px;
 	}
 	&-opened{
 
@@ -61,6 +60,7 @@
 		font-weight: 300;
 	}
 }
+
 
 .map{
 	&-variants{

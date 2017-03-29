@@ -4,7 +4,7 @@
 .map-hint-block {
   position: fixed;
   right: 1%;
-  top: 200px;
+  bottom: 50px;
   z-index: 10001; }
 
 .map-hint {
@@ -34,8 +34,7 @@
         top: -19px;
         left: 23px; }
   .map-hint-closed {
-    display: none;
-    margin-top: 135px; }
+    display: none; }
   .map-hint-open {
     margin-top: -3px; }
   .map-hint-close {
