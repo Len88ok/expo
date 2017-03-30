@@ -115,3 +115,14 @@
 .catalog-item-button.button-base:focus {
   border-radius: 0 !important;
   padding: 12px 7px; }
+
+.stand-contacts .table {
+  font-size: 12px;
+  margin-left: 50px; }
+
+.stand-contacts .table thead tr th {
+  text-align: center; }
+
+.stand-contacts .table tr th,
+.stand-contacts .table tr td {
+  padding: 15px 5px; }
