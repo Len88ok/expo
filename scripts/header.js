@@ -151,8 +151,8 @@ $(document).ready(function() {
 
     //added js by Len88ok
     $('#search-input-field').on('blur', function(){
-        $('.popup-open-search').show();
-        $('.search-input-li').hide();
+        $('.popup-open-search').show(600);
+        $('.search-input-li').hide(600);
     });
 
 
