@@ -112,7 +112,6 @@ header{
 	padding: 0;
 	margin: .75em 0;
     margin-right: 2em;
-	background: #fff;
 
   li{
   	float: left;
@@ -220,6 +219,14 @@ li.search-input-li a:before, li.search-input-li.active a:before{
 .main-menu.authorization-menu li.main-menu-search {
     margin-top: 3px;
     margin-right: 0;
+}
+.main-menu.authorization-menu .profile{
+    margin-top: 5px;        
+}
+
+.main-menu.authorization-menu li.profile a.profile-inner{
+	height: 28px;
+	padding: 5px 10px;
 }
 
 
