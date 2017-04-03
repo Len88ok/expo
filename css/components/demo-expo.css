@@ -8,6 +8,15 @@
     top: auto;
     bottom: 0; } }
 
+.stand-contacts .page-content-area-inner::-webkit-scrollbar {
+  width: 0; }
+
+.stand-contacts .page-content-area-inner {
+  -ms-overflow-style: none; }
+
+.stand-contacts .page-content-area-inner {
+  overflow: -moz-scrollbars-none; }
+
 .main-stand .button-base-outer {
   position: absolute;
   top: 300px;
