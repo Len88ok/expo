@@ -23,9 +23,14 @@
   left: 50%;
   margin-left: -282px;
   width: 564px; }
+  .main-stand .button-base-outer .glyphicon {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: -2px; }
   .main-stand .button-base-outer .video-call-text {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    padding-top: 3px; }
   .main-stand .button-base-outer .video-call-icon {
     background-image: url(../../images/stand/ic-camera.png);
     background-repeat: no-repeat;
