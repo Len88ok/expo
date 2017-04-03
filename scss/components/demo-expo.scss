@@ -26,35 +26,44 @@
     position: absolute;
     top: 300px;
     left: 50%;
-    margin-left: -282px;
-    width: 564px;
+    margin-left: -250px;
+    width: 500px;
     .glyphicon{
     	font-size: 22px;
     	margin-right: 10px;
 	    margin-top: -2px;
     }
-    .video-call-text{
+    .button-text{
     	display: inline-block;
     	vertical-align: top;
     	padding-top: 3px;
     }
-    .video-call-icon{
-	    background-image: url(../../images/stand/ic-camera.png);
+    .button-icon{
 	    background-repeat: no-repeat;
 	    display: inline-block;
 	    width: 30px;
 	    height: 20px;
 	    background-position: center center;
 	    margin-right: 10px;
+		    &.video-call{
+		    	background-image: url(../../images/stand/camera.png);
+		    }
+		    &.send-email{
+		    	background-image: url(../../images/stand/envelop.png);
+		    }
 		}
 		.button-base{
 			text-transform: none;
 			width: 100%;
 			height: 40px;
+			padding: 9px;
 			&:hover{
-				.video-call-icon{
-		    	background-image: url(../../images/stand/ic-camera-green.png);
-		    }
+				.video-call{
+			    	background-image: url(../../images/stand/camera_green.png);
+			    }
+			    .send-email{
+			    	background-image: url(../../images/stand/envelop-green.png);
+			    }
 			}
 		}
 	}
