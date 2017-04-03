@@ -134,6 +134,7 @@ $(document).ready(function() {
 
     $('.popup-open-search').click(function(e){
         e.preventDefault();
+        //added js by Len88ok
         $('.popup-open-search').hide(speed);
 
         var li    = $('.search-input-li');
@@ -141,13 +142,19 @@ $(document).ready(function() {
 
         if (!li.is(':visible')) {
             li.show(speed, function() {
-                $('#search-input-field').focus();
-                
+                $('#search-input-field').focus();                
             });
         } else {
             li.hide(speed);
         }
     });
+
+    //added js by Len88ok
+    $('#search-input-field').on('blur', function(){
+        $('.popup-open-search').show();
+        $('.search-input-li').hide();
+    });
+
 
     $('#start-search').click(function(e){
         e.preventDefault();
