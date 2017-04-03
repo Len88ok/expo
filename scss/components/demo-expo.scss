@@ -127,15 +127,20 @@
 .stand_catalog_item_wrap.service{
 	background-color: #55d17d;
 	color: #fff;
+	  padding: 10px 20px;
+	  a{
+	  	color: #fff;
+	  }
 }
 
 .stand_catalog_service-text{
 	font-size: 12px;
-  padding: 10px 20px;
-  height: 160px;
-  overflow-y: scroll;  
+  height: 140px;
+  overflow-y: auto;  
 }
-
+.catalog-wrapper .item-description{
+	overflow-y: auto; 
+}
 /* хром, сафари */
 .stand_catalog_service-text::-webkit-scrollbar { width: 0; }
 
@@ -173,6 +178,5 @@
 	.table tr td{
 		padding: 15px 5px; 
 	}
-
 
 }

@@ -19,7 +19,6 @@
 .parent-level .jstree-clicked span.parent-item{
     border-color: #55d17d;
 		outline: 0;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 }
 
 .tree-item-name-inner{
@@ -34,11 +33,22 @@
 
 .jstree-anchor span.tree-item-name-outer {
     padding: 2px 2px 5px 12px;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block !important;
 }
 
-.jstree-children .jstree-clicked span.tree-item-name-outer{
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);	
-}
+/* хром, сафари */
+.tree-item-name-outer::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.tree-item-name-outer { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.tree-item-name-outer { overflow: -moz-scrollbars-none; }
+
 
 .catalog-search{
 	display: none;

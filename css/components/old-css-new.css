@@ -82,6 +82,9 @@ body {
 .stand-contacts .cd-main {
   padding-left: 0; }
 
+.item-full-info .item-full-image {
+  text-align: center; }
+
 @media screen and (max-width: 991px) {
   .left-panel-button:hover,
   .left-panel {
@@ -109,7 +112,16 @@ body {
     #main-content.bg-catalog .button-outer .button-base:visited,
     #main-content.bg-catalog .button-outer .button-base:focus {
       width: 180px;
-      padding: 5px 10px; } }
+      padding: 5px 10px; }
+  .item-full-info-outer .description-title .product-name {
+    margin-left: 0;
+    width: 100%; }
+  .description-title .product-name {
+    max-height: 100%; }
+  .item-full-info .full-description {
+    width: 100%; }
+  .item-full-info .item-full-image {
+    text-align: center; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-header {
@@ -180,3 +192,6 @@ body {
   .company-logo-outer {
     width: 120px;
     height: 120px; } }
+
+.item-full-info .full-description p {
+  padding-bottom: 0; }

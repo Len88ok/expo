@@ -6,14 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Expo</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-		<link href="css/old-all.css" rel="stylesheet">
+		<link href="../css/old-all.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link href="css/screen.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/components/jstree-catalog.css">
-		<link rel="stylesheet" href="css/components/old-css-new.css">
-		<link rel="stylesheet" href="css/components/stand-catalog.css">
-		<link rel="stylesheet" type="text/css" href="css/components/demo-expo.css">
-		<link rel="stylesheet" href="css/components/catalog-tree.css">
+		<link href="../css/screen.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/components/jstree-catalog.css">
+		<link rel="stylesheet" href="../css/components/old-css-new.css">
+		<link rel="stylesheet" href="../css/components/stand-catalog.css">
+		<link rel="stylesheet" href="../css/components/demo-expo.css">
+		<link rel="stylesheet" href="../css/components/catalog-tree.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 						<div class="container">
 							<!-- Brand and toggle get grouped for better mobile display -->
 							<div class="navbar-header">
-								<a class="navbar-brand" href="#"><img src="images/logo.png" alt="navbar-logo">
+								<a class="navbar-brand" href="#"><img src="../images/logo.png" alt="navbar-logo">
 									<span class="navbar-brand-dscr">международный выставочный портал</span></a>
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 									<span class="sr-only">Toggle navigation</span>
@@ -252,178 +252,37 @@
 																</div>
 															</div>
 														</div>
-														<div class="col-lg-7">
-															<div class="catalog-search-outer">
-																<div class="catalog-search">
-																	<div class="input-group">
-																		<input type="text" id="itemsFilter" class="form-control" placeholder="Поиск">
-																		<div class="input-group-addon"></div>
+														<div class="col-lg-7 item-full-info-outer">
+															<div class="description-title">
+																<a href="../demo-catalog.html" class="btn-base left-arrow-black">
+																</a>
+																<div class="product-name">"Веселые пружинки"</div>
+																<a title="Добавить в закладки" id="268" class="bookmark " data-type="catalog">
+																</a>
+															</div>
+															<div class="item-full-info">
+																<div class="item-full-image">
+																	<div class="col-lg-12 center-block" style="max-height: 300px; margin-bottom: 10px; padding: 5px; border: 1px solid #D5D5D5;">
+																		<a id="main-img-link" class="fancybox-stand-item" rel="item-view-gallery" href="/uploads/stand/catalog/268/56c2dc94d29fd.png">
+																			<img id="main-img" src="../images/stand/Фрукты/1.jpg" class="img-responsive mh-for-main-img" style="margin: 0px auto;">
+																		</a>
+																	</div>
+																	<div class="hide" id="item-view-gallery">
+																	</div>
+																	<div class="clearfix"></div>
+																	<ul id="item-view-slider" class="list-unstyled slick-initialized slick-slider">
+																		<div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"></div></div></ul>
+																	</div>
+																	<div class="full-description">
+																		<p><strong>Фруктозаврики</strong></p>
+																		<p>Мягкие жевательные конфеты с ароматами абрикоса, зеленого яблока, ананаса и клубники, покрытые разноцветной глазурью с кислинкой</p>
+																		<p>Вес: 6 кг, закрытый ящик</p>
 																	</div>
 																</div>
-															</div>
-															<div class="catalog-items-list-outer">
-																<div class="row">
-																	<div class="loading"></div>
-																	<ul class="catalog-items-list" id="item_container">
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap">
-																					<div class="item-title">
-																						<a href="cards/Pancake.html" class="itemView">"Confectum PanCake"</a>
-																					</div>
-																					<div class="item-description">
-																						<span><p>Пышное бисквитное  тесто с особенной фирменной рецептурой зефира, с вишневым наполнителем</p>
-																						</span>
-																					</div>
-																					<div class="item-image">
-																						<a href="cards/Pancake.html" class="itemView">
-																							<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="images/stand/Confectum PanCake/1.jpg">
-																						</a>
-																					</div>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
-																			</div>
-																		</li>
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap">
-																					<div class="item-title">
-																						<a href="cards/snowy.html" class="itemView" data-id="">"Mini Snowy Mallows"</a>
-																					</div>
-																					<div class="item-description">
-																						<span><p>Зефир жевательной с ароматом пломбира и ванили, в удобных пакетиках по 10 гр, идеально сочетается с кофе и какао.</p>
-																						</span>
-																					</div>
-																					<div class="item-image">
-																						<a href="cards/snowy.html" class="itemView">
-																							<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="images/stand/Mini Snowy Mallows/1.jpg">
-																						</a>
-																					</div>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
-																			</div>
-																		</li>
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap">
-																					<div class="item-title">
-																						<a href="cards/funny.html" class="itemView" data-id="">"Веселые пружинки"</a>
-																					</div>
-																					<div class="item-description">
-																						<span><p>Зефир жевательный с ароматом клубники</p>
-																						</span>
-																					</div>
-																					<div class="item-image">
-																						<a href="cards/funny.html" class="itemView">
-																							<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="images/stand/Веселые пружинки/1.jpg">
-																						</a>
-																					</div>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
-																			</div>
-																		</li>
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap">
-																					<div class="item-title">
-																						<a href="cards/Pancake-apple.html" class="itemView" data-id="">"ПанКейк" с яблочным наполнителем</a>
-																					</div>
-																					<div class="item-description">
-																						<span><p>Блины кондитерские "ПанКейк" с яблочным наполнителем</p>
-																						</span>
-																					</div>
-																					<div class="item-image">
-																						<a href="cards/Pancake-apple.html" class="itemView">
-																							<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="images/stand/ПанКейк с яблочным наполнителем/1.jpg">
-																						</a>
-																					</div>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
-																			</div>
-																		</li>
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap">
-																					<div class="item-title">
-																						<a href="cards/fruits.html" class="itemView" data-id="">"Фруктозаврики"</a>
-																					</div>
-																					<div class="item-description">
-																						<span><p>Мягкие жевательные конфеты с ароматами абрикоса, зеленого яблока, ананаса и клубники, покрытые разноцветной глазурью с кислинкой</p>
-																						</span>
-																					</div>
-																					<div class="item-image">
-																						<a href="cards/fruits.html" class="itemView">
-																							<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="images/stand/Фрукты/1.jpg">
-																						</a>
-																					</div>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
-																			</div>
-																		</li>
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark" data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap service">
-																				<a href="cards/service1.html" class="itemView">
-																					<div class="stand_catalog_service text-center">
-																						<div class="stand_catalog_service_info">
-																							<div class="stand_catalog_service-heading">Производство продукции под Приват лейбл</div>
-																							<div class="stand_catalog_service-text">Производство маршмелоу, шоколадно-вафельных конфет, печенья и другой кондитерской продукции под Вашей торговой маркой на выгодных для Вас условиях У вас будет продукция, произведенная исключительно для Вас, что дает неоспоримые преимущества:  качественная продукция в упаковке с Вашим дизайном создаст позитивный образ и доверие к Вашей ТМ, будет способствовать увеличению лояльности покупателей и увеличению продаж Вашей ТМ. Это послужит оригинальной визитной карточкой и даст неоспоримое преимущество перед Вашим конкурентом.</div>
-																						</div>																						
-																					</div>
-																				</a>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>	
-																			</div>
-																		</li>
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap">
-																					<div class="item-title">
-																						<a href="cards/service2.html" class="itemView" data-id="">Торговля производственным оборудованием собственной сборки</a>
-																					</div>
-																					<div class="item-description">
-																						<span><p>Комплексные производственные и упаковочные линии для кондитерской и пищевой промышленности для производства конфет, батончиков (экструдирование, отливка, формование), вафель, соломки, маршмеллоу
-																							Депозиторы, экструдеры, глазировщики, холодильные туннели и шкафы, аэраторы, декораторы, кремонамазывающие автоматы, гильотины, печи и др.
-																							Упаковочное оборудование: горизонтальные флоупаки, фолд-роп; вертикально-фасовочные автоматы с мультидозаторами; термоформовочные автоматы.
-																							Послепродажный и гарантийный сервис</p>
-																						</span>
-																					</div>
-																					<div class="item-image">
-																						<a href="cards/service2.html" class="itemView">
-																							<img style="top:0; width: 94%; height: 88%; margin: 10px; float:left;" src="images/stand/10258815.jpg">
-																						</a>
-																					</div>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
-																			</div>
-																		</li>																		
-																		<li class="col-xs-6">
-																			<div class="stand_catalog_item_wrap-outer">
-																				<a title="Добавить в закладки" class="bookmark " data-type="catalog"></a>
-																				<div class="stand_catalog_item_wrap service">
-																					<a href="cards/service3.html" class="itemView">
-																						<div class="stand_catalog_service text-center">
-																							<div class="stand_catalog_service_info">
-																								<div class="stand_catalog_service-heading">Франшиза по открытию магазинов кондитерских изделий "Сластена"</div>
-																								<div class="stand_catalog_service-text">Предлагаем вам возможность открыть свой собственный магазин по продаже кондитерских изделий фабрики на условиях франчайзинга. Стать владельцем собственного бизнеса достаточно просто – нужно только желание и небольшой опыт коммерческой деятельности. Сегодня фирменные магазины "Сластена" представлены в крупных  городах мира. Все они динамично развиваются и увеличивают объемы продаж.</div>
-																							</div>																						
-																						</div>
-																					</a>
-																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>	
-																			</div>
-																		</li>																		
-																	</ul>
+																<div class="button-base-outer">
+																	<a href="#demostandPopup" class="button-base green popup-open-demostand">Связаться с менеджером</a>
 																</div>
 															</div>
-														</div>
 													</div>
 												</div>
 											</div>
@@ -472,16 +331,16 @@
 							</ul>
 							<div class="pull-right">
 								<a href="https://vk.com" target="_blank" class="pull-left social-networks">
-									<img src="images/social_networks/vk.png" alt="vk">
+									<img src="../images/social_networks/vk.png" alt="vk">
 								</a>
 								<a href="https://www.facebook.com" target="_blank" class="pull-left social-networks">
-									<img src="images/social_networks/fb.png" alt="fb">
+									<img src="../images/social_networks/fb.png" alt="fb">
 								</a>
 								<a href="https://plus.google.com/" target="_blank" class="pull-left social-networks">
-									<img src="images/social_networks/gp.png" alt="gp">
+									<img src="../images/social_networks/gp.png" alt="gp">
 								</a>
 								<a href="https://ok.ru/" target="_blank" class="pull-left social-networks">
-									<img src="images/social_networks/ok.png" alt="ok">
+									<img src="../images/social_networks/ok.png" alt="ok">
 								</a>
 							</div>
 						</div>
@@ -583,7 +442,6 @@
               </div>
             </form>
           </div>
-          <script type="text/javascript" src="/js/6220c15.js"></script>
         </div>
         <div style="display: none;" id="confirmation">
           <div id="confirmation" class="common-popup entrance-page-popup" style="width: 100%;">
@@ -628,11 +486,11 @@
         </div>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script src="dist/jstree.min.js"></script>
+			<script src="../dist/jstree.min.js"></script>
 			<!-- Latest compiled and minified JavaScript -->
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-			<script type="text/javascript" src="scripts/catalog.js"></script><div style="display: none;" id="login"></div>  
+			<script type="text/javascript" src="../scripts/catalog.js"></script><div style="display: none;" id="login"></div>  
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script src="scripts/demo-popups.js"></script>
+      <script src="../scripts/demo-popups.js"></script>
     </body>
   </html>
