@@ -90,7 +90,7 @@
                     <span class="stand-info-details-img industry-img plate"></span>
                   </p>
                 </div>
-                <ul class="left-nav wrap-for-hint bordered">
+                <ul class="left-nav wrap-for-hint">
                   <li>
                     <a href="demo-about.html" data-menu="/stand/230/company-info" title="О компании" class="sliding_link">
                       <span class="icon-logo">
@@ -136,7 +136,7 @@
                         <div class="company-name">
                           <strong>ТМ «CONFEСTUM»</strong>
                         </div>
-                        <a title="Добавить в закладки" id="230" class="bookmark wrap-for-hint bordered" data-type="stand">
+                        <a title="Добавить в закладки" id="230" class="bookmark wrap-for-hint" data-type="stand">
                         </a>
                       </div>
                     </div>
@@ -523,25 +523,54 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script>
         $(document).on('ready', function() {
-          $('.map-hint-close').click(function(){            
+          
+          var el_to_hightlight = [
+            $('#communication'),
+            $('.left-nav'),
+            $('.bookmark')
+          ];
+
+         var el_to_hightlight_pointer = 0;
+          var el_to_hightlight_length  = el_to_hightlight.length;
+
+         function addBorder(action = 'next'){
+            if (action == 'next') {
+              el_to_hightlight[el_to_hightlight_pointer].removeClass('bordered');
+
+             if (el_to_hightlight_pointer < el_to_hightlight.length - 1) {
+                ++el_to_hightlight_pointer;
+              } else {
+                el_to_hightlight_pointer = 0;
+              }
+            } else {
+              el_to_hightlight[el_to_hightlight_pointer].removeClass('bordered');
+              
+              if (el_to_hightlight_pointer > 0) {
+                --el_to_hightlight_pointer;
+              } else {
+                el_to_hightlight_pointer = el_to_hightlight.length - 1;
+              }
+            }
+
+           el_to_hightlight[el_to_hightlight_pointer].addClass('bordered');
+          }
+
+         $('.map-hint-close').click(function(){            
             $('.map-hint-opened').hide();
             $('.map-hint-closed').show();
           });
-          $('.map-hint-open').click(function(){           
+          $('.map-hint-open').click(function(){          
             $('.map-hint-closed').hide();
             $('.map-hint-opened').show();
           });
-        });
-      </script>
-      <script>
-        $(document).ready(function() { 
-          $('.map-hint-next .btn').click(function(){ 
-            $('.nav-tabs > .active').next('li').find('a').trigger('click'); 
-            // $('.wrap-for-hint').toggleClass('bordered');
-          }); 
-          $('.map-hint-prev .btn').click(function(){            
-            $('.nav-tabs > .active').prev('li').find('a').trigger('click'); 
 
+         $('.map-hint-next .btn').click(function(){
+            $('.nav-tabs > .active').next('li').find('a').trigger('click');
+            addBorder('next');
+          });
+          $('.map-hint-prev .btn').click(function(){            
+            $('.nav-tabs > .active').prev('li').find('a').trigger('click');
+            addBorder('prev');
           });
         });
       </script>
