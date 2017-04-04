@@ -46,7 +46,7 @@
   overflow: hidden;
   background-position: center 0;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
 
 .exhibition-banner.page-section {
   padding: 0; }
@@ -108,7 +108,7 @@
 .paper-ticket {
   z-index: 1;
   width: 100%;
-  height: 270px;
+  height: 200px;
   text-align: center;
   background-position: 0 0;
   background-size: 100%;
@@ -155,7 +155,8 @@
 .paper-ticket .button-base {
   width: 180px;
   margin-top: 54px;
-  padding: 9px 10px; }
+  padding: 9px 5px;
+  font-weight: 600; }
 
 /*----------*/
 .page-section {
