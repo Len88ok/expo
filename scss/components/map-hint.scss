@@ -127,8 +127,8 @@
 	.map-hint-content-info{
 		height: 140px;		
 	}
-	a, a:active, a:visited{color: #fff;}
-	a:focus{
+	a, a:active{color: #fff;}
+	a:focus, a:hover{
 		color: #55d17d;
 	}
 	.map-hint-block{

@@ -88,10 +88,10 @@
 .bg-stand .map-hint-content-info {
   height: 140px; }
 
-.bg-stand a, .bg-stand a:active, .bg-stand a:visited {
+.bg-stand a, .bg-stand a:active {
   color: #fff; }
 
-.bg-stand a:focus {
+.bg-stand a:focus, .bg-stand a:hover {
   color: #55d17d; }
 
 .bg-stand .map-hint-block {
