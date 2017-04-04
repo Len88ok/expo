@@ -105,6 +105,16 @@ body{
   }
 
 
+/* хром, сафари */
+.page-content-area-inner::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.page-content-area-inner { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.page-content-area-inner { overflow: -moz-scrollbars-none; }
+
+
 @media screen and (max-width: 991px ) {    
   .left-panel-button:hover,
   .left-panel{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   min-width: 100%;
   max-width: 100%;
@@ -84,6 +85,18 @@ body {
 
 .item-full-info .item-full-image {
   text-align: center; }
+
+/* хром, сафари */
+.page-content-area-inner::-webkit-scrollbar {
+  width: 0; }
+
+/* ie 10+ */
+.page-content-area-inner {
+  -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.page-content-area-inner {
+  overflow: -moz-scrollbars-none; }
 
 @media screen and (max-width: 991px) {
   .left-panel-button:hover,

@@ -61,6 +61,15 @@
   .wrap-btn-hint .button-base {
     margin-top: 0; }
 
+.wrap-btn-no-hint {
+  border: 1px dashed transparent;
+  display: inline-block;
+  width: 194px;
+  padding: 7px;
+  margin-top: 48px; }
+  .wrap-btn-no-hint .button-base {
+    margin-top: 0; }
+
 .map-hint {
   position: static; }
   .map-hint-prev {
