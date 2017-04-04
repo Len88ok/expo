@@ -93,10 +93,10 @@
 					<div class="map-hint-block-wrap">
 						<div class="map-hint-block">
 						 	<ul class="nav nav-tabs hidden" role="tablist">
-						    <li role="presentation" class="active"><a href="#first-hint" aria-controls="first-hint" role="tab" data-toggle="tab">Home</a></li>
-						    <li role="presentation"><a href="#second-hint" aria-controls="second-hint" role="tab" data-toggle="tab">Profile</a></li>
-						    <li role="presentation"><a href="#third-hint" aria-controls="third-hint" role="tab" data-toggle="tab">Messages</a></li>
-						    <li role="presentation"><a href="#fourth-hint" aria-controls="fourth-hint" role="tab" data-toggle="tab">Settings</a></li>
+						    <li role="presentation" class="active"><a href="#first-hint" aria-controls="first-hint" role="tab" data-toggle="tab">Павильоны</a></li>
+						    <li role="presentation"><a href="#second-hint" aria-controls="second-hint" role="tab" data-toggle="tab">Рекомендуем посетить</a></li>
+						    <li role="presentation"><a href="#third-hint" aria-controls="third-hint" role="tab" data-toggle="tab">Все участники выставки</a></li>
+						    <li role="presentation"><a href="#fourth-hint" aria-controls="fourth-hint" role="tab" data-toggle="tab">Премиум стенды</a></li>
 						  </ul>
 						  <div class="tab-content">
 							  <div role="tabpanel" class="tab-pane fade in active" id="first-hint">
@@ -1246,15 +1246,6 @@
 			        $('body,html').animate({scrollTop: top}, 500);
 			    });
 
-				function isVisible( row, container ){
-				    
-				    var elementTop = $(row).offset().top,
-				        elementHeight = $(row).height(),
-				        containerTop = container.scrollTop(),
-				        containerHeight = container.height();
-				    
-				    return ((((elementTop - containerTop) + elementHeight) > 0) && ((elementTop - containerTop) < containerHeight));
-				}
 				$(window).scroll(function(){
 				  $('.main div').each(function(){
 				      if(isVisible($(this), $(window))){
@@ -1262,6 +1253,7 @@
 				      };  
 				  });
 				});
+				
 				function isVisible( row, container ){
 				    
 				    var elementTop = $(row).offset().top,

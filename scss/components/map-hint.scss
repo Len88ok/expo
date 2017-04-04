@@ -66,43 +66,14 @@
 	&-variants{
 		position: relative;
 	}
-	.map-hint{
-		position: static;
-		&-prev{
-			display: inline-block;
-			.btn{
-				padding: 5px 15px;
-				&:hover{
-					.sprite-hint-left-arrow{
-						background-position: -8px -119px;
-					}					
-				}
-			}
-		}
-		&-next{
-		  display: inline-block;
-		  .btn{
-				padding: 5px 15px;
-				&:hover{
-					.sprite-hint-right-arrow{
-						background-position: -6px -348px;
-					}					
-				}
-			}	
-		}
-	}
+
 	.map-hint-content{
 		height: 330px;
 		&-info{
 			height: 175px;
 		}
 	}
-	.map-hint-next-text,
-	.map-hint-prev-text{
-		display: inline-block;
-		vertical-align: top;		
-		padding-top: 5px;
-	}
+
 }
 .wrap-btn-hint{
 	border: 1px dashed magenta;
@@ -116,6 +87,60 @@
 }
 
 
+.map-hint{
+	position: static;
+	&-prev{
+		display: inline-block;
+		.btn{
+			padding: 5px 15px;
+			&:hover{
+				.sprite-hint-left-arrow{
+					background-position: -8px -119px;
+				}					
+			}
+		}
+	}
+	&-next{
+	  display: inline-block;
+	  .btn{
+			padding: 5px 15px;
+			&:hover{
+				.sprite-hint-right-arrow{
+					background-position: -6px -348px;
+				}					
+			}
+		}	
+	}
+}
+
+.map-hint-next-text,
+.map-hint-prev-text{
+	display: inline-block;
+	vertical-align: top;		
+	padding-top: 5px;
+}
+
+.bg-stand{
+	.map-hint-content {
+	    height: 200px;
+	}
+	.map-hint-content-info{
+		height: 140px;		
+	}
+	a, a:active, a:visited{color: #fff;}
+	a:focus{
+		color: #55d17d;
+	}
+	.map-hint-block{
+		right: 5%;
+		bottom: 50px;
+	}
+}
+.cd-side-navigation{
+	.wrap-for-hint{
+		display: inherit;
+	}
+}
 // :target{
 // 		border: 1px dashed magenta;
 // }

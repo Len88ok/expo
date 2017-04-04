@@ -339,17 +339,6 @@ $(function () {
         }
     });
 
-    if (socket != undefined) {
-        socket.on('close notification popup force', function(visitorId) {
-            if((isInvitePopupOpen || isInvitePopupOpenAgain) && visitorId == $('#userId').val()) {
-                clearIsNotConfirmedTimer();
-                clearTimer();
-                isInvitePopupOpen = isInvitePopupOpenAgain = isConfirmed = false;
-                $.fancybox.close();
-            }
-        });
-    }
-
     function isIEorEDGE() {
         return navigator.appName == 'Microsoft Internet Explorer' || (navigator.appName == "Netscape" && navigator.appVersion.indexOf('Trident') > -1);
     }
@@ -837,11 +826,6 @@ $(document).ready(function() {
 
         $('#main').css( 'height' , height_page );
         $('#search-result-block').css('height', search_result_shift);
-    });
-
-    /*---custom checkbox---*/
-    $('input').iCheck({
-        handle: 'checkbox'
     });
 
     $('.popup-open-search').click(function(e){
