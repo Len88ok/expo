@@ -121,7 +121,7 @@
   .map-hint p {
     font-size: 11px; }
   .map-hint-close {
-    margin-top: -19px; }
+    margin-top: -6px; }
   .map-hint-open {
     margin-top: -6px; }
   .map-hint-content-heading {
@@ -133,21 +133,25 @@
   .map .map-hint-content-info {
     margin-bottom: 0; }
   .map-hint-header {
-    font-size: 10px; }
+    font-size: 10px;
+    padding: 1em .5em 1em 1em; }
   .map-hint-page {
     text-align: center;
     margin-bottom: 10px;
     font-size: 14px; }
-  .map .map-hint-next-text,
-  .map .map-hint-prev-text {
+  .map-hint-next-text,
+  .map-hint-prev-text {
     display: none; }
-  .map .map-hint-prev .btn,
-  .map .map-hint-next .btn {
+  .map-hint-prev .btn,
+  .map-hint-next .btn {
     padding: 2px 8px; }
   .map-hint-content,
-  .map .map-hint-content {
+  .map .map-hint-content,
+  .bg-stand .map-hint-content {
     padding: .5em;
     height: 270px; }
+  .bg-stand .map-hint-content-info {
+    height: 200px; }
   .map-hint-content-img {
     margin-top: 70px; }
   .map-hint-content-img i {
