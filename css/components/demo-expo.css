@@ -1,4 +1,7 @@
 @charset "UTF-8";
+#header {
+  position: absolute !important; }
+
 @media screen and (max-width: 767px) {
   .wrapper > .content {
     padding-bottom: 65px; } }
