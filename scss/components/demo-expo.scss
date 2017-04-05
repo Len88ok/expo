@@ -97,6 +97,10 @@
     background: url(https://expouniverse.cf/bundles/sitebundlebackend/images/jsTree/vertical-line.png) repeat-y 30px 0;
 }
 
+.button-base, .button-base:active, .button-base:visited, .button-base:focus{
+	display: inline-block !important;
+}
+
 @media screen and (max-width: 991px ) {
 	.button-base-outer .popup-open-demostand{
 		bottom: 100px;
