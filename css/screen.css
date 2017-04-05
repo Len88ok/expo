@@ -269,7 +269,7 @@ a:hover {
   line-height: 16px;
   text-transform: uppercase;
   text-align: center;
-  display: block;
+  display: inline-block;
   padding: 9px 39px;
   overflow: hidden;
   cursor: pointer;
