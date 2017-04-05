@@ -77,13 +77,13 @@
             </header>
             <nav class="cd-side-navigation">
               <div class="left-panel">
-                <a href="/exhibition-map?show=37&amp;industry=117&amp;stand=230" class="left-panel-button" title="Карта">
+                <a href="new_map.html" class="left-panel-button" title="Карта">
                   <span>Карта</span>
                 </a>
                 <div class="stand-info">
                   <p class="stand-industry">
                     <span class="stand-info-title">Выставка:&nbsp;</span>
-                    <span class="stand-info-details">Expofood</span>
+                    <span class="stand-info-details"><a href="new_map.html">Expofood</a></span>
                   </p>
                   <p class="stand-number">
                     <span class="stand-info-title">Павильон</span>
@@ -135,7 +135,7 @@
                         <div class="company-name">
                           <strong>ТМ «CONFEСTUM»</strong>
                         </div>
-                        <a title="Добавить в закладки" id="230" class="bookmark wrap-for-hint" data-type="stand">
+                        <a href="#demostandPopup" class="bookmark wrap-for-hint popup-open-demostand">
                         </a>
                       </div>
                     </div>
@@ -376,121 +376,7 @@
               </div>
             </div>
           </div>
-        </footer>
-        <div style="display: none;" id="login"></div>
-        <div style="display: none;" id="registration">
-          <style type="text/css">
-          .fancybox-overlay { background: rgba(0, 0, 0, 0) url("/bundles/sitebundlebackend/images/fancybox/fancybox_overlay-light.png") repeat scroll 0 0; }
-          .fancybox-skin { background: transparent; padding: 0 !important; }
-          .fancybox-outer { border: none; }
-          .fancybox-inner { overflow: hidden !important; }
-          .fancybox-close { right: -34px !important; top: -34px !important; background: url('/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png') -80px 0px; }
-          .fancybox-close:hover { background: url('/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png') -80px -81px; }
-          </style>
-          <div class="authorization-popup registration-form" style="width: 100%;">
-            <div class="title">Регистрация</div>
-            <form action="/registration/visitor" id="registrationForm" method="post" novalidate="novalidate" class="form-horizontal form-without-legend" role="form">
-              <div class="error-global">
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer without-label field-valid">
-                <div class="form-group-inner">
-                  <input type="text" id="fos_user_registration_form_firstname" name="fos_user_registration_form[firstname]" required="required" maxlength="64" placeholder="Имя">
-                  <div class="input-details">
-                    <span class="necessary-string-icon"></span>
-                    <span class="wrong-password hidden"></span>
-                    <span class="success-password hidden"></span>
-                  </div>
-                </div>
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer without-label field-valid">
-                <div class="form-group-inner">
-                  <input type="text" id="fos_user_registration_form_lastname" name="fos_user_registration_form[lastname]" required="required" maxlength="64" placeholder="Фамилия">
-                  <div class="input-details">
-                    <span class="necessary-string-icon"></span>
-                    <span class="wrong-password hidden"></span>
-                    <span class="success-password hidden"></span>
-                  </div>
-                </div>
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer without-label field-valid">
-                <div class="form-group-inner">
-                  <input type="text" id="fos_user_registration_form_company" name="fos_user_registration_form[company]" placeholder="Название компании" maxlength="255">
-                </div>
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer without-label field-valid">
-                <div class="form-group-inner">
-                  <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required" placeholder="Email">
-                  <div class="input-details">
-                    <span class="necessary-string-icon"></span>
-                    <span class="wrong-password hidden"></span>
-                    <span class="success-password hidden"></span>
-                  </div>
-                </div>
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer field-valid">
-                <div class="form-group-inner">
-                  <label for="fos_user_registration_form_plainPassword_first">Пароль</label>
-                  <input type="password" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]">
-                  <div class="input-details">
-                    <span class="wrong-password hidden"></span>
-                    <span class="success-password hidden"></span>
-                    <a class="show-password show-password-first" onclick="showPassword(this);" title="Показать пароль"></a>
-                  </div>
-                </div>
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer field-valid">
-                <div class="form-group-inner">
-                  <label for="fos_user_registration_form_plainPassword_second">Подтверждение пароля</label>
-                  <input type="password" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]">
-                  <div class="input-details">
-                    <span class="wrong-password hidden"></span>
-                    <span class="success-password hidden"></span>
-                    <a class="show-password" onclick="showPassword(this);" title="Показать пароль"></a>
-                  </div>
-                </div>
-                <div class="error-text"></div>
-              </div>
-              <div class="form-group-outer field-valid">
-                <div class="checkbox-label-container i-agree">
-                  <div class="icheckbox" style="position: relative;"><input type="checkbox" id="fos_user_registration_form_termsOfUser" name="fos_user_registration_form[termsOfUser]" required="required" value="1" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
-                  <label for="fos_user_registration_form_termsOfUser" class="required">Я согласен с</label>
-                  <a href="https://expouniverse.cf/info/terms-of-usage" class="terms-of-use-link show-terms-of-usage reopen-register-form" title="правилами пользования">
-                  правилами пользования</a>
-                </div>
-              </div>
-              <div class="form-group-outer field-valid">
-                <input type="submit" class="button-base green" id="regFormBtn" title="Отправить" name="_submit" value="Отправить">
-              </div>
-              <div id="goExhReg">
-                <input type="hidden" id="fos_user_registration_form_goExhReg" name="fos_user_registration_form[goExhReg]">
-              </div>
-            </form>
-          </div>
-          <script type="text/javascript" src="/js/6220c15.js"></script>
-        </div>
-        <div style="display: none;" id="confirmation">
-          <div id="confirmation" class="common-popup entrance-page-popup" style="width: 100%;">
-            <div class="title">Активация аккаунта</div>
-            <div class="popup-inner">
-              <div class="popup-content">
-                <p>
-                  Ваш аккаунт уже активирован. Выполните вход.
-                </p>
-              </div>
-              <div class="button-wrapper">
-                <a href="#login" class="button-base green popup-open">
-                  Войти
-                </a>
-              </div>
-            </div>
-          </div>                
-        </div>
+        </footer>        
         <div style="display: none;" id="demostandPopup">
           <div class="demostand-popup common-popup">
             <div class="title">Демонстрационный стенд</div>
@@ -498,7 +384,7 @@
               <p style="padding: 20px;"><span>Это демонстрационный стенд. Чтобы принять участие в реальной выставке, перейдите к расписанию выставок.</span></p>
               <div class="button-wrapper">
                 <div class="button-base-outer">
-                  <a href="/exhibition-schedule" class="button-base green" title="">Расписание выставок</a>
+                  <a href="https://expo-universe.com/exhibition-schedule" class="button-base green">Расписание выставок</a>
                 </div>
               </div>
             </div>

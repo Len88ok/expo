@@ -17,6 +17,15 @@
 .stand-contacts .page-content-area-inner {
   overflow: -moz-scrollbars-none; }
 
+.catalog-items-list-outer::-webkit-scrollbar {
+  width: 0; }
+
+.catalog-items-list-outer {
+  -ms-overflow-style: none; }
+
+.catalog-items-list-outer {
+  overflow: -moz-scrollbars-none; }
+
 .catalog-item-button.button-base,
 .catalog-item-button.button-base:active,
 .catalog-item-button.button-base:visited,
