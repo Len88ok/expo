@@ -23,9 +23,6 @@
     margin-bottom: 2em; }
   .faq .panel-default > .panel-heading + .panel-collapse .panel-body {
     border-top-color: transparent; }
-  .faq-section {
-    font-size: 1.8rem;
-    margin-left: .9em; }
   .faq-icon-closed {
     display: inline-block;
     width: 9px;
