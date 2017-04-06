@@ -7,7 +7,8 @@
 	.panel-default,
 	.panel-default > .panel-heading{
 		border-color: transparent;
-		background-color: transparent;}
+		background-color: transparent;
+		box-shadow: none;}
 	&-sub-title,
 	.panel-title{
 		font-size: 2.4rem;
