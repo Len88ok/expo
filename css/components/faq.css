@@ -1,12 +1,41 @@
-.faq .page-title {
-  margin-bottom: 4em; }
-
-.faq .panel-default {
-  border-color: transparent;
-  background-color: transparent; }
-
-.faq-sub-title {
-  color: #026fb3;
-  font-size: 2.4rem;
-  line-height: 1.5;
-  text-align: center; }
+.faq {
+  color: #333333; }
+  .faq .page-title {
+    margin-bottom: 3em; }
+  .faq .panel-default,
+  .faq .panel-default > .panel-heading {
+    border-color: transparent;
+    background-color: transparent; }
+  .faq-sub-title,
+  .faq .panel-title {
+    font-size: 2.4rem;
+    line-height: 1.5; }
+  .faq .panel-title {
+    color: #44526f; }
+  .faq-sub-title {
+    color: #026fb3;
+    text-align: center;
+    padding: 1em; }
+  .faq .panel-body {
+    font-size: 1.4rem;
+    padding: 1.1em 5em;
+    margin-bottom: 2em; }
+  .faq .panel-default > .panel-heading + .panel-collapse .panel-body {
+    border-top-color: transparent; }
+  .faq-section {
+    font-size: 1.8rem;
+    margin-left: .9em; }
+  .faq-icon-closed {
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background-image: url(../../images/faq/arrow-closed.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    margin-right: 15px; }
+    .faq-icon-closed.opened {
+      width: 16px;
+      height: 9px;
+      background-image: url(../../images/faq/arrow-opened.png);
+      vertical-align: middle; }

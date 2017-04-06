@@ -81,7 +81,7 @@
 			    <div class="panel-heading" role="tab" id="headingOne">
 			      <h4 class="panel-title">
 			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			          Обязательна ли регистрация на портале?
+			         <span class="faq-icon-closed"></span>Обязательна ли регистрация на портале?
 			        </a>
 			      </h4>
 			    </div>
@@ -95,7 +95,7 @@
 			    <div class="panel-heading" role="tab" id="headingTwo">
 			      <h4 class="panel-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Сколько времени длится виртуальная выставка?
+			         <span class="faq-icon-closed"></span>Сколько времени длится виртуальная выставка?
 			        </a>
 			      </h4>
 			    </div>
@@ -113,7 +113,7 @@
 			    <div class="panel-heading" role="tab" id="heading3">
 			      <h4 class="panel-title">
 			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-			          Как стать участником виртуальной выставки?
+			          <span class="faq-icon-closed"></span>Как стать участником виртуальной выставки?
 			        </a>
 			      </h4>
 			    </div>
@@ -127,7 +127,7 @@
 			    <div class="panel-heading" role="tab" id="heading4">
 			      <h4 class="panel-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-			          Сколько времени длится виртуальная выставка?
+			          <span class="faq-icon-closed"></span>Сколько времени длится виртуальная выставка?
 			        </a>
 			      </h4>
 			    </div>
@@ -142,7 +142,7 @@
 			    <div class="panel-heading" role="tab" id="heading5">
 			      <h4 class="panel-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-users" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-			          Как стать участником виртуальной выставки?
+			          <span class="faq-icon-closed"></span>Как стать участником виртуальной выставки?
 			        </a>
 			      </h4>
 			    </div>
@@ -192,5 +192,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		$('.panel-title > a').on('click', function(){
+				$('.faq-icon-closed').toggleClass('opened');
+		});
+	</script>
 </body>
 </html>
