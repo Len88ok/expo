@@ -53,3 +53,13 @@
 
 	}
 }
+
+
+@media screen and (max-width: 767px ) {
+	.faq{
+		margin-bottom: 3em;
+		.page-title{
+			margin-bottom: 0;
+		}
+	}
+}

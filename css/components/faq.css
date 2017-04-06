@@ -40,3 +40,9 @@
       height: 9px;
       background-image: url(../../images/faq/arrow-opened.png);
       vertical-align: middle; }
+
+@media screen and (max-width: 767px) {
+  .faq {
+    margin-bottom: 3em; }
+    .faq .page-title {
+      margin-bottom: 0; } }
