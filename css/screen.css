@@ -884,13 +884,99 @@ body {
     padding: 0.25em 0 0; }
     #footer ul.footer-menu li {
       margin-left: 0; }
-  #footer a.social-networks {
-    margin-right: 10px;
-    transition: all 0.5s linear; }
-    #footer a.social-networks:hover {
-      -webkit-filter: grayscale(100%);
-      /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%); }
+
+ul.social-icons {
+  margin: 0;
+  padding: 0;
+  width: auto; }
+
+ul.social-icons li {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-image: url(../images/social_networks/spritesheet.png);
+  background-repeat: no-repeat;
+  background-color: #FFF;
+  background-position: 0 100px;
+  display: block;
+  margin: -1px 1px 5px 0;
+  padding: 0;
+  border-radius: 100%;
+  overflow: visible;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3); }
+
+ul.social-icons li.vk {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -209px; }
+  ul.social-icons li.vk :hover {
+    background-position: -5px -243px; }
+
+ul.social-icons li.facebook {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -5px; }
+  ul.social-icons li.facebook :hover {
+    background-position: -5px -39px; }
+
+ul.social-icons li.google {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -73px; }
+  ul.social-icons li.google:hover {
+    background-position: -5px -107px; }
+
+ul.social-icons li.odnoklassniki {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -141px; }
+  ul.social-icons li.odnoklassniki :hover {
+    background-position: -5px -175px; }
+
+.socials {
+  background-image: url(socialssheet.png);
+  background-repeat: no-repeat;
+  display: block; }
+
+.socials-fb {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -5px; }
+
+.socials-fb1 {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -39px; }
+
+.socials-gp {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -73px; }
+
+.socials-gp1 {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -107px; }
+
+.socials-ok {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -141px; }
+
+.socials-ok1 {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -175px; }
+
+.socials-vk {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -209px; }
+
+.socials-vk1 {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -243px; }
 
 .copyright {
   color: #cfd0e4;
