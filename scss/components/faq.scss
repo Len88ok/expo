@@ -38,15 +38,15 @@
 		background-repeat: no-repeat;
 		background-position: 0 0;
         background-size: 100%;
-        margin-right: 15px;
-        &.opened{
+        margin-right: 15px;       
+
+	}
+	.opened > .faq-icon-closed{
         	width: 16px;
 			height: 9px;
 			background-image: url(../../images/faq/arrow-opened.png);
 			vertical-align: middle;
         }
-
-	}
 }
 
 

@@ -32,11 +32,11 @@
     background-position: 0 0;
     background-size: 100%;
     margin-right: 15px; }
-    .faq-icon-closed.opened {
-      width: 16px;
-      height: 9px;
-      background-image: url(../../images/faq/arrow-opened.png);
-      vertical-align: middle; }
+  .faq .opened > .faq-icon-closed {
+    width: 16px;
+    height: 9px;
+    background-image: url(../../images/faq/arrow-opened.png);
+    vertical-align: middle; }
 
 @media screen and (max-width: 767px) {
   .faq {
