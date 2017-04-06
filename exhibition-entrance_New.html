@@ -252,12 +252,6 @@
 									            <td class="application-medium"></td>
 									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
 									          </tr>
-									          <tr class="last">
-									            <td class="application-services text-center">Выбрать пакет</td>
-									            <td class="application-minimal"><a class="button-base green-light application-btn" title="Выбрано" href="#">Выбрать</a></td>
-									            <td class="application-medium"><a class="button-base green-light application-btn" title="Выбрать" href="#">Выбрать</a></td>
-									            <td class="application-prime"><a class="button-base green-light application-btn" title="Выбрать" href="#">Выбрать</a></td>
-									          </tr>
 									        </tbody>
 												</table>
 											</div>
@@ -368,7 +362,7 @@
 		<script>
 		$(document).on('ready', function() {
 		    $('#modal-print').click(function(){
-		        var printing_css='<style media=print>ul{list-style-type:none;}.price-tarifs{display: table; width: 80%; margin: 0 auto;} .page-title{text-align:center; color:#026fb3; font-size:24px; text-transform:uppercase;} .price-sub-title{text-align:center; color:#026fb3; font-size:18px;} .stamp{float:right;} .site-logo-img{float: left;} img{max-width: 100%!important;} table{border-collapse:collapse; margin-bottom: 10px;} th,td{border: 1px solid #000000;vertical-align: top; padding: 3px;} .last{text-align:center;}</style>';
+		        var printing_css='<style media=print>ul{list-style-type:none;}.price-tarifs{display: table; width: 80%; margin: 0 auto;} .page-title{text-align:center; color:#026fb3; font-size:24px; text-transform:uppercase;} .price-sub-title{text-align:center; color:#026fb3; font-size:18px;} .stamp{float:right;} .site-logo-img{float: left;} img{max-width: 100%!important;} table{border-collapse:collapse; margin-bottom: 10px;} th,td{border: 1px solid #000000;vertical-align: top; padding: 3px;}</style>';
 		        var html_to_print=printing_css+$('#to_print').html();
 		        var iframe=$('<iframe id="modal-print_frame">');
 		        $('body').append(iframe);
