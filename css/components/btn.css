@@ -27,11 +27,19 @@
   line-height: 16px;
   text-transform: uppercase;
   text-align: center;
-  display: block;
+  display: inline-block;
   padding: 9px 39px;
   overflow: hidden;
   cursor: pointer;
   transition: all .3s linear; }
+
+.button-base.green {
+  background: #55d17d;
+  border: 1px solid #55d17d; }
+
+.button-base.green:hover {
+  background: transparent;
+  color: #55d17d; }
 
 .button-base.green-light {
   background: transparent;
@@ -58,7 +66,7 @@
 
 .btn-base.left-arrow-white {
   padding-left: 50px;
-  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -326px;
+  background: url(../images/arrow-sprite.png) no-repeat scroll 0 -329px;
   color: #fff; }
 
 .btn-base.left-arrow-white:hover {

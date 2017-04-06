@@ -39,6 +39,15 @@
   transition: all .3s linear;
 }
 
+.button-base.green {
+    background: #55d17d;
+    border: 1px solid #55d17d;
+}
+
+.button-base.green:hover {
+    background: transparent;
+    color: #55d17d;
+}
 .button-base.green-light{
 	background: transparent;
   border: 1px solid #55d17d;
@@ -69,7 +78,7 @@
 
 .btn-base.left-arrow-white{
 	padding-left: 50px;
-	background: url(../images/arrow-sprite.png) no-repeat scroll 0 -326px;
+	background: url(../images/arrow-sprite.png) no-repeat scroll 0 -329px;
   color: #fff;
 }
 

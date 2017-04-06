@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="css/screen.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/components/entrance.css">
 	<link rel="stylesheet" href="css/components/price-popup.css">
 	<link rel="stylesheet" href="css/components/exhibition-counter.css">
@@ -77,7 +78,7 @@
 				<div class="content">
 					<div class="page-section exhibition-banner block-overlay" style="background-image: url('images/40/banner-background.jpg')">
 						<div class="container">
-							<a class="btn-base left-arrow-white white expohall-btn" title="Экспохолл" href="/exhibition-schedule">
+							<a class="btn-base left-arrow-white white expohall-btn" title="Экспохолл" href="https://expo-universe.com/exhibition-schedule">
 								Экспохолл
 							</a>
 							<div class="banner-content">
@@ -89,7 +90,7 @@
 										<div class="col-md-4">
 											<div class="paper-ticket buy-ticket" id="ticket-request-btn">
 											<div class="wrap-btn-hint">
-												<a class="button-base btn inactiveLink" title="Купить билет">Перейти на выставку
+												<a href="new_map.html" class="button-base btn inactiveLink" title="Купить билет">Перейти на выставку
 												</a>
 											</div>
 												<div class="ticket-info">
@@ -114,7 +115,7 @@
 										<div class="col-md-4">
 											<div class="paper-ticket invitation-ticket">
 												<div class="wrap-btn-no-hint">
-													<a class="button-base btn inactiveLink">Разместить стенд</a>
+													<a href="#demostandPopup" class="button-base btn popup-open-demostand">Разместить стенд</a>
 												</div>
 												<div class="ticket-info">
 													<div class="ticket-info-inner">
@@ -136,123 +137,146 @@
 					</div>
 				</div>
 					<!-- Modal Price-->				
-					<div id="modal-price" class="modal fade">				
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close btn-base left-arrow" data-dismiss="modal" aria-hidden="true">Назад</button>	
-									<a id='modal-print' class="btn-base"><img src="images/application/png/001-technology.png" alt=""></a>
-								</div>
-								<div id="to_print">
-									<div class="modal-body">
+				<div id="modal-price" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close btn-base left-arrow" data-dismiss="modal" aria-hidden="true">Назад</button>
+								<a id='modal-print' class="btn-base"><img src="images/application/png/001-technology.png" alt=""></a>
+							</div>
+							<div id="to_print">
+								<div class="modal-body">
 									<div class="page-title">Прайс</div>
-										<div class="row">
-											<div class="col-md-6">
-												<div class="price-list-outer">
-			                    <div class="page-sub-title">Для Экспонента</div>
-			                    <ul class="price-list">
-			                        <li>
-			                            <span class="dscr">Стандартный стенд</span>
-
-			                            <div class="cost-outer">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">1000</span>
-			                            </div>
-			                        </li>
-			                        <li style="position: relative;">
-			                            <span class="in-developing-text zero" style="left: 66px;">В разработке</span>                        
-			                            <span class="dscr">Премиум стенд</span>
-
-			                            <div class="cost-outer" style="opacity: 0;">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">2000</span>
-			                            </div>
-			                        </li>
-			                        <li>
-			                            <span class="dscr">Размещение на странице общей карты выставки</span>
-
-			                            <div class="cost-outer">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">100</span>
-			                            </div>
-			                        </li>
-			                        <li>
-			                            <span class="dscr">Размещение на первых страницах карты павильона выставки</span>
-
-			                            <div class="cost-outer">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">100</span>
-			                            </div>
-			                        </li>
-			                        <li style="position: relative;">
-			                            <span class="in-developing-text first" style="left: 198px;">В разработке</span>                        
-			                            <span class="dscr">Помощь менеджера при создании стенда</span>
-
-			                            <div class="cost-outer" style="opacity: 0;">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">100</span>
-			                            </div>
-			                        </li>
-			                        <li style="position: relative;">
-			                            <span class="dscr">Размещение рекламного слайдера экспонента на выставке</span>
-
-			                            <div class="cost-outer" style="opacity: 0;">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">100</span>
-			                            </div>
-			                        </li>
-			                        <li style="position: relative;">
-			                            <span class="in-developing-text second" style="left: 72px;">В разработке</span>                        
-			                            <span class="dscr">Скачать каталог</span>
-
-			                            <div class="cost-outer" style="opacity: 0;">
-			                                <span class="cost-article">от</span>
-			                                <span class="currency uah"></span>
-			                                <span class="cost">25</span>
-			                            </div>
-			                        </li>
-			                    </ul>
-			                </div>
+									<div class="row">
+										<div class="col-md-offset-1 col-md-10">
+											<div class="price-list-outer">
+												<div class="price-sub-title text-center">Тарифы на размещение стенда</div>
+												<div class="price-tarifs">
+													<div class="table-responsive">
+														<table class="table">
+													    <tbody>
+											          <tr class="price-tarifs-item">
+											            <td class="price-tarifs-name">Стандартный</td>
+											            <td class="price-tarifs-info">Размещение в блоке «Стандартные стенды» в виде стандартного логотипа  и возможностью  перейти на    страницу   с   описанием вашей   компании и  предлагаемых вами  вакансиях (в  стоимость входит рекламный пакет «Minimal»)</td>
+											            <td class="price-tarifs-price">1000 грн</td>
+											          </tr>	          	
+											          <tr class="price-tarifs-item">
+											            <td class="price-tarifs-name">Премиум</td>
+											            <td class="price-tarifs-info">Размещение в блоке  «Премимум стенды» в виде крупного баннера логотипа и непосредственного описания   вашей компании. Преимущественная позиция размещения по сравнению со стандартными стендами увеличивает вероятность перехода на ваш стенд (в стоимость входит  рекламный пакет «Minimal»)</td>
+											            <td class="price-tarifs-price">1000 грн</td>	
+											          </tr>
+											          <tr class="price-tarifs-item">
+											            <td class="price-tarifs-name">Топ - 10</td>
+											            <td class="price-tarifs-info">Размещение в ТОПе блока «Премиум стенды» - всегда на  первых позициях.  Самое  преимущественное  размещение  (в  стоимость входит рекламный пакет «Minimal»). <strong>Количество мест ограничено!</strong> </td>
+											            <td class="price-tarifs-price">1500 грн</td>	
+											          </tr>									         
+											        </tbody>
+														</table>
+													</div>
+												</div>
 											</div>
-											<div class="col-md-6">
-												<div class="price-list-outer">
-			                    <div class="page-sub-title">Для Посетителя</div>
-			                    <ul class="price-list">
-			                        <li>
-			                            <span class="dscr">Билет</span>
-
-			                            <div class="cost-outer">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">0</span>
-			                            </div>
-			                        </li>
-			                        <li style="position: relative;">
-			                            <span class="in-developing-text third" style="left: 153px;">В разработке</span>
-			                            <span class="dscr">Скачать каталог участников</span>
-
-			                            <div class="cost-outer" style="opacity: 0;">
-			                                <span class="currency uah"></span>
-			                                <span class="cost">5</span>
-			                            </div>
-			                        </li>
-			                    </ul>
-			                </div>
+										</div>
+										<div class="col-md-12">
+										<div class="price-sub-title">Рекламные услуги</div>
+											<div class="table-responsive">
+												<table class="table table-striped table-bordered">
+												  <thead>
+											      <tr>
+											        <th>Мы предлагаем</th>
+											        <th class="application-minimal">Пакет <span class="text-uppercase">“Minimal”</span><br/><small>Включен в стоимость участия</small></th>
+											        <th class="application-medium">Пакет <span class="text-uppercase">“Medium”</span><br/> 600 грн</th>
+											        <th class="application-prime">Пакет <span class="text-uppercase">“Prime”</span><br/> 1000 грн</th>
+											      </tr>
+											    </thead>
+											    <tbody>
+									          <tr>
+									            <td class="application-services">Проведение рекламной кампании для привлечения
+																целевой аудитории на выставку.</td>
+									            <td class="application-minimal"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-medium"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>	          	
+									          <tr>
+									            <td class="application-services">Реклама вашей компании в наших профильных
+																	группах в соц. сетях: Вконтакте, Facebook, Instagram.</td>
+									            <td class="application-minimal"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-medium"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Размещение в рекламном слайдере на странице
+															входа на выставку.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Участие Вашей компании в анонсе мероприятия
+															на медиа-порталах Харькова.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Размещение вашей компании в печатных
+															пригласительных на выставку.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Размещение логотипа вашей компании
+															на печатных рекламных афишах.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Размещение логотипа вашей компании в рекламных
+															постах сообществ Харькова в соц. сетях: VK, FB.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Размещение в рекламном слайдере на главной
+															странице выставки.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"></td>
+									            <td class="application-prime"><img src="https://len88ok.github.io/expo/images/icon-inline4.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr>
+									            <td class="application-services">Участие логотипа Вашей компании в рекламном
+															видео-ролике выставки.</td>
+									            <td class="application-minimal"></td>
+									            <td class="application-medium"></td>
+									            <td class="application-prime"><img src="images/application/checked-t.png" alt="icon-checked"></td>
+									          </tr>
+									          <tr class="last">
+									            <td class="application-services text-center">Выбрать пакет</td>
+									            <td class="application-minimal"><a class="button-base green-light application-btn" title="Выбрано" href="#">Выбрать</a></td>
+									            <td class="application-medium"><a class="button-base green-light application-btn" title="Выбрать" href="#">Выбрать</a></td>
+									            <td class="application-prime"><a class="button-base green-light application-btn" title="Выбрать" href="#">Выбрать</a></td>
+									          </tr>
+									        </tbody>
+												</table>
 											</div>
 										</div>
 									</div>
-								<div class="modal-footer">									
-									<div class="stamp-outer">
-		                <a href="/" title="Expo Universe" class="site-logo">
-		                    <div class="site-logo-img">
-		                        <img alt="Expo Universe" src="https://expouniverse.cf/bundles/sitebundlefrontend/images/logo.png">
-		                    </div>
-		                </a>
-		                <div class="stamp"><img src="https://expouniverse.cf/bundles/sitebundlefrontend/images/stamp.png" alt="stamp"></div>
-		            	</div>
 								</div>
+								<div class="modal-footer">
+									<div class="stamp-outer">
+										<a href="/" title="Expo Universe" class="site-logo">
+											<div class="site-logo-img">
+												<img alt="Expo Universe" src="https://expouniverse.cf/bundles/sitebundlefrontend/images/logo.png">
+											</div>
+										</a>
+										<div class="stamp"><img src="https://expouniverse.cf/bundles/sitebundlefrontend/images/stamp.png" alt="stamp"></div>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 					</div><!-- end Modal-->
 				<div class="map-hint-block-wrap">
 					<div class="map-hint-block">
@@ -313,6 +337,17 @@
 				</div>
 			</div>
 		</footer>
+		<div style="display: none;" id="demostandPopup">
+      <div class="demostand-popup common-popup">
+        <div class="title">Демонстрационный стенд</div>
+        <div class="popup-inner">
+          <p style="padding: 20px;"><span>Это демонстрационный стенд. Чтобы принять участие в реальной выставке, перейдите к расписанию выставок.</span></p>
+          <div class="button-wrapper text-center">
+            <a href="https://expo-universe.com/exhibition-schedule" class="button-base green">Расписание выставок</a>
+          </div>
+        </div>
+      </div>
+    </div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -333,7 +368,7 @@
 		<script>
 		$(document).on('ready', function() {
 		    $('#modal-print').click(function(){
-		        var printing_css='<style media=print>ul{list-style-type:none;}.page-title{text-align:center; color:#026fb3; font-size:24px; text-transform:uppercase;} .page-sub-title{text-align:center; color:#026fb3; font-size:18px;} .price-list li:first-child{border-top:1px solid #d5d5d5;} 	.price-list li{display:table; width:60%; margin:0 auto; border:1px solid #d5d5d5; border-width:0 1px 1px; color:#262626; padding: 12px 25px;}.price-list li .dscr, .cost-oute{display:table-cell; height:100%; vertical-align:middle;}.stamp-outer{text-align:center;} 	.in-developing-text { color:#a2a2a2; font-size:11px; line-height:13px; position:absolute; top:0px; left:0px; text-transform:lowercase;}.cost-outer{text-align:right;}.stamp{margin-top:20px;};</style>';
+		        var printing_css='<style media=print>ul{list-style-type:none;}.price-tarifs{display: table; width: 80%; margin: 0 auto;} .page-title{text-align:center; color:#026fb3; font-size:24px; text-transform:uppercase;} .price-sub-title{text-align:center; color:#026fb3; font-size:18px;} .stamp{float:right;} .site-logo-img{float: left;} img{max-width: 100%!important;} table{border-collapse:collapse; margin-bottom: 10px;} th,td{border: 1px solid #000000;vertical-align: top; padding: 3px;} .last{text-align:center;}</style>';
 		        var html_to_print=printing_css+$('#to_print').html();
 		        var iframe=$('<iframe id="modal-print_frame">');
 		        $('body').append(iframe);
@@ -345,5 +380,7 @@
 		    });
 		});
 		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script src="scripts/demo-popups.js"></script>
 </body>
 </html>

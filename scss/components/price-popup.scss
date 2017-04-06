@@ -1,4 +1,5 @@
 #modal-price{
+	z-index: 10050;
 	.modal{		
 		&-dialog{
 			width: 80%;
@@ -128,6 +129,51 @@
 		width: 134px;
 		height: 134px;
 	}	
+
+
+	//new exhibition-entrance
+	.price-list-outer{
+		text-align: center;
+	}
+
+	.price-sub-title{
+		text-align: center;
+		padding-bottom: 7px;
+		color: #026fb3;
+		font-size: 18px;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+	.price-tarifs-name {
+	    color: #026fb3;
+	    font-size: 16px;
+	    text-transform: uppercase;
+	}
+	.price-tarifs-info {
+	    padding-bottom: 1.5em;
+	    width: 65%;
+	}
+	.price-wrap-line {
+	    border-bottom: 1px solid #55d17d;
+	    margin-bottom: 1em;
+	}
+	.price-tarifs-price {
+	    color: #28b957;
+	    font-size: 2rem;
+	}
+	.table>thead>tr>th{
+		vertical-align: middle;
+		text-align: center;
+	}
+	td.application-minimal,
+	td.application-medium,
+	td.application-prime{
+		text-align: center;
+	}
+	td.application-services{
+		vertical-align: middle;
+	}
+
 }
 
 
@@ -162,7 +208,6 @@
 		}
 	}
 }
-
 
 
 

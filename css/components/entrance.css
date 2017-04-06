@@ -412,6 +412,65 @@ body .map-navigation-panel h2 {
   padding-top: 27px; }
 
 /*-----------------------------------------------------------------*/
+/*--- Common Popup Styles ---*/
+/*-----------------------------------------------------------------*/
+.common-popup {
+  background: #fff;
+  border: 1px solid #63646d; }
+
+.common-popup .title {
+  text-align: center;
+  background: #eef3f5;
+  width: 100%;
+  height: 84px;
+  padding-top: 33px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  color: #0567a6; }
+
+.common-popup input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+  -webkit-text-fill-color: #6c6c6c !important;
+  color: #6c6c6c !important; }
+
+.popup-inner {
+  background: #fff;
+  overflow: hidden;
+  padding: 0 15px; }
+
+/*-----------------*/
+.bookmark-notes-popup-outer .fancybox-close, .invite-popup-outer .fancybox-close {
+  background: url("https://expouniverse.cf/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png") repeat scroll -80px 0;
+  right: -34px;
+  top: -34px; }
+
+.bookmark-notes-popup-outer .fancybox-close:hover, .invite-popup-outer .fancybox-close:hover {
+  background: url("https://expouniverse.cf/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png") repeat scroll -80px -81px; }
+
+.invite-popup-outer.fancybox-overlay {
+  background: transparent url("https://expouniverse.cf/bundles/sitebundlebackend/images/fancybox/fancybox_overlay-light.png") repeat scroll 0 0; }
+
+.close-demo-stand {
+  background: url("https://expouniverse.cf/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png") -80px 0px !important;
+  position: absolute !important;
+  top: -34px !important;
+  right: -34px !important;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  z-index: 8040; }
+
+.close-invite {
+  background: url("https://expouniverse.cf/bundles/sitebundlebackend/images/fancybox/close-pop-up-sprite.png") -80px 0px !important;
+  position: absolute !important;
+  top: -34px !important;
+  right: -34px !important;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  z-index: 8040; }
+
 @media screen and (max-width: 1169px) {
   .exhibition-banner {
     background-size: cover; }
