@@ -875,7 +875,7 @@ body {
   margin: 0;
   outline: none;
   z-index: 4;
-  line-height: 1.4em; }
+  line-height: 1em; }
   #footer .footer-right {
     padding: 0.25em 0; }
   #footer ul.footer-menu {
@@ -927,6 +927,7 @@ ul.social-icons li.odnoklassniki {
 
 .copyright {
   color: #cfd0e4;
+  font-size: 10px;
   padding-top: 0;
   text-align: left; }
 
@@ -935,13 +936,6 @@ ul.social-icons li.odnoklassniki {
   list-style: none; }
 
 @media screen and (max-width: 767px) {
-  #footer {
-    height: auto;
-    text-align: center; }
-  .wrapper > .content {
-    padding-bottom: 70px; } }
-
-@media screen and (max-width: 479px) {
   #footer ul.footer-menu {
     float: none; }
   #footer a.social-networks {
