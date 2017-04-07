@@ -2,6 +2,17 @@
 	height: 523px;
 }
 
+@media screen and (max-width: 767px ) {
+	.exhibition-banner {
+	    height: auto;
+	}
+}
+
+@media screen and (min-width: 767px ) {
+	.common-popup { width: 700px;}
+	.fancybox-wrap {width: 700px!important; margin: 0 auto!important;}
+}
+
 .ticket-outer{
 	transform: translateY(20%);
 }

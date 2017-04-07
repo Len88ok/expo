@@ -327,7 +327,7 @@ a:hover {
   cursor: pointer; }
 
 #header {
-  position: static; }
+  position: relative; }
 
 header {
   position: relative;
@@ -898,8 +898,7 @@ ul.social-icons li {
   transition: all 0.3s ease;
   background-image: url(../images/social_networks/spritesheet1.png);
   background-repeat: no-repeat;
-  background-color: #FFF;
-  background-position: 0 100px;
+  background-color: #e9ebff;
   display: inline-block;
   padding: 0;
   border-radius: 100%;
@@ -939,7 +938,7 @@ ul.social-icons li.odnoklassniki {
     height: auto;
     text-align: center; }
   .wrapper > .content {
-    padding-bottom: 120px; } }
+    padding-bottom: 70px; } }
 
 @media screen and (max-width: 479px) {
   #footer ul.footer-menu {
@@ -950,7 +949,9 @@ ul.social-icons li.odnoklassniki {
     float: none !important;
     display: inline-block; }
   .copyright {
-    text-align: center; } }
+    text-align: center; }
+  .wrapper > .content {
+    padding-bottom: 110px; } }
 
 .terms-of-usage {
   padding: 3em 2em; }

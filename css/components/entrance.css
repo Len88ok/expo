@@ -437,7 +437,7 @@ body .map-navigation-panel h2 {
 .popup-inner {
   background: #fff;
   overflow: hidden;
-  padding: 0 15px; }
+  padding: 15px; }
 
 /*-----------------*/
 .bookmark-notes-popup-outer .fancybox-close, .invite-popup-outer .fancybox-close {
@@ -547,10 +547,22 @@ body .map-navigation-panel h2 {
   .page-section.participants .ticket-outer {
     top: 0; } }
 
+@media screen and (max-width: 767px) {
+  .common-popup {
+    width: 350px; }
+  .fancybox-wrap {
+    width: 350px !important; }
+  .exhibition-banner.page-section {
+    padding-bottom: 100px; } }
+
 @media screen and (max-width: 600px) {
   .ticket-outer {
     width: 65%; } }
 
 @media screen and (max-width: 479px) {
   .ticket-outer {
-    width: 85%; } }
+    width: 85%; }
+  .common-popup {
+    width: 300px; }
+  .fancybox-wrap {
+    width: 300px !important; } }
