@@ -8,12 +8,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 		<link href="css/old-all.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
 		<link href="css/screen.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/components/jstree-catalog.css">
 		<link rel="stylesheet" href="css/components/old-css-new.css">
 		<link rel="stylesheet" href="css/components/stand-catalog.css">
 		<link rel="stylesheet" type="text/css" href="css/components/demo-expo.css">
 		<link rel="stylesheet" href="css/components/catalog-tree.css">
+		<link href="css/components/map-hint.css" rel="stylesheet">
+		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -262,7 +265,7 @@
 																	<ul class="catalog-items-list" id="item_container">
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap">
 																					<div class="item-title">
 																						<a href="cards/Pancake.html" class="itemView">"Confectum PanCake"</a>
@@ -277,12 +280,12 @@
 																						</a>
 																					</div>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
 																			</div>
 																		</li>
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap">
 																					<div class="item-title">
 																						<a href="cards/snowy.html" class="itemView">"Mini Snowy Mallows"</a>
@@ -297,12 +300,12 @@
 																						</a>
 																					</div>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
 																			</div>
 																		</li>
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap">
 																					<div class="item-title">
 																						<a href="cards/funny.html" class="itemView" data-id="">"Веселые пружинки"</a>
@@ -317,12 +320,12 @@
 																						</a>
 																					</div>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
 																			</div>
 																		</li>
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap">
 																					<div class="item-title">
 																						<a href="cards/Pancake-apple.html" class="itemView" data-id="">"ПанКейк" с яблочным наполнителем</a>
@@ -337,12 +340,12 @@
 																						</a>
 																					</div>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
 																			</div>
 																		</li>
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap">
 																					<div class="item-title">
 																						<a href="cards/fruits.html" class="itemView" data-id="">"Фруктозаврики"</a>
@@ -357,12 +360,12 @@
 																						</a>
 																					</div>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
 																			</div>
 																		</li>
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap service">
 																				<a href="cards/service1.html" class="itemView">
 																					<div class="stand_catalog_service text-center">
@@ -373,12 +376,12 @@
 																					</div>
 																				</a>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>	
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>	
 																			</div>
 																		</li>
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap">
 																					<div class="item-title">
 																						<a href="cards/service2.html" class="itemView" data-id="">Торговля производственным оборудованием собственной сборки</a>
@@ -396,12 +399,12 @@
 																						</a>
 																					</div>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>																			
 																			</div>
 																		</li>																		
 																		<li class="col-xs-6">
 																			<div class="stand_catalog_item_wrap-outer">
-																				<a href="#demostandPopup" class="bookmark popup-open-demostand" data-type="catalog"></a>
+																				<a href="#demostandBookmark" class="bookmark popup-open-demostand" data-type="catalog"></a>
 																				<div class="stand_catalog_item_wrap service">
 																					<a href="cards/service3.html" class="itemView">
 																						<div class="stand_catalog_service text-center">
@@ -412,7 +415,7 @@
 																						</div>
 																					</a>
 																				</div>
-																				<a href="#demostandPopup" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>	
+																				<a href="#demostandManager" class="catalog-item-button button-base popup-open-demostand">Связаться с менеджером</a>	
 																			</div>
 																		</li>																		
 																	</ul>
@@ -617,6 +620,28 @@
                 <div class="button-base-outer">
                   <a href="https://expo-universe.com/exhibition-schedule" class="button-base green">Расписание выставок</a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;" id="demostandBookmark">
+          <div class="demostand-popup common-popup">
+            <div class="title">Демонстрационный стенд</div>
+            <div class="popup-inner">
+              <p style="padding: 20px;"><span>Вы можете добавить данный стенд в Избранное. Раздел Избранное доступен в для просмотра в Личном кабинете. Личный кабинет доступен после регистрации. Регистрация на портале – бесплатна.</span></p>
+              <div class="button-wrapper">
+                  <a href="https://expo-universe.com/exhibition-schedule" class="button-base green">Расписание выставок</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;" id="demostandManager">
+          <div class="demostand-popup common-popup">
+            <div class="title">Демонстрационный стенд</div>
+            <div class="popup-inner">
+              <p style="padding: 20px;"><span>Вы можете связаться с представителем компании для онлайн видео-общения и в текстовом чате только в момент проведения выставки. Для этого необходимо зарегистрироваться на портале. Регистрация на портале бесплатна.</span></p>
+              <div class="button-wrapper">
+                  <a href="https://expo-universe.com/exhibition-schedule" class="button-base green">Расписание выставок</a>
               </div>
             </div>
           </div>

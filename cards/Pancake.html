@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="../css/components/stand-catalog.css">
 		<link rel="stylesheet" href="../css/components/demo-expo.css">
 		<link rel="stylesheet" href="../css/components/catalog-tree.css">
+		<link href="../css/components/map-hint.css" rel="stylesheet">
+		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -252,7 +254,7 @@
 																<a href="../demo-catalog.html" class="btn-base left-arrow-black">
 																</a>
 																<div class="product-name">"Confectum PanCake"</div>
-																<a title="Добавить в закладки" id="268" class="bookmark " data-type="catalog">
+																<a  href="#demostandBookmark" title="Добавить в закладки" id="268" class="bookmark popup-open-demostand" data-type="catalog">
 																</a>
 															</div>
 															<div class="item-full-info">
@@ -275,7 +277,7 @@
 																	</div>
 																</div>
 																<div class="button-base-outer">
-																	<a href="#demostandPopup" class="button-base green popup-open-demostand">Связаться с менеджером</a>
+																	<a href="#demostandManager" class="button-base green popup-open-demostand">Связаться с менеджером</a>
 																</div>
 															</div>
 													</div>
@@ -466,15 +468,26 @@
             <div class="clear"></div>
           </div>
         </div>
-        <div style="display: none;" id="demostandPopup">
+        <div style="display: none;" id="demostandManager">
           <div class="demostand-popup common-popup">
             <div class="title">Демонстрационный стенд</div>
             <div class="popup-inner">
-              <p style="padding: 20px;"><span>Это демонстрационный стенд. Чтобы принять участие в реальной выставке, перейдите к расписанию выставок.</span></p>
+              <p style="padding: 20px;"><span>Вы можете связаться с представителем компании для онлайн видео-общения и в текстовом чате только в момент проведения выставки. Для этого необходимо зарегистрироваться на портале. Регистрация на портале бесплатна.</span></p>
               <div class="button-wrapper">
                 <div class="button-base-outer">
                   <a href="/exhibition-schedule" class="button-base green" title="">Расписание выставок</a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;" id="demostandBookmark">
+          <div class="demostand-popup common-popup">
+            <div class="title">Демонстрационный стенд</div>
+            <div class="popup-inner">
+              <p style="padding: 20px;"><span>Вы можете добавить данный стенд в Избранное. Раздел Избранное доступен в для просмотра в Личном кабинете. Личный кабинет доступен после регистрации. Регистрация на портале – бесплатна.</span></p>
+              <div class="button-wrapper">
+                  <a href="https://expo-universe.com/exhibition-schedule" class="button-base green">Расписание выставок</a>
               </div>
             </div>
           </div>
