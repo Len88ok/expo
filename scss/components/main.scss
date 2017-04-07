@@ -76,6 +76,8 @@ iframe.tv {
 	text-align: center;
 	background-color: #e9ebff;
 	background-image: none;
+	min-width: 100%;
+    max-width: 100%;
 	&-content{
 		position: relative;	
 		width: 100%;

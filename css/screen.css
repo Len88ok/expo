@@ -901,6 +901,7 @@ ul.social-icons li {
   background-color: #e9ebff;
   display: inline-block;
   padding: 0;
+  margin-right: 10px;
   border-radius: 100%;
   overflow: visible; }
 
