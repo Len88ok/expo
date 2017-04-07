@@ -1,5 +1,5 @@
 #header{
-	position: static;
+	position: relative;
 }
 
 header{
@@ -15,11 +15,11 @@ header{
 		margin-right: 50px;
 		&-dscr{
 			text-transform: none;
-	    color: #026fb3;
-	    font-size: 9px;
-	    line-height: 11px;
-	    display: block;
-	    padding-top: 4px;
+		    color: #026fb3;
+		    font-size: 9px;
+		    line-height: 11px;
+		    display: block;
+		    padding-top: 4px;
 		}
 	}
 	&-nav{
