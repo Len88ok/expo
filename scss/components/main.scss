@@ -2,6 +2,10 @@ html {
   height: 100%;
 }
 
+.wrapper{
+	height: 1%;
+}
+
 #tv{
 	position: absolute;
 	top: 0;
@@ -38,6 +42,30 @@ html {
 .unmute{
 	background: url(https://expouniverse.cf/bundles/sitebundlefrontend/images/sound-on.svg) no-repeat;
 	background-size: cover;
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 0){
+	iframe.tv {
+	    height: 100% !important;
+	    width: 100% !important;
+	}
+}
+@media only screen and (max-width: 1440px) and (min-width: 0){
+	iframe.tv {
+	    height: 100% !important;
+	    width: 100% !important;
+	}
+}
+@media only screen and (max-width: 1600px) and (min-width: 0){
+	iframe.tv {
+	    height: 100% !important;
+	    width: 100% !important;
+	}
+}
+iframe.tv {
+    height: 100% !important;
+    width: 100% !important;
+    top: 43% !important;
 }
 
 
